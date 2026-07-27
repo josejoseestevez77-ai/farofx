@@ -1,0 +1,55 @@
+{
+  "_comment": "Firmas E-E-A-T. Mismo formato que Pulso Mercados (slug, nombre, rol, ubicacion, especialidades, clusters, credenciales, sameAs). PLACEHOLDERS: Jose debe validar con personas reales (o seudonimo con persona real detras) y perfiles publicos verificables en sameAs antes de publicar (Fase 3).",
+  "authors": [
+    {
+      "slug": "autor-jefe-brokers",
+      "name": "[Autor 1 — pendiente]",
+      "role": "Analista jefe de brokers y regulación",
+      "location": "Madrid, España",
+      "specialties": ["Regulación (CNMV, ESMA, MiFID II)", "Verificación de licencias", "Veredictos"],
+      "clusters": ["fichas-resena", "hubs-regulador"],
+      "credentials": "[Credenciales verificables pendientes de Jose]",
+      "sameAs": []
+    },
+    {
+      "slug": "autor-costes-ejecucion",
+      "name": "[Autor 2 — pendiente]",
+      "role": "Analista de costes y ejecución",
+      "location": "[Ciudad pendiente]",
+      "specialties": ["Spreads y comisiones", "Swaps", "Ejecución"],
+      "clusters": ["comparativas-costes", "roundups-menores-costes"],
+      "credentials": "[Credenciales verificables pendientes de Jose]",
+      "sameAs": []
+    },
+    {
+      "slug": "autor-plataformas-cuentas",
+      "name": "[Autor 3 — pendiente]",
+      "role": "Analista de plataformas y cuentas",
+      "location": "[Ciudad pendiente]",
+      "specialties": ["MT4/MT5/cTrader", "Tipos de cuenta", "Ejecución"],
+      "clusters": ["plataformas", "tipos-cuenta"],
+      "credentials": "[Credenciales verificables pendientes de Jose]",
+      "sameAs": []
+    },
+    {
+      "slug": "autor-latam-proteccion",
+      "name": "[Autor 4 — pendiente]",
+      "role": "Especialista LatAm y protección al inversor",
+      "location": "[Ciudad pendiente, LatAm]",
+      "specialties": ["Reguladores LatAm", "Protección al inversor", "Fraude/scam"],
+      "clusters": ["brokers-latam", "fraude-scam"],
+      "credentials": "[Credenciales verificables pendientes de Jose]",
+      "sameAs": []
+    },
+    {
+      "slug": "editor-metodologia",
+      "name": "[Autor 5 — pendiente]",
+      "role": "Editor y metodología de ranking",
+      "location": "[Ciudad pendiente]",
+      "specialties": ["Metodología de ranking", "QA editorial", "Política de reseñas"],
+      "clusters": ["metodologia", "como-verificamos"],
+      "credentials": "[Credenciales verificables pendientes de Jose]",
+      "sameAs": []
+    }
+  ]
+}

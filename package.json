@@ -1,0 +1,10 @@
+{
+  "name": "farofx",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FAROFX — reseñas verificadas y ranking de brokers. Generador estático sin dependencias.",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

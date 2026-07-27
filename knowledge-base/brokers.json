@@ -1,0 +1,155 @@
+{
+  "_comment": "FUENTE DE VERDAD DE DATOS DE FAROFX. Datos de DEMOSTRACION (brokers ficticios) para validar el motor y el diseño. Sustituir por brokers reales con fuente y fecha en Fase 5/6 antes de publicar. Las sub-notas (0-10) alimentan la formula de metodologia-ranking.md.",
+  "brokers": [
+    {
+      "slug": "pepperline-fx",
+      "name": "Pepperline FX",
+      "init": "PX",
+      "color": "#2b6cb0",
+      "demo": true,
+      "legalEntity": "Pepperline Markets Ltd (demo)",
+      "foundedYear": 2013,
+      "headquarters": { "country": "Reino Unido", "flag": "🇬🇧" },
+      "type": ["forex", "copy"],
+      "depositMin": 100,
+      "spreadTypical": "0,6 pips EUR/USD",
+      "platforms": ["MT4", "MT5", "cTrader"],
+      "fundProtection": "Cuentas segregadas + FSCS hasta 85.000 £ (demo)",
+      "affiliateUrl": "#afiliado-pepperline",
+      "office": { "status": "verified", "date": "Marzo 2026", "method": "Plano continuo + dirección visible coincidente con licencia FCA. Videollamada confirmada." },
+      "regulators": [
+        { "authority": "FCA", "licenseNumber": "509909", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://register.fca.org.uk/", "ok": true },
+        { "authority": "CySEC", "licenseNumber": "234/14", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cysec.gov.cy/", "ok": true },
+        { "authority": "CNMV", "licenseNumber": "pasaporte MiFID", "status": "notificado", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cnmv.es/", "ok": true }
+      ],
+      "subscores": { "regulacion": 9.5, "retirada": 8.2, "quejas": 8.8, "costes": 7.9 },
+      "reviews": {
+        "count": 1243,
+        "stars": 4.6,
+        "samples": [
+          { "user": "Carlos M.", "stars": 5, "text": "Retiradas en menos de 24h durante 8 meses. Spreads ajustados en EUR/USD.", "meta": ["Cuenta verificada", "14 meses operando", "Depósito 2.500€"] },
+          { "user": "Lucía R.", "stars": 4, "text": "Soporte correcto, alguna demora en verificación KYC al abrir, pero todo legítimo.", "meta": ["Cuenta verificada", "6 meses operando"] }
+        ]
+      }
+    },
+    {
+      "slug": "meridian-copy",
+      "name": "Meridian Copy",
+      "init": "MC",
+      "color": "#2FA36B",
+      "demo": true,
+      "legalEntity": "Meridian Copy ESI (demo)",
+      "foundedYear": 2016,
+      "headquarters": { "country": "España", "flag": "🇪🇸" },
+      "type": ["copy"],
+      "depositMin": 50,
+      "spreadTypical": "Comisión 0,08 % por operación",
+      "platforms": ["Plataforma propia", "MT5"],
+      "fundProtection": "Cuentas segregadas + FOGAIN hasta 100.000 € (demo)",
+      "affiliateUrl": "#afiliado-meridian",
+      "office": { "status": "pending", "date": "Recibido · en revisión", "method": "Video recibido. Pendiente de comprobar coincidencia de dirección y videollamada." },
+      "regulators": [
+        { "authority": "CNMV", "licenseNumber": "ESI registrada", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cnmv.es/", "ok": true },
+        { "authority": "CySEC", "licenseNumber": "388/20", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cysec.gov.cy/", "ok": true }
+      ],
+      "subscores": { "regulacion": 8.6, "retirada": 7.8, "quejas": 8.4, "costes": 7.5 },
+      "reviews": {
+        "count": 489,
+        "stars": 4.5,
+        "samples": [
+          { "user": "Ana S.", "stars": 5, "text": "El copytrading es transparente, se ve el histórico real del estratega antes de copiar.", "meta": ["Cuenta verificada", "11 meses operando"] }
+        ]
+      }
+    },
+    {
+      "slug": "aurum-markets",
+      "name": "Aurum Markets",
+      "init": "AM",
+      "color": "#7a5e18",
+      "demo": true,
+      "legalEntity": "Aurum Markets Ltd (demo)",
+      "foundedYear": 2015,
+      "headquarters": { "country": "Chipre", "flag": "🇨🇾" },
+      "type": ["forex"],
+      "depositMin": 250,
+      "spreadTypical": "1,1 pips EUR/USD",
+      "platforms": ["MT4", "MT5"],
+      "fundProtection": "Cuentas segregadas + ICF hasta 20.000 € (demo)",
+      "affiliateUrl": "#afiliado-aurum",
+      "office": { "status": "verified", "date": "Noviembre 2025", "method": "Plano continuo con marca de fecha. Dirección coincide con registro CySEC." },
+      "regulators": [
+        { "authority": "CySEC", "licenseNumber": "410/22", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cysec.gov.cy/", "ok": true },
+        { "authority": "ASIC", "licenseNumber": "4458xx", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://asic.gov.au/", "ok": true },
+        { "authority": "FCA", "licenseNumber": null, "status": "sin registro", "verifiedDate": "2026-07-01", "sourceUrl": "https://register.fca.org.uk/", "ok": false }
+      ],
+      "subscores": { "regulacion": 8.0, "retirada": 6.9, "quejas": 7.1, "costes": 7.6 },
+      "reviews": {
+        "count": 612,
+        "stars": 4.1,
+        "samples": [
+          { "user": "David P.", "stars": 4, "text": "Buena ejecución pero las retiradas tardan 2-3 días laborables.", "meta": ["Cuenta verificada", "9 meses operando"] }
+        ]
+      }
+    },
+    {
+      "slug": "titanflow",
+      "name": "Titanflow",
+      "init": "TF",
+      "color": "#475569",
+      "demo": true,
+      "legalEntity": "Titanflow Global Pty (demo)",
+      "foundedYear": 2019,
+      "headquarters": { "country": "Australia", "flag": "🇦🇺" },
+      "type": ["forex", "copy"],
+      "depositMin": 200,
+      "spreadTypical": "1,4 pips EUR/USD",
+      "platforms": ["MT4", "MT5"],
+      "fundProtection": "Cuentas segregadas (sin fondo de compensación UE/UK) (demo)",
+      "affiliateUrl": "#afiliado-titanflow",
+      "office": { "status": "none", "date": "No enviado", "method": "El broker no ha aportado verificación de oficina física." },
+      "regulators": [
+        { "authority": "ASIC", "licenseNumber": "4471xx", "status": "activa", "verifiedDate": "2026-07-01", "sourceUrl": "https://asic.gov.au/", "ok": true },
+        { "authority": "FCA", "licenseNumber": null, "status": "sin registro", "verifiedDate": "2026-07-01", "sourceUrl": "https://register.fca.org.uk/", "ok": false },
+        { "authority": "CySEC", "licenseNumber": null, "status": "sin registro", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cysec.gov.cy/", "ok": false }
+      ],
+      "subscores": { "regulacion": 6.5, "retirada": 5.8, "quejas": 6.0, "costes": 6.4 },
+      "reviews": {
+        "count": 301,
+        "stars": 3.4,
+        "samples": [
+          { "user": "Jorge L.", "stars": 3, "text": "Funciona, pero el soporte en español es limitado y los spreads suben en noticias.", "meta": ["Cuenta verificada", "4 meses operando"] }
+        ]
+      }
+    },
+    {
+      "slug": "novax-trade",
+      "name": "NovaX Trade",
+      "init": "NX",
+      "color": "#D9534F",
+      "demo": true,
+      "legalEntity": "Desconocida / no declarada (demo)",
+      "foundedYear": 2023,
+      "headquarters": { "country": "Offshore", "flag": "🏴" },
+      "type": ["forex"],
+      "depositMin": 50,
+      "spreadTypical": "Variable, no publicado",
+      "platforms": ["Plataforma propia"],
+      "fundProtection": "Sin protección de fondos declarada (demo)",
+      "affiliateUrl": null,
+      "office": { "status": "failed", "date": "Febrero 2026", "method": "El video no coincide con la dirección registrada en su web. No supera la verificación." },
+      "regulators": [
+        { "authority": "FCA", "licenseNumber": null, "status": "sin registro", "verifiedDate": "2026-07-01", "sourceUrl": "https://register.fca.org.uk/", "ok": false },
+        { "authority": "CySEC", "licenseNumber": null, "status": "sin registro", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cysec.gov.cy/", "ok": false },
+        { "authority": "CNMV", "licenseNumber": null, "status": "no autorizado · advertencia", "verifiedDate": "2026-07-01", "sourceUrl": "https://www.cnmv.es/", "ok": false }
+      ],
+      "subscores": { "regulacion": 1.5, "retirada": 3.2, "quejas": 2.8, "costes": 4.0 },
+      "reviews": {
+        "count": 88,
+        "stars": 1.6,
+        "samples": [
+          { "user": "Miguel A.", "stars": 1, "text": "Retirada bloqueada tras solicitar beneficios. Caso abierto en mediación.", "meta": ["Cuenta verificada", "Incidencia en curso"] }
+        ]
+      }
+    }
+  ]
+}
