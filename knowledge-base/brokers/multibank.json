@@ -1,0 +1,77 @@
+{
+  "slug": "multibank",
+  "name": "MultiBank",
+  "init": "MB",
+  "color": "#0b1f3a",
+  "demo": false,
+  "legalEntity": "MEX Group Worldwide Limited (marca comercial 'MultiBank Group'); entidades operativas verificadas: MEX Australia Pty Ltd (ASIC) y MEX Europe Ltd (CySEC)",
+  "foundedYear": 2005,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos (Dubái)",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "<cite index=\"119-2,119-3\">La cuenta Standard, con un depósito mínimo de 50 USD, ofrece spreads desde 1,5 pips en EUR/USD sin comisión</cite>; <cite index=\"118-1\">la cuenta Pro reduce el spread a 0,8 pips y la cuenta ECN ofrece spreads en bruto desde 0,0 pips</cite> <cite index=\"120-12\">con una comisión de 3 USD por lote por lado (6 USD por operación completa)</cite>.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"21-2,21-3\">Los clientes europeos operan bajo MEX Europe Ltd, regulada por CySEC con fondo de compensación a inversores obligatorio, mientras que los clientes australianos se registran vía MEX Australia Pty Ltd, con protección de saldo negativo bajo supervisión ASIC</cite>. <cite index=\"21-4,21-10\">Los clientes de otras jurisdicciones se dirigen a MEX Atlantic Corporation (Islas Caimán), que ofrece un seguro de exceso de pérdidas de hasta 1 millón de USD suscrito por Lloyd's of London, aunque sin las mismas garantías estatutarias que las entidades de primer nivel</cite>.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido cotejar de forma directa la dirección física operativa declarada por MultiBank Group con los datos de domicilio que constan en los registros oficiales de ASIC y CySEC; se ha confirmado únicamente la existencia de las entidades reguladas en dichos registros, no la coincidencia exacta de la dirección física."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "416279",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "430/23",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/94970/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin",
+      "licenseNumber": null,
+      "status": "no confirmada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Verbrauchermitteilung/unerlaubte/2026/meldung_2026_03_11_mex_multibank_en.html",
+      "ok": false
+    },
+    {
+      "authority": "FMA",
+      "licenseNumber": null,
+      "status": "no confirmada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fma.gv.at/en/search-company-database/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 6,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 1780,
+    "stars": 4.5,
+    "source": "https://www.trustpilot.com/review/multibankfx.com",
+    "samples": []
+  }
+}
