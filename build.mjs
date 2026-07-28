@@ -7,7 +7,7 @@
 
    Uso:  SITE_URL=https://farofx.com  node build.mjs
    ========================================================================== */
-import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { SITE, computeScore } from './src/templates/helpers.mjs';
@@ -21,7 +21,34 @@ const __dir = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dir, 'dist');
 const KB = join(__dir, 'knowledge-base');
 
-const brokers = JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers;
+const BROKERS_DIR = join(KB, 'brokers');
+
+// Carga de brokers. Preferimos una CARPETA con un fichero por broker
+// (lo que el motor de n8n publica de uno en uno, igual que Pulso con cada
+// artículo). Si la carpeta no existe o está vacía, usamos el brokers.json
+// único (datos de demostración iniciales).
+function loadBrokers() {
+  if (existsSync(BROKERS_DIR)) {
+    const files = readdirSync(BROKERS_DIR).filter((f) => f.toLowerCase().endsWith('.json'));
+    const list = [];
+    for (const f of files) {
+      let parsed;
+      try { parsed = JSON.parse(readFileSync(join(BROKERS_DIR, f), 'utf8')); }
+      catch (e) { console.warn(`⚠ Broker inválido (ignorado): ${f} — ${e.message}`); continue; }
+      if (Array.isArray(parsed)) list.push(...parsed);
+      else if (parsed && Array.isArray(parsed.brokers)) list.push(...parsed.brokers);
+      else if (parsed && parsed.slug) list.push(parsed);
+    }
+    if (list.length) {
+      // Orden estable por slug para que el build sea determinista.
+      list.sort((a, b) => String(a.slug).localeCompare(String(b.slug)));
+      return list;
+    }
+  }
+  return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers;
+}
+
+const brokers = loadBrokers();
 const authors = JSON.parse(readFileSync(join(KB, 'authors.json'), 'utf8')).authors;
 
 const pages = []; // {path, html, priority, changefreq}
