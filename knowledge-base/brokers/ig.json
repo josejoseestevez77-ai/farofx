@@ -71,6 +71,16 @@
     "count": 9000,
     "stars": 3.8,
     "source": "https://www.trustpilot.com/review/ig.com",
-    "samples": []
+    "samples": [
+      {
+        "user": "Prueba Aprobacion",
+        "stars": 5,
+        "text": "Reseña de prueba para verificar el botón Aprobar. Plataforma estable y retiros correctos. (PRUEBA - se puede borrar)",
+        "meta": [
+          "Test del sistema",
+          "Opinion verificada"
+        ]
+      }
+    ]
   }
 }
