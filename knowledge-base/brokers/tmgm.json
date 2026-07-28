@@ -1,0 +1,67 @@
+{
+  "slug": "tmgm",
+  "name": "TMGM",
+  "init": "TG",
+  "color": "#c8a24b",
+  "demo": false,
+  "legalEntity": "Trademax Australia Limited (marca comercial TMGM)",
+  "foundedYear": 2013,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Cuenta Edge: desde 0,0 pips + 7 USD por lote estándar (ida y vuelta); Cuenta Classic: desde 1,0 pip sin comisión aparte",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en un banco australiano (ADI) con calificación AA (National Australia Bank); sin fondo de compensación estatutario para clientes minoristas",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "La dirección declarada (Level 28, One International Tower, 100 Barangaroo Avenue, Sídney) coincide con la registrada en la ficha pública de ASIC para Trademax Australia Limited, pero FAROFX no ha realizado una verificación presencial ni videollamada propia, por lo que el estado queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "436416",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://service.asic.gov.au/search/EntityDetail?LicenceNumber=436416&PermissionType=Australian+financial+services+licensees&licenceName=TRADEMAX+AUSTRALIA+LIMITED",
+      "ok": true
+    },
+    {
+      "authority": "FMA (Nueva Zelanda)",
+      "licenseNumber": null,
+      "status": "no confirmable para la marca TMGM",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.fma.govt.nz/business/licensed-providers/zero-markets-nz-limited/",
+      "ok": false
+    },
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": null,
+      "status": "declarada por el bróker, no verificable en un registro público consultable",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.vfsc.vu/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6.5,
+    "quejas": 7,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 962,
+    "stars": 3.9,
+    "source": "https://www.trustpilot.com/review/tmgm.com",
+    "samples": []
+  }
+}
