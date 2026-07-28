@@ -1,0 +1,76 @@
+{
+  "slug": "admirals",
+  "name": "Admirals (Admiral Markets)",
+  "init": "AD",
+  "color": "#00a3a3",
+  "demo": false,
+  "legalEntity": "Admirals Europe Ltd (anteriormente Admiral Markets Cyprus Ltd), registrada en Chipre con nº HE 310328 <cite index=\"13-6\">Admirals Europe Ltd (ex Admiral Markets Cyprus Ltd) Licence Number: 201/13 · Licence Date: 14/06/2013 · Company Registration Number: 310328</cite>; para clientes del Reino Unido opera además Admiral Markets UK Ltd.",
+  "foundedYear": 2001,
+  "headquarters": {
+    "country": "Estonia",
+    "flag": "🇪🇪"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "Desde 0,5 pips en EUR/USD en la cuenta Trade.MT5 <cite index=\"86-1\">For the EUR/USD pair, Admirals offers a typical spread of 0.7 pips for the Trade MT5 and Trade MT4 accounts.</cite> o 0,0 pips más comisión (hasta 3 USD por lote/lado) en la cuenta Zero <cite index=\"86-2\">The typical spread for the same pair for the Zero MT5 and Zero MT4 accounts would be 0.0 pips plus a commission of $3 per lot per single side.</cite>. El depósito mínimo puede ser de solo 1 USD/EUR en la cuenta Invest.MT5 <cite index=\"91-12\">El depósito mínimo en esta cuenta es de 1 EUR o 1 USD, dependiendo de tu moneda.</cite>.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas. En Reino Unido, la entidad FCA está adherida al esquema FSCS <cite index=\"4-1\">Como Admirals (Admiral Markets) está regulado por la FCA, es automáticamente miembro del FSCS.</cite>. En Chipre, la entidad CySEC es miembro del Fondo de Compensación a Inversores (ICF) <cite index=\"16-7\">Admiral Markets Cyprus Ltd is also a member of Investor Compensation Fund, which objective is to secure any claims of covered clients against members of the Fund.</cite>.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No ha sido posible contrastar de forma independiente la dirección física exacta declarada por el broker con la registrada en el registro oficial de CySEC: los propios documentos legales del broker muestran direcciones distintas en fechas recientes (Dramas 2, Nicosia, y posteriormente Agias Zoni 63, Limassol), por lo que la verificación queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "595450",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMdhxAAD",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "201/13",
+      "status": "activa (en 2024 pausó voluntariamente la incorporación de nuevos clientes UE tras una revisión de cumplimiento con CySEC, reanudada en marzo de 2025)",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37716/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no vigente: la entidad australiana (AFSL 410681) fue vendida y ahora opera bajo la marca PU Prime",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": false
+    },
+    {
+      "authority": "EFSA (Estonia)",
+      "licenseNumber": null,
+      "status": "revocada el 28/04/2026 a petición propia dentro de una reestructuración del grupo",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fi.ee/en/investment-market/investment-firms-0/investment-market/licenced-investment-firms-estonia/admiral-markets",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6.5,
+    "quejas": 7.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 2161,
+    "stars": 4.2,
+    "source": "https://www.trustpilot.com/review/admiralmarkets.com",
+    "samples": []
+  }
+}
