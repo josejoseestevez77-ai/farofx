@@ -1,0 +1,77 @@
+{
+  "slug": "thinkmarkets",
+  "name": "ThinkMarkets",
+  "init": "TK",
+  "color": "#0b1f3a",
+  "demo": false,
+  "legalEntity": "TF Global Markets (UK) Limited (marca ThinkMarkets), junto con las entidades hermanas TF Global Markets (Aust) Pty Ltd, TF Global Markets (Europe) Ltd y TF Global Markets (South Africa) (Pty) Ltd",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 1,2 pips en EUR/USD en la cuenta Standard/ThinkTrader (sin comisión); en la cuenta ThinkZero, spreads brutos desde 0,0 pips con comisión de 7 USD por lote redondo",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas en todas las entidades reguladas; protección FSCS para clientes de la entidad FCA y Fondo de Compensación a Inversores (ICF) para clientes de la entidad CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "Se confirmó la existencia y vigencia de las entidades legales en los registros oficiales de FCA, ASIC, CySEC y FSCA, pero no se ha verificado de forma independiente que la dirección física declarada coincida exactamente con la registrada en cada regulador; queda pendiente de comprobación in situ."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "629628",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000aRiH0AAK",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "424700",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asic-registers/company-and-organisation-registers/",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "215/13",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37717/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": "49835",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.fsca.co.za/Entity-Persons-Search/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 6.5,
+    "quejas": 7,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 645,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/www.thinkmarkets.com",
+    "samples": []
+  }
+}
