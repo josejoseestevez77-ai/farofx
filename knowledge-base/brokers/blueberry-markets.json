@@ -1,0 +1,61 @@
+{
+  "slug": "blueberry-markets",
+  "name": "Blueberry Markets",
+  "init": "BM",
+  "color": "#3b5bdb",
+  "demo": false,
+  "legalEntity": "Blueberry Australia Pty Ltd (ABN 67 646 513 797)",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "1,0 pips EUR/USD (cuenta Standard, sin comisión) / 0,0-0,1 pips + 7 USD comisión ida y vuelta (cuenta Direct/Raw)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Fondos de clientes en cuentas segregadas en un banco australiano con calificación AA; Australia no dispone de un fondo de compensación estatal específico para clientes de brokers CFD (a diferencia de FSCS/ICF en Reino Unido/UE)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "Se ha contrastado la dirección declarada por el bróker (Suite 701, Nivel 7, 107 Mount Street, North Sydney NSW 2060) en varias fuentes secundarias independientes, pero no se ha podido confirmar de forma directa contra la ficha en tiempo real del registro ASIC Connect, por lo que se mantiene como pendiente de verificación presencial/documental."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "AFSL 535887",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/panelSearch.jspx",
+      "ok": true
+    },
+    {
+      "authority": "VFSC",
+      "licenseNumber": "Nº de compañía 700697 (Blueberry Markets (V) Ltd, Financial Dealers Licensing Act, clases A, B y C)",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.vfsc.vu/entity-search/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6.5,
+    "quejas": 6.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 3229,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.blueberrymarkets.com",
+    "samples": []
+  }
+}
