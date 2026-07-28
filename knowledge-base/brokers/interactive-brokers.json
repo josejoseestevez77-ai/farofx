@@ -1,0 +1,74 @@
+{
+  "slug": "interactive-brokers",
+  "name": "Interactive Brokers",
+  "init": "IB",
+  "color": "#d81222",
+  "demo": false,
+  "legalEntity": "Interactive Brokers Group, Inc. (matriz, Nasdaq: IBKR), operando a través de filiales reguladas: Interactive Brokers LLC (EE. UU.), Interactive Brokers (U.K.) Limited, Interactive Brokers Ireland Limited e Interactive Brokers Australia Pty Ltd",
+  "foundedYear": 1978,
+  "headquarters": {
+    "country": "Estados Unidos (Greenwich, Connecticut)",
+    "flag": "🇺🇸"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "EUR/USD desde aprox. 0,1-0,2 pips (modelo ECN IBKR IDEAL FX) más comisión por operación, sin spread añadido",
+  "platforms": [
+    "propia (Trader Workstation, IBKR Desktop, IBKR Mobile, Client Portal)"
+  ],
+  "fundProtection": "Cuentas segregadas; SIPC en EE. UU. (Interactive Brokers LLC), FSCS en Reino Unido en circunstancias limitadas, Fondo de Compensación de Inversores (ICS, hasta 20.000 € en Irlanda) y membresía en AFCA en Australia",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-28",
+    "method": "Dirección de Interactive Brokers (U.K.) Limited (20 Fenchurch Street, Londres) confirmada en la ficha oficial de alerta de clones de la FCA, que muestra los datos verificados del registro; la entidad Interactive Brokers Ireland Limited (North Dock One, Dublín) se confirmó en el registro público del Banco Central de Irlanda; la sede global en Greenwich (Connecticut) se corrobora mediante documentación pública de la SEC (Form 424B5) y el registro FINRA BrokerCheck (CRD 36418)."
+  },
+  "regulators": [
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": "208159",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000MfKjCAAV",
+      "ok": true
+    },
+    {
+      "authority": "Banco Central de Irlanda (CBI)",
+      "licenseNumber": "C423427",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://registers.centralbank.ie/FirmDataPage.aspx?firmReferenceNumber=C423427",
+      "ok": true
+    },
+    {
+      "authority": "SEC/FINRA (EE. UU.)",
+      "licenseNumber": "CRD #36418",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://brokercheck.finra.org/firm/summary/36418",
+      "ok": true
+    },
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "AFSL 453554",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 9,
+    "retirada": 6.5,
+    "quejas": 6,
+    "costes": 8.5
+  },
+  "reviews": {
+    "count": 5399,
+    "stars": 3.5,
+    "source": "https://www.trustpilot.com/review/interactivebrokers.com",
+    "samples": []
+  }
+}
