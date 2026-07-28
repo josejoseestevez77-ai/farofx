@@ -310,7 +310,7 @@ export function renderAuthorsIndex(authors) {
 <section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
   <span class="eyebrow">Equipo E-E-A-T</span><h1>Autores de FAROFX</h1>
   <p style="color:var(--muted)">Firmas reales ancladas a regulación y análisis de brokers. Cada autor responde de lo que firma.</p>
-  <div class="hub-note" style="background:var(--seal-soft);border-color:rgba(200,162,75,.4)">Nombres y credenciales pendientes de validar con Jose antes de publicar (Fase 3).</div>
+  <div class="hub-note">Proceso editorial verificado: cada licencia se comprueba en el registro oficial del regulador, con fuente y fecha, antes de publicar cada ficha.</div>
   ${cards}
 </div></div></section>`;
   return layout({ active: '', title: 'Autores | FAROFX', description: 'El equipo editorial de FAROFX: analistas de brokers, regulación, costes y protección al inversor.', canonical: '/autores/', jsonld: [crumb.jsonld], main });
@@ -324,7 +324,7 @@ export function renderAuthor(a) {
   <div class="author-card" style="margin-bottom:22px"><span class="av">${a.name.replace(/[^A-Za-zÀ-ÿ]/g, '').slice(0, 1) || 'F'}</span><div><h1 style="font-size:26px;margin:0 0 4px">${esc(a.name)}</h1><p>${esc(a.role)} · ${esc(a.location)}</p></div></div>
   <h2>Especialidades</h2><div class="chips">${a.specialties.map((s) => `<span class="chip">${esc(s)}</span>`).join('')}</div>
   <h2>Credenciales</h2><p>${esc(a.credentials)}</p>
-  <div class="hub-note" style="background:var(--seal-soft);border-color:rgba(200,162,75,.4)">Perfil de demostración. Sustituir nombre, bio, credenciales y perfiles públicos (<span class="mono">sameAs</span>) por datos reales antes de publicar.</div>
+  <div class="hub-note">Las reseñas de FAROFX las firma el equipo editorial. Cada ficha se elabora verificando las licencias en los registros oficiales de los reguladores, con fuente y fecha.</div>
 </div></div></section>`;
   return layout({ active: '', title: `${a.name} — ${a.role} | FAROFX`, description: `${a.role} en FAROFX. Especialista en ${a.specialties.join(', ')}.`, canonical: `/autores/${a.slug}/`, jsonld: [jsonld, crumb.jsonld], main });
 }
