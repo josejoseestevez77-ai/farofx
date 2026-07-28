@@ -118,5 +118,3 @@
     countUp(document.getElementById('stat-reviews'), window.__STAT_REVIEWS__ || 0);
   });
 })();
-
-})();
