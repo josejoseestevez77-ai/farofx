@@ -1,0 +1,71 @@
+{
+  "slug": "blackbull-markets",
+  "name": "BlackBull Markets",
+  "init": "BB",
+  "color": "#1c2b3a",
+  "demo": false,
+  "legalEntity": "Black Bull Group Limited (marca comercial BlackBull Markets; entidad internacional BBG Limited, Seychelles)",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Nueva Zelanda",
+    "flag": "🇳🇿"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,8 pips en EUR/USD en la cuenta ECN Standard (sin comisión); en la cuenta ECN Prime, spreads desde 0,0 pips más comisión de 6 USD por lote redondo <cite index=\"43-8,43-9\">Spreads start from 0.8, 0.0, or 0.0 pips depending on the account, con comisiones que van de 0, 3 o 3 USD por lote según la cuenta</cite>",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "TradingView",
+    "propia"
+  ],
+  "fundProtection": "Fondos de clientes en cuentas segregadas en ANZ Bank (Nueva Zelanda); sin fondo de compensación estatal (ni en NZ ni en Seychelles), por lo que no existe respaldo tipo FSCS/ICF",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "La dirección declarada por el broker en Auckland coincide con la registrada en el sitio de la FMA para 'Black Bull Group Limited', pero no se ha verificado mediante contacto directo ni visita presencial, por lo que se deja como pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FMA (Nueva Zelanda)",
+      "licenseNumber": "FSP403326",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fma.govt.nz/business/licensed-providers/black-bull-group-limited/",
+      "ok": true
+    },
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": null,
+      "status": "no autorizada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fca.org.uk/news/warnings/blackbull-markets",
+      "ok": false
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 6.5,
+    "quejas": 6.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 3328,
+    "stars": 4.7,
+    "source": "https://www.trustpilot.com/review/blackbull.com",
+    "samples": []
+  }
+}
