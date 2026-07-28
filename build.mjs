@@ -15,6 +15,7 @@ import { renderHome } from './src/templates/home.mjs';
 import {
   renderBroker, renderMethodology, renderComoVerificamos, renderRegulatorHub,
   renderRoundup, renderAuthorsIndex, renderAuthor, renderSimplePage,
+  renderOpinar, renderOpinionRecibida,
 } from './src/templates/pages.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
@@ -62,6 +63,8 @@ page('/', renderHome(brokers), 1.0, 'daily');
 page('/metodologia/', renderMethodology(), 0.7, 'monthly');
 page('/como-verificamos/', renderComoVerificamos(), 0.7, 'monthly');
 page('/mejores-brokers-forex/', renderRoundup(brokers), 0.9, 'weekly');
+page('/opinar/', renderOpinar(brokers), 0.6, 'monthly');
+page('/opinion-recibida/', renderOpinionRecibida(), 0.1, 'yearly');
 
 // Fichas de reseña (página estrella)
 for (const b of brokers) page(`/brokers/${b.slug}/`, renderBroker(b, authors), 0.9, 'weekly');
