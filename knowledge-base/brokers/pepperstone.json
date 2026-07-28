@@ -1,0 +1,78 @@
+{
+  "slug": "pepperstone",
+  "name": "Pepperstone",
+  "init": "PP",
+  "color": "#0a2a66",
+  "demo": false,
+  "legalEntity": "Pepperstone Group Limited (matriz, Australia); entidades locales: Pepperstone Limited (Reino Unido), Pepperstone EU Limited (Chipre), Pepperstone GmbH (Alemania)",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Cuenta Razor: EUR/USD entre 0,0 y 0,2 pips más comisión (aprox. 3,50-7 USD por lote por lado); Cuenta Standard: EUR/USD en torno a 1,0-1,2 pips sin comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "TradingView"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel; en el Reino Unido cobertura FSCS hasta 85.000 £ por cliente elegible; en la UE (Chipre) cobertura del Fondo de Compensación a Inversores (ICF)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido contrastar de forma independiente la dirección operativa declarada por Pepperstone frente a un registro público distinto de la propia ficha del regulador; se toma como referencia la dirección que figura en el registro FCA (70 Gracechurch Street, Londres) pero no se ha verificado mediante visita, videollamada o tercero independiente"
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "684312",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000nQHG2AAO",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "414530",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/panelSearch.jspx?searchType=OrgAndBusNm",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "388/20",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin",
+      "licenseNumber": "151148",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 9,
+    "retirada": 7.5,
+    "quejas": 7.5,
+    "costes": 8
+  },
+  "reviews": {
+    "count": 3423,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/pepperstone.com",
+    "samples": []
+  }
+}
