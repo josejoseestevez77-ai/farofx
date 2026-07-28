@@ -1,0 +1,76 @@
+{
+  "slug": "fxpro",
+  "name": "FxPro",
+  "init": "FX",
+  "color": "#b8860b",
+  "demo": false,
+  "legalEntity": "FxPro Financial Services Ltd (entidad chipriota, licencia CySEC) y FxPro UK Limited (entidad británica, licencia FCA), ambas bajo la matriz FxPro Group Limited",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "<cite index=\"2-12\">Spread medio EUR/USD de 1,40 pips en la cuenta con el depósito mínimo más bajo</cite>; cuentas Raw+/cTrader desde 0,0-0,3 pips más comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"9-3,10-1,10-3,10-4,10-5\">FxPro Financial Services Limited está autorizada y regulada por la Comisión de Bolsa y Valores de Chipre (CySEC) con el número de licencia 078/07</cite>, con fondos segregados y participación en el fondo de compensación chipriota (ICF); <cite index=\"1-11,1-12\">FxPro mantiene el dinero de los clientes en cuentas segregadas, aplica protección de saldo negativo y cuenta con cobertura del Financial Services Compensation Scheme (FSCS) para clientes del Reino Unido</cite>",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido verificar de forma cruzada que la dirección publicada en la web coincida exactamente con la registrada en el regulador, ya que las distintas entidades del grupo (FxPro UK Limited, FxPro Financial Services Ltd) declaran domicilios distintos en Londres y Limasol; <cite index=\"25-4\">el propio aviso de la FCA sobre un clon fraudulento cita como domicilio genuino de FXPRO UK Limited la dirección 80 Coleman Street, City of London, EC2R 5BJ</cite>, mientras que otras fuentes corporativas usan una dirección distinta en Basinghall Street; queda pendiente de confirmación documental adicional"
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "509956",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMTlsAAH",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "078/07",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37670/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/Regulated-Entities/Pages/Search-Regulated-Entities.aspx",
+      "ok": false
+    },
+    {
+      "authority": "SCB",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://scb.gov.bs/registrant-licensee-search/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6,
+    "quejas": 5.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 774,
+    "stars": 3,
+    "source": "https://www.trustpilot.com/review/www.fxpro.com",
+    "samples": []
+  }
+}
