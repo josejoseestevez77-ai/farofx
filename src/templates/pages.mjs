@@ -181,8 +181,7 @@ ${crumb.html}
 
     <div class="hub-note" style="margin-top:30px"><b>Enlaces relacionados:</b>
       ${euUk.map((r) => `<a href="/regulados/${r.authority.toLowerCase()}/" style="color:var(--seal)">Brokers regulados por ${r.authority}</a> · `).join('')}
-      <a href="/mejores-brokers-forex/" style="color:var(--seal)">Mejores brokers de forex ${YEAR}</a> ·
-      <a href="${SITE.sisters[0].url}" style="color:var(--seal)" rel="noopener">${SITE.sisters[0].name}</a>
+      <a href="/mejores-brokers-forex/" style="color:var(--seal)">Mejores brokers de forex ${YEAR}</a>
     </div>
   </div></div>
 </section>`;

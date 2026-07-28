@@ -1,14 +1,11 @@
 // Configuración del sitio y utilidades compartidas.
 export const SITE = {
   name: 'FAROFX',
-  url: (process.env.SITE_URL || 'https://farofx.com').replace(/\/$/, ''),
+  url: (process.env.SITE_URL || 'https://farofx.org').replace(/\/$/, ''),
   tagline: 'Opiniones de brokers verificadas. Puntuación auditable.',
   description:
     'Plataforma independiente de análisis de brokers de forex y copytrading. Opiniones solo de traders verificados. Puntuación abierta y auditable. Nadie paga para cambiar su nota.',
-  sisters: [
-    { name: 'Pulso Mercados', url: 'https://pulsomercados.com', desc: 'Noticias y análisis de forex de la misma familia.' },
-    { name: 'FondeoMatch', url: 'https://fondeomatch.com', desc: 'Comparador de prop firms de la misma familia.' },
-  ],
+  sisters: [],
 };
 
 // Pesos del score editorial (deben coincidir con metodologia-ranking.md).

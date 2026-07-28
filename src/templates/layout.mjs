@@ -70,12 +70,12 @@ export function footer() {
         <a href="/autores/">Autores</a>
       </div>
       <div>
-        <h6>Transparencia y familia</h6>
+        <h6>Transparencia</h6>
         <a href="/politica-afiliacion/">Política de afiliación</a>
         <a href="/como-verificamos/">Cómo verificamos</a>
         <a href="/aviso-legal/">Aviso legal y riesgo</a>
-        <a href="${SITE.sisters[0].url}" rel="noopener">${SITE.sisters[0].name} ↗</a>
-        <a href="${SITE.sisters[1].url}" rel="noopener">${SITE.sisters[1].name} ↗</a>
+        <a href="/privacidad/">Privacidad</a>
+        <a href="/cookies/">Cookies</a>
       </div>
     </div>
     <div class="foot-bottom">
