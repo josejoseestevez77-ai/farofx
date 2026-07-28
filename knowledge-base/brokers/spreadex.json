@@ -1,0 +1,50 @@
+{
+  "slug": "spreadex",
+  "name": "Spreadex",
+  "init": "SP",
+  "color": "#003a70",
+  "demo": false,
+  "legalEntity": "Spreadex Limited",
+  "foundedYear": 1999,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,60 pips en EUR/USD (cuenta CFD sin comisión)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Fondos de clientes segregados en cuenta fiduciaria en Barclays; cobertura FSCS hasta 85.000 GBP en caso de insolvencia",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-29",
+    "method": "Se comparó la dirección declarada por Spreadex ante la FCA (26-30 Upper Marlborough Road, St. Albans, Hertfordshire, AL1 3UU) con la dirección registrada en Companies House para Spreadex Limited (nº 03720378), coincidiendo ambas."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "190941",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=190941",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6.5,
+    "quejas": 7,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 196,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/financials.spreadex.com",
+    "samples": []
+  }
+}
