@@ -1,0 +1,69 @@
+{
+  "slug": "ic-markets",
+  "name": "IC Markets",
+  "init": "IC",
+  "color": "#00263e",
+  "demo": false,
+  "legalEntity": "International Capital Markets Pty Ltd (marca global IC Markets; entidad europea IC Markets (EU) Ltd)",
+  "foundedYear": 2007,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 200,
+  "spreadTypical": "0,1 pips EUR/USD (cuenta Raw Spread, con comisión de 3,50 USD por lado); desde 0,8-1,1 pips sin comisión en cuenta Standard",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel; en la entidad europea (CySEC) los clientes minoristas cuentan con el Fondo de Compensación a Inversores (ICF) hasta 20.000€; la entidad australiana (ASIC) no dispone de fondo de compensación estatal equivalente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Las fuentes públicas consultadas (documentos del propio bróker y webs de terceros) citan direcciones ligeramente distintas para la oficina de Sídney (p. ej. Level 4 o Level 6, 50 Carrington Street); no se ha podido contrastar de forma directa con el registro societario australiano (ASIC) la dirección exacta vigente, por lo que se deja como pendiente de verificación."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "335692",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asic-registers/",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "362/18",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/80418/",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificado en registro oficial consultable",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 7.5,
+    "quejas": 8.5,
+    "costes": 8.5
+  },
+  "reviews": {
+    "count": 55289,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/icmarkets.com",
+    "samples": []
+  }
+}
