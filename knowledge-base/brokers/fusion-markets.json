@@ -1,0 +1,78 @@
+{
+  "slug": "fusion-markets",
+  "name": "Fusion Markets",
+  "init": "FM",
+  "color": "#0aab8e",
+  "demo": false,
+  "legalEntity": "FMGP Trading Group Pty Ltd (ABN 74 146 086 017), operando internacionalmente a través de Gleneagle Securities Pty Limited (Vanuatu) y Fusion Markets International Ltd (Seychelles)",
+  "foundedYear": 2017,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,0 pips EUR/USD + comisión de 4,50 USD por lote redondeado (cuenta Zero); desde 1,0 pip aprox. en cuenta Classic sin comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "TradingView"
+  ],
+  "fundProtection": "Fondos de clientes en cuentas segregadas en National Australia Bank (NAB) para la entidad australiana; sin fondo de compensación tipo FSCS/ICF para clientes atendidos por las entidades offshore de Vanuatu o Seychelles",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "La dirección declarada en la Guía de Servicios Financieros (Chapel St, South Yarra, VIC 3141) coincide con la publicada por el broker, pero no se ha podido contrastar de forma interactiva contra la ficha completa del registro ASIC Connect, por lo que queda pendiente de verificación directa"
+  },
+  "regulators": [
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "385620",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": "40256",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.vfsc.vu/financial-dealers-licensee-list/",
+      "ok": true
+    },
+    {
+      "authority": "FSA Seychelles",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": null,
+      "ok": false
+    },
+    {
+      "authority": "CNMV (España)",
+      "licenseNumber": null,
+      "status": "entidad no autorizada para prestar servicios de inversión en España (aviso al público)",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cnmv.es/portal/advertencias?lang=en",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 7.5,
+    "quejas": 8.5,
+    "costes": 9
+  },
+  "reviews": {
+    "count": 8200,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/fusionmarkets.com",
+    "samples": []
+  }
+}
