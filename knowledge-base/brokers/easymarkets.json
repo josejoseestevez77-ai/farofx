@@ -1,0 +1,68 @@
+{
+  "slug": "easymarkets",
+  "name": "easyMarkets",
+  "init": "EM",
+  "color": "#e8531a",
+  "demo": false,
+  "legalEntity": "Easy Forex Trading Ltd (entidad CySEC, marca comercial easyMarkets, grupo Blue Capital Markets Ltd)",
+  "foundedYear": 2001,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 25,
+  "spreadTypical": "Desde 0,7-0,9 pips en EUR/USD (spread fijo, sin comisión, cuenta estándar/MT4); hasta 1,8 pips según cuenta y plataforma",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; clientes de la entidad chipriota cubiertos por el Fondo de Compensación para Inversores (ICF) hasta 20.000€; entidades offshore (Seychelles/BVI) sin fondo de compensación",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "No se ha podido contrastar de forma independiente la dirección operativa declarada por el broker con un documento del propio regulador; se ha usado documentación pública del grupo (FSG, páginas legales) como referencia, por lo que queda pendiente de verificación directa en el registro."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "079/07",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37685/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "246566",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 7,
+    "quejas": 7,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 1844,
+    "stars": 4.1,
+    "source": "https://www.trustpilot.com/review/easymarkets.com",
+    "samples": []
+  }
+}
