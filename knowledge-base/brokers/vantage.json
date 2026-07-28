@@ -1,0 +1,69 @@
+{
+  "slug": "vantage",
+  "name": "Vantage",
+  "init": "VG",
+  "color": "#e30613",
+  "demo": false,
+  "legalEntity": "Vantage Global Prime Pty Ltd (entidad ASIC); grupo opera también como Vantage Global Limited (VFSC, Vanuatu) y Vantage Markets (Pty) Ltd (FSCA, Sudáfrica)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,0-0,08 pips en EUR/USD en cuenta RAW ECN (+ comisión por lote) o en torno a 1,0-1,2 pips en cuenta Standard STP sin comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos aprobados; seguro complementario vía Lloyd's of London (cobertura variable según entidad); sin fondo de compensación estatal tipo FSCS/ICF en las entidades offshore (VFSC/FSCA)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se han localizado direcciones declaradas por Vantage en Sídney (Level 12, 15 Castlereagh Street) que coinciden con los datos asociados al AFSL 428901 en fuentes espejo del registro ASIC, pero no se ha podido contrastar directamente en el portal ASIC Connect ni verificar la dirección física, por lo que queda pendiente de confirmación presencial"
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "AFSL 428901",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": "FSP 51268",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www2.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": true
+    },
+    {
+      "authority": "VFSC",
+      "licenseNumber": "700271",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.vfsc.vu/financial-dealers-licensee-list/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 7.5,
+    "quejas": 7,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 13912,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/vantagemarkets.com",
+    "samples": []
+  }
+}
