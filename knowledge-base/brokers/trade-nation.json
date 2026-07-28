@@ -1,0 +1,76 @@
+{
+  "slug": "trade-nation",
+  "name": "Trade Nation",
+  "init": "TN",
+  "color": "#1a1f71",
+  "demo": false,
+  "legalEntity": "Trade Nation Financial UK Ltd",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,6 pips en EUR/USD (spread fijo, cuenta TN Trader)",
+  "platforms": [
+    "MT4",
+    "propia (TN Trader)",
+    "TradingView"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas en bancos de primer nivel y protección de saldo negativo en las entidades FCA y ASIC; los clientes del Reino Unido pueden optar a la FSCS hasta 85.000 GBP. Las entidades de Bahamas y Seychelles no cuentan con fondo de compensación estatutario equivalente.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha cotejado la dirección declarada por el broker (14 Bonhill Street, Londres) con la que figura en la ficha pública de advertencia de clon de la FCA, que coincide. No se ha realizado verificación directa e interactiva en el resto de registros por restricciones técnicas de acceso a los portales oficiales, por lo que se mantiene como pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "525164",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMS1hAAH",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/",
+      "ok": false
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    },
+    {
+      "authority": "SCB",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.scb.gov.bs/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6.5,
+    "quejas": 7.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 1900,
+    "stars": 4.5,
+    "source": "https://www.trustpilot.com/review/tradenation.com",
+    "samples": []
+  }
+}
