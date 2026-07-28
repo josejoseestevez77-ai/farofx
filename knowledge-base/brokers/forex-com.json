@@ -1,0 +1,76 @@
+{
+  "slug": "forex-com",
+  "name": "Forex.com",
+  "init": "FX",
+  "color": "#0057B8",
+  "demo": false,
+  "legalEntity": "GAIN Capital Group LLC (marca operada globalmente por filiales de StoneX Group Inc., entre ellas Gain Capital UK Limited, StoneX Financial Ltd, StoneX Financial Pty Ltd y StoneX Financial (Canada) Inc.)",
+  "foundedYear": 2001,
+  "headquarters": {
+    "country": "Estados Unidos",
+    "flag": "🇺🇸"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "0,8–1,3 pips EUR/USD en cuenta Standard (sin comisión); desde 0,0 pips en cuenta RAW Pricing con comisión de 7 USD por cada 100.000 USD operados",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Fondos de clientes mantenidos en cuentas segregadas en bancos de primer nivel; cobertura FSCS de hasta 85.000 GBP a través de StoneX Financial Ltd en el Reino Unido; cobertura CIPF de hasta 1.000.000 CAD a través de StoneX Financial (Canada) Inc.; en EE. UU. no existe un fondo de garantía tipo SIPC para cuentas de forex spot al no tratarse de valores negociables",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha verificado la existencia y el domicilio registrado de las distintas entidades del grupo (Companies House del Reino Unido para Gain Capital UK Limited y StoneX Financial Ltd, y los registros de ASIC y NFA para las filiales australiana y estadounidense), pero no se ha realizado una comprobación directa (visita o llamada) que confirme que la dirección operativa declarada al público coincide exactamente con la de cada registro; por ello el estado queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": "113942",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000MfEJIAA3",
+      "ok": true
+    },
+    {
+      "authority": "NFA / CFTC (Estados Unidos)",
+      "licenseNumber": "NFA ID 0339826",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.nfa.futures.org/BasicNet/basic-profile.aspx?nfaid=8xWTPnTVRTw%3D",
+      "ok": true
+    },
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "AFSL 345646 (StoneX Financial Pty Ltd)",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    },
+    {
+      "authority": "CIRO (Canadá)",
+      "licenseNumber": "Miembro CIRO / CIPF (StoneX Financial (Canada) Inc.)",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.ciro.ca/investors/choosing-investment-advisor/dealers-we-regulate/stonex-financial-canada-inc",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 7,
+    "quejas": 7.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 2326,
+    "stars": 4.6,
+    "source": "https://www.trustpilot.com/review/www.forex.com",
+    "samples": []
+  }
+}
