@@ -1,0 +1,70 @@
+{
+  "slug": "moneta-markets",
+  "name": "Moneta Markets",
+  "init": "MN",
+  "color": "#1f6feb",
+  "demo": false,
+  "legalEntity": "Moneta Markets (Pty) Ltd (Sudáfrica, FSP nº 47490); marca comercial usada también por Moneta Markets Trading Limited (Mauricio), Moneta Markets Ltd (Santa Lucía/Seychelles) y Moneta Markets Capital Ltd (Reino Unido, antes VIBHS Financial Ltd). <cite index=\"1-1\">Moneta Markets es una marca comercial de Moneta Markets (Pty) Ltd, un Proveedor de Servicios Financieros autorizado y regulado por la Autoridad de Conducta del Sector Financiero (FSCA) de Sudáfrica con el número de licencia 47490</cite>.",
+  "foundedYear": 2020,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos (Dubái)",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Cuenta STP: <cite index=\"77-1\">depósito mínimo de 50 dólares, spreads desde 1,2 pips, sin comisión, apalancamiento de hasta 1000:1</cite>. Cuenta ECN: <cite index=\"77-3\">depósito mínimo de 50 dólares, spreads desde 0,0 pips, comisión de 3 dólares por lote por lado</cite>.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "ProTrader",
+    "AppTrader"
+  ],
+  "fundProtection": "<cite index=\"16-22,16-23\">Los fondos de los clientes se mantienen en una cuenta segregada en un banco global con calificación AA y las cuentas de trading cuentan con protección de saldo negativo; el bróker está sujeto a auditorías periódicas y cuenta con seguro de indemnización</cite>. La cobertura de un fondo de compensación oficial (tipo FSCS) solo aplicaría, si se confirma, a clientes onboardeados a través de la entidad británica.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido verificar de forma independiente que las direcciones operativas publicadas por el broker (Sudáfrica, Mauricio, Dubái) coincidan exactamente con el domicilio registrado en los registros oficiales de la FSCA y la FSC de Mauricio; el dato proviene únicamente de las páginas legales del propio broker, por lo que queda pendiente de confirmación directa en el registro."
+  },
+  "regulators": [
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": "47490",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "GB24203391",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensee",
+      "ok": true
+    },
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial en esta revisión",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 5,
+    "quejas": 5.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 508,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/monetamarkets.com",
+    "samples": []
+  }
+}
