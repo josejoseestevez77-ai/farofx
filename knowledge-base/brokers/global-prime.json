@@ -1,0 +1,61 @@
+{
+  "slug": "global-prime",
+  "name": "Global Prime",
+  "init": "GP",
+  "color": "#0f2e5c",
+  "demo": false,
+  "legalEntity": "FMGP Trading Group Pty Ltd (ABN 74 146 086 017), operando bajo la marca comercial Global Prime",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,1–0,2 pips en EUR/USD (cuenta Raw, con comisión de 3,5–7 USD por lote); desde 0,9–1,1 pips sin comisión (cuenta Standard)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en un banco de primer nivel (NAB, regulado por APRA/ASIC); sin fondo de compensación tipo FSCS/ICF, ya que Australia no dispone de un esquema equivalente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se contrastó la dirección publicada por el propio broker (Level 10, 627 Chapel St, South Yarra, Victoria 3141) con perfiles públicos de LinkedIn, Facebook y Trustpilot, que coinciden entre sí, pero no se ha podido cotejar directamente contra la dirección registrada en el buscador oficial de ASIC, por lo que queda pendiente de verificación formal"
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "385620",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": true
+    },
+    {
+      "authority": "VFSC",
+      "licenseNumber": null,
+      "status": "no verificado en registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.vfsc.vu/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 8,
+    "quejas": 8,
+    "costes": 8
+  },
+  "reviews": {
+    "count": 500,
+    "stars": 4.5,
+    "source": "https://www.trustpilot.com/review/globalprime.com",
+    "samples": []
+  }
+}
