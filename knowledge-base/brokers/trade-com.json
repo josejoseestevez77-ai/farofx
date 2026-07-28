@@ -1,0 +1,77 @@
+{
+  "slug": "trade-com",
+  "name": "trade.com",
+  "init": "TC",
+  "color": "#0aa6a6",
+  "demo": false,
+  "legalEntity": "Trade Capital Markets (TCM) Ltd (anteriormente Leadcapital Markets Ltd); en el Reino Unido opera bajo Trade Capital UK (TCUK) Ltd, anteriormente Livemarkets Ltd",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde aproximadamente 1,9 pips en EUR/USD en la cuenta de entrada (depósito mínimo 100 USD), reduciéndose hasta 0,8 pips en la cuenta Exclusive (depósito mínimo 100.000 USD)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; clientes de la UE cubiertos por el Fondo de Compensación de Inversores de Chipre (ICF) hasta 20.000 €; clientes onboarded vía la entidad británica cubiertos por el FSCS del Reino Unido",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha contrastado la dirección declarada por el broker (Strovolos, Nicosia, Chipre) con los datos públicos de contacto de la ficha de CySEC para Trade Capital Markets (TCM) Ltd, pero no se ha realizado una verificación in situ ni notarial de las oficinas, por lo que el estado permanece pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "227/14",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37648/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "738538",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000003JgSdWAAV",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www2.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    },
+    {
+      "authority": "FSA (Seychelles) / FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no verificada / en revisión",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fscmauritius.org/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 4.5,
+    "quejas": 4.5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 220,
+    "stars": 3.1,
+    "source": "https://www.trustpilot.com/review/trade.com",
+    "samples": []
+  }
+}
