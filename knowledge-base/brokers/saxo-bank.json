@@ -1,0 +1,76 @@
+{
+  "slug": "saxo-bank",
+  "name": "Saxo Bank",
+  "init": "SX",
+  "color": "#003d5b",
+  "demo": false,
+  "legalEntity": "Saxo Bank A/S",
+  "foundedYear": 1992,
+  "headquarters": {
+    "country": "Dinamarca",
+    "flag": "🇩🇰"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,6 pips en EUR/USD (cuenta Classic); 0,4 pips (Platinum/VIP)",
+  "platforms": [
+    "SaxoTraderGO",
+    "SaxoTraderPRO",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; miembro del Fondo de Garantía de Depósitos e Inversores danés (DGS), que cubre depósitos hasta 100.000 € y, en caso de fallo en la devolución de instrumentos financieros, hasta 20.000 € por inversor",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha contrastado la dirección declarada por el broker (Philip Heymans Allé 15, 2900 Hellerup, Dinamarca) con varias fuentes independientes que coinciden, pero no se ha verificado directamente contra la ficha textual del registro de Finanstilsynet, por lo que queda pendiente de confirmación formal."
+  },
+  "regulators": [
+    {
+      "authority": "DFSA (Finanstilsynet - Dinamarca)",
+      "licenseNumber": "1149",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://virksomhedsregister.finanstilsynet.dk/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "551422",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMcpXAAT",
+      "ok": true
+    },
+    {
+      "authority": "FINMA",
+      "licenseNumber": "CHE-106.787.764 (Saxo Bank (Schweiz) AG)",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.finma.ch/en/finma-public/bewilligte-institute-personen-und-produkte/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no aplicable / entidad rebrandeada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 7.5,
+    "quejas": 6.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 8607,
+    "stars": 3.5,
+    "source": "https://www.trustpilot.com/review/home.saxo",
+    "samples": []
+  }
+}
