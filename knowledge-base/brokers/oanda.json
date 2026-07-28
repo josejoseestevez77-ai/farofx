@@ -1,0 +1,83 @@
+{
+  "slug": "oanda",
+  "name": "OANDA",
+  "init": "OA",
+  "color": "#a1123a",
+  "demo": false,
+  "legalEntity": "OANDA Europe Limited (entidad regulada por la FCA; forma parte del grupo OANDA Global Corporation)",
+  "foundedYear": 1996,
+  "headquarters": {
+    "country": "Estados Unidos",
+    "flag": "🇺🇸"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "<cite index=\"69-1\">Los spreads parten de 0,6 pips en EUR/USD, 1 punto en el UK 100, 1,2 puntos en Alemania 40 y 1,3 pips en USD/JPY</cite> en la entidad FCA (cuenta Standard); comparadores independientes sitúan la media observada en torno a 1,0-1,1 pips en condiciones normales de mercado.",
+  "platforms": [
+    "MT4",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas. En la entidad regulada por la FCA (Reino Unido), <cite index=\"2-3\">FSCS investor protection up to £85,000 per eligible client</cite>; en la entidad de EE. UU. los fondos se mantienen en cuentas bancarias segregadas bajo supervisión CFTC/NFA.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "La dirección declarada por OANDA Europe Limited (Dashwood House, 69 Old Broad Street, Londres, según los propios avisos legales del broker) no ha podido contrastarse de forma independiente por FAROFX contra la ficha viva del registro de la FCA en esta verificación (se hallaron direcciones distintas en fuentes históricas de terceros), por lo que se mantiene como pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "542574",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/search?q=542574",
+      "ok": true
+    },
+    {
+      "authority": "CFTC/NFA",
+      "licenseNumber": "0325821",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.nfa.futures.org/BasicNet/basic-profile.aspx?nfaid=tDw0VT6Nt%2F8%3D",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "412981",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/panelSearch.jspx",
+      "ok": true
+    },
+    {
+      "authority": "MAS",
+      "licenseNumber": "Capital Markets Services Licence (Co. Reg. 200704926K)",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://eservices.mas.gov.sg/fid/institution/detail/1792-OANDA-Asia-Pacific-Pte-Ltd",
+      "ok": true
+    },
+    {
+      "authority": "CNMV",
+      "licenseNumber": null,
+      "status": "sin licencia local",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cnmv.es/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 1224,
+    "stars": 3.7,
+    "source": "https://www.trustpilot.com/review/www.oanda.com",
+    "samples": []
+  }
+}
