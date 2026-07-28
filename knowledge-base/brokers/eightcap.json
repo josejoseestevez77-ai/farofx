@@ -1,0 +1,76 @@
+{
+  "slug": "eightcap",
+  "name": "Eightcap",
+  "init": "E8",
+  "color": "#101820",
+  "demo": false,
+  "legalEntity": "Eightcap Pty Ltd (ABN 73 139 495 944)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Cuenta Standard: ~1,0 pips en EUR/USD sin comisión; Cuenta Raw: desde 0,15 pips + comisión de 7 USD por lote/ida y vuelta",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "TradingView"
+  ],
+  "fundProtection": "Cuentas segregadas en todas las entidades del grupo; los clientes de la entidad británica (Eightcap Group Ltd) están cubiertos por el FSCS hasta 85.000 GBP en caso de insolvencia; protección de saldo negativo para clientes retail de ASIC, CySEC y FCA",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-28",
+    "method": "Se contrastó la dirección declarada por Eightcap Group Ltd (40 Gracechurch Street, Londres, EC3V 0BT) con la dirección que figura en el aviso oficial de la FCA sobre un clon de la firma autorizada (FRN 921296), que reproduce los datos reales de la entidad registrada; coinciden."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "391441",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "921296",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=0014G00002TptadQAB",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "246/14",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/40651/",
+      "ok": false
+    },
+    {
+      "authority": "SCB (Bahamas)",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://scb.gov.bs/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6.5,
+    "quejas": 7.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 3705,
+    "stars": 4.1,
+    "source": "https://www.trustpilot.com/review/eightcap.com",
+    "samples": []
+  }
+}
