@@ -112,9 +112,9 @@ function standalone(html) {
 }
 const homeHtml = pages.find((p) => p.path === '/').html;
 writeFileSync(join(DIST, 'ABRIR-PREVIEW-FAROFX.html'), standalone(homeHtml));
-// También una ficha de reseña de ejemplo, todo-en-uno.
-const fichaHtml = pages.find((p) => p.path === '/brokers/pepperline-fx/').html;
-writeFileSync(join(DIST, 'PREVIEW-ficha-ejemplo.html'), standalone(fichaHtml));
+// También una ficha de reseña de ejemplo, todo-en-uno (la primera disponible).
+const fichaPage = pages.find((p) => p.path.startsWith('/brokers/'));
+if (fichaPage) writeFileSync(join(DIST, 'PREVIEW-ficha-ejemplo.html'), standalone(fichaPage.html));
 
 // ---- sitemap.xml ----
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
