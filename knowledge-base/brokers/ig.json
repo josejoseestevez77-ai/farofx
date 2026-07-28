@@ -4,7 +4,7 @@
   "init": "IG",
   "color": "#e4002b",
   "demo": false,
-  "legalEntity": "IG Markets Limited (Reino Unido) / IG Europe GmbH (Unión Europea)",
+  "legalEntity": "IG Markets Limited (grupo IG Group Holdings plc)",
   "foundedYear": 1974,
   "headquarters": {
     "country": "Reino Unido",
@@ -14,18 +14,18 @@
     "forex"
   ],
   "depositMin": 0,
-  "spreadTypical": "<cite index=\"20-1\">Spreads Forex desde 0,6 pips en EUR/USD, con depósito mínimo de 0€</cite>",
+  "spreadTypical": "0,6 pips EUR/USD (cuenta estándar, condiciones de mercado óptimas)",
   "platforms": [
-    "propia",
     "MT4",
-    "ProRealTime"
+    "ProRealTime",
+    "propia"
   ],
-  "fundProtection": "<cite index=\"40-19\">Los fondos de clientes en el Reino Unido están protegidos hasta 85.000 £ por el FSCS</cite>; <cite index=\"106-3,106-11\">IG Europe GmbH está adscrita a la Entschädigungseinrichtung der Wertpapierhandelsunternehmen (EdW), que indemniza hasta el 90% de las reclamaciones con un máximo de 20.000€ por cliente</cite>.",
+  "fundProtection": "Cuentas segregadas; clientes UK cubiertos por el FSCS hasta 85.000 £; clientes UE (vía IG Europe GmbH) cubiertos por el fondo alemán EdW hasta 100.000 €",
   "affiliateUrl": null,
   "office": {
     "status": "pending",
     "date": "2026-07-28",
-    "method": "Se ha confirmado la dirección registrada de IG Markets Limited (Cannon Bridge House, 25 Dowgate Hill, Londres) en el registro de la FCA y la de IG Europe GmbH (Westhafenplatz 1, Fráncfort) en la base de datos de la BaFin, pero no se ha realizado una verificación física ni una videollamada con la oficina; por tanto el estado queda pendiente hasta contraste adicional."
+    "method": "No se ha podido contrastar de forma independiente la dirección física declarada por IG Europe GmbH, Sucursal en España, frente a un documento notarial u otra fuente distinta del propio registro de la CNMV; se ha verificado la existencia de la sucursal en el registro de la CNMV, pero el campo queda en 'pending' al no disponer de una comprobación adicional independiente."
   },
   "regulators": [
     {
@@ -37,40 +37,40 @@
       "ok": true
     },
     {
+      "authority": "ASIC",
+      "licenseNumber": "220440",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": true
+    },
+    {
       "authority": "BaFin",
       "licenseNumber": "148759",
       "status": "activa",
       "verifiedDate": "2026-07-28",
-      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?cmd=loadInstitutAction&institutId=148759",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/",
       "ok": true
     },
     {
-      "authority": "CNMV (España)",
+      "authority": "CNMV",
       "licenseNumber": null,
-      "status": "pasaporte europeo (sin licencia propia)",
+      "status": "Pasaporte europeo - sucursal registrada (nº 121) sin licencia propia de la CNMV; la entidad opera en España bajo la autorización de BaFin (Alemania)",
       "verifiedDate": "2026-07-28",
-      "sourceUrl": "https://www.cnmv.es/portal/consultas/busquedaporentidad?tipoBusqueda=ESI&lang=en",
-      "ok": false
-    },
-    {
-      "authority": "ASIC (Australia)",
-      "licenseNumber": null,
-      "status": "no verificado en registro oficial",
-      "verifiedDate": "2026-07-28",
-      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esisextranjerassuc?tipo=CSU&numero=121&vista=15&lang=es",
       "ok": false
     }
   ],
   "subscores": {
-    "regulacion": 8.5,
-    "retirada": 7.5,
-    "quejas": 6.5,
-    "costes": 7
+    "regulacion": 9,
+    "retirada": 7,
+    "quejas": 7,
+    "costes": 6.5
   },
   "reviews": {
-    "count": 9780,
+    "count": 9000,
     "stars": 3.8,
-    "source": "https://uk.trustpilot.com/review/ig.com",
+    "source": "https://www.trustpilot.com/review/ig.com",
     "samples": []
   }
 }
