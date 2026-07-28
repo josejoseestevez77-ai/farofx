@@ -159,7 +159,6 @@ export function renderHome(brokers) {
       <div id="rows"></div>
       <div class="empty" id="empty">Ningún broker coincide con esos filtros.</div>
     </div>
-    <p style="margin-top:14px;font-size:12px;color:var(--muted)" class="mono">Datos de demostración · sustituir por brokers reales verificados antes de lanzar.</p>
   </div>
 </section>
 
@@ -190,7 +189,7 @@ export function renderHome(brokers) {
       <div class="step"><div class="num">2</div><h4>Revisión humana</h4><p>El equipo verifica que la cuenta existió y anonimiza los datos sensibles. Si no se puede comprobar, la opinión no se publica.</p></div>
       <div class="step"><div class="num">3</div><h4>Sello + auditoría</h4><p>La reseña aparece con sello <em>Verificado</em> y un ID que enlaza a la evidencia tratada. Transparente para el lector, privado para ti.</p></div>
     </div>
-    <div style="margin-top:28px"><button class="btn btn-seal" onclick="openVerify()">Dejar mi opinión verificada</button></div>
+    <div style="margin-top:28px"><a class="btn btn-seal" href="/opinar/">Dejar mi opinión verificada</a></div>
   </div>
 </section>
 
@@ -241,7 +240,6 @@ function modals() {
           <div class="proofbox" onclick="document.getElementById('o-video').click()">🎥 Sube el video continuo de tus instalaciones.<br>Máx. 1 archivo · lo revisa una persona del equipo.<input type="file" id="o-video" accept="video/*" style="display:none" onchange="markVideo(this)"></div>
           <div id="video-name" class="mono" style="font-size:12px;color:var(--verified);margin-top:8px"></div>
           <button class="btn btn-seal" style="margin-top:18px;width:100%" onclick="submitOffice()">Enviar para revisión</button>
-          <p style="font-size:11.5px;color:var(--muted);margin-top:10px">Demo: no envía datos. En producción, sube el video a almacenamiento privado y crea un caso en la cola de revisión.</p>
         </div>
       </div>
       <div class="ok-msg" id="office-ok">✓ Recibido. Un revisor comprobará el video contra tu dirección registrada y te contactará para la videollamada. Si todo cuadra, publicaremos <b>Oficina verificada</b> con la fecha de hoy.</div>
@@ -263,7 +261,7 @@ function modals() {
     </div>
     <div class="m-foot">
       <a class="btn btn-seal" id="m-cta" href="#">Ver ficha completa →</a>
-      <button class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-dark)" onclick="closeBroker();openVerify()">Dejar opinión</button>
+      <a class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-dark)" href="/opinar/">Dejar opinión</a>
       <span class="disc">Enlace de afiliado declarado. Podemos cobrar comisión si abres cuenta; no afecta a la puntuación. El CFD y el copytrading conllevan alto riesgo de pérdida.</span>
     </div>
   </div>
@@ -282,7 +280,6 @@ function modals() {
         <div class="proofbox" onclick="document.getElementById('v-proof').click()">📎 Sube un extracto, captura de tu nº de cuenta o contraseña <em>investor</em> de solo lectura.<br>Nunca pidas ni subas credenciales con permiso de operar.<input type="file" id="v-proof" style="display:none" onchange="markProof(this)"></div>
         <div id="proof-name" class="mono" style="font-size:12px;color:var(--verified);margin-top:8px"></div>
         <button class="btn btn-seal" style="margin-top:18px;width:100%" onclick="submitReview()">Enviar para verificación</button>
-        <p style="font-size:11.5px;color:var(--muted);margin-top:10px">Demo: este formulario no envía datos. En producción conecta con tu backend de revisión.</p>
       </div>
       <div class="ok-msg" id="ok-msg">✓ Recibido. Tu opinión entrará en cola de verificación. Te avisaremos cuando se publique con el sello <b>Verificado</b>.</div>
     </div>

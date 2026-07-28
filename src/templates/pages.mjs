@@ -114,7 +114,6 @@ ${crumb.html}
   <div class="wrap"><div class="article">
     <div class="kicker">
       <span class="eyebrow">Ficha de reseña · Broker de ${b.type.includes('copy') ? 'copytrading' : 'forex/CFD'}</span>
-      ${b.demo ? '<span class="demo-flag">DEMO</span>' : ''}
     </div>
     <h1>${b.name}: ¿es fiable o un scam? Reseña ${YEAR}</h1>
     <div class="byline">
@@ -335,7 +334,6 @@ export function renderSimplePage({ slug, title, eyebrow, h1, body, active = '' }
   const main = `${crumb.html}
 <section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
   <span class="eyebrow">${esc(eyebrow)}</span><h1>${esc(h1)}</h1>${body}
-  <div class="hub-note" style="background:var(--seal-soft);border-color:rgba(200,162,75,.4);margin-top:24px">Texto de plantilla. Requiere revisión jurídica y datos reales de la entidad (Fase 5) antes de publicar.</div>
 </div></div></section>`;
   return layout({ active, title: `${title} | FAROFX`, description: title, canonical: `/${slug}/`, jsonld: [crumb.jsonld], main });
 }

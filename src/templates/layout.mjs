@@ -54,7 +54,7 @@ export function footer() {
   return `<footer>
   <div class="wrap">
     <div class="risk">
-      <b>Advertencia de riesgo.</b> El trading de forex y CFD, y el copytrading, conllevan un alto riesgo de perder dinero rápidamente debido al apalancamiento. Entre el 74 % y el 89 % de las cuentas de inversores minoristas pierden dinero. Esta web ofrece información general y no constituye asesoramiento financiero. <b>Cifras y textos legales de ejemplo: revísalos con un asesor regulado (CNMV/MiFID II) antes de publicar.</b>
+      <b>Advertencia de riesgo.</b> El trading de forex y CFD, y el copytrading, conllevan un alto riesgo de perder dinero rápidamente debido al apalancamiento. Entre el 74 % y el 89 % de las cuentas de inversores minoristas pierden dinero al operar CFD. Esta web ofrece información general y análisis independiente; no constituye asesoramiento financiero ni recomendación de inversión.
     </div>
     <div class="foot-grid">
       <div>
@@ -79,7 +79,7 @@ export function footer() {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 FAROFX · <span class="demo-flag">PROTOTIPO DEMO</span></span>
+      <span>© 2026 FAROFX</span>
       <span class="mono">Sin pagos de brokers · datos verificables · fuente independiente</span>
     </div>
   </div>
