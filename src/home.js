@@ -13,9 +13,13 @@
     none: { cls: 'ob-none', ico: '–', label: 'No verificada' },
     failed: { cls: 'ob-failed', ico: '⚠', label: 'No superada' },
   };
+  // Escapa texto para meterlo con seguridad dentro de un atributo HTML (title="…").
+  // Sin esto, unas comillas en el texto romperían el atributo y desbordarían la tabla.
+  const escAttr = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const officeBadge = (b) => {
     const o = OFFICE[b.office.status];
-    return `<div class="office"><span class="ob ${o.cls}" title="${b.office.method}">${o.ico} ${o.label}</span></div>`;
+    return `<div class="office"><span class="ob ${o.cls}" title="${escAttr(b.office.method)}">${o.ico} ${o.label}</span></div>`;
   };
 
   window.renderRows = function () {
@@ -113,4 +117,6 @@
     countUp(document.getElementById('stat-brokers'), BROKERS.length);
     countUp(document.getElementById('stat-reviews'), window.__STAT_REVIEWS__ || 0);
   });
+})();
+
 })();
