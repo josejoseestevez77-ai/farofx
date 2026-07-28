@@ -1,0 +1,60 @@
+{
+  "slug": "eurotrader",
+  "name": "Eurotrader",
+  "init": "EU",
+  "color": "#123a8f",
+  "demo": false,
+  "legalEntity": "Eurotrade Investments RGB Ltd",
+  "foundedYear": 2015,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,9 pips en EUR/USD (cuenta Standard); desde 0,0 pips + comisión en cuenta Raw",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas y adhesión al Fondo de Compensación para Inversores (ICF) de Chipre por su licencia CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por el bróker coincida con el domicilio registrado en la ficha oficial de CySEC; se deja como pendiente de verificación presencial/documental."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "279/15",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "777162",
+      "status": "revocada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000003lCliXAAS",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 5.5,
+    "quejas": 6,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 175,
+    "stars": 3.5,
+    "source": "https://www.trustpilot.com/review/eurotrader.com",
+    "samples": []
+  }
+}
