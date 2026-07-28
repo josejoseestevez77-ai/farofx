@@ -1,0 +1,77 @@
+{
+  "slug": "avatrade",
+  "name": "AvaTrade",
+  "init": "AV",
+  "color": "#1f3a5f",
+  "demo": false,
+  "legalEntity": "AVA Trade EU Limited",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Irlanda",
+    "flag": "🇮🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "<cite index=\"58-1,58-16\">El spread medio en EUR/USD bajo condiciones normales de mercado se sitúa en torno a 0,9 pips</cite> en la cuenta Standard (fijo), con opción de cuenta profesional desde 0,6 pips para clientes elegibles.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"34-13\">Los fondos de los clientes de Ava Capital Markets Pty se mantienen en cuentas segregadas en un banco (ABSA)</cite>; en la entidad europea (AVA Trade EU Ltd), al ser una firma de inversión autorizada bajo MiFID en Irlanda, aplican normas de segregación de fondos de clientes propias del marco de la UE. No se ha podido verificar de forma independiente la existencia de un fondo de compensación equivalente al FOGAIN/FSCS para todos los clientes.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha realizado una verificación in situ ni por videollamada de la dirección operativa. La dirección de la entidad europea que consta en el registro del Banco Central de Irlanda (P.O. Box 559, Dublín 1) coincide con la registrada para AVA Trade EU Limited, pero no se ha contrastado documentalmente con la oficina física declarada por el broker en su web."
+  },
+  "regulators": [
+    {
+      "authority": "Banco Central de Irlanda (CBI)",
+      "licenseNumber": "C53877",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "http://registers.centralbank.ie/FirmRegisterDataPage.aspx?firmReferenceNumber=C53877&register=32",
+      "ok": true
+    },
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "406684",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://service.asic.gov.au/search/EntityDetail?LicenceNumber=406684&PermissionType=Australian+financial+services+licensees&licenceName=AVA+CAPITAL+MARKETS+AUSTRALIA+PTY+LTD",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (vía D.T. Direct Investment Hub Ltd)",
+      "licenseNumber": "347/17",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/79651/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 7.5,
+    "quejas": 7.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 12959,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/avatrade.com",
+    "samples": []
+  }
+}
