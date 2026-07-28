@@ -1,0 +1,67 @@
+{
+  "slug": "xm",
+  "name": "XM",
+  "init": "XM",
+  "color": "#c8102e",
+  "demo": false,
+  "legalEntity": "Trading Point of Financial Instruments Ltd",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 5,
+  "spreadTypical": "0,6 pips EUR/USD (cuenta Standard); desde 0,0-0,1 pips + comisión en cuenta Zero",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel; protección de saldo negativo; para la entidad chipriota (CySEC) cobertura del Fondo de Compensación a Inversores (ICF) hasta 20.000 €",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha contrastado la dirección declarada por el grupo en Limassol (12, Richard & Verengaria Str, Araouzos Castle Court) con varias fuentes secundarias independientes, pero no se ha podido confirmar de forma directa que coincida con el campo de domicilio social que figura en la ficha del registro oficial de CySEC, por lo que se mantiene como pendiente de verificación directa."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "120/10",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37582/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "443670",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    },
+    {
+      "authority": "IFSC/FSC (Belice)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.ifsc.gov.bz/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.8,
+    "retirada": 5.5,
+    "quejas": 5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 3082,
+    "stars": 2.4,
+    "source": "https://www.trustpilot.com/review/xm.com",
+    "samples": []
+  }
+}
