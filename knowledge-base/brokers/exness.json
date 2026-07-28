@@ -1,0 +1,76 @@
+{
+  "slug": "exness",
+  "name": "Exness",
+  "init": "EX",
+  "color": "#0a2540",
+  "demo": false,
+  "legalEntity": "Exness (Cy) Ltd (licencia CySEC 178/12); el Grupo Exness opera además mediante entidades locales separadas en Reino Unido, Seychelles, Sudáfrica, Curazao, BVI, Kenia, Mauricio, Jordania y Belice",
+  "foundedYear": 2008,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "0,8 pips EUR/USD (cuenta Standard, sin comisión) / desde 0,0-0,3 pips + comisión de hasta 3,5 USD por lado y lote (cuenta Raw Spread)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (Exness Terminal / Exness Trade app)"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas de los fondos propios de la empresa según cada entidad; no existe fondo de compensación de inversores (tipo FSCS/ICF) para los clientes minoristas habituales, ya que las entidades reguladas por FCA y CySEC no prestan servicio a minoristas y los clientes suelen operar bajo entidades offshore (Seychelles, Sudáfrica u otras) sin ese tipo de cobertura",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por cada entidad Exness coincida exactamente con la registrada en cada regulador; se han cotejado direcciones publicadas en el registro de CySEC y en documentación pública de la entidad de Seychelles, pero sin verificación cruzada in situ ni por videollamada"
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "178/12",
+      "status": "activa (no ofrece servicios a clientes minoristas)",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "730729",
+      "status": "activa (no ofrece servicios a clientes minoristas)",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/search?q=exness",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": "51024",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": "SD025",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.8,
+    "retirada": 7.5,
+    "quejas": 7.8,
+    "costes": 8
+  },
+  "reviews": {
+    "count": 26000,
+    "stars": 4.7,
+    "source": "https://www.trustpilot.com/review/exness.com",
+    "samples": []
+  }
+}
