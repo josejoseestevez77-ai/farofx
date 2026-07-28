@@ -1,0 +1,70 @@
+{
+  "slug": "go-markets",
+  "name": "GO Markets",
+  "init": "GO",
+  "color": "#e11b22",
+  "demo": false,
+  "legalEntity": "GO Markets Pty Ltd (ABN 85 081 864 039)",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,1–0,3 pips EUR/USD (cuenta GO Plus+ con comisión); ~1,2 pips (cuenta Standard sin comisión)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "TradingView"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas; en la entidad CySEC los clientes minoristas están cubiertos por el Fondo de Compensación de Inversores hasta 20.000 €; la entidad ASIC no exige fondo de compensación",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por el broker coincida exactamente con la dirección registrada en los portales de ASIC y CySEC; se mantiene pendiente de verificación directa."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "254963",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "322/17",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/42449/",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://opr.fscmauritius.org/ords/opr/r/fsc-opr/fsc-online-public-register-opr",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 7,
+    "quejas": 7.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 717,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/gomarkets.com",
+    "samples": []
+  }
+}
