@@ -349,17 +349,19 @@ export function renderOpinar(brokers) {
   const options = brokers.map((b) => `<option value="${esc(b.name)}"></option>`).join('');
   const mapJs = JSON.stringify(brokers.map((b) => ({ slug: b.slug, name: b.name })));
   const style = `<style>
-  .form-card{background:var(--surface,#12130f);border:1px solid var(--line,rgba(255,255,255,.12));border-radius:16px;padding:22px;max-width:660px}
+  .form-card{background:var(--surface,#12130f);border:1px solid var(--line,rgba(255,255,255,.12));border-radius:16px;padding:22px;max-width:660px;color:var(--txt-inv,#f1f1ec)}
   .form-row{margin:0 0 16px}
-  .form-row .lbl{display:block;font-weight:600;margin:0 0 6px}
-  .form-row .hint{color:var(--muted);font-size:13px;margin:5px 0 0}
-  .form-row input[type=text],.form-row textarea,.form-row input[type=file]{width:100%;background:var(--bg,#0c0d0a);border:1px solid var(--line,rgba(255,255,255,.14));border-radius:10px;padding:11px 12px;color:inherit;font:inherit;box-sizing:border-box}
+  .form-row .lbl{display:block;font-weight:600;margin:0 0 6px;color:var(--txt-inv,#f1f1ec)}
+  .form-row .hint{color:rgba(255,255,255,.55);font-size:13px;margin:5px 0 0}
+  .form-row input[type=text],.form-row textarea,.form-row input[type=file]{width:100%;background:var(--bg,#0c0d0a);border:1px solid var(--line,rgba(255,255,255,.14));border-radius:10px;padding:11px 12px;color:var(--txt-inv,#f1f1ec);caret-color:var(--txt-inv,#f1f1ec);font:inherit;box-sizing:border-box}
+  .form-row input::placeholder,.form-row textarea::placeholder{color:rgba(255,255,255,.42)}
   .form-row textarea{min-height:120px;resize:vertical}
+  .form-card label{color:var(--txt-inv,#f1f1ec)}
   .stars-input{display:inline-flex;flex-direction:row-reverse;gap:4px;font-size:32px;line-height:1}
   .stars-input input{display:none}
   .stars-input label{color:#5a5f52;cursor:pointer;transition:color .1s}
   .stars-input input:checked ~ label,.stars-input label:hover,.stars-input label:hover ~ label{color:#e6b800}
-  .req{color:#d9534f}
+  .req{color:#ff6b66}
   .hp{position:absolute!important;left:-9999px!important}
   </style>`;
   const main = `${crumb.html}
