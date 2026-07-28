@@ -1,0 +1,74 @@
+{
+  "slug": "xtb",
+  "name": "XTB",
+  "init": "XT",
+  "color": "#d6001c",
+  "demo": false,
+  "legalEntity": "XTB S.A. (anteriormente X-Trade Brokers Dom Maklerski S.A.), KRS 0000217580, con sucursales operativas como XTB Limited (Reino Unido, FCA) y XTB Limited (Chipre, CySEC)",
+  "foundedYear": 2002,
+  "headquarters": {
+    "country": "Polonia",
+    "flag": "🇵🇱"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "≈0,9 pips en EUR/USD (cuenta Estándar, sin comisión); acciones/ETFs 0% hasta 100.000€/mes",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas. En Polonia (KNF) el sistema de compensación de inversores cubre el 100% hasta 3.000€ y el 90% del exceso hasta el máximo legal; en Chipre (CySEC) el ICF cubre hasta 20.000€; en Reino Unido (FCA) el FSCS cubre hasta 85.000£ para clientes de XTB Limited.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "La dirección operativa en España (C/ Pedro Teixeira 8, Madrid) aparece en la documentación básica del broker, pero no se ha podido contrastar de forma independiente contra la ficha completa e interactiva del registro CNMV (nº 40), que requiere navegación dinámica del portal. Verificación pendiente de confirmación directa."
+  },
+  "regulators": [
+    {
+      "authority": "CNMV",
+      "licenseNumber": "40",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esisextranjerassuc?tipo=CSU&numero=40&lang=en",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "522157",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMI9WAAX",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "169/12",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "KNF",
+      "licenseNumber": null,
+      "status": "no verificado en el buscador interactivo oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.knf.gov.pl/dla_rynku/procesy_licencyjne/kapitalowy/informacje_ogolne/rejestry",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6.5,
+    "quejas": 6,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 2422,
+    "stars": 3.3,
+    "source": "https://www.trustpilot.com/review/xtb.com",
+    "samples": []
+  }
+}
