@@ -1,0 +1,77 @@
+{
+  "slug": "fxtm",
+  "name": "FXTM",
+  "init": "FT",
+  "color": "#0aa1dd",
+  "demo": false,
+  "legalEntity": "Exinity Limited (Mauricio) y Exinity UK Limited (Reino Unido), operando bajo la marca FXTM; ForexTime Ltd (Chipre) es la entidad histórica del grupo",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "Desde 0,1 pips en EUR/USD en cuentas tipo Advantage/ECN; spreads más amplios (variables) en cuentas Standard/Cent",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (FXTM Trader App)"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel; protección FSCS solo para clientes de la entidad Exinity UK Ltd (FCA); el antiguo Fondo de Compensación a Inversores (ICF) de Chipre ya no aplica tras la renuncia voluntaria a la licencia CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-28",
+    "method": "Se contrastó la dirección declarada por FXTM para la entidad Exinity Limited (5th Floor, 355 NEX Tower, Rue du Savoir, Cybercity, Ebene 72201, Mauricio) con la dirección registrada en el Registro de Licenciatarios de la FSC de Mauricio para el número de licencia C113012295, resultando coincidente. No se ha verificado del mismo modo la dirección de la oficina de Limassol (Chipre), que queda como referencia corporativa/comercial."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "777911",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "C113012295",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://fscmauritius.org/en/supervision/register-of-licensees/register-of-licensees-details?cat=GB&licence_no=C113012295",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "185/12",
+      "status": "licencia extinta (renuncia voluntaria, entidad listada como 'Former Investment Firm')",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37676/",
+      "ok": false
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificado directamente en el registro oficial de la FSCA en la fecha de esta ficha, aunque múltiples fuentes secundarias citan el número FSP 46614",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 6.5,
+    "quejas": 4.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 1081,
+    "stars": 2.4,
+    "source": "https://www.trustpilot.com/review/fxtm.com",
+    "samples": []
+  }
+}
