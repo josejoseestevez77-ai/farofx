@@ -24,6 +24,30 @@ const KB = join(__dir, 'knowledge-base');
 
 const BROKERS_DIR = join(KB, 'brokers');
 
+// --- Saneado de datos generados por el motor (búsqueda web con IA) ---
+// El motor puede colar en algún campo etiquetas de cita como <cite index="25-1">…</cite>.
+// Esas comillas rompen el HTML (p. ej. en title="…") y el texto se desborda en la tabla.
+// Quitamos cualquier etiqueta HTML suelta de TODOS los campos de texto, de forma recursiva,
+// para que ningún broker (actual o futuro) muestre esa basura. Los datos de brokers son
+// texto plano: nunca deben contener HTML legítimo, así que es seguro limpiarlo entero.
+function stripTags(s) {
+  return String(s)
+    .replace(/<\/?cite[^>]*>/gi, '') // etiquetas de cita de la búsqueda web
+    .replace(/<[^>]+>/g, '')          // cualquier otra etiqueta HTML suelta
+    .replace(/[ \t]+/g, ' ')          // colapsa espacios sobrantes
+    .trim();
+}
+function sanitize(value) {
+  if (typeof value === 'string') return stripTags(value);
+  if (Array.isArray(value)) return value.map(sanitize);
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const k of Object.keys(value)) out[k] = sanitize(value[k]);
+    return out;
+  }
+  return value;
+}
+
 // Carga de brokers. Preferimos una CARPETA con un fichero por broker
 // (lo que el motor de n8n publica de uno en uno, igual que Pulso con cada
 // artículo). Si la carpeta no existe o está vacía, usamos el brokers.json
@@ -43,10 +67,10 @@ function loadBrokers() {
     if (list.length) {
       // Orden estable por slug para que el build sea determinista.
       list.sort((a, b) => String(a.slug).localeCompare(String(b.slug)));
-      return list;
+      return list.map(sanitize);
     }
   }
-  return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers;
+  return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers.map(sanitize);
 }
 
 const brokers = loadBrokers();
