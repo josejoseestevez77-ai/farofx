@@ -1,0 +1,66 @@
+{
+  "slug": "trading-212",
+  "name": "Trading 212",
+  "init": "T2",
+  "color": "#00a1e0",
+  "demo": false,
+  "legalEntity": "Trading 212 UK Limited",
+  "foundedYear": 2004,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "Entre 0,7 y 2,4 pips en EUR/USD (cuenta CFD), según la fuente consultada",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; FSCS (Reino Unido) e ICF (Chipre/Bulgaria) según entidad",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-28",
+    "method": "Se cotejó la dirección declarada por el broker (Aldermary House, 10-15 Queen Street, Londres, EC4N 1TX) con el domicilio social registrado en Companies House para Trading 212 UK Limited (nº 08590005) y con el registro de la ICO, que coinciden."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "609146",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMi1QAAT",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "398/21",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/89835/",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Bulgaria)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.8,
+    "retirada": 7.5,
+    "quejas": 7.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 98267,
+    "stars": 4,
+    "source": "https://uk.trustpilot.com/review/trading212.com",
+    "samples": []
+  }
+}
