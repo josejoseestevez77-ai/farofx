@@ -339,3 +339,101 @@ export function renderSimplePage({ slug, title, eyebrow, h1, body, active = '' }
 </div></div></section>`;
   return layout({ active, title: `${title} | FAROFX`, description: title, canonical: `/${slug}/`, jsonld: [crumb.jsonld], main });
 }
+
+// ---------- FORMULARIO: DEJAR OPINIÓN ----------
+// El formulario envía la reseña al webhook de n8n (moderación por Telegram).
+export const REVIEW_WEBHOOK = 'https://n8n.pulsomercados.com/webhook/farofx-review';
+
+export function renderOpinar(brokers) {
+  const crumb = breadcrumb([{ label: 'Inicio', url: '/' }, { label: 'Dejar opinión' }]);
+  const options = brokers.map((b) => `<option value="${esc(b.name)}"></option>`).join('');
+  const mapJs = JSON.stringify(brokers.map((b) => ({ slug: b.slug, name: b.name })));
+  const style = `<style>
+  .form-card{background:var(--surface,#12130f);border:1px solid var(--line,rgba(255,255,255,.12));border-radius:16px;padding:22px;max-width:660px}
+  .form-row{margin:0 0 16px}
+  .form-row .lbl{display:block;font-weight:600;margin:0 0 6px}
+  .form-row .hint{color:var(--muted);font-size:13px;margin:5px 0 0}
+  .form-row input[type=text],.form-row textarea,.form-row input[type=file]{width:100%;background:var(--bg,#0c0d0a);border:1px solid var(--line,rgba(255,255,255,.14));border-radius:10px;padding:11px 12px;color:inherit;font:inherit;box-sizing:border-box}
+  .form-row textarea{min-height:120px;resize:vertical}
+  .stars-input{display:inline-flex;flex-direction:row-reverse;gap:4px;font-size:32px;line-height:1}
+  .stars-input input{display:none}
+  .stars-input label{color:#5a5f52;cursor:pointer;transition:color .1s}
+  .stars-input input:checked ~ label,.stars-input label:hover,.stars-input label:hover ~ label{color:#e6b800}
+  .req{color:#d9534f}
+  .hp{position:absolute!important;left:-9999px!important}
+  </style>`;
+  const main = `${crumb.html}
+<section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
+  <div class="sec-head"><span class="eyebrow">Opiniones verificadas</span>
+  <h1 style="font-family:var(--display);font-size:clamp(26px,3vw,38px);letter-spacing:-.02em;margin:10px 0 12px">Deja tu opinión sobre un broker</h1>
+  <p>Solo publicamos opiniones de traders que demuestran haber tenido una cuenta real. Tu opinión pasa por revisión humana antes de aparecer. Puedes adjuntar una prueba (captura de la cuenta, rentabilidades…) que solo verá nuestro equipo de verificación: no se publica.</p></div>
+  ${style}
+  <form class="form-card" action="${REVIEW_WEBHOOK}" method="post" enctype="multipart/form-data" onsubmit="return farofxReviewSubmit(this)">
+    <div class="form-row">
+      <label class="lbl" for="broker-input">Broker <span class="req">*</span></label>
+      <input type="text" list="brokers-list" id="broker-input" name="broker_name" placeholder="Escribe y elige el broker…" autocomplete="off" required>
+      <datalist id="brokers-list">${options}</datalist>
+      <input type="hidden" name="broker_slug" id="broker-slug">
+      <p class="hint">Empieza a escribir el nombre y selecciónalo de la lista.</p>
+    </div>
+    <div class="form-row">
+      <span class="lbl">Tu puntuación <span class="req">*</span></span>
+      <span class="stars-input">
+        <input type="radio" id="st5" name="stars" value="5" required><label for="st5" title="5 estrellas">★</label>
+        <input type="radio" id="st4" name="stars" value="4"><label for="st4" title="4 estrellas">★</label>
+        <input type="radio" id="st3" name="stars" value="3"><label for="st3" title="3 estrellas">★</label>
+        <input type="radio" id="st2" name="stars" value="2"><label for="st2" title="2 estrellas">★</label>
+        <input type="radio" id="st1" name="stars" value="1"><label for="st1" title="1 estrella">★</label>
+      </span>
+    </div>
+    <div class="form-row">
+      <label class="lbl" for="op">Tu opinión <span class="req">*</span></label>
+      <textarea id="op" name="opinion" maxlength="1200" placeholder="Cuenta tu experiencia real: retiros, spreads, atención al cliente, incidencias…" required></textarea>
+    </div>
+    <div class="form-row">
+      <label class="lbl" for="alias">Alias a mostrar <span class="req">*</span></label>
+      <input type="text" id="alias" name="alias" maxlength="40" placeholder="P. ej. Carlos M." required>
+      <p class="hint">No pongas tu nombre completo ni datos personales.</p>
+    </div>
+    <div class="form-row">
+      <label class="lbl" for="contexto">Contexto (opcional)</label>
+      <input type="text" id="contexto" name="contexto" maxlength="60" placeholder="P. ej. 8 meses operando · depósito 2.000 €">
+    </div>
+    <div class="form-row">
+      <label class="lbl" for="prueba">Prueba (opcional)</label>
+      <input type="file" id="prueba" name="prueba" accept="image/*,application/pdf">
+      <p class="hint">Captura de la cuenta, rentabilidades o similar. Solo la ve nuestro equipo de verificación; no se publica.</p>
+    </div>
+    <div class="form-row">
+      <label><input type="checkbox" name="confirmo" value="si" required> Confirmo que he tenido una cuenta real en este broker. <span class="req">*</span></label>
+    </div>
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn btn-seal" type="submit">Enviar opinión</button>
+    <p class="hint" style="margin-top:10px">Al enviar, tu opinión pasa a revisión humana. No compartas datos sensibles.</p>
+  </form>
+</div></div></section>`;
+  const scripts = `<script>
+  var FAROFX_BROKERS = ${mapJs};
+  (function(){
+    var input=document.getElementById('broker-input'), hidden=document.getElementById('broker-slug');
+    if(!input) return;
+    function sync(){ var v=(input.value||'').trim().toLowerCase(); var m=FAROFX_BROKERS.find(function(b){return b.name.toLowerCase()===v;}); hidden.value=m?m.slug:''; }
+    input.addEventListener('input',sync); input.addEventListener('change',sync);
+  })();
+  function farofxReviewSubmit(f){
+    var slug=(document.getElementById('broker-slug')||{}).value;
+    if(!slug){ alert('Elige un broker de la lista escribiendo su nombre.'); return false; }
+    return true;
+  }
+  </script>`;
+  return layout({ active: '', title: 'Deja tu opinión sobre un broker | FAROFX', description: 'Comparte tu experiencia real con un broker de forex/CFD. Opiniones verificadas con revisión humana antes de publicar.', canonical: '/opinar/', jsonld: [crumb.jsonld], main, scripts });
+}
+
+export function renderOpinionRecibida() {
+  const main = `
+<section class="block" style="padding-top:44px"><div class="wrap"><div class="article" style="text-align:center;max-width:640px;margin:0 auto">
+  <div class="answer-box"><b>¡Gracias por tu opinión!</b> La hemos recibido correctamente. Pasará por revisión humana antes de publicarse; si supera la verificación, aparecerá en la ficha del broker.</div>
+  <p style="margin-top:20px"><a class="btn btn-seal" href="/#ranking">Volver al ranking</a></p>
+</div></div></section>`;
+  return layout({ active: '', title: 'Opinión recibida | FAROFX', description: 'Gracias por tu opinión. Pasará por revisión antes de publicarse.', canonical: '/opinion-recibida/', jsonld: [], main });
+}

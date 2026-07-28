@@ -43,7 +43,7 @@ export function header(active = '') {
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}
     </nav>
     <span class="spacer"></span>
-    <a class="btn btn-ghost" href="/como-verificamos/">Dejar opinión</a>
+    <a class="btn btn-ghost" href="/opinar/">Dejar opinión</a>
     <a class="btn btn-seal" href="/#ranking">Comparar brokers</a>
     <a class="btn nav-toggle" href="/#ranking" aria-label="Menú">☰</a>
   </div>
