@@ -1,0 +1,67 @@
+{
+  "slug": "cmc-markets",
+  "name": "CMC Markets",
+  "init": "CM",
+  "color": "#003b5c",
+  "demo": false,
+  "legalEntity": "CMC Markets UK plc",
+  "foundedYear": 1989,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,7 pips en EUR/USD (cuenta CFD estándar); desde 0 pips + comisión en cuenta FX Active",
+  "platforms": [
+    "MT4",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas (CASS/FCA) + FSCS hasta 85.000 £ para clientes minoristas del Reino Unido",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "La dirección declarada por el broker (133 Houndsditch, Londres EC3A 7BX) coincide con la que figura en sus páginas legales, pero no se ha podido cotejar línea a línea con el contenido dinámico de la ficha del registro FCA (register.fca.org.uk), por lo que se deja como pendiente de verificación directa."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "173730",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000MfH7rAAF",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "238054",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asics-registers/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin",
+      "licenseNumber": "154814",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?cmd=loadInstitutAction&institutId=154814",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 9,
+    "retirada": 8,
+    "quejas": 7.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 3310,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.cmcmarkets.com",
+    "samples": []
+  }
+}
