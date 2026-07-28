@@ -1,0 +1,67 @@
+{
+  "slug": "etoro",
+  "name": "eToro",
+  "init": "ET",
+  "color": "#5b9c3e",
+  "demo": false,
+  "legalEntity": "eToro Group Ltd. (matriz); entidades reguladas: eToro (UK) Ltd, eToro (Europe) Ltd, eToro AUS Capital Limited",
+  "foundedYear": 2007,
+  "headquarters": {
+    "country": "Israel",
+    "flag": "🇮🇱"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Aprox. 1,0 pips en EUR/USD (cuenta estándar); comisión adicional del 1% en apertura y cierre de posiciones cripto desde 2025",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Fondos de clientes segregados. La entidad británica (eToro UK Ltd) está cubierta por el FSCS hasta 85.000 £; la entidad chipriota (eToro Europe Ltd) está cubierta por el Fondo de Compensación a Inversores (ICF) de Chipre hasta 20.000 €",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por eToro coincida exactamente con la registrada en cada regulador (existen varias direcciones publicadas para la entidad chipriota); se mantiene como pendiente hasta verificación documental adicional"
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "583263",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMkLXAA1",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "109/10",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37683/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6,
+    "quejas": 7,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 31875,
+    "stars": 4.2,
+    "source": "https://www.trustpilot.com/review/www.etoro.com",
+    "samples": []
+  }
+}
