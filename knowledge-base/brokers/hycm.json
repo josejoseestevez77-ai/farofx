@@ -1,0 +1,76 @@
+{
+  "slug": "hycm",
+  "name": "HYCM",
+  "init": "HY",
+  "color": "#c0102f",
+  "demo": false,
+  "legalEntity": "HYCM Capital Markets (UK) Limited",
+  "foundedYear": 1977,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Datos de terceros (no verificados directamente en la web oficial): en torno a 0,2 pips en EUR/USD para la cuenta Raw (con comisión aparte) y hasta 1,2 pips en la cuenta con el depósito mínimo más bajo.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "HYCM Capital Markets (UK) Limited mantiene cuentas de clientes segregadas y, al estar autorizada por la FCA, sus clientes minoristas del Reino Unido pueden beneficiarse del FSCS hasta 85.000 £; la entidad de Chipre (antes cubierta por el ICF) ha renunciado voluntariamente a su licencia CySEC, por lo que esa protección ya no aplica a esa entidad.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "La dirección declarada por HYCM en el Reino Unido (18 King William Street, Londres, EC4N 7BP) coincide con la que figura en los avisos de clon publicados por la FCA, pero no se ha podido contrastar de forma independiente y documental con el registro completo de la entidad, por lo que se deja como pendiente de verificación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "186171",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000MfHH0AAN",
+      "ok": true
+    },
+    {
+      "authority": "DFSA",
+      "licenseNumber": "F000048",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.dfsa.ae/public-register/firms/henyep-capital-markets-difc-limited",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "259/14",
+      "status": "licencia extinta (renuncia voluntaria)",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/former-investment-firms-cypriot/42663/",
+      "ok": false
+    },
+    {
+      "authority": "CIMA",
+      "licenseNumber": null,
+      "status": "no confirmado en el buscador oficial interactivo",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cima.ky/search-entities-cima",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 5.5,
+    "quejas": 4.8,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 793,
+    "stars": 2.8,
+    "source": "https://www.reviews.io/company-reviews/store/hycm",
+    "samples": []
+  }
+}
