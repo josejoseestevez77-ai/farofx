@@ -1,0 +1,77 @@
+{
+  "slug": "capital-com",
+  "name": "Capital.com",
+  "init": "CC",
+  "color": "#1a54ff",
+  "demo": false,
+  "legalEntity": "Capital Com SV Investments Limited (Chipre) / Capital Com (UK) Limited (Reino Unido) / Capital Com Australia Pty Ltd (Australia)",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 20,
+  "spreadTypical": "<cite index=\"95-1,95-11\">Cuentas sin comisión, con un spread medio en EUR/USD de aproximadamente 0,7 pips durante las pruebas de 2026</cite>",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"13-13,13-14,13-15,13-16\">Cobertura del Fondo de Compensación a Inversores (ICF) hasta 20.000 €, además de un seguro privado adicional que protege a los clientes minoristas de la UE, Noruega, Islandia y Liechtenstein hasta 1.000.000 € por cliente en caso de insolvencia</cite>",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "<cite index=\"25-1\">Companies House confirma que Capital Com (UK) Limited tiene su domicilio social registrado en 2nd Floor 4 Orchard Place, Londres, SW1H 0BF</cite>, dirección que difiere de la indicada en avisos previos de la FCA, por lo que no se ha podido contrastar de forma cruzada al 100% con el registro del regulador; se deja como pendiente de verificación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "793714",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b0000042g1LfAAI",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "319/17",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/42294/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "513393",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    },
+    {
+      "authority": "NBRB",
+      "licenseNumber": "16 (16/04/2019)",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.nbrb.by/engl/finsector/forex/register?page=2",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 7,
+    "quejas": 8,
+    "costes": 8
+  },
+  "reviews": {
+    "count": 14352,
+    "stars": 4.6,
+    "source": "https://www.trustpilot.com/review/capital.com",
+    "samples": []
+  }
+}
