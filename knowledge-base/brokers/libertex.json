@@ -1,0 +1,60 @@
+{
+  "slug": "libertex",
+  "name": "Libertex",
+  "init": "LX",
+  "color": "#00c07f",
+  "demo": false,
+  "legalEntity": "Indication Investments Ltd",
+  "foundedYear": 2012,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Variable; distintas fuentes independientes reportan cifras dispares para EUR/USD, desde <cite index=\"39-2\">un promedio de 0,1 pips en pruebas propias de un medio especializado</cite> hasta <cite index=\"38-3\">un rango de 0,3 a 0,7 pips en cuenta estándar, con cuentas RAW/ECN en torno a 0,15 pips más una comisión de 4 USD por lote</cite>. El bróker también aplica comisión por operación según el activo y swaps por posiciones nocturnas.",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas bajo supervisión de CySEC; cobertura del Fondo de Compensación a Inversores de Chipre (ICF), citado por analistas como <cite index=\"40-10\">protección de compensación de 20.000 € bajo supervisión de CySEC</cite>.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "La sede corporativa declarada por el bróker (10 Agiou Athanasiou, Ksenos building, Limassol, Chipre) no se ha podido cotejar de forma directa con una dirección física publicada en la ficha del registro oficial de CySEC, que solo detalla teléfono y correo de contacto. Un informe de verificación de terceros documentó además otra oficina física del grupo en Neapoli, Limassol, lo que añade incertidumbre sobre la dirección exacta vigente. Se mantiene como pendiente hasta confirmación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "164/12",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37658/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin (Alemania)",
+      "licenseNumber": null,
+      "status": "registro de pasaporte europeo (sin licencia local propia)",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://libertex.com/imprint",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6.5,
+    "quejas": 6.8,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 4358,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/libertex.org",
+    "samples": []
+  }
+}
