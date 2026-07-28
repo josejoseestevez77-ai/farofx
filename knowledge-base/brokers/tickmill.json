@@ -1,0 +1,76 @@
+{
+  "slug": "tickmill",
+  "name": "Tickmill",
+  "init": "TM",
+  "color": "#e2231a",
+  "demo": false,
+  "legalEntity": "Tickmill UK Ltd (sociedad registrada en Inglaterra y Gales, nº 09592225); grupo con entidades adicionales Tickmill Europe Ltd (Chipre), Tickmill South Africa (Pty) Ltd y Tickmill Ltd (Seychelles)",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Cuenta Raw: spreads desde 0,0 pips en EUR/USD más comisión de 3 USD por lote por lado; Cuenta Classic: spreads desde 1,6 pips sin comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; clientes del Reino Unido cubiertos por el FSCS hasta 120.000 libras por persona; clientes de la UE cubiertos por el Fondo de Compensación a Inversores (ICF) chipriota hasta 20.000 euros",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se ha contrastado la dirección declarada por la entidad regulada por la FCA (Tickmill UK Ltd) frente a la documentación pública del broker, pero no se ha realizado una verificación física ni contacto directo con la sede; se mantiene pendiente hasta confirmación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "717270",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000001HjJatAAF",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "278/15",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/74706/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsca.co.za/Entity-Persons-Search/?iframe_target=financial-services-providers",
+      "ok": false
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.fsaseychelles.sc/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6.5,
+    "quejas": 6,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 1080,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.tickmill.com",
+    "samples": []
+  }
+}
