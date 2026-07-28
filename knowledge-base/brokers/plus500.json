@@ -1,0 +1,66 @@
+{
+  "slug": "plus500",
+  "name": "Plus500",
+  "init": "P5",
+  "color": "#e63329",
+  "demo": false,
+  "legalEntity": "Plus500 Ltd (matriz cotizada en LSE); opera localmente a través de Plus500UK Ltd, Plus500CY Ltd y Plus500AU Pty Ltd según la jurisdicción del cliente",
+  "foundedYear": 2008,
+  "headquarters": {
+    "country": "Israel",
+    "flag": "🇮🇱"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "EUR/USD entre 0,7 y 1,3 pips aprox. (cuenta estándar, sin comisión, spread variable)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas; clientes UK cubiertos por el FSCS hasta 85.000 £; clientes CY cubiertos por el ICF chipriota; clientes AU con protección de saldo negativo y AFCA",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-28",
+    "method": "Se contrastó la dirección declarada por Plus500UK Ltd (8 Angel Court, Copthall Avenue, Londres EC2R 7HJ) en su documentación regulatoria con la que figura en avisos oficiales de la FCA, pero no se pudo cargar la ficha interactiva del registro FCA (register.fca.org.uk) para una verificación directa completa, por lo que queda pendiente de confirmación total."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "509909",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMTYtAAP",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "250/14",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "417727",
+      "status": "activa",
+      "verifiedDate": "2026-07-28",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 7,
+    "quejas": 7,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 19595,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.plus500.com",
+    "samples": []
+  }
+}
