@@ -1,0 +1,62 @@
+{
+  "slug": "errante",
+  "name": "Errante",
+  "init": "ER",
+  "color": "#9333ea",
+  "demo": false,
+  "legalEntity": "Notely Trading Ltd (HE394425)",
+  "foundedYear": 2019,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,1 pips en EUR/USD en cuenta ECN con comisión (aprox. 3,5 USD/lote); en la cuenta con depósito mínimo se han medido spreads en torno a 1,5 pips",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas y adhesión al Fondo de Compensación para Inversores (ICF) de Chipre a través de la entidad regulada por CySEC (Notely Trading Ltd); la entidad de Seychelles no ofrece protección equivalente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se contrastó la dirección declarada por el broker (30 Karpenisiou, 1077 Nicosia, Chipre) con la ficha pública de CySEC, pero no se ha realizado una verificación física ni telefónica directa de la oficina, por lo que se mantiene como pendiente"
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "383/20",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/86468/",
+      "ok": true
+    },
+    {
+      "authority": "FSA Seychelles",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.8,
+    "retirada": 5,
+    "quejas": 5.2,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 64,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/errante.com",
+    "samples": []
+  }
+}
