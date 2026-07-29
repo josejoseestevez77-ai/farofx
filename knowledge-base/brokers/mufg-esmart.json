@@ -1,0 +1,50 @@
+{
+  "slug": "mufg-esmart",
+  "name": "Mitsubishi UFJ eSmart Securities",
+  "init": "MU",
+  "color": "#78002E",
+  "demo": false,
+  "legalEntity": "Mitsubishi UFJ eSmart Securities Co., Ltd. (三菱UFJ eスマート証券株式会社), anteriormente au Kabucom Securities Co., Ltd.",
+  "foundedYear": 2001,
+  "headquarters": {
+    "country": "Japón",
+    "flag": "🇯🇵"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": "0,2 yenes (pips) en USD/JPY, sin comisión de operativa (cuenta FX estándar); spreads más amplios en pares minoritarios",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Segregación de activos de clientes + adhesión al Fondo Japonés de Protección al Inversor (Japan Investor Protection Fund), cobertura hasta 10 millones de yenes",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "Se confirmó la sede declarada (Kasumigaseki, Chiyoda-ku, Tokio) mediante fuentes corporativas y de prensa del propio grupo MUFG, pero no se ha podido contrastar de forma independiente contra la ficha exacta del registro oficial de la Kanto Local Finance Bureau, por lo que queda pendiente de verificación cruzada directa."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Japón) / Kanto Local Finance Bureau",
+      "licenseNumber": "Kanto Local Finance Bureau (Kinsho) N.º 61",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.fsa.go.jp/search/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 7.5,
+    "quejas": 7,
+    "costes": 7.3
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
