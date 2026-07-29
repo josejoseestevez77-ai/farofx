@@ -1,0 +1,66 @@
+{
+  "slug": "exante",
+  "name": "EXANTE",
+  "init": "EN",
+  "color": "#1A1A2E",
+  "demo": false,
+  "legalEntity": "EXT Ltd",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 10000,
+  "spreadTypical": "Modelo DMA sin spreads fijos publicados; comisión variable por operación según mercado (no es un bróker market-maker de spreads tipo retail)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas y Fondo de Compensación a Inversores de Chipre (ICF) hasta 20.000€ por cliente en la entidad CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha verificado en el registro oficial de CySEC que la entidad EXT Ltd figura dada de alta con los dominios corporativos de EXANTE, pero no se ha podido contrastar de forma independiente (visita, videollamada o documento notarial) que la dirección operativa declarada en Limassol coincida físicamente con la sede real; queda pendiente de verificación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "165/12",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37644/",
+      "ok": true
+    },
+    {
+      "authority": "MFSA",
+      "licenseNumber": null,
+      "status": "no confirmada / entidades maltesas vinculadas sin licencia local",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.mfsa.mt/financial-services-register/",
+      "ok": false
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificada en el registro oficial en la fecha de esta ficha",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 5,
+    "quejas": 6.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 76,
+    "stars": 4.3,
+    "source": "https://www.trustpilot.com/review/exante.eu",
+    "samples": []
+  }
+}
