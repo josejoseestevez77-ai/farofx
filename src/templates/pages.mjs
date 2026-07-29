@@ -399,9 +399,9 @@ export function renderOpinar(brokers) {
       <input type="text" id="contexto" name="contexto" maxlength="60" placeholder="P. ej. 8 meses operando · depósito 2.000 €">
     </div>
     <div class="form-row">
-      <label class="lbl" for="prueba">Prueba (opcional)</label>
+      <label class="lbl" for="prueba">Prueba <span class="req">*</span></label>
       <input type="file" id="prueba" name="prueba" accept="image/*,application/pdf">
-      <p class="hint">Captura de la cuenta, rentabilidades o similar. Solo la ve nuestro equipo de verificación; no se publica.</p>
+      <p class="hint"><b>Obligatorio para verificar tu opinión:</b> adjunta una captura de la cuenta, rentabilidades o similar. Solo la ve nuestro equipo de verificación; no se publica.</p>
     </div>
     <div class="form-row">
       <label><input type="checkbox" name="confirmo" value="si" required> Confirmo que he tenido una cuenta real en este broker. <span class="req">*</span></label>
