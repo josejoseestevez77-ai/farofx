@@ -1,0 +1,67 @@
+{
+  "slug": "ironfx",
+  "name": "IronFX",
+  "init": "IR",
+  "color": "#0a3d62",
+  "demo": false,
+  "legalEntity": "Notesco Financial Services Limited (entidad chipriota que opera la marca IronFX; el grupo también utiliza Notesco UK Limited y Notesco SA (Pty) Ltd en otras jurisdicciones)",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "<cite index=\"16-1,16-7\">Spread medio de 1,20 pips en EUR/USD en la cuenta con el depósito mínimo más bajo</cite>, con cuentas de tipo ECN/STP que ofrecen <cite index=\"16-21\">spreads competitivos desde 0,0 pips en determinadas cuentas</cite>",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas exigidas por CySEC para las entidades reguladas del grupo; al ser Notesco Financial Services Ltd una empresa de inversión chipriota, sus clientes minoristas están en principio cubiertos por el Fondo de Compensación para Inversores (ICF) de Chipre, sin que FAROFX haya podido verificar el detalle exacto de cobertura en la documentación pública del broker",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "La dirección declarada por el broker (2, Iapetou Street, Agios Athanasios, 4101, Limassol, Chipre) aparece de forma consistente en varias fuentes independientes (registro LEI, directorios corporativos, Glassdoor), pero FAROFX no ha podido contrastarla directamente contra la ficha completa del registro de CySEC, por lo que queda pendiente de verificación presencial u oficial."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "125/10",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37655/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "585561",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMaXsAAL",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 5,
+    "quejas": 4,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 766,
+    "stars": 2.8,
+    "source": "https://www.trustpilot.com/review/ironfx.com",
+    "samples": []
+  }
+}
