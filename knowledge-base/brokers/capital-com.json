@@ -72,6 +72,16 @@
     "count": 14352,
     "stars": 4.6,
     "source": "https://www.trustpilot.com/review/capital.com",
-    "samples": []
+    "samples": [
+      {
+        "user": "Benjamin W.",
+        "stars": 2,
+        "text": "Tardan mucho en procesar los retiros...",
+        "meta": [
+          "3 meses operando en el broker",
+          "Opinion verificada"
+        ]
+      }
+    ]
   }
 }
