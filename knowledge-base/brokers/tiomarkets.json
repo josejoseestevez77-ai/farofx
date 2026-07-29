@@ -1,0 +1,68 @@
+{
+  "slug": "tiomarkets",
+  "name": "TIOmarkets",
+  "init": "TI",
+  "color": "#6E2C8C",
+  "demo": false,
+  "legalEntity": "TIO Markets UK Limited (entidad regulada por la FCA, Reino Unido); Trade i.o Ltd (entidad que opera bajo la marca TIOmarkets en Seychelles)",
+  "foundedYear": 2019,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 20,
+  "spreadTypical": "1,1 pips EUR/USD (cuenta Standard, sin comisión); 0,0 pips + 6 USD/lote (cuenta Raw)",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Fondos de clientes segregados en un banco de Nivel 1 para la entidad FCA; cobertura FSCS del Reino Unido citada por distintas fuentes entre 85.000 y 120.000 GBP para clientes de TIO Markets UK Limited. La entidad vinculada a Seychelles no dispone de un fondo de compensación de inversores equivalente.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Dirección (8 Devonshire Square, Londres, EC2M 4YJ) contrastada con la ficha pública de la FCA que identifica a la entidad genuina TIO Markets UK Limited, FRN 488900, tras las alertas de clones publicadas por el propio regulador."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "488900",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000Mfn2ZAAR",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities",
+      "ok": false
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial en esta comprobación",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 7.5,
+    "quejas": 6.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 691,
+    "stars": 4.5,
+    "source": "https://www.trustpilot.com/review/tiomarkets.com",
+    "samples": []
+  }
+}
