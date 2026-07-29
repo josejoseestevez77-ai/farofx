@@ -1,0 +1,61 @@
+{
+  "slug": "weltrade",
+  "name": "Weltrade",
+  "init": "WT",
+  "color": "#2e86de",
+  "demo": false,
+  "legalEntity": "Weltrade Ltd (IBC n.º 2023-00055, Santa Lucía); marca operada históricamente también por Systemgates Ltd (San Vicente y las Granadinas) y, para clientes sudafricanos, Weltrade SA (Pty) Ltd",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Santa Lucía",
+    "flag": "🇱🇨"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "Desde 0,5 pips en EUR/USD en la cuenta Pro; en torno a 1,5 pips en las cuentas de entrada (Micro/Premium)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (Weltrade App)"
+  ],
+  "fundProtection": "El bróker declara mantener cuentas segregadas y protección de saldo negativo, pero las entidades offshore que atienden a la mayoría de clientes internacionales no cuentan con fondo de compensación ni regulador con potestad sancionadora",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No ha sido posible cotejar la dirección física declarada por Weltrade en Santa Lucía con un registro público independiente accesible; el registro de IBC de Santa Lucía no ofrece consulta pública gratuita, por lo que el estado queda pendiente de verificación."
+  },
+  "regulators": [
+    {
+      "authority": "FSC / FSA (San Vicente y las Granadinas)",
+      "licenseNumber": null,
+      "status": "sin licencia financiera (solo registro mercantil IBC)",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsasvg.com/entity-name-search/",
+      "ok": false
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": "50691",
+      "status": "no confirmado directamente en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 2.5,
+    "retirada": 4,
+    "quejas": 4.5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 1700,
+    "stars": 3.8,
+    "source": "https://www.trustpilot.com/review/weltrade.com",
+    "samples": []
+  }
+}
