@@ -1,0 +1,69 @@
+{
+  "slug": "fxprimus",
+  "name": "FXPrimus (Primus Global)",
+  "init": "FW",
+  "color": "#1B3B6F",
+  "demo": false,
+  "legalEntity": "Primus Global Ltd (anteriormente FX Primus Europe (CY) Ltd)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 15,
+  "spreadTypical": "Desde 1,5 pips en cuenta PrimusCLASSIC (sin comisión); desde 0,0 pips + 5 USD de comisión en PrimusZERO",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "WebTrader"
+  ],
+  "fundProtection": "Cuentas segregadas en todas las entidades; solo los clientes de la entidad chipriota (CySEC) están cubiertos por el Fondo de Compensación a Inversores (ICF) hasta 20.000 €. Los clientes de las entidades de Vanuatu no disponen de un esquema de compensación estatutario.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La ficha pública del registro de la CySEC para 'Primus Global Ltd' únicamente muestra número de registro mercantil, teléfono, fax y correo electrónico, sin domicilio físico detallado, por lo que no ha sido posible contrastar la dirección exacta que el broker declara en su web (se han encontrado direcciones distintas en Limassol según la fuente) frente al registro oficial. Se mantiene como pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "261/14",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/42644/",
+      "ok": true
+    },
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": "14595",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.vfsc.vu/financial-dealers-licensee-list/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificada / revocada según fuentes de terceros",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 5.5,
+    "quejas": 5.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 95,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/fxprimus.com",
+    "samples": []
+  }
+}
