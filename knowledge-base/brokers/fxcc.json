@@ -1,0 +1,67 @@
+{
+  "slug": "fxcc",
+  "name": "FXCC (Forex Central Clearing)",
+  "init": "FZ",
+  "color": "#0057A0",
+  "demo": false,
+  "legalEntity": "FX Central Clearing Ltd (entidad regulada por CySEC); marca operada también por Central Clearing Ltd (Mwali/Comoras) para clientes fuera del EEE",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,0 pips anunciados en la cuenta ECN XL; en pruebas independientes el spread medio de EUR/USD se sitúa en torno a 0,6 pips",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas + Fondo de Compensación a Inversores (ICF) de Chipre para la entidad CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "El registro oficial de CySEC confirma el número de licencia, el número de registro de sociedad (258741) y datos de contacto (teléfono/email), pero no se ha podido cotejar de forma independiente la dirección física exacta declarada por el broker con un documento oficial adicional, por lo que queda pendiente de verificación completa."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "121/10",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/?page=7",
+      "ok": true
+    },
+    {
+      "authority": "MISA (Mwali/Comoras) - vía Central Clearing Ltd",
+      "licenseNumber": null,
+      "status": "no verificable en registro de primer nivel",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    },
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": null,
+      "status": "no confirmada / disputada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 6,
+    "quejas": 5.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 186,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/fxcc.com",
+    "samples": []
+  }
+}
