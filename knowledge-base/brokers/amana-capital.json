@@ -1,0 +1,68 @@
+{
+  "slug": "amana-capital",
+  "name": "Amana Capital",
+  "init": "AN",
+  "color": "#C9A24B",
+  "demo": false,
+  "legalEntity": "Amana Capital Ltd (Chipre, HE 281953) / Amana Financial Services (Dubai) Limited (EAU)",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "1,4 pips EUR/USD en cuenta de entrada; desde 0,1 pips más comisión en cuentas Active/Elite",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas según las normas de cada jurisdicción reguladora",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se localizó la ficha de la entidad en el registro público de la DFSA (Dubái), pero la dirección exacta difiere entre fuentes públicas consultadas (Emirates Financial Towers frente a Central Park Towers, DIFC), por lo que no se ha podido cotejar de forma concluyente una única dirección vigente; queda pendiente de verificación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "DFSA",
+      "licenseNumber": "F003269",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.dfsa.ae/public-register/firms/amana-financial-services-dubai-limited",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "155/11",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37712/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 5.5,
+    "quejas": 5.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 122,
+    "stars": 3.6,
+    "source": "https://www.trustpilot.com/review/amanacapital.com",
+    "samples": []
+  }
+}
