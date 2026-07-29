@@ -1,0 +1,68 @@
+{
+  "slug": "scope-markets",
+  "name": "Scope Markets",
+  "init": "SM",
+  "color": "#0f766e",
+  "demo": false,
+  "legalEntity": "SM Capital Markets Ltd",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 200,
+  "spreadTypical": "Desde 0,9 pips en EUR/USD, sin comisión (cuenta One)",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas en entidades bancarias y, al ser SM Capital Markets Ltd una Empresa de Inversión chipriota (CIF) autorizada por CySEC, adhesión obligatoria al Fondo de Compensación para Inversores (ICF) de Chipre; protección de saldo negativo para clientes minoristas",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-29",
+    "method": "Se comparó la dirección registrada que el broker declara en su web legal (Gladstonos 116, M. Kyprianou House, 3ª y 4ª planta, 3032 Limassol, Chipre) con la dirección de la entidad SM Capital Markets Ltd en el registro LEI/GLEIF, coincidiendo ambas."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "339/17",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/45918/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": null,
+      "ok": false
+    },
+    {
+      "authority": "FSC Belice",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 4.5,
+    "quejas": 4,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 54,
+    "stars": 2.8,
+    "source": "https://www.trustpilot.com/review/scopemarkets.com",
+    "samples": []
+  }
+}
