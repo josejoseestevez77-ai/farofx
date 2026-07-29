@@ -41,6 +41,7 @@ export function header(active = '') {
       ${link('/metodologia/', 'Cómo puntuamos', 'metodologia')}
       ${link('/como-verificamos/', 'Opiniones verificadas', 'verificar')}
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}
+      <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Soporte</a>
     </nav>
     <span class="spacer"></span>
     <a class="btn btn-ghost" href="/opinar/">Dejar opinión</a>
@@ -60,6 +61,7 @@ export function footer() {
       <div>
         <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px"><span class="mark">F</span>FARO<b>FX</b></a>
         <p style="font-size:13.5px;max-width:36ch">Análisis independiente de brokers basado en datos verificados. Reseñas solo de traders verificados y puntuación abierta y auditable.</p>
+        <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@farofx.org">contacto@farofx.org</a></p>
       </div>
       <div>
         <h6>Plataforma</h6>
