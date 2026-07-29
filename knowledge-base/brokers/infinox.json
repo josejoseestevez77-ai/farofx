@@ -1,0 +1,61 @@
+{
+  "slug": "infinox",
+  "name": "INFINOX",
+  "init": "IX",
+  "color": "#f59e0b",
+  "demo": false,
+  "legalEntity": "Infinox Capital Ltd (entidad autorizada por la FCA en el Reino Unido); IX Capital Group Limited, antes Infinox Capital (Bahamas) Limited (entidad registrada en Bahamas)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "0,2 pips en EUR/USD en la cuenta con el depósito mínimo más bajo",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas y protección de balance negativo según la entidad contratante; el fondo FSCS del Reino Unido solo aplicaría, en su caso, a clientes elegibles de la entidad autorizada por la FCA, que atiende exclusivamente a clientes profesionales/institucionales; la entidad de Bahamas no cuenta con fondo de compensación equivalente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "Se contrastó la dirección declarada por INFINOX en el Reino Unido (Birchin Court, 20 Birchin Lane, Londres) con los datos de constitución de la sociedad (nº 06854853) citados por el propio broker, pero no se ha verificado mediante llamada o inspección directa al registro mercantil ni a la sede física; queda pendiente de confirmación independiente"
+  },
+  "regulators": [
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": "501057",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/search?type=Companies&q=infinox",
+      "ok": true
+    },
+    {
+      "authority": "SCB - Securities Commission of The Bahamas",
+      "licenseNumber": "SIA-F188",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://scb.gov.bs/registrant-licensee-search/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 7,
+    "quejas": 6.5,
+    "costes": 6.8
+  },
+  "reviews": {
+    "count": 1142,
+    "stars": 4.7,
+    "source": "https://www.trustpilot.com/review/www.infinox.com",
+    "samples": []
+  }
+}
