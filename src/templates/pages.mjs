@@ -422,6 +422,10 @@ export function renderOpinar(brokers) {
   function farofxReviewSubmit(f){
     var slug=(document.getElementById('broker-slug')||{}).value;
     if(!slug){ alert('Elige un broker de la lista escribiendo su nombre.'); return false; }
+    // Si no se adjunta archivo, deshabilitamos el input para NO enviar una parte de fichero vacía
+    // (un fichero de 0 bytes rompe la recepción del webhook y provoca el error al publicar).
+    var fileInp=document.getElementById('prueba');
+    if(fileInp && (!fileInp.files || fileInp.files.length===0)){ fileInp.disabled=true; }
     return true;
   }
   </script>`;
