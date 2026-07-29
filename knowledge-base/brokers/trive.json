@@ -1,0 +1,68 @@
+{
+  "slug": "trive",
+  "name": "Trive",
+  "init": "TV2",
+  "color": "#0ea5e9",
+  "demo": false,
+  "legalEntity": "Trive South Africa (Pty) Ltd (entidad autorizada por la FSCA); a nivel europeo el grupo opera a través de Trive Financial Services Europe Ltd / Trive Financial Services Malta Ltd",
+  "foundedYear": 2020,
+  "headquarters": {
+    "country": "Países Bajos",
+    "flag": "🇳🇱"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,1 pips en EUR/USD en cuentas tipo ECN/Raw con comisión; en la cuenta Classic (sin comisión) los spreads son más altos",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas según la entidad reguladora correspondiente; no se ha podido confirmar un fondo de compensación específico para todas las entidades del grupo",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "No se ha realizado verificación presencial ni contacto directo; se han cotejado direcciones publicadas en la documentación legal del broker y en su web oficial, sin confirmación cruzada con un registro público independiente"
+  },
+  "regulators": [
+    {
+      "authority": "FSCA",
+      "licenseNumber": "27231",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www2.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "424122",
+      "status": "cancelada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-147mr-asic-cancels-afs-licence-of-cfd-issuer-trive/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 4.5,
+    "retirada": 5.5,
+    "quejas": 6,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 161,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.trive.com",
+    "samples": []
+  }
+}
