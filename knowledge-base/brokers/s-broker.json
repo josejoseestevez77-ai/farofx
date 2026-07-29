@@ -1,0 +1,50 @@
+{
+  "slug": "s-broker",
+  "name": "S Broker",
+  "init": "SB",
+  "color": "#E2001A",
+  "demo": false,
+  "legalEntity": "S Broker AG & Co. KG",
+  "foundedYear": 2001,
+  "headquarters": {
+    "country": "Alemania",
+    "flag": "🇩🇪"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": "No trabaja con spread tipo forex; cobra comisión por orden: desde 0,95 € + 0,25% del volumen operado en los principales centros de contratación",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Entidad de crédito alemana (CRR-Kreditinstitut) adscrita al sistema de garantía de la Sparkassen-Finanzgruppe",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-29",
+    "method": "Se cotejó la dirección social que figura en la base de datos institucional oficial de BaFin (Carl-Bosch-Straße 10, 65203 Wiesbaden, institutId 119213) con la sede en Wiesbaden que la propia entidad declara en su web corporativa."
+  },
+  "regulators": [
+    {
+      "authority": "BaFin",
+      "licenseNumber": "BaFin-ID 10119213 (Institut-Nr. 119213)",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?cmd=loadInstitutAction&institutId=119213",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6,
+    "quejas": 4.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 686,
+    "stars": 2.7,
+    "source": "https://www.trustpilot.com/review/www.sbroker.de",
+    "samples": []
+  }
+}
