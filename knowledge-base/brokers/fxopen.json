@@ -1,0 +1,70 @@
+{
+  "slug": "fxopen",
+  "name": "FXOpen",
+  "init": "FO",
+  "color": "#2563eb",
+  "demo": false,
+  "legalEntity": "FXOpen Ltd (Reino Unido) / FXOpen Markets Limited (matriz, San Cristóbal y Nieves)",
+  "foundedYear": 2005,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "0,0 pips EUR/USD en cuenta ECN + comisión desde 1,5 USD/lote",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "TickTrader (propia)",
+    "TradingView"
+  ],
+  "fundProtection": "Cuentas segregadas en bancos de primer nivel; clientes de la entidad británica cubiertos por el FSCS hasta 85.000 £",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "No se ha podido verificar de forma independiente que la dirección operativa declarada coincida físicamente con la registrada; se toma como referencia la dirección que figura en el registro FCA, pero no se ha realizado comprobación in situ"
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "579202",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMhfLAAT&id=f11e83bc-fb20-4420-9ecf-5c5c5e090ae6",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "412871",
+      "status": "cancelada",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2024-releases/24-194mr-asic-cancels-afs-licence-of-retail-otc-derivative-issuer-fxopen-au/",
+      "ok": false
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": null,
+      "status": "no verificada en el registro oficial",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 6,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 451,
+    "stars": 3.7,
+    "source": "https://www.trustpilot.com/review/www.fxopen.com",
+    "samples": []
+  }
+}
