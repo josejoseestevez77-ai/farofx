@@ -1,0 +1,50 @@
+{
+  "slug": "smbc-nikko",
+  "name": "SMBC Nikko Securities",
+  "init": "SN",
+  "color": "#046A38",
+  "demo": false,
+  "legalEntity": "SMBC Nikko Securities Inc. (SMBC日興証券株式会社)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Japón",
+    "flag": "🇯🇵"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": null,
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Segregación de activos de clientes exigida por la Ley de Instrumentos Financieros y Cambio de Japón para los operadores de instrumentos financieros de Tipo I; no se ha podido verificar de forma independiente su adhesión concreta a un fondo de protección al inversor.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Se comparó la dirección corporativa pública (3-3-1 Marunouchi, Chiyoda-ku, Tokio) con la dirección registrada en el listado oficial de operadores autorizados de la FSA (menkyo), coincidiendo ambas."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Japón)",
+      "licenseNumber": "関東財務局長(金商)第2251号",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsa.go.jp/menkyo/menkyo.html",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
