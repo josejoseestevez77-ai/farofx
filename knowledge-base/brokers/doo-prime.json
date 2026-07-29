@@ -1,0 +1,61 @@
+{
+  "slug": "doo-prime",
+  "name": "Doo Prime",
+  "init": "DP",
+  "color": "#1e3a8a",
+  "demo": false,
+  "legalEntity": "Doo Prime Seychelles Limited / Doo Prime Mauritius Limited",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Hong Kong",
+    "flag": "🇭🇰"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Spreads desde 0,1 pips en cuentas ECN/STP, según <cite index=\"7-10\">\"Doo Prime offers minimized transactions costs with tight spreads as low as 0.1 pips\"</cite> (dato publicitario del propio bróker, no verificado por FAROFX de forma independiente)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "El bróker declara fondos de clientes segregados; <cite index=\"28-5\">\"Doo Prime Mauritius Limited has chosen Mauritius Commercial Bank to deposit the client's funds in them\"</cite>. No existe un fondo de compensación estatal tipo FSCS/ICF en Seychelles ni en Mauricio para clientes retail.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar mediante visita física o videollamada que la dirección operativa coincida con la registrada; solo se contrastó documentalmente que <cite index=\"6-2\">\"la compañía tiene su domicilio social en Room B11, 1st Floor Providence Complex, Providence, Mahe, Seychelles\"</cite> y una dirección equivalente en Mauricio publicadas en el propio aviso de riesgo del bróker."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": "SD090",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "C119023907",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 4,
+    "retirada": 3.5,
+    "quejas": 4.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 450,
+    "stars": 3.9,
+    "source": "https://www.trustpilot.com/review/dooprime.com",
+    "samples": []
+  }
+}
