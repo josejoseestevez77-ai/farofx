@@ -1,0 +1,60 @@
+{
+  "slug": "intertrader",
+  "name": "InterTrader",
+  "init": "IT",
+  "color": "#005B99",
+  "demo": false,
+  "legalEntity": "Alvar Financial Services Limited (trading as InterTrader / InterTrader Limited)",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Gibraltar",
+    "flag": "🇬🇮"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 500,
+  "spreadTypical": "0,3–0,6 pips en EUR/USD (cuenta Standard)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas en Gibraltar + Esquema de Compensación a Inversores de Gibraltar (hasta 20.000 €)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-29",
+    "method": "La dirección declarada (Gibraltar, Europort Avenue/Suite 851 Europort) coincide con la usada en las comunicaciones oficiales de la FCA sobre firmas clon, pero no se ha podido contrastar de forma directa con la ficha completa del registro de la GFSC en esta verificación, por lo que queda pendiente de confirmación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "597312",
+      "status": "activa (regulación limitada / pasaporte)",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMgyqAAD",
+      "ok": true
+    },
+    {
+      "authority": "GFSC",
+      "licenseNumber": "FSC1108MIF",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.fsc.gi/regulated-entity/intertrader-limited-17009",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 5.5,
+    "quejas": 6.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 268,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.intertrader.com",
+    "samples": []
+  }
+}
