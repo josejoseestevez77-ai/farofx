@@ -1,0 +1,60 @@
+{
+  "slug": "topfx",
+  "name": "TopFX",
+  "init": "TF",
+  "color": "#0072CE",
+  "demo": false,
+  "legalEntity": "TopFX Ltd (nº de registro en Chipre HE 274180)",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,0 pips en cuentas Raw/Zero (con comisión) hasta ~1,2 pips en cuenta Growth sin comisión (entidad CySEC)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel y protección de saldo negativo; la entidad regulada por CySEC ofrece cobertura del Fondo de Compensación a Inversores (ICF) hasta 20.000€, mientras que la entidad de Seychelles no dispone de ningún esquema de compensación al inversor",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma directa la dirección operativa declarada por el bróker con la ficha del registro oficial de la CySEC; existen reportajes de terceros (no verificados por FAROFX) que sitúan una oficina en Limassol, Chipre, pero no se ha confirmado la coincidencia exacta con el domicilio registrado."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "138/11",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37585/",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 5.5,
+    "quejas": 5.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 452,
+    "stars": 4.1,
+    "source": "https://www.trustpilot.com/review/topfx.com",
+    "samples": []
+  }
+}
