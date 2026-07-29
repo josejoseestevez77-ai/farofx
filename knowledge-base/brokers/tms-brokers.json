@@ -1,0 +1,51 @@
+{
+  "slug": "tms-brokers",
+  "name": "TMS Brokers",
+  "init": "TB",
+  "color": "#003865",
+  "demo": false,
+  "legalEntity": "OANDA TMS Brokers S.A. (anteriormente Dom Maklerski TMS Brokers S.A.)",
+  "foundedYear": 1997,
+  "headquarters": {
+    "country": "Polonia",
+    "flag": "🇵🇱"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,4-0,9 pips en EUR/USD según tipo de cuenta (sin comisión en cuenta estándar)",
+  "platforms": [
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas + Sistema de Recompensas para Inversores del KDPW (Krajowy Depozyt Papierów Wartościowych)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Se contrastó la dirección declarada por el broker en su web (Rondo/Warsaw UNIT, Daszyńskiego 1, 00-843 Varsovia) con los datos del Registro Mercantil polaco (KRS nº 0000204776) y con el registro KNF de casas de bolsa, coincidiendo en ambos casos."
+  },
+  "regulators": [
+    {
+      "authority": "KNF",
+      "licenseNumber": "KPWiG-4021-54-1/2004",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6,
+    "quejas": 5.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 7,
+    "stars": 2.3,
+    "source": "https://www.trustpilot.com/review/www.tms.pl",
+    "samples": []
+  }
+}
