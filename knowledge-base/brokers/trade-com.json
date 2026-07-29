@@ -74,6 +74,14 @@
     "source": "https://www.trustpilot.com/review/trade.com",
     "samples": [
       {
+        "user": "Copier",
+        "stars": 5,
+        "text": "Atención al cliente top y buen sistema de copy trading",
+        "meta": [
+          "Opinion verificada"
+        ]
+      },
+      {
         "user": "Mario P.",
         "stars": 5,
         "text": "Broker con las comisiones muy bajas, lo recomiendo",
