@@ -1,0 +1,59 @@
+{
+  "slug": "gbe-brokers",
+  "name": "GBE brokers",
+  "init": "GB",
+  "color": "#0369a1",
+  "demo": false,
+  "legalEntity": "GBE brokers Ltd (nº de registro 324205), con sucursal GBE brokers Ltd, Zweigniederlassung Hamburg",
+  "foundedYear": 2013,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 1000,
+  "spreadTypical": "Cuenta ECN: spreads desde 0,0 pips en EUR/USD más comisión aproximada de 3 EUR por lote; otras cuentas aplican comisiones distintas según el tipo de cuenta y divisa",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas; miembro del Fondo de Compensación de Inversores (ICF) de Chipre hasta 20.000 EUR, con una póliza adicional contratada con Lloyd's que amplía la cobertura hasta 300.000 EUR por cliente minorista",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-29",
+    "method": "La dirección de la sucursal de Hamburgo declarada por el bróker (Große Elbstraße 145b, 22767 Hamburgo) coincide con la registrada en la base de datos oficial de BaFin para el ID 148129. No se ha podido verificar de forma independiente la dirección exacta de la sede en Limasol (Chipre) frente al registro público de CySEC, que solo muestra datos de contacto y número de registro."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "240/14",
+      "status": "activa",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin",
+      "licenseNumber": null,
+      "status": "notificación de sucursal por pasaporte europeo (sin licencia propia de BaFin)",
+      "verifiedDate": "2026-07-29",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?amp=&cmd=loadInstitutAction&institutId=148129",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6.5,
+    "quejas": 7.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 710,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/www.gbebrokers.com",
+    "samples": []
+  }
+}
