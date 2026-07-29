@@ -1,0 +1,58 @@
+{
+  "slug": "moomoo",
+  "name": "moomoo",
+  "init": "MO",
+  "color": "#f97316",
+  "demo": false,
+  "legalEntity": "Moomoo Securities Australia Ltd / Moomoo Financial Singapore Pte. Ltd. (entidades locales del grupo Futu Holdings Limited)",
+  "foundedYear": 2018,
+  "headquarters": {
+    "country": "Estados Unidos (grupo cotizado Futu Holdings, con origen operativo en Hong Kong)",
+    "flag": "🇺🇸"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "No publica de forma estandarizada un spread típico de FX; moomoo es principalmente un bróker de acciones, ETF y opciones con comisión cero en renta variable de EE. UU., más que un bróker de forex/CFD clásico",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en bancos de primer nivel según jurisdicción (p. ej. HSBC/Commonwealth Bank en Australia); en EE. UU. cobertura SIPC para la entidad estadounidense; en Australia no existe un fondo de compensación estatal equivalente a FSCS/SIPC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente la dirección física declarada por moomoo (Sídney, Australia / Singapur) frente a un registro notarial u oficial distinto del propio registro del regulador; se toma como pendiente de verificación adicional"
+  },
+  "regulators": [
+    {
+      "authority": "ASIC (Australia)",
+      "licenseNumber": "AFSL 224663",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "MAS (Singapur)",
+      "licenseNumber": "CMS101000",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://eservices.mas.gov.sg/fid/institution/detail/235399-MOOMOO-FINANCIAL-SINGAPORE-PTE-LTD",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6.5,
+    "quejas": 4.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 385,
+    "stars": 2.4,
+    "source": "https://www.trustpilot.com/review/moomoo.com",
+    "samples": []
+  }
+}
