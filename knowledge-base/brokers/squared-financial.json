@@ -1,0 +1,61 @@
+{
+  "slug": "squared-financial",
+  "name": "Squared Financial",
+  "init": "SQ",
+  "color": "#dc2626",
+  "demo": false,
+  "legalEntity": "Squared Financial (CY) Limited",
+  "foundedYear": 2005,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,0 pips en EUR/USD en la cuenta SquaredElite (comisión de 5 USD por lote); desde 1,2 pips sin comisión en la cuenta SquaredPro",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "App móvil"
+  ],
+  "fundProtection": "Cuentas segregadas declaradas por el bróker. La entidad chipriota fue miembro del Fondo de Compensación para Inversores (ICF) mientras mantuvo la licencia CySEC, pero esta ha sido objeto de renuncia voluntaria; la entidad offshore de Seychelles (SQ Sey Ltd) no cuenta con fondo de compensación equivalente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha localizado la dirección declarada por el bróker (205, Archiepiskopou Makariou, Victory House, Limassol, Chipre) coincidente con la que figura en el registro de identificadores de entidad jurídica (LEI) asociado a Squared Financial (CY) Limited, pero no se ha podido contrastar de forma directa y actualizada con la ficha del registro de CySEC, por lo que se mantiene como pendiente de verificación final"
+  },
+  "regulators": [
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "329/17",
+      "status": "en proceso de renuncia voluntaria / no operativa para clientes minoristas",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/43653/",
+      "ok": false
+    },
+    {
+      "authority": "Financial Services Authority Seychelles (offshore)",
+      "licenseNumber": "SD024",
+      "status": "no verificado en registro de nivel superior",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 3.5,
+    "quejas": 5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 386,
+    "stars": 4.4,
+    "source": "https://www.trustpilot.com/review/sqfin.com",
+    "samples": []
+  }
+}
