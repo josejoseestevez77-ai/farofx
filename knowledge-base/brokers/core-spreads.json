@@ -1,0 +1,51 @@
+{
+  "slug": "core-spreads",
+  "name": "Core Spreads (Finsa Europe Ltd)",
+  "init": "CR",
+  "color": "#1B5E20",
+  "demo": false,
+  "legalEntity": "Finsa Europe Ltd (nº de compañía 07073413, Inglaterra y Gales); la propia entidad cambió de nombre en el registro de la FCA a Trade Nation Financial UK Ltd",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,6 pips en EUR/USD (histórico, cuenta CoreTrader con spreads fijos)",
+  "platforms": [
+    "MT4",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas y, según la información histórica del broker, cobertura FSCS hasta 85.000 £ para clientes del Reino Unido; no verificable de forma independiente bajo la marca actual",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar una oficina operativa bajo la marca Core Spreads: el dominio corespreads.com redirige actualmente a tradenation.com y foros especializados señalan la marca como discontinuada ('Out of business'). No se ha realizado comprobación directa de domicilio por falta de una web operativa propia."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificable bajo esta razón social/marca",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 3,
+    "quejas": 3,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
