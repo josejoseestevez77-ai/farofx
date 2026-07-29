@@ -72,6 +72,16 @@
     "count": 220,
     "stars": 3.1,
     "source": "https://www.trustpilot.com/review/trade.com",
-    "samples": []
+    "samples": [
+      {
+        "user": "Mario P.",
+        "stars": 5,
+        "text": "Broker con las comisiones muy bajas, lo recomiendo",
+        "meta": [
+          "15 meses operando",
+          "Opinion verificada"
+        ]
+      }
+    ]
   }
 }
