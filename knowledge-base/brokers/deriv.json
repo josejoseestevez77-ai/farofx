@@ -1,0 +1,61 @@
+{
+  "slug": "deriv",
+  "name": "Deriv",
+  "init": "DV",
+  "color": "#ff444f",
+  "demo": false,
+  "legalEntity": "Deriv Investments (Europe) Limited (C 70156)",
+  "foundedYear": 1999,
+  "headquarters": {
+    "country": "Malta",
+    "flag": "🇲🇹"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 5,
+  "spreadTypical": "<cite index=\"49-8,49-9\">Los spreads en la cuenta Standard Deriv MT5 son de medios a altos, aunque el bróker compensa sin cobrar comisiones ni tarifas de depósito o retiro</cite>",
+  "platforms": [
+    "MT5",
+    "cTrader",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"24-1,24-2,24-3\">Para clientes de Deriv Investments (Europe) Limited, el Investor Compensation Scheme de Malta ofrece una compensación condicional máxima del 90% de las reclamaciones o hasta 20.000€</cite>",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido confirmar de forma independiente que la dirección operativa declarada (W Business Centre, Birkirkara, Malta) coincida exactamente con el registro físico verificado por el regulador; se cotejó únicamente con fuentes corporativas y de terceros, no con una inspección directa del registro de la MFSA, por lo que queda pendiente de verificación presencial."
+  },
+  "regulators": [
+    {
+      "authority": "MFSA (Malta)",
+      "licenseNumber": "IS/70156",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.mfsa.mt/financial-services-register/",
+      "ok": true
+    },
+    {
+      "authority": "LFSA (Labuan, Malasia)",
+      "licenseNumber": null,
+      "status": "no verificado en registro público",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.labuanfsa.gov.my/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 7,
+    "quejas": 7.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 72477,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/deriv.com",
+    "samples": []
+  }
+}
