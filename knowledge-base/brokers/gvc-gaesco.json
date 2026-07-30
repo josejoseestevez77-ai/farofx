@@ -1,0 +1,48 @@
+{
+  "slug": "gvc-gaesco",
+  "name": "GVC Gaesco",
+  "init": "GG",
+  "color": "#002856",
+  "demo": false,
+  "legalEntity": "GVC Gaesco Valores, S.V., S.A.",
+  "foundedYear": 2008,
+  "headquarters": {
+    "country": "España",
+    "flag": "🇪🇸"
+  },
+  "type": [],
+  "depositMin": null,
+  "spreadTypical": null,
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; entidad adherida al Fondo General de Garantía de Inversiones (FOGAIN)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente la dirección física declarada por el broker (Calle Doctor Ferrán 3, Barcelona) con un documento oficial distinto del propio registro mercantil/CNMV; se deja como pendiente por prudencia."
+  },
+  "regulators": [
+    {
+      "authority": "CNMV",
+      "licenseNumber": "182",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esis?nif=A-62132352&lang=en",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 5.5,
+    "quejas": 5.5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 2,
+    "stars": 3.6,
+    "source": "https://es.trustpilot.com/review/grupo.gvcgaesco.es",
+    "samples": []
+  }
+}
