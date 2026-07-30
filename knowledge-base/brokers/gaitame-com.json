@@ -1,0 +1,50 @@
+{
+  "slug": "gaitame-com",
+  "name": "Gaitame.com",
+  "init": "GC",
+  "color": "#0057A6",
+  "demo": false,
+  "legalEntity": "株式会社外為どっとコム (Gaitame.Com Co., Ltd.)",
+  "foundedYear": 2002,
+  "headquarters": {
+    "country": "Japón",
+    "flag": "🇯🇵"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "USD/JPY desde 0,2 sen y EUR/USD desde 0,3 pips en horario de máxima liquidez (pueden ampliarse fuera de horario)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas en fideicomiso segregadas (信託保全); la entidad figura como miembro de la Financial Futures Association of Japan (FFAJ) y de asociaciones sectoriales japonesas",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha confirmado la dirección de la sede (Tokio, Minato-ku, Higashi-Shimbashi 2-8-1) a través de la propia web corporativa y de directorios empresariales públicos, pero no se ha podido cotejar directamente contra una ficha individual buscable del registro oficial del regulador japonés (el FSA/Kanto Local Finance Bureau publica listados agregados en PDF, no fichas individuales consultables como en FCA o CySEC), por lo que queda en estado pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FSA / Kanto Local Finance Bureau (Japón)",
+      "licenseNumber": "関東財務局長（金商）第262号",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://lfb.mof.go.jp/kantou/kinyuu/pagekthp00400052.html",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6.5,
+    "quejas": 5.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
