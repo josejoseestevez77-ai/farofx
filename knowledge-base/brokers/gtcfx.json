@@ -1,0 +1,69 @@
+{
+  "slug": "gtcfx",
+  "name": "GTCFX",
+  "init": "GX",
+  "color": "#0057B8",
+  "demo": false,
+  "legalEntity": "GTC Global Ltd (Mauricio, nº C188049) y GTC Global Trade Capital Co. Limited (Vanuatu), operando bajo el grupo GTC Group L.L.C-FZ (Dubái, EAU)",
+  "foundedYear": 2012,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 1,4 pips de media en EUR/USD en cuenta Standard (sin comisión); 0,0 pips + comisión de 3-5 USD/lote en cuenta ECN/Raw",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas declaradas por el grupo, pero sin fondo de compensación tipo FSCS/FOGAIN verificado para los clientes minoristas que contratan con las entidades de Mauricio o Vanuatu",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente la dirección operativa declarada por GTCFX (Dubái) con un registro mercantil o regulatorio que confirme dicha sede para la entidad que realmente contrata con los clientes; queda pendiente de verificación presencial o documental."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificado para GTCFX",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no verificado para servicios de trading",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://connectonline.asic.gov.au/",
+      "ok": false
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificado como emisor del producto",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 4.5,
+    "quejas": 4.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 417,
+    "stars": 3.7,
+    "source": "https://www.trustpilot.com/review/www.gtcfx.com",
+    "samples": []
+  }
+}
