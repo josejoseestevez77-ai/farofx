@@ -1,0 +1,69 @@
+{
+  "slug": "bdswiss",
+  "name": "BDSwiss",
+  "init": "BD",
+  "color": "#e2001a",
+  "demo": false,
+  "legalEntity": "BDS Markets Ltd (Registro n.º 143350), autorizada por la FSC de Mauricio con licencia C116016172; y BDS Ltd (Registro n.º 8424660-1), autorizada por la FSA de Seychelles con licencia SD047. Ambas operan bajo la marca comercial BDSwiss",
+  "foundedYear": 2012,
+  "headquarters": {
+    "country": "Mauricio",
+    "flag": "🇲🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "EUR/USD desde 1,3-1,6 pips en cuentas Classic/Cent; desde 0,0 pips más comisión en cuentas Zero-Spread/Raw/VIP",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Sin fondo de compensación de inversores (tipo FSCS/ICF) vigente: la antigua licencia CySEC de la entidad europea del grupo (BDSwiss Holding Ltd / posteriormente Viverno Markets Ltd, CIF 199/13, con acceso al ICF chipriota) fue retirada por CySEC en mayo de 2025. Las entidades actualmente activas (FSC Mauricio y FSA Seychelles) no ofrecen un esquema equivalente de garantía de fondos para clientes minoristas",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección declarada por BDS Markets (6th Floor, Tower 1, Nexteracom Building, 72201 Ebene, Mauricio) coincide con la que figura en los términos y condiciones legales del broker y en el registro LEI de la entidad, pero no se ha podido contrastar de forma independiente con una inspección o confirmación directa del registro de la FSC, por lo que queda pendiente de verificación presencial"
+  },
+  "regulators": [
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "C116016172",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": "SD047",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "199/13",
+      "status": "revocada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 2,
+    "quejas": 2.5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 2830,
+    "stars": 2.1,
+    "source": "https://www.trustpilot.com/review/www.bdswiss.com",
+    "samples": []
+  }
+}
