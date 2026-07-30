@@ -1,0 +1,69 @@
+{
+  "slug": "century-financial",
+  "name": "Century Financial",
+  "init": "CN",
+  "color": "#8B0000",
+  "demo": false,
+  "legalEntity": "Century Financial Consultancy LLC",
+  "foundedYear": 1989,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": null,
+  "platforms": [
+    "MT5",
+    "propia (Century Trader)",
+    "CQG",
+    "TWS"
+  ],
+  "fundProtection": "Sin fondo de garantía tipo FSCS/ICF; la propia entidad afirma ofrecer cobertura de seguro de hasta 2 millones de USD por cliente en caso de insolvencia, dato no verificable en un registro público independiente",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Se comparó la dirección declarada por el broker (Emaar Square, Building 4, Office 601/601A, Downtown Dubai) con la dirección registrada en el buscador de entidades licenciadas de la SCA (Open Data), que coincide en el mismo edificio y zona de Dubái"
+  },
+  "regulators": [
+    {
+      "authority": "SCA (Securities and Commodities Authority, EAU)",
+      "licenseNumber": "20200000028 / 301044",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.sca.gov.ae/en/open-data/licensed-companies.aspx?q=CP-0000038",
+      "ok": true
+    },
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": null,
+      "status": "no regulado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": null,
+      "status": "no regulado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 5.5,
+    "quejas": 5,
+    "costes": 4.5
+  },
+  "reviews": {
+    "count": 30,
+    "stars": 3.5,
+    "source": "https://www.trustpilot.com/review/www.century.ae",
+    "samples": []
+  }
+}
