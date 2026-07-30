@@ -1,0 +1,58 @@
+{
+  "slug": "vestle",
+  "name": "Vestle",
+  "init": "VE",
+  "color": "#FF5F00",
+  "demo": false,
+  "legalEntity": "iCFD Limited",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "<cite index=\"1-21\">El spread básico de EUR/USD con Vestle flota alrededor de 1,9 a 2 pips, lo que en nuestra opinión es algo más alto de lo que los traders suelen esperar en una cuenta estándar</cite>",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"15-12,15-13\">Como bróker regulado, Vestle mantiene una política de protección de saldo negativo, y el sitio utiliza cuentas bancarias segregadas, con los fondos de los clientes depositados en bancos de primer nivel</cite>. Al estar autorizada como CIF chipriota, en teoría entraría dentro del Fondo de Compensación para Inversores (ICF) de Chipre, aunque no se ha verificado el límite de cobertura vigente.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "<cite index=\"81-5\">Varias fuentes de terceros citan como domicilio Corner of Agiou Andreou & Venizelou Streets, Vashiotos Agiou Andreou Building, Second Floor, P.O.B 54216, Limassol, Chipre</cite>, pero no se ha podido contrastar de forma directa esta dirección contra la ficha oficial del registro de CySEC, por lo que queda pendiente de verificación presencial/documental."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "143/11",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37660/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 5,
+    "quejas": 4,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 5,
+    "stars": 1.5,
+    "source": "https://www.trustpilot.com/review/vestle.com",
+    "samples": []
+  }
+}
