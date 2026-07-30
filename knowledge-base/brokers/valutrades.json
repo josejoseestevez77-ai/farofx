@@ -1,0 +1,60 @@
+{
+  "slug": "valutrades",
+  "name": "Valutrades",
+  "init": "VL",
+  "color": "#0f766e",
+  "demo": false,
+  "legalEntity": "Valutrades Limited",
+  "foundedYear": 2012,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "Desde 0,0-0,1 pips EUR/USD en cuenta ECN/Raw (comisión 3-6 USD/lote); desde 1,0 pip en cuenta Standard sin comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas en bancos de primer nivel (Barclays/Lloyds) + FSCS hasta 85.000 GBP para la entidad UK; la entidad de Seychelles ofrece segregación voluntaria sin fondo de compensación obligatorio",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Dirección declarada (51 Eastcheap, London, EC3M 1JP) contrastada con el registro de Companies House para Valutrades Limited (nº 07939901), que confirma esa misma sede social."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "586541",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMcguAAD",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 500,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/www.valutrades.com",
+    "samples": []
+  }
+}
