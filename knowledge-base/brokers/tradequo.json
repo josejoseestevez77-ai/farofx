@@ -1,0 +1,61 @@
+{
+  "slug": "tradequo",
+  "name": "TradeQuo",
+  "init": "TQ",
+  "color": "#0F62FE",
+  "demo": false,
+  "legalEntity": "Trade Quo Global Ltd",
+  "foundedYear": 2020,
+  "headquarters": {
+    "country": "Seychelles",
+    "flag": "🇸🇨"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "0,8 pips EUR/USD (cuenta Standard); desde 0 pips en cuenta ZERO con comisión",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas y protección de saldo negativo declaradas por el broker; sin fondo de garantía de inversores de un regulador de primer nivel verificado",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar la dirección declarada (CT House, Office 9A/1C, Providence, Mahe, Seychelles) con un registro público independiente accesible; se basa únicamente en documentación legal publicada por el propio broker."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": false
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 3.5,
+    "quejas": 5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 177,
+    "stars": 4.8,
+    "source": "https://www.trustpilot.com/review/www.tradequo.com",
+    "samples": []
+  }
+}
