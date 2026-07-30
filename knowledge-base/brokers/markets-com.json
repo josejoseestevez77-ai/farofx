@@ -1,0 +1,77 @@
+{
+  "slug": "markets-com",
+  "name": "Markets.com",
+  "init": "MK",
+  "color": "#6c2eb9",
+  "demo": false,
+  "legalEntity": "Safecap Investments Limited",
+  "foundedYear": 2008,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "≈1,0 pips en EUR/USD (cuenta estándar, depósito mínimo)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas; los clientes de la entidad chipriota (Safecap) están cubiertos por el Fondo de Compensación para Inversores (ICF) de Chipre hasta 20.000€; no se ha podido confirmar cobertura FSCS para clientes minoristas bajo la entidad británica, ya que esta opera principalmente con clientes profesionales/institucionales",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por Markets.com (Safecap, Strovolos, Nicosia) coincida al 100% con los datos completos de dirección publicados en el registro oficial de CySEC, que en su ficha pública solo muestra teléfono y correo de contacto; queda pendiente de verificación in situ"
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "092/08",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "481853",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000Mfy5NAAR",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/bySearchId.jspx",
+      "ok": false
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 7,
+    "quejas": 6.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 1252,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/markets.com",
+    "samples": []
+  }
+}
