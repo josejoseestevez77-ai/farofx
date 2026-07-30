@@ -1,0 +1,61 @@
+{
+  "slug": "fxpesa",
+  "name": "FXPesa (EGM Securities)",
+  "init": "FE",
+  "color": "#00A651",
+  "demo": false,
+  "legalEntity": "EGM Securities Limited (Nº de registro PVT-AAAAFF7)",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "Kenia",
+    "flag": "🇰🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 1,4 pips en EUR/USD (cuenta Standard, sin comisión) / desde 0,0 pips + comisión de aprox. 3,5 USD por lado y lote (cuenta Premier, depósito mínimo 100 USD)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (EquitiTrader / WebTrader)"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas según normativa de la CMA; la CMA de Kenia no dispone de un fondo de compensación estatutario equivalente al FSCS o al ICF europeos",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección física declarada por FXPesa (12th Floor, Tower 2, Delta Corner Towers, Waiyaki Way, Nairobi) coincida documentalmente con el domicilio registrado ante la CMA más allá de lo publicado por el propio grupo y por directorios de terceros; queda pendiente de verificación directa en fuente notarial/registral."
+  },
+  "regulators": [
+    {
+      "authority": "CMA (Capital Markets Authority, Kenia)",
+      "licenseNumber": "107",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://licensees.cma.or.ke/licenses/5/",
+      "ok": true
+    },
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": null,
+      "status": "no aplica a esta entidad",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5,
+    "retirada": 5.5,
+    "quejas": 4,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 24,
+    "stars": 2.3,
+    "source": "https://www.trustpilot.com/review/fxpesa.com",
+    "samples": []
+  }
+}
