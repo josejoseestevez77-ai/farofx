@@ -1,0 +1,58 @@
+{
+  "slug": "iforex",
+  "name": "iFOREX",
+  "init": "IF2",
+  "color": "#1d4ed8",
+  "demo": false,
+  "legalEntity": "iCFD Ltd (nombre comercial iFOREX Europe)",
+  "foundedYear": 1996,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "1,8 pips EUR/USD (cuenta estándar; puede reducirse con depósitos superiores a 5.000 USD)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas + Fondo de Compensación al Inversor (ICF) de Chipre, cobertura hasta 20.000 € por cliente elegible (entidad iCFD Ltd)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha contrastado el número de registro de la sociedad (254495) y los datos de contacto (teléfono +357 25 204 600, correo info@iforex.eu) que figuran en la ficha del registro oficial de CySEC frente a los publicados por el propio broker, pero no se ha realizado una verificación física ni notarial de la dirección exacta de la oficina, por lo que el estado queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "143/11",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "BVI FSC (British Virgin Islands Financial Services Commission)",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 6,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 59,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.iforex.eu",
+    "samples": []
+  }
+}
