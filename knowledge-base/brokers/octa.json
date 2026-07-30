@@ -1,0 +1,61 @@
+{
+  "slug": "octa",
+  "name": "Octa",
+  "init": "OC",
+  "color": "#a5122b",
+  "demo": false,
+  "legalEntity": "Octa Markets Cyprus Ltd (entidad regulada por CySEC); la marca global opera también a través de Octa Markets Incorporated / Octa Markets Ltd (Saint Vincent y Granadinas / Mwali, Comoras)",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "San Vicente y las Granadinas",
+    "flag": "🇻🇨"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 25,
+  "spreadTypical": "Desde 0,6 pips en EUR/USD (cuenta estándar, sin comisión)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "OctaTrader (propia)"
+  ],
+  "fundProtection": "Cuentas segregadas y protección de saldo negativo en todas las entidades. Fondo de Compensación a Inversores (ICF) de hasta 20.000 € disponible solo para clientes de la entidad europea Octa Markets Cyprus Ltd, supervisada por CySEC.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se confirmó en el registro oficial de CySEC la existencia de Octa Markets Cyprus Ltd con domicilio social en Limassol (Chipre), pero no se ha podido contrastar de forma independiente que la dirección operativa declarada por el broker para el resto de entidades (San Vicente y Granadinas, Comoras, Sudáfrica) coincida con la registrada ante cada autoridad, por lo que queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "372/18",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/81668/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificado en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/Entity-Persons-Search/?iframe_target=financial-services-providers",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.8,
+    "retirada": 6.5,
+    "quejas": 6,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 9639,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/octafx.com",
+    "samples": []
+  }
+}
