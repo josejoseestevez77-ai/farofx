@@ -82,9 +82,15 @@ export const BROKER_DOMAINS = {
   xtb: 'xtb.com', 'zero-markets': 'zeromarkets.com',
 };
 
+// Excepciones: logo real cuando el favicon por dominio no da un resultado bueno.
+export const LOGO_OVERRIDES = {
+  'trade-com': 'https://www.trade.com/wp-content/uploads/2025/04/cropped-Fav-trade-192x192.png',
+};
+
 // Devuelve la URL del logo real del broker (o null si no hay dominio mapeado,
 // en cuyo caso la plantilla mantiene el círculo de iniciales de siempre).
 export function logoUrl(slug) {
+  if (LOGO_OVERRIDES[slug]) return LOGO_OVERRIDES[slug];
   const domain = BROKER_DOMAINS[slug];
   return domain ? `https://www.google.com/s2/favicons?sz=128&domain=${domain}` : null;
 }
