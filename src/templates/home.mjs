@@ -1,6 +1,6 @@
 // Home / hub principal: hero + tabla de ranking data-driven + metodología + verificación + modales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS, logoUrl, logoImg } from './helpers.mjs';
 
 const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
 
@@ -18,6 +18,7 @@ export function clientModel(brokers) {
         name: b.name,
         color: b.color,
         init: b.init,
+        logo: logoUrl(b.slug),
         office: b.office,
         type: b.type,
         deposit: b.depositMin,
@@ -93,7 +94,7 @@ export function renderHome(brokers) {
     </div>
     <div class="ledger" aria-label="Ficha de puntuación auditable de ejemplo">
       <div class="ledger-top">
-        <div class="name"><span class="logo" style="width:26px;height:26px;border-radius:7px;background:${top.color};font-size:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700">${esc(top.init)}</span> ${esc(top.name)}</div>
+        <div class="name"><span class="logo" style="width:26px;height:26px;border-radius:7px;background:${top.color};font-size:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700;position:relative;overflow:hidden">${esc(top.init)}${logoImg(top.id)}</span> ${esc(top.name)}</div>
         <span class="vbadge">VERIFICADO</span>
       </div>
       <div class="score-row">
