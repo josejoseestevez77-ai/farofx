@@ -1,0 +1,52 @@
+{
+  "slug": "fxchoice",
+  "name": "FXChoice",
+  "init": "FC",
+  "color": "#1e3a8a",
+  "demo": false,
+  "legalEntity": "FX Choice Limited",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Belice",
+    "flag": "🇧🇿"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "0,5 pips EUR/USD (cuenta Pro, con comisión aparte)",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas de los fondos corporativos; sin fondo de compensación al inversor (regulador offshore de nivel 3)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido confirmar de forma independiente que la dirección física del broker coincida con la registrada ante la FSC de Belice: distintas fuentes citan direcciones diferentes (New Horizon Building, 3½ Miles Philip Goldson Highway, frente a Blake Building, Suite 302, ambas en Belize City), por lo que la verificación queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FSC (Belice)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.belizefsc.org.bz/license-verification/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 4,
+    "quejas": 5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 138,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/myfxchoice.com",
+    "samples": []
+  }
+}
