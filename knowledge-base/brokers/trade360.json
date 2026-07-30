@@ -1,0 +1,61 @@
+{
+  "slug": "trade360",
+  "name": "Trade360",
+  "init": "T3",
+  "color": "#7A2E8C",
+  "demo": false,
+  "legalEntity": "Crowd Tech Ltd (anteriormente MPF Global Markets Ltd), operador de la marca Trade360",
+  "foundedYear": 2013,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 450,
+  "spreadTypical": "Desde 1,8 pips en EUR/USD (cuenta Classic); 1 pip en Premium; 0 pips + comisión de 7 USD en cuenta Zero Spread",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "En teoría cuentas segregadas y cobertura del Fondo de Compensación para Inversores de Chipre (ICF) mientras la entidad estuvo autorizada por CySEC; no verificable en la actualidad dado que la licencia se encuentra en proceso de renuncia",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar que la dirección declarada (116 Gladstonos Str., Michael Kyprianou House, Limassol, Chipre) siga operativa, ya que la entidad renunció a su licencia y el dominio original trade360.com aparece inactivo en varias fuentes consultadas; queda pendiente de confirmación directa."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "202/13",
+      "status": "en renuncia voluntaria / no vigente",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    },
+    {
+      "authority": "CNMV",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/busquedaporentidad?tipoBusqueda=ESI&lang=en",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 1.5,
+    "retirada": 2,
+    "quejas": 1.5,
+    "costes": 3.5
+  },
+  "reviews": {
+    "count": 355,
+    "stars": 1.4,
+    "source": "https://www.trustpilot.com/review/trade360.com",
+    "samples": []
+  }
+}
