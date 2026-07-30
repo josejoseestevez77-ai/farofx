@@ -1,0 +1,61 @@
+{
+  "slug": "naga",
+  "name": "NAGA",
+  "init": "NG",
+  "color": "#10b981",
+  "demo": false,
+  "legalEntity": "Naga Markets Europe Ltd",
+  "foundedYear": 2015,
+  "headquarters": {
+    "country": "Alemania",
+    "flag": "🇩🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 250,
+  "spreadTypical": "Desde ~1,1-1,7 pips en EUR/USD (cuenta de entrada 'Iron'), spreads variables según nivel VIP",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas en bancos de la UE; Fondo de Compensación para Inversores de Chipre (ICF) hasta 20.000 € para clientes minoristas elegibles",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección declarada por NAGA Markets Europe Ltd (Agias Zonis 11, Limassol, Chipre) coincida con un registro físico verificado más allá de la propia documentación legal del broker; queda pendiente de confirmación directa con el registro mercantil chipriota."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "204/13",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "Seychelles FSA (entidad offshore del grupo, NAGA Capital Ltd)",
+      "licenseNumber": null,
+      "status": "no verificable en registro de primer nivel",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 4300,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/naga.com",
+    "samples": []
+  }
+}
