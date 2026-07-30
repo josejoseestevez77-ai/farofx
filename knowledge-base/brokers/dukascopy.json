@@ -1,0 +1,60 @@
+{
+  "slug": "dukascopy",
+  "name": "Dukascopy",
+  "init": "DK",
+  "color": "#2b3a67",
+  "demo": false,
+  "legalEntity": "Dukascopy Bank SA",
+  "foundedYear": 2004,
+  "headquarters": {
+    "country": "Suiza",
+    "flag": "🇨🇭"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde 0,1 pips en EUR/USD (modelo ECN, cuenta Dukascopy Europe)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (JForex)"
+  ],
+  "fundProtection": "Cuentas segregadas; en Suiza protección de depósitos hasta CHF 100.000 (FINMA); en la UE, esquema de compensación al inversor hasta 20.000 € vía Dukascopy Europe IBS AS",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha cotejado la dirección declarada por el broker (Route de Pré-Bois 20, CH-1215 Ginebra) con la que figura en su documentación oficial de información al cliente, pero no se ha podido contrastar de forma independiente con un registro mercantil suizo, por lo que queda como pendiente de verificación total."
+  },
+  "regulators": [
+    {
+      "authority": "FINMA (Suiza)",
+      "licenseNumber": "CHE-112.086.322 (nº de identificación de empresa / UID)",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.finma.ch/en/finma-public/authorised-institutions-individuals-and-products/",
+      "ok": true
+    },
+    {
+      "authority": "FCMC / Banco de Letonia (Latvijas Banka)",
+      "licenseNumber": "Nº de registro 40003344762 (Dukascopy Europe IBS AS)",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://uzraudziba.bank.lv/en/market/investment-service-providers/investment-firms/dukascopy-europe-ibs-as/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8.5,
+    "retirada": 6,
+    "quejas": 5.8,
+    "costes": 7.2
+  },
+  "reviews": {
+    "count": 800,
+    "stars": 2.8,
+    "source": "https://www.trustpilot.com/review/dukascopy.com",
+    "samples": []
+  }
+}
