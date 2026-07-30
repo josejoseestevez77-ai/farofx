@@ -1,0 +1,59 @@
+{
+  "slug": "colmex-pro",
+  "name": "Colmex Pro",
+  "init": "CP",
+  "color": "#0A6E31",
+  "demo": false,
+  "legalEntity": "Colmex Pro Ltd",
+  "foundedYear": 2010,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 500,
+  "spreadTypical": "0,8 pips en EUR/USD (cuenta básica/Bronze)",
+  "platforms": [
+    "MT4",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas + Fondo de Compensación a Inversores (ICF) de CySEC hasta 20.000 €",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección declarada (117 Makariou III Avenue & Sissifou Street, Limassol, Chipre) coincide en múltiples fuentes públicas y reseñas de terceros, pero no se ha podido contrastar de forma independiente contra el expediente físico del registro de CySEC en esta verificación; queda pendiente de confirmación directa."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "123/10",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/37695/",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/FSB-Search/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 6,
+    "quejas": 7,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 225,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/colmexpro.com",
+    "samples": []
+  }
+}
