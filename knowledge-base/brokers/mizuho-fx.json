@@ -1,0 +1,50 @@
+{
+  "slug": "mizuho-fx",
+  "name": "Mizuho Securities (Mizuho FX)",
+  "init": "MZ",
+  "color": "#00529B",
+  "demo": false,
+  "legalEntity": "Mizuho Securities Co., Ltd. (みずほ証券株式会社)",
+  "foundedYear": 2000,
+  "headquarters": {
+    "country": "Japón",
+    "flag": "🇯🇵"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": null,
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas obligatorias en entidades bancarias japonesas de primer nivel + Fondo Japonés de Protección al Inversor (JIPF) en caso de insolvencia del broker",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se comprobó que la sede figura en Ōtemachi, distrito de Chiyoda, Tokio, tanto en el registro oficial de la FSA/Kantō Local Finance Bureau como en fuentes corporativas, pero no se ha verificado la coincidencia exacta a nivel de dirección postal completa, por lo que queda pendiente de confirmación presencial."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Japón) / Kantō Local Finance Bureau",
+      "licenseNumber": "Kantō Local Finance Bureau (Kinshō) nº 94",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsa.go.jp/menkyo/menkyo.html",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6,
+    "quejas": 5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
