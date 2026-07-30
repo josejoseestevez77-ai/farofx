@@ -50,7 +50,7 @@
       el.onkeydown = (e) => { if (e.key === 'Enter') openBroker(b.id); };
       el.innerHTML = `
         <span class="rank">${medal}${String(i + 1).padStart(2, '0')}</span>
-        <div class="bk"><span class="logo" style="background:${b.color}">${b.init}</span>
+        <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${b.logo ? `<img src="${b.logo}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff" onerror="this.remove()">` : ''}</span>
           <span class="meta"><b>${b.name}</b><span>Depósito mín. ${b.deposit}€ · ${b.type.includes('copy') ? 'Copytrading' : 'Forex/CFD'}</span></span></div>
         <div class="regs">${regs}</div>
         ${officeBadge(b)}
@@ -63,7 +63,8 @@
 
   window.openBroker = function (id) {
     const b = BROKERS.find((x) => x.id === id); if (!b) return;
-    $('#m-logo').textContent = b.init; $('#m-logo').style.background = b.color;
+    const mLogo = $('#m-logo'); mLogo.style.background = b.color; mLogo.style.position = 'relative'; mLogo.style.overflow = 'hidden'; mLogo.innerHTML = ''; mLogo.appendChild(document.createTextNode(b.init));
+  if (b.logo) { const img = document.createElement('img'); img.src = b.logo; img.alt = ''; img.loading = 'lazy'; img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff'; img.onerror = function () { img.remove(); }; mLogo.appendChild(img); }
     $('#m-name').textContent = b.name;
     $('#m-sub').textContent = `Depósito mínimo ${b.deposit}€ · ${b.type.includes('copy') ? 'Forex + Copytrading' : 'Forex / CFD'}`;
     $('#m-score').textContent = b.score.toFixed(1); $('#m-score').style.color = scoreColor(b.score);
