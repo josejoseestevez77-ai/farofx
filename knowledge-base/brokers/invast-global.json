@@ -1,0 +1,60 @@
+{
+  "slug": "invast-global",
+  "name": "Invast Global",
+  "init": "IG",
+  "color": "#0B3D62",
+  "demo": false,
+  "legalEntity": "26 Degrees Global Markets Pty Ltd (anteriormente Invast Financial Services Pty Ltd), ABN 48 162 400 035",
+  "foundedYear": 2013,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 25000,
+  "spreadTypical": "Aprox. 0,2 pips en pares principales (spread variable, ejecución STP/ECN institucional)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas; ASIC no ofrece un fondo de compensación tipo FSCS, pero exige capital mínimo y auditorías periódicas",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha localizado la dirección corporativa (Sídney, Australia) en directorios corporativos y en la web del propio grupo, pero no se ha podido contrastar de forma directa con la ficha textual del registro ASIC en esta verificación, por lo que queda como pendiente"
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "438283",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "CySEC",
+      "licenseNumber": "435/23",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/96061/",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6.5,
+    "quejas": 5.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 5,
+    "stars": 3.1,
+    "source": "https://www.trustpilot.com/review/invast.com.au",
+    "samples": []
+  }
+}
