@@ -1,0 +1,52 @@
+{
+  "slug": "ibroker",
+  "name": "iBroker",
+  "init": "IO",
+  "color": "#E30613",
+  "demo": false,
+  "legalEntity": "iBroker Global Markets, S.V., S.A.",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "España",
+    "flag": "🇪🇸"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "<cite index=\"35-3\">Spread típico de 0,39 pips en EUR/USD</cite> (cuenta estándar de forex)",
+  "platforms": [
+    "propia",
+    "TradingView",
+    "Visual Chart"
+  ],
+  "fundProtection": "<cite index=\"29-8,29-9\">Fondos de clientes en cuentas segregadas ómnibus, con cobertura del fondo de garantía (FOGAIN) hasta 100.000 €</cite>",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha contrastado el domicilio social declarado por el broker (Madrid, calle Caleruega 102-104) con datos del Registro Mercantil, pero no se ha podido confirmar de forma directa e independiente en la ficha pública de la CNMV, por lo que queda como pendiente de verificación."
+  },
+  "regulators": [
+    {
+      "authority": "CNMV",
+      "licenseNumber": "260",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esis?nif=A87520771&lang=en",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 7,
+    "quejas": 6,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 4,
+    "stars": 2.6,
+    "source": "https://www.trustpilot.com/review/ibroker.es",
+    "samples": []
+  }
+}
