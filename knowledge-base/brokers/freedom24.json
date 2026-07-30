@@ -1,0 +1,56 @@
+{
+  "slug": "freedom24",
+  "name": "Freedom24",
+  "init": "FR",
+  "color": "#0891b2",
+  "demo": false,
+  "legalEntity": "Freedom Finance Europe Ltd",
+  "foundedYear": 2013,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [],
+  "depositMin": 0,
+  "spreadTypical": "Sin spreads tipo forex; comisiones por operación (plan Smart: 0,02 €/acción, mínimo 2 € por orden; sin comisión de custodia ni mantenimiento)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas + Fondo de Compensación a Inversores (ICF) de Chipre hasta 20.000 €",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se consultó la ficha pública de Freedom Finance Europe Ltd en el registro oficial de CySEC (entidad nº 73116), pero la ficha del registro no muestra una dirección física completa contrastable de forma independiente; los documentos legales del bróker citan como domicilio Christaki Kranou 20, Freedom Tower, 5º piso, Germasogeia, Limassol (Chipre). No se ha podido verificar coincidencia exacta mediante una fuente independiente, por lo que el estado queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "275/15",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/73116/",
+      "ok": true
+    },
+    {
+      "authority": "BaFin (Alemania)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6.5,
+    "quejas": 7.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 1273,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/freedom24.com",
+    "samples": []
+  }
+}
