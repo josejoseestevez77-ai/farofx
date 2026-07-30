@@ -1,0 +1,69 @@
+{
+  "slug": "skilling",
+  "name": "Skilling",
+  "init": "SK",
+  "color": "#2d5bff",
+  "demo": false,
+  "legalEntity": "Skilling Ltd",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde 0,7–0,8 pips en EUR/USD (cuenta Standard); desde 0,1 pips + comisión en cuenta Premium",
+  "platforms": [
+    "MT4",
+    "cTrader",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas; adhesión al Fondo de Compensación a Inversores (ICF) de Chipre",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha verificado la existencia de la entidad Skilling Ltd en el registro público de CySEC, con nombre y número de licencia coincidentes, pero no se ha podido confirmar de forma independiente que la dirección declarada por el broker se corresponda exactamente con la registrada en el Registro Mercantil de Chipre, por lo que la verificación queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "357/18",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no verificada en registro vigente",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsaseychelles.sc/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.8,
+    "retirada": 6.8,
+    "quejas": 6.5,
+    "costes": 6.8
+  },
+  "reviews": {
+    "count": 430,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/skilling.com",
+    "samples": []
+  }
+}
