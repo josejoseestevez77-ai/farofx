@@ -1,0 +1,68 @@
+{
+  "slug": "fxgt",
+  "name": "FXGT.com",
+  "init": "GT",
+  "color": "#17b978",
+  "demo": false,
+  "legalEntity": "GT IO Markets (Pty) Ltd (Sudáfrica) / 360 Degrees Markets Ltd (Seychelles)",
+  "foundedYear": 2019,
+  "headquarters": {
+    "country": "Seychelles",
+    "flag": "🇸🇨"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 5,
+  "spreadTypical": "desde 0,0 pips en cuentas ECN/Pro (con comisión); variable según tipo de cuenta",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas en entidades bancarias; sin fondo de compensación tipo FSCS/ICF, ya que FSCA y FSA Seychelles no cuentan con esquemas de este tipo",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido confirmar una dirección física única y coincidente con el regulador: distintas fuentes y filiales del grupo citan direcciones diferentes en Mahe (Seychelles) para las entidades 360 Degrees Markets Ltd y FXGT, por lo que se mantiene pendiente de verificación directa in situ."
+  },
+  "regulators": [
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": "48896",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": "SD019",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5,
+    "retirada": 5.5,
+    "quejas": 5.5,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 1621,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/fxgt.com",
+    "samples": []
+  }
+}
