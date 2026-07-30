@@ -1,0 +1,61 @@
+{
+  "slug": "capex",
+  "name": "CAPEX.com",
+  "init": "CX",
+  "color": "#1d4ed8",
+  "demo": false,
+  "legalEntity": "Key Way Investments Ltd (marca CAPEX.com); en Oriente Medio opera bajo Key Way Markets Ltd",
+  "foundedYear": 2016,
+  "headquarters": {
+    "country": "Chipre",
+    "flag": "🇨🇾"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Cifras variables según fuente y tipo de cuenta: desde 0,3 pips en EUR/USD según <cite index=\"60-1\">un análisis independiente que describe 'competitive spreads from 0.3 pips on EUR/USD'</cite>, aunque otra revisión sitúa el spread base en EUR/USD desde 1,8 pips más una <cite index=\"56-2\">comisión de 3 dólares por lote en su cuenta de entrada</cite>. La entidad también aplica <cite index=\"56-11,56-12\">una tarifa de inactividad de 30 USD mensuales tras varios meses sin operar y una comisión de conversión de divisas de entre el 2% y el 3,5%</cite>.",
+  "platforms": [
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas en todas las entidades del grupo; para la entidad chipriota (CySEC), <cite index=\"13-4\">los clientes retail cuentan con protección de saldo negativo y compensación ICF de hasta 20.000 EUR</cite>.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se confirmó en el registro oficial de CySEC que Key Way Investments Ltd figura con licencia 292/16 y número de registro de empresa 341196, dato consistente con el declarado por la propia firma (HE341196, oficina en Nicosia). Para la entidad de Abu Dabi, el registro público de ADGM confirma la licencia 190005 y una dirección en Al Sila Tower, Al Maryah Island; sin embargo, documentos corporativos más antiguos del propio broker citan una dirección distinta (Al Khatem Tower) para la misma entidad, posiblemente por un traslado de oficina no verificado de forma independiente. Por prudencia, el estado se mantiene en 'pending' hasta confirmar la dirección vigente mediante una fuente adicional."
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": "292/16",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/77479/",
+      "ok": true,
+      "note": "Verificado en el registro oficial de CySEC: <cite index=\"25-1\">Key Way Investments Ltd, Licencia Número: 292/16, Fecha de licencia: 21/01/2016, Número de registro de empresa: 341196</cite>. Cabe señalar que, según Finance Magnates, <cite index=\"24-2,24-3\">CySEC alcanzó en 2020 un acuerdo de liquidación con Key Way Investments Ltd por 120.000 EUR</cite> relacionado con deficiencias organizativas y de gobernanza detectadas en una inspección de 2019."
+    },
+    {
+      "authority": "ADGM (FSRA)",
+      "licenseNumber": "190005",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.adgm.com/public-registers/fsra/fsf/key-way-markets-limited",
+      "ok": true,
+      "note": "Verificado en el registro público de la ADGM FSRA para Key Way Markets Limited: <cite index=\"54-1\">licencia 190005, fecha de permiso de servicios financieros 01 de marzo de 2020, dirección Office 2, 21st Floor, Al Sila Tower, Al Maryah Island, Abu Dabi</cite>."
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 5.5,
+    "quejas": 4,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 400,
+    "stars": 2.5,
+    "source": "https://www.trustpilot.com/review/capex.com",
+    "samples": []
+  }
+}
