@@ -1,0 +1,61 @@
+{
+  "slug": "startrader",
+  "name": "STARTRADER",
+  "init": "ST",
+  "color": "#0ea5e9",
+  "demo": false,
+  "legalEntity": "STARTRADER Financial Markets Limited",
+  "foundedYear": null,
+  "headquarters": {
+    "country": "Mauricio",
+    "flag": "🇲🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 50,
+  "spreadTypical": "Desde 0,0 pips + comisión en cuenta ECN; alrededor de 1,4 pips en EUR/USD en cuenta Standard",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "El bróker afirma mantener cuentas segregadas y protección de saldo negativo. <cite index=\"103-1\">El fondo de compensación es de 20.000 € por reclamación, con fecha de registro del 31.05.2023 y estado de membresía activo</cite> en Financial Commission, un organismo privado de resolución de disputas (no un esquema oficial de un regulador de primer nivel como FSCS/FOGAIN/ICF). Según fuentes de terceros, <cite index=\"93-9\">existe también una cobertura de seguro complementaria de Lloyd's of London de hasta 1.000.000 $ por cliente</cite>, aunque no ha sido verificada de forma independiente por FAROFX.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido confirmar de forma independiente, a través del registro oficial del regulador, que la dirección declarada por cada entidad del grupo STARTRADER coincida con la registrada ante la FSCA o la FSC de Mauricio. La verificación queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no confirmada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no confirmada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3,
+    "retirada": 5,
+    "quejas": 5.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 984,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/startrader.international",
+    "samples": []
+  }
+}
