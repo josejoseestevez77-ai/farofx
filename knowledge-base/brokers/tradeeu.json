@@ -1,0 +1,59 @@
+{
+  "slug": "tradeeu",
+  "name": "TradeEU Global",
+  "init": "EU",
+  "color": "#0ea5e9",
+  "demo": false,
+  "legalEntity": "TRADESENSE HOLDING LTD (nº de registro 183967, Mauricio)",
+  "foundedYear": null,
+  "headquarters": {
+    "country": "Mauricio",
+    "flag": "🇲🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 250,
+  "spreadTypical": "Desde 1,9-2,5 pips en EUR/USD en cuenta Silver; más ajustado en cuentas Gold (~1,3 pips) y Platinum (~0,7 pips)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Sin fondo de compensación de inversores; el regulador mauriciano (FSC) no exige cobertura equivalente a FSCS/ICF ni auditorías públicas obligatorias",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar que la dirección física coincida con la registrada; los documentos legales del propio broker citan direcciones distintas (Floreal y Ebène, Mauricio) según el documento consultado, por lo que se mantiene pendiente de confirmación"
+  },
+  "regulators": [
+    {
+      "authority": "CySEC",
+      "licenseNumber": null,
+      "status": "no verificada / entidad no listada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "GB21026906",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees/register-of-licensees-details?licence_no=GB21026906&cat=GB&code=SEC21B",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 2.5,
+    "retirada": 2,
+    "quejas": 2.5,
+    "costes": 4
+  },
+  "reviews": {
+    "count": 243,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/tradeeuglobal.net",
+    "samples": []
+  }
+}
