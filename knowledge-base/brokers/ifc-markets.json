@@ -1,0 +1,84 @@
+{
+  "slug": "ifc-markets",
+  "name": "IFC Markets",
+  "init": "IF",
+  "color": "#003A70",
+  "demo": false,
+  "legalEntity": "IFCMARKETS.CORP. (Islas Vírgenes Británicas); intermediación local a través de IFC Markets SA (Pty) Ltd (FSP 51818, FSCA)",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Islas Vírgenes Británicas",
+    "flag": "🇻🇬"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 1,
+  "spreadTypical": "Desde 1,8 pips (cuenta fija), desde 0,4 pips (cuenta flotante) y desde 0,0 pips + comisión 0,005% (cuenta ECN)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia (NetTradeX)"
+  ],
+  "fundProtection": "Segregación de fondos declarada por el bróker y seguro de responsabilidad profesional; no existe fondo de compensación tipo FSCS/ICF vigente tras la retirada voluntaria de la licencia CySEC en 2024",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección declarada (Quijano Chambers, P.O. Box 3159, Road Town, Tortola, Islas Vírgenes Británicas) aparece de forma consistente en la web del bróker y en fuentes de terceros, pero no se ha podido contrastar directamente contra el registro oficial de la BVI Financial Services Commission por no disponer de acceso a su buscador interactivo; queda pendiente de verificación directa"
+  },
+  "regulators": [
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": "51818",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www2.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": null,
+      "status": "licencia retirada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    },
+    {
+      "authority": "BVI Financial Services Commission",
+      "licenseNumber": null,
+      "status": "no verificado en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.bvifsc.vg/",
+      "ok": false
+    },
+    {
+      "authority": "Labuan FSA (Malasia)",
+      "licenseNumber": null,
+      "status": "no verificado en registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.labuanfsa.gov.my/",
+      "ok": false
+    },
+    {
+      "authority": "CNMV (España)",
+      "licenseNumber": null,
+      "status": "advertencia pública (entidad no registrada en España)",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 4.5,
+    "retirada": 5,
+    "quejas": 5.5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 545,
+    "stars": 3.6,
+    "source": "https://www.trustpilot.com/review/ifcmarkets.com",
+    "samples": []
+  }
+}
