@@ -1,0 +1,69 @@
+{
+  "slug": "tradeview-markets",
+  "name": "Tradeview Markets",
+  "init": "TV",
+  "color": "#34495e",
+  "demo": false,
+  "legalEntity": "Tradeview Ltd.",
+  "foundedYear": 2004,
+  "headquarters": {
+    "country": "Islas Caimán",
+    "flag": "🇰🇾"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "0,0 pips EUR/USD + comisión de 5 USD por lote (cuenta ILC); spreads algo más amplios y 0 comisión en cuenta XLev",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas de los fondos propios de la empresa, mantenidas en bancos de primer nivel (se menciona Santander) y auditadas por la firma independiente GC Partners. Al tratarse de una entidad regulada en un centro offshore (CIMA), no existe un fondo de compensación al inversor equivalente al FSCS o al ICF europeos.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección operativa publicada por el propio bróker (13 Genesis Close, 4th Floor, Suite 422, Gran Caimán, KY1-1110) no ha podido cotejarse de forma independiente con un registro público del regulador, por lo que se mantiene como pendiente de verificación."
+  },
+  "regulators": [
+    {
+      "authority": "CIMA (Cayman Islands Monetary Authority)",
+      "licenseNumber": "585163",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cima.ky/search-entities-cima",
+      "ok": true
+    },
+    {
+      "authority": "MFSA (Malta Financial Services Authority) - entidad Tradeview Europe Ltd.",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    },
+    {
+      "authority": "Labuan FSA (Malasia)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": null,
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 4.5,
+    "retirada": 5,
+    "quejas": 6,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 428,
+    "stars": 4.4,
+    "source": "https://www.trustpilot.com/review/tvmarkets.com",
+    "samples": []
+  }
+}
