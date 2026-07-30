@@ -1,0 +1,77 @@
+{
+  "slug": "hantec-markets",
+  "name": "Hantec Markets",
+  "init": "HN",
+  "color": "#0a4d8c",
+  "demo": false,
+  "legalEntity": "Hantec Markets Limited",
+  "foundedYear": 2009,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "<cite index=\"77-3,77-4\">La cuenta Global opera con una estructura de comisión cero, con todos los costes de negociación incorporados en el spread, y para EUR/USD los spreads parten de 0,6 pips.</cite>",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "<cite index=\"11-9,11-11\">Hantec Markets protege los fondos mediante cuentas segregadas, protección de saldo negativo (\"Balance Guard\") y plataformas seguras como MetaTrader 4 y 5, manteniendo los depósitos de clientes en cuentas bancarias segregadas separadas de los fondos de la empresa.</cite> <cite index=\"1-4,1-7\">No obstante, estas protecciones ya no aplican a los clientes minoristas del Reino Unido, ya que Hantec no acepta clientes minoristas bajo la entidad FCA, siendo los residentes británicos incorporados a través de una entidad offshore sin las protecciones de la FCA.</cite>",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "<cite index=\"37-1\">Se ha confirmado en Companies House (Reino Unido) que HANTEC MARKETS LIMITED (06819047) figura activa con domicilio social en 43-45 Dorset Street, Londres, W1U 7NA</cite>, pero no ha sido posible cotejar esta dirección de forma cruzada con la ficha específica de la FCA para dar la verificación por completada, por lo que queda pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "502635",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/search?q=Hantec%20Markets",
+      "ok": true
+    },
+    {
+      "authority": "ASIC",
+      "licenseNumber": "326907",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/SearchRegisters.jspx",
+      "ok": true
+    },
+    {
+      "authority": "FSCA",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificada en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 6,
+    "quejas": 7,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 4768,
+    "stars": 5,
+    "source": "https://www.trustpilot.com/review/hmarkets.com",
+    "samples": []
+  }
+}
