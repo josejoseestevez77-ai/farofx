@@ -1,0 +1,68 @@
+{
+  "slug": "zero-markets",
+  "name": "ZERO Markets",
+  "init": "ZM",
+  "color": "#ef4444",
+  "demo": false,
+  "legalEntity": "ZERO Securities Pty Ltd (ABN 61 056 617 862)",
+  "foundedYear": 2017,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde 0,5 pips en EUR/USD (cuenta Standard); desde 0,0 pips + comisión de 2,50 USD por lado (cuenta ECN/Raw)",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas exigidas por ASIC; Australia no dispone de un fondo de compensación tipo FSCS/ICF para clientes minoristas de derivados",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección declarada (Level 3, Exchange House, 10 Bridge Street, Sídney) aparece de forma consistente en los Términos y Condiciones del broker y en varias fuentes secundarias, pero no se ha podido contrastar de forma directa con la ficha viva del registro ASIC Connect (contenido dinámico no accesible por búsqueda), por lo que queda pendiente de verificación presencial/documental."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "244040",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "FMA (Nueva Zelanda)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fma.govt.nz/",
+      "ok": false
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 5.5,
+    "quejas": 6.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 993,
+    "stars": 5,
+    "source": "https://www.trustpilot.com/review/zeromarkets.com",
+    "samples": []
+  }
+}
