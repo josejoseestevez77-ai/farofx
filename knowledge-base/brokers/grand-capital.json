@@ -1,0 +1,61 @@
+{
+  "slug": "grand-capital",
+  "name": "Grand Capital",
+  "init": "GC",
+  "color": "#b45309",
+  "demo": false,
+  "legalEntity": "Grand Capital Ltd (dos entidades registradas bajo el mismo nombre: una en Seychelles y otra en San Vicente y las Granadinas)",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Seychelles",
+    "flag": "🇸🇨"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "Cuenta Standard desde 1 pip sin comisión; cuenta ECN Prime desde 0,4 pips más comisión de 5 USD/lote (EUR/USD)",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Sin fondo de garantía oficial. El bróker anuncia un seguro privado de hasta 20.000 € a través de The Financial Commission (FinaCom), una organización de autorregulación creada por y para brókeres, no un regulador estatal.",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No ha sido posible cotejar la dirección declarada por el bróker con un registro estatal oficial, ya que Grand Capital opera desde entidades offshore (Seychelles y San Vicente y las Granadinas) sin ficha pública verificable en un regulador de primer nivel."
+  },
+  "regulators": [
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name",
+      "ok": false
+    },
+    {
+      "authority": "MISA (Mwali, Comoras)",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://grandcapital.net/about/regulation/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 1.5,
+    "retirada": 3,
+    "quejas": 3.5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 76,
+    "stars": 2.6,
+    "source": "https://www.trustpilot.com/review/grandcapital.net",
+    "samples": []
+  }
+}
