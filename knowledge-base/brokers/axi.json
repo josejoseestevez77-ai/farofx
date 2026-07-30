@@ -1,0 +1,68 @@
+{
+  "slug": "axi",
+  "name": "Axi",
+  "init": "AX",
+  "color": "#d21f2b",
+  "demo": false,
+  "legalEntity": "AxiCorp Financial Services Pty Ltd (ACN 127 606 348)",
+  "foundedYear": 2007,
+  "headquarters": {
+    "country": "Australia",
+    "flag": "🇦🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Desde 0,0 pips en EUR/USD (cuenta Pro, con comisión) o en torno a 1,0 pip en cuenta Standard",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas; FSCS hasta 85.000 GBP para clientes de la entidad regulada por la FCA; en Australia, resolución de disputas a través de AFCA",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "La dirección declarada (Level 13, 73 Miller Street, North Sydney, Australia) coincide con la registrada en la base LEI vinculada al registro de sociedades de ASIC, pero FAROFX no ha realizado una verificación directa adicional (llamada o visita) a fecha de hoy, por lo que se mantiene pendiente."
+  },
+  "regulators": [
+    {
+      "authority": "ASIC",
+      "licenseNumber": "AFSL 318232",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.asic.gov.au/online-services/search-asic-registers/professional-registers-search/",
+      "ok": true
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": "FRN 466201",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000Mfj8AAAR",
+      "ok": true
+    },
+    {
+      "authority": "DFSA",
+      "licenseNumber": "F003742",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.dfsa.ae/public-register/firms/axicorp-financial-services-pty-ltd",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 7,
+    "quejas": 7.5,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 7211,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/axi.com",
+    "samples": []
+  }
+}
