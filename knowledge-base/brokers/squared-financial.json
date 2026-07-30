@@ -56,6 +56,16 @@
     "count": 386,
     "stars": 4.4,
     "source": "https://www.trustpilot.com/review/sqfin.com",
-    "samples": []
+    "samples": [
+      {
+        "user": "Javier",
+        "stars": 1,
+        "text": "Tienen mi dinero bloqueado no me dejan retirarlo",
+        "meta": [
+          "Retiro solicitado hace 5 meses",
+          "Opinion verificada"
+        ]
+      }
+    ]
   }
 }
