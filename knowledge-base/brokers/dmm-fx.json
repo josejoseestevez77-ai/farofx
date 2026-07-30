@@ -1,0 +1,50 @@
+{
+  "slug": "dmm-fx",
+  "name": "DMM FX (DMM.com Securities)",
+  "init": "DM",
+  "color": "#FF0099",
+  "demo": false,
+  "legalEntity": "株式会社DMM.com証券 (DMM.com Securities Co., Ltd.)",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Japón",
+    "flag": "🇯🇵"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": null,
+  "spreadTypical": "<cite index=\"55-1\">コアタイムのUSD/JPYスプレッドは0.2銭（原則固定）</cite> (aprox. 0,2 pips en USD/JPY durante el horario núcleo, spread mayoritariamente fijo)",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Segregación de fondos de clientes en bancos fiduciarios y membresía en el <cite index=\"32-2\">日本証券業協会(協会員番号1105) 一般社団法人 金融先物取引業協会(協会員番号1145) 日本商品先物取引協会 一般社団法人 第二種金融商品取引業協会(協会員番号480)</cite>, incluido el Fondo Japonés de Protección al Inversor",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha comparado la dirección declarada en las páginas corporativas oficiales del broker (Tokio, distrito de Chuo, Nihonbashi 2-7-1, Nihonbashi Tower 10F), coherente entre varias webs del grupo DMM.com証券, pero no se ha contrastado de forma independiente con el registro mercantil japonés (登記), por lo que queda pendiente de verificación cruzada oficial."
+  },
+  "regulators": [
+    {
+      "authority": "FSA (Japón)",
+      "licenseNumber": "関東財務局長（金商）第1629号",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsa.go.jp/menkyo/menkyo.html",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 7.5,
+    "quejas": 6,
+    "costes": 8.5
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
