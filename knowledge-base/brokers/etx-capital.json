@@ -1,0 +1,52 @@
+{
+  "slug": "etx-capital",
+  "name": "ETX Capital (Monecor London Ltd)",
+  "init": "EZ",
+  "color": "#0B3D91",
+  "demo": false,
+  "legalEntity": "Monecor (London) Limited",
+  "foundedYear": 1965,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "No verificable en la actualidad; en su última etapa operativa como OvalX se citaban spreads medios de en torno a 1,0 pip en EUR/USD (fuente de terceros, no oficial del bróker)",
+  "platforms": [
+    "MT4",
+    "propia (TraderPro)"
+  ],
+  "fundProtection": "Durante su etapa activa: cuentas de cliente segregadas y cobertura FSCS del Reino Unido hasta 85.000 £ para reclamantes elegibles; esta protección dejó de ser relevante para nuevos clientes tras el cierre del bróker en 2023",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar una oficina operativa actual porque la entidad cesó su actividad comercial en 2023; no existe una sede activa que cotejar con el registro del regulador a fecha de hoy."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "124721",
+      "status": "cancelada / no vigente",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 2.5,
+    "retirada": 3.5,
+    "quejas": 5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 265,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/etxcapital.com",
+    "samples": []
+  }
+}
