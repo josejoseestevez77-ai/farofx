@@ -1,0 +1,61 @@
+{
+  "slug": "darwinex",
+  "name": "Darwinex",
+  "init": "DW",
+  "color": "#00b3a4",
+  "demo": false,
+  "legalEntity": "Tradeslide Trading Tech Limited",
+  "foundedYear": 2012,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 500,
+  "spreadTypical": "0,1-0,8 pips en EUR/USD (cuenta estándar); desde 0,0 pips + comisión de 2,5 USD/lote en cuentas ECN/RAW",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas; FSCS hasta 85.000 GBP (entidad UK) y FOGAIN hasta 100.000 EUR (entidad española)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se ha verificado la existencia y vigencia de las licencias en los registros oficiales de la FCA y la CNMV, pero no se ha podido contrastar de forma independiente que la dirección operativa declarada (Canary Wharf, Londres) coincida exactamente con el domicilio social inscrito, por lo que queda pendiente de confirmación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "586466",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMcTBAA1",
+      "ok": true
+    },
+    {
+      "authority": "CNMV",
+      "licenseNumber": "311",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esis?nif=A10537348&lang=en",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 8,
+    "retirada": 6.5,
+    "quejas": 7,
+    "costes": 7.5
+  },
+  "reviews": {
+    "count": 254,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.darwinex.com",
+    "samples": []
+  }
+}
