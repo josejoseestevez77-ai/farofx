@@ -1,0 +1,50 @@
+{
+  "slug": "spread-co",
+  "name": "Spread Co",
+  "init": "SD",
+  "color": "#E2231A",
+  "demo": false,
+  "legalEntity": "Spread Co Limited",
+  "foundedYear": 2006,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde 0,1 pips en EUR/USD en cuenta CFD, según datos de terceros; spreads fijos sin comisión adicional en Forex, índices y materias primas",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas; al estar autorizada por la FCA, los clientes elegibles cuentan con la cobertura del FSCS del Reino Unido en caso de insolvencia de la entidad",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se comprobó la ficha de la FCA, que muestra la dirección registrada como <cite index=\"1-12\">Spreadco Argyle House Joel Street Northwood Hillingdon HA6 1NWH A 6 1 N W UNITED KINGDOM</cite>, mientras que la propia web del broker declara como domicilio social <cite index=\"2-1\">Spread Co Limited is a limited liability company registered in England and Wales with its registered office at 22 Bruton Street, London W1J 6QE</cite>. Al no coincidir ambas direcciones en las fuentes consultadas, el estado queda como pendiente de verificación adicional."
+  },
+  "regulators": [
+    {
+      "authority": "FCA",
+      "licenseNumber": "446677",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000MfgZ4AAJ",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.5,
+    "retirada": 6,
+    "quejas": 6,
+    "costes": 6.5
+  },
+  "reviews": {
+    "count": 60,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/www.spreadco.com",
+    "samples": []
+  }
+}
