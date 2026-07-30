@@ -1,0 +1,68 @@
+{
+  "slug": "cwg-markets",
+  "name": "CWG Markets",
+  "init": "CW",
+  "color": "#1C1C1C",
+  "demo": false,
+  "legalEntity": "CWG Markets Ltd (nº de compañía 08888720, Inglaterra y Gales)",
+  "foundedYear": 2017,
+  "headquarters": {
+    "country": "Reino Unido",
+    "flag": "🇬🇧"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "0,1-0,3 pips EUR/USD (cuenta Standard); desde 0,0 pips + comisión en cuentas RAW/Avanzada",
+  "platforms": [
+    "MT4",
+    "MT5"
+  ],
+  "fundProtection": "Cuentas segregadas (Barclays Bank) para la entidad FCA; posible cobertura FSCS hasta 85.000 £ para clientes elegibles del Reino Unido",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "La dirección declarada por el broker (3rd Floor, 76 Cannon Street, Londres, EC4N 6AE) coincide con el domicilio social registrado en Companies House (nº 08888720) y con el aviso oficial de la FCA que identifica a la firma genuina bajo el FRN 785129."
+  },
+  "regulators": [
+    {
+      "authority": "FCA (Reino Unido)",
+      "licenseNumber": "785129",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000003uH2bTAAS",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/",
+      "ok": false
+    },
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": null,
+      "status": "no verificado",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.vfsc.vu/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 7,
+    "retirada": 5,
+    "quejas": 5.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 94,
+    "stars": 3.9,
+    "source": "https://www.trustpilot.com/review/www.cwgmarkets.com",
+    "samples": []
+  }
+}
