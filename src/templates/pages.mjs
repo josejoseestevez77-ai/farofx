@@ -1,6 +1,6 @@
 // Fichas de reseña, hubs, autores, metodología y páginas de confianza/legales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, logoImg } from './helpers.mjs';
 
 const YEAR = 2026;
 const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
@@ -255,7 +255,7 @@ export function renderRegulatorHub(reg, brokers, authors) {
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
-      <div class="bk"><span class="logo" style="background:${b.color}">${b.init}</span><span class="meta"><b>${esc(b.name)}</b><span>Depósito mín. ${b.depositMin}€ · desde ${b.foundedYear}</span></span></div>
+      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>Depósito mín. ${b.depositMin}€ · desde ${b.foundedYear}</span></span></div>
       <div class="regs">${b.regulators.filter((r) => r.ok).map((r) => `<span class="reg">${r.authority}</span>`).join('')}</div>
       <span class="scorepill"><span class="dot" style="background:${scoreColor(score)}"></span>${score.toFixed(1)}</span>
       <span class="more">Ver análisis</span></a>`)
@@ -279,7 +279,7 @@ export function renderRoundup(brokers) {
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
-      <div class="bk"><span class="logo" style="background:${b.color}">${b.init}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span></span></div>
+      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span></span></div>
       <div class="regs">${b.regulators.filter((r) => r.ok).map((r) => `<span class="reg">${r.authority}</span>`).join('') || '<span class="reg warn">Sin reg. UE/UK</span>'}</div>
       <span class="scorepill"><span class="dot" style="background:${scoreColor(score)}"></span>${score.toFixed(1)}</span>
       <span class="more">Ver análisis</span></a>`)
