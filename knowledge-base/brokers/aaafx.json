@@ -1,0 +1,61 @@
+{
+  "slug": "aaafx",
+  "name": "AAAFx (Triple A Experts)",
+  "init": "AA",
+  "color": "#0A3D62",
+  "demo": false,
+  "legalEntity": "Triple A Experts Investment Services Single Member S.A.",
+  "foundedYear": 2007,
+  "headquarters": {
+    "country": "Grecia",
+    "flag": "🇬🇷"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "Desde 0,0 pips en cuentas ECN (EUR/USD), según el proveedor",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas + Fondo de Garantía de Inversores griego (hasta 30.000 € por cliente en la entidad HCMC)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa publicitada coincida exactamente con la registrada ante HCMC/FSCA; se han localizado direcciones públicas (Piraeus, Grecia y Pretoria, Sudáfrica) en documentos corporativos, pero no una verificación cruzada con el regulador."
+  },
+  "regulators": [
+    {
+      "authority": "HCMC (Hellenic Capital Market Commission, Grecia)",
+      "licenseNumber": "2/540/17.2.2010",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "http://www.hcmc.gr/el_GR/web/portal/orgcmc/viewinvestmentfirms?auid=2fd",
+      "ok": true
+    },
+    {
+      "authority": "FSCA (Financial Sector Conduct Authority, Sudáfrica)",
+      "licenseNumber": null,
+      "status": "no verificada en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fsca.co.za/Fais/Search_FSP.htm",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 6,
+    "retirada": 6.5,
+    "quejas": 6.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 254,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/aaafx.com",
+    "samples": []
+  }
+}
