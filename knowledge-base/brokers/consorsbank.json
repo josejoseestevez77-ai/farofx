@@ -1,0 +1,54 @@
+{
+  "slug": "consorsbank",
+  "name": "Consorsbank",
+  "init": "CB",
+  "color": "#FF6600",
+  "demo": false,
+  "legalEntity": "BNP Paribas S.A. Niederlassung Deutschland (marca comercial: Consorsbank)",
+  "foundedYear": 1994,
+  "headquarters": {
+    "country": "Alemania",
+    "flag": "🇩🇪"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "Sin comisión fija en CFD sobre índices, divisas, materias primas y metales preciosos; el coste se traslada al spread del creador de mercado (no se publica una cifra fija de pips para EUR/USD)",
+  "platforms": [
+    "ActiveTrader",
+    "Active Trader Pro",
+    "Future Trader",
+    "Premium Trader",
+    "App móvil"
+  ],
+  "fundProtection": "Depósitos protegidos hasta 100.000 € por cliente; al operar como sucursal alemana de una entidad de crédito francesa, la cobertura de garantía de depósitos remite al esquema francés (FGDR), aunque fuentes alemanas también citan la adhesión al fondo de compensación de bancos alemanes",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Cotejo de la dirección declarada en el Impressum oficial de Consorsbank (Bahnhofstraße 55, 90402 Nürnberg) con los datos del Registro Mercantil de Núremberg (HRB 31129) para BNP Paribas S.A. Niederlassung Deutschland."
+  },
+  "regulators": [
+    {
+      "authority": "BaFin",
+      "licenseNumber": "ID de entidad BaFin 108556 (BNP Paribas S.A. Niederlassung Deutschland)",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?cmd=loadInstitutAction&institutId=108556",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 7.3,
+    "retirada": 4,
+    "quejas": 2.5,
+    "costes": 5.5
+  },
+  "reviews": {
+    "count": 294,
+    "stars": 1.6,
+    "source": "https://www.trustpilot.com/review/consorsbank.de",
+    "samples": []
+  }
+}
