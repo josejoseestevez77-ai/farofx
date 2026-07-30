@@ -1,0 +1,62 @@
+{
+  "slug": "axiory",
+  "name": "Axiory Global",
+  "init": "AY",
+  "color": "#1C3F60",
+  "demo": false,
+  "legalEntity": "Axiory Global Ltd.",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "Belice",
+    "flag": "🇧🇿"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 10,
+  "spreadTypical": "Desde 0,2 pips en EUR/USD + comisión (cuenta Nano); spreads flotantes desde 0,0 en otras cuentas",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader",
+    "propia"
+  ],
+  "fundProtection": "Cuentas segregadas de los fondos de clientes y protección de saldo negativo; miembro de la Financial Commission (organismo privado de resolución de disputas) con fondo de compensación de hasta 20.000 € por reclamación, no equivalente a un fondo estatal como FSCS/ICF/FOGAIN",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por el broker (Belize City, Belice) coincida con un registro público verificable de un regulador de primer nivel; queda pendiente de confirmación documental."
+  },
+  "regulators": [
+    {
+      "authority": "FSC (Belice)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.belizefsc.org.bz/license-verification/",
+      "ok": false
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.fscmauritius.org/en/supervision/register-of-licensees-search-by-name",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 7
+  },
+  "reviews": {
+    "count": 62,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/axiory.com",
+    "samples": []
+  }
+}
