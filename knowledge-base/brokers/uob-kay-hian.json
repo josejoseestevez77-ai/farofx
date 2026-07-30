@@ -1,0 +1,51 @@
+{
+  "slug": "uob-kay-hian",
+  "name": "UOB Kay Hian",
+  "init": "UK",
+  "color": "#003399",
+  "demo": false,
+  "legalEntity": "UOB Kay Hian Private Limited",
+  "foundedYear": 1970,
+  "headquarters": {
+    "country": "Singapur",
+    "flag": "🇸🇬"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 5000,
+  "spreadTypical": "0,8 pips EUR/USD (plataforma UTRADE FX Elite)",
+  "platforms": [
+    "MT4",
+    "propia (UTRADE)"
+  ],
+  "fundProtection": "Fondos de clientes en cuentas segregadas en bancos asiáticos de primer nivel; sin fondo de compensación específico para CFDs/forex minorista",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por el broker coincida exactamente con la registrada ante el regulador; se han localizado direcciones corporativas (Singapur, Malasia, Reino Unido) en registros mercantiles y en el directorio de la MAS, pero no se ha realizado una verificación in situ ni documental cruzada."
+  },
+  "regulators": [
+    {
+      "authority": "MAS (Monetary Authority of Singapore)",
+      "licenseNumber": "197000447W (UEN, titular de Capital Markets Services Licence)",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://eservices.mas.gov.sg/fid/institution/detail/189-UOB-KAY-HIAN-PRIVATE-LIMITED",
+      "ok": true
+    }
+  ],
+  "subscores": {
+    "regulacion": 6.5,
+    "retirada": 6.5,
+    "quejas": 5.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 0,
+    "stars": 0,
+    "source": "",
+    "samples": []
+  }
+}
