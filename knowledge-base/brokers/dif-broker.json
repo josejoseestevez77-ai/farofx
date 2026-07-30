@@ -1,0 +1,66 @@
+{
+  "slug": "dif-broker",
+  "name": "DIF Broker",
+  "init": "DI",
+  "color": "#006341",
+  "demo": false,
+  "legalEntity": "DIF Broker – Sociedade Financeira de Corretagem, S.A.",
+  "foundedYear": 1999,
+  "headquarters": {
+    "country": "Portugal",
+    "flag": "🇵🇹"
+  },
+  "type": [
+    "forex"
+  ],
+  "depositMin": 2000,
+  "spreadTypical": "No publica spreads fijos tipo CFD; opera principalmente por comisión (ej. 0,20% mín. 12€ en acciones/ETFs de mercados europeos); condiciones de forex/CFD no detalladas de forma clara en la web pública",
+  "platforms": [
+    "propia"
+  ],
+  "fundProtection": "Cuentas de clientes segregadas y adhesión al Sistema de Indemnização aos Investidores portugués (cobertura hasta 25.000€)",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "Se contrastó la dirección pública en el aviso legal del broker (Avenida 24 de Julho, 74-76, 1200-869 Lisboa) con la ficha del registro de intermediarios financieros de la CMVM, que confirma la existencia de la entidad, pero no se pudo abrir el detalle ficha-por-ficha del registro para verificar campo a campo la dirección exacta, por lo que se mantiene como pendiente"
+  },
+  "regulators": [
+    {
+      "authority": "CMVM",
+      "licenseNumber": "276",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://web3.cmvm.pt/english/sdi/IFs/app/ifs_por_servico.cfm",
+      "ok": true
+    },
+    {
+      "authority": "CNMV",
+      "licenseNumber": null,
+      "status": "pasaporte europeo (sin licencia propia en España)",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cnmv.es/portal/consultas/esi/esisextranjeraslp?tipo=CLP&numero=954&lang=es",
+      "ok": false
+    },
+    {
+      "authority": "FCA",
+      "licenseNumber": null,
+      "status": "no confirmada como vigente; fuentes agregadoras señalan revocación, sin verificación directa en el registro oficial",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 5.5,
+    "quejas": 5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 3,
+    "stars": 3.5,
+    "source": "https://www.trustpilot.com/review/www.difbroker.com",
+    "samples": []
+  }
+}
