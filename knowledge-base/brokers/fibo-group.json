@@ -1,0 +1,69 @@
+{
+  "slug": "fibo-group",
+  "name": "FIBO Group",
+  "init": "FI",
+  "color": "#2E5E9E",
+  "demo": false,
+  "legalEntity": "FIBO Group, Ltd. (entidad regulada por la BVI FSC; el grupo opera también, o ha operado, bajo FIBO Group Holdings Ltd. / FIBO Markets Ltd. en Chipre)",
+  "foundedYear": 1998,
+  "headquarters": {
+    "country": "Islas Vírgenes Británicas",
+    "flag": "🇻🇬"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 0,
+  "spreadTypical": "0,2 pips EUR/USD en cuentas NDD (MT4 NDD/cTrader NDD); 0 pips + comisión en cTrader NDD",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "cTrader"
+  ],
+  "fundProtection": "Cuentas segregadas declaradas por el bróker; la BVI FSC no dispone de fondo de compensación estatutario para clientes en caso de insolvencia",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido verificar de forma independiente que la dirección operativa declarada coincida con un domicilio físico auditado; solo se ha contrastado la dirección que figura en fuentes de terceros (2nd Floor, O'Neal Marketing Associates Building, Wickham's Cay II, Road Town, Tortola, BVI) con la entidad listada en el registro de la BVI FSC"
+  },
+  "regulators": [
+    {
+      "authority": "BVI FSC (Comisión de Servicios Financieros de las Islas Vírgenes Británicas)",
+      "licenseNumber": "SIBA/L/14/1063",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.bvifsc.vg/regulated-entities/fibo-group-ltd-1",
+      "ok": true
+    },
+    {
+      "authority": "CySEC (Chipre)",
+      "licenseNumber": "118/10",
+      "status": "revocada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.cysec.gov.cy/en-GB/entities/investment-firms/cypriot/",
+      "ok": false
+    },
+    {
+      "authority": "FSC Belice",
+      "licenseNumber": null,
+      "status": "no verificada",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.belizefsc.org.bz/registered-individuals-companies/",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 3.5,
+    "retirada": 4.5,
+    "quejas": 3.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 16,
+    "stars": 2.5,
+    "source": "https://www.trustpilot.com/review/www.fibogroup.com",
+    "samples": []
+  }
+}
