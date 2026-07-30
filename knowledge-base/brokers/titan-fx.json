@@ -1,0 +1,69 @@
+{
+  "slug": "titan-fx",
+  "name": "Titan FX",
+  "init": "TZ",
+  "color": "#E4032E",
+  "demo": false,
+  "legalEntity": "Titan FX Limited (Vanuatu, lic. VFSC 40313); opera también como Goliath Trading Limited (FSA Seychelles, lic. SD138, no verificada en registro oficial) y Titan Markets (FSC Mauricio, lic. GB20026097)",
+  "foundedYear": 2014,
+  "headquarters": {
+    "country": "Vanuatu",
+    "flag": "🇻🇺"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 200,
+  "spreadTypical": "Desde 0,0 pips en la cuenta Zero Blade (comisión de 3,5 USD por lote/lado); spread variable sin comisión en la cuenta Zero Standard",
+  "platforms": [
+    "MT4",
+    "MT5",
+    "Titan FX Social (copy trading)"
+  ],
+  "fundProtection": "Cuentas de cliente segregadas de los fondos propios de la empresa; membresía en The Financial Commission (compensación de hasta 20.000 € por reclamación), sin fondo de garantía estatal tipo FSCS/ICF/FOGAIN al no operar bajo regulación de primer nivel",
+  "affiliateUrl": null,
+  "office": {
+    "status": "verified",
+    "date": "2026-07-30",
+    "method": "Se comparó la dirección de contacto de Titan FX en Mauricio (The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène) publicada en su web oficial con la dirección registrada de 'Titan Markets' en el Registro de Licenciatarios de la FSC de Mauricio (C/o Credentia International Management Ltd, Silicon Avenue, 40 Cybercity, The Catalyst, 72201 Ebene), coincidiendo ambas en edificio, calle y código postal"
+  },
+  "regulators": [
+    {
+      "authority": "VFSC (Vanuatu)",
+      "licenseNumber": "40313",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.vfsc.vu/financial-dealers-licensee-list/",
+      "ok": true
+    },
+    {
+      "authority": "FSC (Mauricio)",
+      "licenseNumber": "GB20026097",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fscmauritius.org/en/supervision/register-of-licensees/register-of-licensees-details?cat=GB&code=&key=&licence_no=GB20026097",
+      "ok": true
+    },
+    {
+      "authority": "FSA (Seychelles)",
+      "licenseNumber": null,
+      "status": "no verificado en el registro oficial de la FSA",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://fsaseychelles.sc/regulated-entities/capital-markets",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 4.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 6
+  },
+  "reviews": {
+    "count": 167,
+    "stars": 3.9,
+    "source": "https://www.trustpilot.com/review/titanfx.com",
+    "samples": []
+  }
+}
