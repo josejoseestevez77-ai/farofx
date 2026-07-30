@@ -1,0 +1,60 @@
+{
+  "slug": "adss",
+  "name": "ADSS (ADS Securities)",
+  "init": "AQ",
+  "color": "#003C71",
+  "demo": false,
+  "legalEntity": "ADS Securities L.L.C – S.P.C",
+  "foundedYear": 2011,
+  "headquarters": {
+    "country": "Emiratos Árabes Unidos",
+    "flag": "🇦🇪"
+  },
+  "type": [
+    "forex",
+    "copy"
+  ],
+  "depositMin": 100,
+  "spreadTypical": "1,2 pips EUR/USD (cuenta Classic, sin comisión)",
+  "platforms": [
+    "MT4",
+    "propia"
+  ],
+  "fundProtection": "Fondos de clientes en cuentas segregadas bajo supervisión de la SCA; sin fondo de compensación tipo FSCS/ICF al no operar ya bajo licencia FCA/CySEC",
+  "affiliateUrl": null,
+  "office": {
+    "status": "pending",
+    "date": "2026-07-30",
+    "method": "No se ha podido contrastar de forma independiente que la dirección operativa declarada por ADSS coincida con un registro público distinto al de la propia entidad; se toma como referencia la dirección publicada en la web legal del broker, pendiente de verificación cruzada adicional."
+  },
+  "regulators": [
+    {
+      "authority": "SCA (Securities and Commodities Authority, Emiratos Árabes Unidos)",
+      "licenseNumber": "305027",
+      "status": "activa",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://www.sca.gov.ae/en/open-data/licensed-companies.aspx?q=CP-0000786",
+      "ok": true
+    },
+    {
+      "authority": "FCA (Reino Unido) — ADS Securities London Limited",
+      "licenseNumber": "577453",
+      "status": "no autorizada (cancelada desde 23/07/2024)",
+      "verifiedDate": "2026-07-30",
+      "sourceUrl": "https://register.fca.org.uk/s/firm?id=001b000000NMhDNAA1",
+      "ok": false
+    }
+  ],
+  "subscores": {
+    "regulacion": 5.5,
+    "retirada": 6,
+    "quejas": 6.5,
+    "costes": 5
+  },
+  "reviews": {
+    "count": 27,
+    "stars": 4,
+    "source": "https://www.trustpilot.com/review/adss.com",
+    "samples": []
+  }
+}
