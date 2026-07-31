@@ -54,7 +54,7 @@
           <span class="meta"><b>${b.name}</b><span>Depósito mín. ${b.deposit}€ · ${b.type.includes('copy') ? 'Copytrading' : 'Forex/CFD'}</span></span></div>
         <div class="regs">${regs}</div>
         ${officeBadge(b)}
-        <div class="vcount"><b>${b.reviews.toLocaleString('es')}</b><span>verificadas</span></div>
+        <div class="vcount"><b>${b.reviews.toLocaleString('es')}</b><span>analizadas</span></div>
         <span class="scorepill"><span class="dot" style="background:${scoreColor(b.score)}"></span>${b.score.toFixed(1)}</span>
         <a class="more" href="${b.url}">Ver análisis</a>`;
       rowsEl.appendChild(el);
@@ -77,7 +77,7 @@
     const o = OFFICE[b.office.status];
     $('#m-office').className = 'office-detail v-' + b.office.status;
     $('#m-office').innerHTML = `<span class="ic">${o.ico}</span><div class="ot"><b>${o.label} · ${b.office.date}</b><span>${b.office.method}</span></div>`;
-    $('#m-reviews').innerHTML = b.revs.map((r) =>
+    $('#m-reviews').innerHTML = `<p style="color:var(--muted-inv);margin:0 0 12px;font-size:13px">${b.reviews.toLocaleString('es')} reviews analizadas · mostrando ${b.revs.length}</p>` + b.revs.map((r) =>
       `<div class="rev"><div class="rh"><span class="who"><span class="vbadge">VERIF.</span>${r.u}</span><span class="stars">${'★'.repeat(r.s)}${'☆'.repeat(5 - r.s)}</span></div><p>${r.t}</p><div class="rmeta">${r.m.map((m) => `<span>· ${m}</span>`).join('')}</div></div>`).join('');
     $('#m-cta').href = b.url;
     $('#brokerModal').classList.add('open'); document.body.style.overflow = 'hidden';
