@@ -34,7 +34,7 @@ export function clientModel(brokers) {
           r.ok,
           r.status.charAt(0).toUpperCase() + r.status.slice(1),
         ]),
-        revs: b.reviews.samples.map((s) => ({ u: s.user, s: s.stars, t: s.text, m: s.meta })),
+        revs: b.reviews.samples.slice(0, 10).map((s) => ({ u: s.user, s: s.stars, t: s.text, m: s.meta })),
       };
     })
     .sort((a, b) => b.score - a.score);
@@ -156,7 +156,7 @@ export function renderHome(brokers) {
       </select>
     </div>
     <div class="table">
-      <div class="thead"><span>#</span><span>Broker</span><span>Reguladores</span><span>Oficina</span><span>Opiniones verif.</span><span>Nota</span><span></span></div>
+      <div class="thead"><span>#</span><span>Broker</span><span>Reguladores</span><span>Oficina</span><span>Reviews analiz.</span><span>Nota</span><span></span></div>
       <div id="rows"></div>
       <div class="empty" id="empty">Ningún broker coincide con esos filtros.</div>
     </div>
