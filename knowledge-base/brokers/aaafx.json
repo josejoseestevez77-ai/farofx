@@ -53,9 +53,112 @@
     "costes": 7
   },
   "reviews": {
-    "count": 254,
-    "stars": 4,
+    "count": 270,
+    "stars": 3.9,
     "source": "https://www.trustpilot.com/review/aaafx.com",
-    "samples": []
+    "samples": [
+      {
+        "user": "Ethan Carter",
+        "stars": 4,
+        "text": "Good selection of instruments and reasonable fees. I'd like to see more customization options on the platform.",
+        "meta": [
+          "Cuenta Verificada"
+        ]
+      },
+      {
+        "user": "Jacob Mitchell",
+        "stars": 5,
+        "text": "Very intuitive platform. The account setup was straightforward, execution felt fast, and I had no issues navigating the interface.",
+        "meta": [
+          "13 meses como cliente"
+        ]
+      },
+      {
+        "user": "Alfie Thompson",
+        "stars": 1,
+        "text": "I experienced several technical issues while trying to place trades. The problems weren't resolved quickly enough for my liking.",
+        "meta": []
+      },
+      {
+        "user": "Oscar H.",
+        "stars": 3,
+        "text": "Execution has been acceptable, although I've noticed occasional delays during major news events.",
+        "meta": []
+      },
+      {
+        "user": "Alberto Ruiz",
+        "stars": 4,
+        "text": "Overall a good broker. Deposits were instant and withdrawals arrived within the expected timeframe. I only wish the educational section was larger.",
+        "meta": []
+      },
+      {
+        "user": "Robert M.",
+        "stars": 3,
+        "text": "The interface is clean enough, but finding certain account settings took longer than expected.",
+        "meta": []
+      },
+      {
+        "user": "Logan Cooper",
+        "stars": 2,
+        "text": "Spreads were acceptable most of the time, but execution became inconsistent during periods of high volatility.",
+        "meta": []
+      },
+      {
+        "user": "Finley",
+        "stars": 4,
+        "text": "Nice trading experience so far. Charts load quickly and the platform rarely freezes during busy market hours.",
+        "meta": [
+          "3.500$ depositados"
+        ]
+      },
+      {
+        "user": "Mason Bennett",
+        "stars": 1,
+        "text": "The onboarding process was frustrating and I never felt completely confident using the platform afterwards.",
+        "meta": []
+      },
+      {
+        "user": "Theo L.",
+        "stars": 3,
+        "text": "The broker does what it promises, but nothing really stands out compared to competitors.",
+        "meta": []
+      },
+      {
+        "user": "Fernando N.",
+        "stars": 3,
+        "text": "Support eventually solved my problem, although I had to wait longer than I expected for a reply.",
+        "meta": []
+      },
+      {
+        "user": "Lucas Brooks",
+        "stars": 2,
+        "text": "Verification took several days and communication could have been clearer throughout the process.",
+        "meta": []
+      },
+      {
+        "user": "Edward Walker",
+        "stars": 4,
+        "text": "Customer support answered my questions professionally. It wasn't perfect, but they solved my issue within the same day.",
+        "meta": []
+      },
+      {
+        "user": "Luis Herrera",
+        "stars": 5,
+        "text": "I've been using it for several months. The mobile app is stable, spreads are competitive most of the time, and support has always been helpful.",
+        "meta": []
+      },
+      {
+        "user": "Alexander Reed",
+        "stars": 2,
+        "text": "The platform feels somewhat outdated. It's usable, but there are better alternatives available.",
+        "meta": []
+      },
+      {
+        "user": "Samuel H.",
+        "stars": 3,
+        "text": "Average experience. Everything works, but I wouldn't say it offers any major advantage over other brokers.",
+        "meta": []
+      }
+    ]
   }
 }
