@@ -120,7 +120,7 @@ ${crumb.html}
       <span class="who">Por <a href="/autores/${author.slug}/" style="color:var(--seal)">${esc(author.name)}</a></span>
       <span class="dot-sep">·</span><span>${esc(author.role)}</span>
       <span class="dot-sep">·</span><span>Actualizado: ${b.regulators[0].verifiedDate}</span>
-      <span class="dot-sep">·</span><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span>
+      <span class="dot-sep">·</span><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reviews analizadas</span>
     </div>
 
     <div class="answer-box"><b>Respuesta directa.</b> ${esc(directAnswer)}</div>
@@ -168,7 +168,8 @@ ${crumb.html}
     </div>
 
     <h2>Opiniones verificadas de traders</h2>
-    ${b.reviews.samples.map((r) => `<div class="rev"><div class="rh"><span class="who"><span class="vbadge">VERIF.</span>${esc(r.user)}</span><span class="stars">${starStr(r.stars)}</span></div><p>${esc(r.text)}</p><div class="rmeta">${r.meta.map((m) => `<span>· ${esc(m)}</span>`).join('')}</div></div>`).join('')}
+    <p style="color:var(--muted);margin:0 0 16px">${fmt(b.reviews.count)} reviews analizadas · mostrando las ${Math.min(b.reviews.samples.length, 10)} más representativas</p>
+    ${b.reviews.samples.slice(0, 10).map((r) => `<div class="rev"><div class="rh"><span class="who"><span class="vbadge">VERIF.</span>${esc(r.user)}</span><span class="stars">${starStr(r.stars)}</span></div><p>${esc(r.text)}</p><div class="rmeta">${r.meta.map((m) => `<span>· ${esc(m)}</span>`).join('')}</div></div>`).join('')}
 
     <h2>Preguntas frecuentes</h2>
     <div class="faq">
@@ -279,7 +280,7 @@ export function renderRoundup(brokers) {
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
-      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span></span></div>
+      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reviews analizadas</span></span></div>
       <div class="regs">${b.regulators.filter((r) => r.ok).map((r) => `<span class="reg">${r.authority}</span>`).join('') || '<span class="reg warn">Sin reg. UE/UK</span>'}</div>
       <span class="scorepill"><span class="dot" style="background:${scoreColor(score)}"></span>${score.toFixed(1)}</span>
       <span class="more">Ver análisis</span></a>`)
