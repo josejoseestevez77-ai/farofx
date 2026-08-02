@@ -155,6 +155,9 @@ const themeCss = readFileSync(join(__dir, 'src', 'theme.css'), 'utf8');
 const homeJs = readFileSync(join(__dir, 'src', 'home.js'), 'utf8');
 cpSync(join(__dir, 'src', 'theme.css'), join(DIST, 'theme.css'));
 cpSync(join(__dir, 'src', 'home.js'), join(DIST, 'home.js'));
+cpSync(join(__dir, 'src', 'logo-mark.png'), join(DIST, 'logo-mark.png'));
+cpSync(join(__dir, 'src', 'favicon.png'), join(DIST, 'favicon.png'));
+cpSync(join(__dir, 'src', 'apple-touch-icon.png'), join(DIST, 'apple-touch-icon.png'));
 
 // ---- Preview todo-en-uno (para abrir con DOBLE CLIC, sin servidor) ----
 // Inlina CSS + JS en el HTML para que funcione desde el disco (file://).
