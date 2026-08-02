@@ -391,9 +391,14 @@ export function renderOpinar(brokers) {
       <textarea id="op" name="opinion" maxlength="1200" placeholder="Cuenta tu experiencia real: retiros, spreads, atención al cliente, incidencias…" required></textarea>
     </div>
     <div class="form-row">
-      <label class="lbl" for="alias">Alias a mostrar <span class="req">*</span></label>
-      <input type="text" id="alias" name="alias" maxlength="40" placeholder="P. ej. Carlos M." required>
-      <p class="hint">No pongas tu nombre completo ni datos personales.</p>
+      <label class="lbl" for="f-nombre">Nombre <span class="req">*</span></label>
+      <input type="text" id="f-nombre" name="nombre" maxlength="30" placeholder="P. ej. Pablo" required>
+    </div>
+    <div class="form-row">
+      <label class="lbl" for="f-apellido">Apellido <span class="req">*</span></label>
+      <input type="text" id="f-apellido" name="apellido" maxlength="30" placeholder="P. ej. Pérez" required>
+      <p class="hint">Se publica solo como "Nombre + inicial", por ejemplo "Pablo P.". No mostramos tu apellido completo ni otros datos personales.</p>
+      <input type="hidden" id="alias" name="alias">
     </div>
     <div class="form-row">
       <label class="lbl" for="contexto">Contexto (opcional)</label>
@@ -423,6 +428,11 @@ export function renderOpinar(brokers) {
   function farofxReviewSubmit(f){
     var slug=(document.getElementById('broker-slug')||{}).value;
     if(!slug){ alert('Elige un broker de la lista escribiendo su nombre.'); return false; }
+    var nombre=(document.getElementById('f-nombre').value||'').trim();
+    var apellido=(document.getElementById('f-apellido').value||'').trim();
+    if(!nombre || !apellido){ alert('Completa tu nombre y apellido.'); return false; }
+    var inicial=apellido.charAt(0).toUpperCase();
+    document.getElementById('alias').value = nombre + ' ' + inicial + '.';
     // Si no se adjunta archivo, deshabilitamos el input para NO enviar una parte de fichero vacía
     // (un fichero de 0 bytes rompe la recepción del webhook y provoca el error al publicar).
     var fileInp=document.getElementById('prueba');
