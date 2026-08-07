@@ -17,12 +17,14 @@ import {
   renderRoundup, renderAuthorsIndex, renderAuthor, renderSimplePage,
   renderOpinar, renderOpinionRecibida,
 } from './src/templates/pages.mjs';
+import { renderArticulo, renderNoticiasIndex } from './src/templates/noticias.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dir, 'dist');
 const KB = join(__dir, 'knowledge-base');
 
 const BROKERS_DIR = join(KB, 'brokers');
+const NOTICIAS_DIR = join(KB, 'noticias');
 
 // --- Saneado de datos generados por el motor (búsqueda web con IA) ---
 // El motor puede colar en algún campo etiquetas de cita como <cite index="25-1">…</cite>.
@@ -73,8 +75,23 @@ function loadBrokers() {
   return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers.map(sanitize);
 }
 
+// Carga de artículos de la sección Noticias (uno por JSON, igual que los brokers).
+function loadArticles() {
+  if (!existsSync(NOTICIAS_DIR)) return [];
+  const files = readdirSync(NOTICIAS_DIR).filter((f) => f.toLowerCase().endsWith('.json'));
+  const list = [];
+  for (const f of files) {
+    try {
+      const parsed = JSON.parse(readFileSync(join(NOTICIAS_DIR, f), 'utf8'));
+      if (parsed && parsed.slug && parsed.title) list.push(parsed);
+    } catch (e) { console.warn(`⚠ Artículo inválido (ignorado): ${f} — ${e.message}`); }
+  }
+  return list.map(sanitize);
+}
+
 const brokers = loadBrokers();
 const authors = JSON.parse(readFileSync(join(KB, 'authors.json'), 'utf8')).authors;
+const articles = loadArticles();
 
 const pages = []; // {path, html, priority, changefreq}
 
@@ -100,6 +117,10 @@ for (const reg of regulators) page(`/regulados/${reg.toLowerCase()}/`, renderReg
 // Autores
 page('/autores/', renderAuthorsIndex(authors), 0.5, 'monthly');
 for (const a of authors) page(`/autores/${a.slug}/`, renderAuthor(a), 0.4, 'monthly');
+
+// Noticias / artículos (uno por JSON en knowledge-base/noticias/)
+page('/noticias/', renderNoticiasIndex(articles), 0.8, 'daily');
+for (const a of articles) page(`/noticias/${a.slug}/`, renderArticulo(a, brokers, authors), 0.7, 'weekly');
 
 // Legales / confianza
 page('/politica-afiliacion/', renderSimplePage({
@@ -155,9 +176,6 @@ const themeCss = readFileSync(join(__dir, 'src', 'theme.css'), 'utf8');
 const homeJs = readFileSync(join(__dir, 'src', 'home.js'), 'utf8');
 cpSync(join(__dir, 'src', 'theme.css'), join(DIST, 'theme.css'));
 cpSync(join(__dir, 'src', 'home.js'), join(DIST, 'home.js'));
-cpSync(join(__dir, 'src', 'logo-mark.png'), join(DIST, 'logo-mark.png'));
-cpSync(join(__dir, 'src', 'favicon.png'), join(DIST, 'favicon.png'));
-cpSync(join(__dir, 'src', 'apple-touch-icon.png'), join(DIST, 'apple-touch-icon.png'));
 
 // ---- Preview todo-en-uno (para abrir con DOBLE CLIC, sin servidor) ----
 // Inlina CSS + JS en el HTML para que funcione desde el disco (file://).
@@ -211,6 +229,9 @@ ${topBrokers.map(({ b, s }) => `- [${b.name} (${s.toFixed(1)}/10)](${SITE.url}/b
 
 ## Hubs por regulador
 ${regulators.map((r) => `- [Brokers regulados por ${r}](${SITE.url}/regulados/${r.toLowerCase()}/)`).join('\n')}
+
+## Noticias y análisis
+${[...articles].sort((a, b) => String(b.date).localeCompare(String(a.date))).map((a) => `- [${a.title}](${SITE.url}/noticias/${a.slug}/)`).join('\n')}
 `;
 writeFileSync(join(DIST, 'llms.txt'), llms);
 
