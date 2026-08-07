@@ -23,8 +23,6 @@ export function head({ title, description, canonical, jsonld = [], extraHead = '
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/theme.css">
 ${extraHead}
 ${ld}
@@ -37,12 +35,13 @@ export function header(active = '') {
     `<a href="${href}"${active === key ? ' aria-current="page"' : ''}>${label}</a>`;
   return `<header>
   <div class="wrap nav">
-    <a href="/" class="brand"><img class="mark" src="/logo-mark.png" alt="" width="26" height="26">FARO<b>FX</b></a>
+    <a href="/" class="brand"><span class="mark">F</span>FARO<b>FX</b></a>
     <nav>
       ${link('/#ranking', 'Ranking', 'ranking')}
       ${link('/metodologia/', 'Cómo puntuamos', 'metodologia')}
       ${link('/como-verificamos/', 'Opiniones verificadas', 'verificar')}
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}
+      ${link('/noticias/', 'Noticias', 'noticias')}
       <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Soporte</a>
     </nav>
     <span class="spacer"></span>
@@ -61,13 +60,14 @@ export function footer() {
     </div>
     <div class="foot-grid">
       <div>
-        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px"><img class="mark" src="/logo-mark.png" alt="" width="26" height="26">FARO<b>FX</b></a>
+        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px"><span class="mark">F</span>FARO<b>FX</b></a>
         <p style="font-size:13.5px;max-width:36ch">Análisis independiente de brokers basado en datos verificados. Reseñas solo de traders verificados y puntuación abierta y auditable.</p>
         <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@farofx.org">contacto@farofx.org</a></p>
       </div>
       <div>
         <h6>Plataforma</h6>
         <a href="/#ranking">Ranking de brokers</a>
+        <a href="/noticias/">Noticias y análisis</a>
         <a href="/metodologia/">Metodología</a>
         <a href="/como-verificamos/">Opiniones verificadas</a>
         <a href="/regulados/cysec/">Brokers regulados (hubs)</a>
