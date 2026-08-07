@@ -129,7 +129,7 @@ ${crumb.html}
 
   return layout({
     active: 'noticias',
-    title: `${article.metaTitle || article.title} | FARO`,
+    title: article.metaTitle || `${article.title} | FARO`,
     description: article.metaDescription || article.excerpt || '',
     canonical: `/noticias/${article.slug}/`,
     jsonld: [jsonldArticle, crumb.jsonld],

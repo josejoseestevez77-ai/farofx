@@ -34,6 +34,7 @@ export function header(active = '') {
   const link = (href, label, key) =>
     `<a href="${href}"${active === key ? ' aria-current="page"' : ''}>${label}</a>`;
   return `<header>
+  <style>header nav{align-items:center!important}header nav a{white-space:nowrap!important}</style>
   <div class="wrap nav">
     <a href="/" class="brand"><span class="mark">F</span>FARO<b>FX</b></a>
     <nav>
