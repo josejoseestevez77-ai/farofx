@@ -1,0 +1,78 @@
+{
+  "slug": "que-es-pasaporte-mifid-ii",
+  "title": "Qué es el pasaporte MiFID II y por qué te importa al elegir bróker",
+  "metaTitle": "Pasaporte MiFID II: qué es y por qué importa | FARO",
+  "metaDescription": "Explicamos qué es el pasaporte MiFID II, cómo lo usan los brokers para operar en España y cómo comprobarlo en el registro de la CNMV antes de abrir una cuenta.",
+  "pillar": "A",
+  "type": "guia",
+  "author": "Redacción FARO",
+  "date": "2026-08-10",
+  "updated": "2026-08-10",
+  "excerpt": "El pasaporte MiFID II permite a una empresa de inversión autorizada en un país de la UE ofrecer sus servicios en el resto del Espacio Económico Europeo, con o sin sucursal local. Te importa porque determina qué regulador supervisa realmente tu dinero y a quién reclamar si algo falla.",
+  "keyTakeaway": "Si un bróker te dice que está \"regulado en la UE\", eso no basta: comprueba en el registro de la CNMV si opera mediante sucursal o en libre prestación de servicios, y quién es realmente su regulador de origen (por ejemplo, KNF en Polonia o BaFin en Alemania). El pasaporte MiFID II es legal y habitual, pero conocer la modalidad concreta te dice ante quién puedes reclamar si algo va mal. Antes de operar, dedica cinco minutos a verificar el registro oficial: es gratis y puede evitarte disgustos mayores.",
+  "body": "## Qué es el pasaporte MiFID II\n\nEl pasaporte MiFID II es el mecanismo que permite a una empresa de servicios de inversión (ESI) autorizada en un Estado miembro de la Unión Europea prestar sus servicios en cualquier otro país de la UE, sin tener que pedir una autorización nueva en cada uno. La normativa comunitaria regula, entre otras cosas, [las condiciones de autorización y funcionamiento de las Empresas de Servicios de Inversión (ESI), incluyendo la libertad de establecimiento y de prestación de servicios en la UE](que corresponde a lo recogido por la CNMV).\n\nEn la práctica, esto significa que un bróker de forex o CFD no necesita una licencia española para operar aquí: le basta con estar autorizado en su país de origen y notificarlo a la [CNMV](https://www.cnmv.es).\n\n## Cómo usan los brokers el pasaporte para llegar a España\n\nUna vez que una compañía ha sido autorizada por su regulador nacional, puede usar el pasaporte para operar en otros Estados miembros de la UE, y esos servicios quedan regulados por cada Estado miembro dentro de sus fronteras. La legislación distingue dos vías principales para hacerlo:\n\n- **Libre prestación de servicios**: el bróker opera directamente desde su país de origen, sin oficina física en España.\n- **Sucursal**: el bróker abre una sede registrada en España, aunque sigue autorizado y supervisado principalmente por su regulador de origen.\n\nLa norma que traspuso MiFID II en España modificó los artículos que regulan este llamado pasaporte europeo, el procedimiento que deben seguir las ESI europeas para actuar en otros Estados miembros, ya sea mediante libre prestación de servicios o mediante sucursales o agentes vinculados.\n\n## Por qué la diferencia entre libre prestación y sucursal te afecta\n\nNo es un matiz técnico menor. La propia industria ha señalado ante la CNMV que las entidades que operan en libre prestación de servicios desde otros países de la UE suelen ser más laxas en la aplicación de la regulación y más agresivas en la captación de clientes, frente a las que están domiciliadas y cumplen la normativa española de forma directa. Esto no implica que toda entidad en libre prestación sea irregular —la inmensa mayoría cumple la ley—, pero sí que conviene saber bajo qué modalidad opera el bróker que estás valorando y qué regulador responde en primera instancia.\n\n## Cómo comprobar si un bróker está realmente autorizado\n\nAntes de abrir una cuenta, el paso más sencillo y gratuito es consultar el registro oficial de la CNMV. Cualquier persona puede verificar sin coste si una entidad dispone de autorización para operar en España, accediendo al registro en la web del supervisor o llamando a su servicio de atención al inversor. El hecho de que una empresa no figure en los registros oficiales de la CNMV significa que no está sometida a la supervisión del organismo regulador español, y que los inversores no cuentan con las garantías legales que sí existen cuando se opera con entidades autorizadas.\n\nLa CNMV mantiene además un listado de advertencias sobre entidades no autorizadas, popularmente conocidas como \"chiringuitos financieros\": empresas o plataformas que ofrecen servicios de inversión sin contar con autorización de los organismos supervisores. El organismo ha recordado que sigue publicando advertencias públicas sobre este tipo de entidades y que colabora con reguladores europeos e internacionales para detectarlas y prevenirlas.\n\n## Dos ejemplos reales en el registro de la CNMV\n\nPara entender cómo funciona el pasaporte en la práctica, sirve mirar el registro de dos brokers conocidos en España:\n\n- [XTB](/brokers/xtb/) opera en la UE como empresa de inversión supervisada en su país de origen, Polonia, por la Komisja Nadzoru Finansowego (KNF). Para prestar servicios en España lo hace mediante una sucursal, XTB S.A., Sucursal en España, que está inscrita en el registro de la CNMV con el número 40.\n- [IG](/brokers/ig/) opera a través de IG Europe GmbH, entidad autorizada y regulada por la Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) y el Deutsche Bundesbank en Alemania. IG Europe GmbH ofrece sus servicios en España a través de su sucursal registrada en la CNMV con el número 121.\n\nEn ambos casos, el patrón es el mismo: autorización principal en el país de origen (Polonia o Alemania) y una sucursal registrada en la CNMV que permite operar en España bajo el pasaporte MiFID II. Puedes comprobar estos y otros datos regulatorios directamente en las fichas de cada bróker, y siempre conviene cruzarlos con el registro oficial de la CNMV antes de decidir.\n\n## Qué preguntar antes de abrir una cuenta\n\nSi vas a operar con un bróker que llega a España por pasaporte MiFID II, conviene aclarar tres cosas: quién es el regulador de origen y qué licencia tiene, si el bróker opera mediante sucursal o en libre prestación de servicios, y qué fondo de garantía de inversiones te protege en caso de insolvencia (que suele ser el del país de origen, no el español). Ninguna de estas preguntas es garantía de rentabilidad ni de ausencia de riesgo de mercado; solo te dicen quién vigila al bróker y a quién puedes reclamar.",
+  "relatedBrokers": [
+    "xtb",
+    "ig"
+  ],
+  "sources": [
+    {
+      "title": "CNMV - MiFID II - MiFIR",
+      "url": "https://internet.cnmv.es/Portal/MiFIDII_MiFIR/MapaMiFID?lang=es",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "MIFID II finalmente se completa su transposición en España - MB Abogados",
+      "url": "https://mbabogados.eu/mifid-ii-finalmente-se-completa-su-transposicion-en-espana-requisitos-para-las-actuaciones-transfronterizas-de-empresas-de-servicios-de-inversion-esis/",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "Directiva sobre Mercados de Instrumentos Financieros - Wikipedia",
+      "url": "https://es.wikipedia.org/wiki/Directiva_sobre_Mercados_de_Instrumentos_Financieros",
+      "date": "2026-06-18"
+    },
+    {
+      "title": "CNMV - XTB LIMITED - Programa de actividades",
+      "url": "https://www.cnmv.es/Portal/consultas/esi/esisextranjeraslp?tipo=CLP&numero=3325&vista=17&fs=19/07/2021&lang=es",
+      "date": "2023-07-19"
+    },
+    {
+      "title": "Información básica sobre XTB S.A. - XTB",
+      "url": "https://xtb.scdn5.secure.raxcdn.com/file/0101/75/ACTUAL_Iinformaci%C3%B3n%20b%C3%A1sica_en_vigor_a_partir_del_28_de_marzo_de_2024_b635e5fd34.pdf",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "XTB opiniones España [2026]: Comisiones, plataforma y seguridad - Rankia",
+      "url": "https://www.rankia.com/blog/mejores-brokers/4528210-analisis-xtb-regulacion-comisiones-productos-plataformas-opiniones",
+      "date": "2026-07-20"
+    },
+    {
+      "title": "Sobre nosotros - IG España",
+      "url": "https://www.ig.com/es/sobre-ig",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "Observaciones de IG a la CNMV",
+      "url": "https://www.cnmv.es/DocPortal/DocFaseConsulta/CNMV/09_IG.pdf",
+      "date": "2023-01-30"
+    },
+    {
+      "title": "Guía de CNMV: Chiringuitos Financieros",
+      "url": "http://www.cnmv.es/docportal/Publicaciones/Guias/chiringuitos.pdf",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "La CNMV alerta de 11 entidades financieras que prestan servicio sin autorización previa en España - Infobae",
+      "url": "https://www.infobae.com/america/agencias/2026/03/02/la-cnmv-alerta-de-11-entidades-financieras-que-prestan-servicio-sin-autorizacion-previa-en-espana/",
+      "date": "2026-03-02"
+    },
+    {
+      "title": "¡ALERTA! La CNMV advierte de 3 entidades no registradas - WikiFX",
+      "url": "https://www.wikifx.com/es/newsdetail/202607152674109909.html",
+      "date": "2026-07-15"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Ilustración de un sello de pasaporte europeo sobre documentos de regulación financiera, simbolizando el pasaporte MiFID II"
+}
