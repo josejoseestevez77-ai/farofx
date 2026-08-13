@@ -1,0 +1,68 @@
+{
+  "slug": "fondo-compensacion-fscs-fogain",
+  "title": "FSCS y FOGAIN: qué fondo de compensación protege tu dinero en un bróker",
+  "metaTitle": "FSCS y FOGAIN: quién cubre tu dinero en un bróker | FARO",
+  "metaDescription": "FSCS (Reino Unido) y FOGAIN (España) protegen a los clientes de brokers insolventes, pero con límites y condiciones distintos. Te explicamos cómo funcionan y qué no cubren.",
+  "pillar": "A",
+  "type": "guia",
+  "author": "Redacción FARO",
+  "date": "2026-08-13",
+  "updated": "2026-08-13",
+  "excerpt": "FSCS y FOGAIN son los fondos de compensación que entran en juego si un bróker regulado quiebra y no puede devolver el dinero o los activos de sus clientes. Ninguno de los dos cubre las pérdidas por movimientos del mercado: solo actúan ante la insolvencia de la entidad. Qué fondo te protege depende de dónde esté autorizado el bróker con el que operas, no de dónde tengas la oficina o el idioma de la web.",
+  "keyTakeaway": "Antes de abrir una cuenta, comprueba qué entidad legal te presta el servicio (no solo la marca comercial) y bajo qué regulador y fondo de compensación opera esa entidad concreta. Un mismo bróker puede tener varias filiales en distintos países, cada una con su propio fondo y su propio límite de cobertura. Guarda capturas de tu contrato y de la información regulatoria, y recuerda que ni el FSCS ni el FOGAIN te devolverán el dinero que pierdas por una operación que salió mal: solo protegen frente a la insolvencia del intermediario.",
+  "body": "## Qué son los fondos de compensación y para qué sirven\n\nCuando abres una cuenta en un bróker regulado, tu dinero y tus activos no desaparecen si la empresa entra en dificultades: las normas de protección al cliente obligan a mantenerlos separados del patrimonio del bróker. Pero, si aun así el bróker quiebra y no puede devolver lo que te debe, entran en juego los fondos de compensación al inversor.\n\nEl FSCS \nes el sistema británico de garantía de depósitos, que paga compensación a los consumidores en el caso improbable de que una entidad de servicios financieros cubierta por el esquema deje de operar\n. Su equivalente en España para clientes de empresas de servicios de inversión es el FOGAIN, \nque ofrece una indemnización a los inversores de sus entidades adheridas en determinados supuestos de insolvencia de la entidad que presta el servicio de inversión, por el dinero y valores depositados o confiados a la entidad\n.\n\nEs importante entender la lógica común a ambos: no aseguran tu inversión, aseguran que recuperes lo que el bróker custodiaba en tu nombre si la propia empresa se hunde.\n\n## FSCS: cómo funciona en el Reino Unido\n\nEl FSCS distingue varias categorías de productos, cada una con su propio límite. Para depósitos bancarios, \ndesde diciembre, si un banco, caja de ahorros o cooperativa de crédito autorizado en el Reino Unido deja de operar, el FSCS compensará a los clientes elegibles hasta el nuevo límite de 120.000 libras, por persona y por entidad autorizada\n. Este aumento, confirmado oficialmente, sustituyó al límite anterior.\n\nSin embargo, ese nuevo límite de depósitos no es el mismo que se aplica a las cuentas de inversión. Según la propia página oficial del FSCS dedicada a la protección de inversiones, \nsi la entidad quebró después del 1 de abril de 2019, la cobertura es de hasta 85.000 libras por persona y por entidad\n. Esto significa que un bróker de CFD o forex autorizado por la FCA en el Reino Unido, en su condición de empresa de inversión (no de banco), suele quedar encuadrado en esta segunda categoría, con el límite de 85.000 libras, y no en el de depósitos bancarios.\n\n## FOGAIN: cómo funciona en España\n\nEn España, el FOGAIN cubre a los clientes de sociedades y agencias de valores, sociedades gestoras de carteras y otras entidades de inversión autorizadas, cuya adhesión al fondo es obligatoria por normativa. Según la guía oficial de la CNMV, \nestán asegurados por el FOGAIN los clientes de las empresas de servicios de inversión autorizadas en España, cuya adhesión a dicho fondo es obligatoria de acuerdo con la normativa\n.\n\nEl límite de cobertura en España está entre los más altos de la Unión Europea. Como recuerda el portal Finanzas para Todos (iniciativa de educación financiera respaldada por CNMV y Banco de España), \nel FOGAIN asegura a los clientes de una entidad adherida la recuperación del efectivo y los instrumentos financieros entregados a la entidad, con un máximo de 100.000 euros por inversor\n. La propia CNMV explica que este importe no es igual en todos los países: \nel nivel de cobertura puede oscilar desde los 100.000 euros en España hasta los 20.000 euros, importe mínimo exigido por la normativa europea\n.\n\n¿Cuándo se activa exactamente el FOGAIN? Según la propia entidad, \nla cobertura solo se aplica cuando la entidad adherida entra en concurso judicial, se tiene judicialmente por solicitada la declaración de concurso, o la CNMV resuelve que la entidad no se encuentra en condiciones de atender sus obligaciones con los clientes\n. Fuera de estos supuestos tasados, el fondo no interviene.\n\n## Lo que ninguno de los dos cubre\n\nTanto el FSCS como el FOGAIN comparten limitaciones esenciales que conviene tener muy claras:\n\n- No cubren pérdidas por movimientos de mercado, ni siquiera si operas con un bróker regulado: si tu posición en CFD o forex pierde valor porque el mercado se movió en tu contra, ningún fondo de compensación te reembolsa esa pérdida.\n- No cubren decisiones de inversión equivocadas ni la mala praxis de asesoramiento cuando la firma sigue solvente.\n- No sustituyen a una reclamación normal ante el bróker si este simplemente tarda en devolver fondos por motivos operativos, sin estar en insolvencia declarada.\n- Solo protegen frente a la incapacidad de la entidad de restituir el dinero o los activos que custodiaba, en los supuestos concretos de insolvencia recogidos en la normativa de cada fondo.\n\n## Qué fondo protege realmente tu cuenta: depende de la entidad legal, no de la marca\n\nAquí está el matiz que más confunde a los traders: un mismo bróker puede operar en España a través de distintas entidades legales, cada una autorizada y supervisada por un regulador diferente, y por tanto adherida a un fondo de compensación distinto.\n\nPor ejemplo, [IG](/brokers/ig/) presta servicios en la Unión Europea, incluida España, a través de IG Europe GmbH. Según la propia web de protección al cliente de IG, \nIG Europe GmbH está regulada y autorizada por la Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin)\n, el supervisor alemán. Esto significa que, para clientes en España, el esquema de compensación aplicable no es el FSCS británico ni el FOGAIN español, sino el sistema de indemnización a inversores vigente en Alemania. IG también describe medidas de segregación de fondos: \ntu dinero se mantiene en cuentas bancarias segregadas para clientes en bancos regulados, y nunca se fusiona con el dinero propio de la entidad\n.\n\nEl caso de [XTB](/brokers/xtb/) ilustra la misma lógica desde otro país de origen. Según la propia página educativa de XTB sobre protección de activos, \nXTB está incluida en el esquema de compensación gestionado por el Polish National Depository For Securities\n, el sistema polaco, ya que la entidad matriz está autorizada en Polonia. Su sucursal española opera bajo registro de la CNMV, pero el fondo de compensación de referencia para el cliente no es automáticamente el FOGAIN: depende de bajo qué autorización concreta se presta el servicio.\n\nLa conclusión práctica es clara: el país donde el bróker tiene una oficina comercial, o el idioma en que atiende al cliente, no determina el fondo de compensación. Lo determina la entidad legal exacta que figura en el contrato y el regulador que la supervisa directamente.\n\n## Cómo comprobarlo tú mismo antes de operar\n\n- Busca en la documentación legal del bróker (aviso legal, política de ejecución, condiciones) qué entidad jurídica concreta te presta el servicio y bajo qué número de registro.\n- Verifica ese registro directamente en la web del regulador correspondiente (CNMV, FCA, BaFin u otro), no solo en la web comercial del bróker.\n- Comprueba a qué fondo de compensación está adherida esa entidad concreta y cuál es el límite de cobertura vigente para ese fondo, ya que puede diferir notablemente entre países.\n- No des por hecho que \"regulado en Europa\" equivale a estar cubierto por el FOGAIN: cada fondo nacional tiene su propio ámbito y sus propios importes.\n\nLos fondos de compensación son una capa de protección real, pero limitada y condicionada. Conocer exactamente cuál te corresponde, y qué cubre, forma parte de la diligencia debida antes de depositar dinero en cualquier bróker.",
+  "relatedBrokers": [
+    "ig",
+    "xtb"
+  ],
+  "sources": [
+    {
+      "title": "FSCS – Investment compensation & protection",
+      "url": "https://www.fscs.org.uk/what-we-cover/investments/",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "FSCS welcomes higher deposit protection limit of £120,000",
+      "url": "https://www.fscs.org.uk/media/press/2025/nov/fscs-welcomes-higher-deposit-protection-limit-of-120000--giving-people-confidence-their-money-is-protected/",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "FSCS – Deposit limit protection increase",
+      "url": "https://www.fscs.org.uk/what-we-cover/banks-building-societies-credit-unions/deposit-limit-increase/",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "CNMV – Guía rápida: Fondo de garantía de inversiones (FOGAIN)",
+      "url": "https://www.cnmv.es/DocPortal/Publicaciones/Fichas/GR14_FOGAIN.pdf",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "CNMV – Ficha Fondo de garantía de inversiones (FOGAIN)",
+      "url": "http://www.cnmv.es/docportal/publicaciones/fichas/ficha_fg.pdf",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "Finanzas para Todos – ¿Están seguras mis inversiones? Fondo de garantía de inversiones",
+      "url": "https://www.finanzasparatodos.es/es/secciones/actualidad/fondogarantiainversiones.html",
+      "date": "2019-04-23"
+    },
+    {
+      "title": "FOGAIN – Área inversores",
+      "url": "https://www.fogain.com/inversores/",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "IG – Protección del dinero del cliente",
+      "url": "https://www.ig.com/es/proteccion-dinero-cliente",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "XTB – Protección de activos de los clientes",
+      "url": "https://www.xtb.com/es/educacion/proteccion-de-activos-de-los-clientes",
+      "date": "2026-03-25"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Ilustración de una hucha protegida por un escudo, símbolo de los fondos de compensación FSCS y FOGAIN"
+}
