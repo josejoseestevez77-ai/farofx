@@ -17,7 +17,7 @@ import {
   renderRoundup, renderAuthorsIndex, renderAuthor, renderSimplePage,
   renderOpinar, renderOpinionRecibida,
 } from './src/templates/pages.mjs';
-import { renderArticulo, renderNoticiasIndex } from './src/templates/noticias.mjs';
+import { renderArticulo, renderBlogIndex } from './src/templates/blog.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dir, 'dist');
@@ -118,9 +118,9 @@ for (const reg of regulators) page(`/regulados/${reg.toLowerCase()}/`, renderReg
 page('/autores/', renderAuthorsIndex(authors), 0.5, 'monthly');
 for (const a of authors) page(`/autores/${a.slug}/`, renderAuthor(a), 0.4, 'monthly');
 
-// Noticias / artículos (uno por JSON en knowledge-base/noticias/)
-page('/noticias/', renderNoticiasIndex(articles), 0.8, 'daily');
-for (const a of articles) page(`/noticias/${a.slug}/`, renderArticulo(a, brokers, authors), 0.7, 'weekly');
+// Blog (uno por JSON en knowledge-base/noticias/; ruta pública /blog/)
+page('/blog/', renderBlogIndex(articles, brokers), 0.9, 'daily');
+for (const a of articles) page(`/blog/${a.slug}/`, renderArticulo(a, brokers, authors), 0.7, 'weekly');
 
 // Legales / confianza
 page('/politica-afiliacion/', renderSimplePage({
@@ -230,10 +230,18 @@ ${topBrokers.map(({ b, s }) => `- [${b.name} (${s.toFixed(1)}/10)](${SITE.url}/b
 ## Hubs por regulador
 ${regulators.map((r) => `- [Brokers regulados por ${r}](${SITE.url}/regulados/${r.toLowerCase()}/)`).join('\n')}
 
-## Noticias y análisis
-${[...articles].sort((a, b) => String(b.date).localeCompare(String(a.date))).map((a) => `- [${a.title}](${SITE.url}/noticias/${a.slug}/)`).join('\n')}
+## Blog: noticias, guías y reseñas
+${[...articles].sort((a, b) => String(b.date).localeCompare(String(a.date))).map((a) => `- [${a.title}](${SITE.url}/blog/${a.slug}/)`).join('\n')}
 `;
 writeFileSync(join(DIST, 'llms.txt'), llms);
+
+// ---- _redirects (Cloudflare Pages): 301 de la antigua sección /noticias/ a /blog/ ----
+writeFileSync(
+  join(DIST, '_redirects'),
+  `/noticias/            /blog/          301
+/noticias/*           /blog/:splat    301
+`
+);
 
 console.log(`✓ FAROFX construido: ${pages.length} páginas + sitemap/robots/llms en dist/`);
 console.log(`  Ranking (score auditable):`);
