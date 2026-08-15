@@ -39,9 +39,9 @@ export function header(active = '') {
     <a href="/" class="brand">FARO<b>FX</b></a>
     <nav>
       ${link('/#ranking', 'Ranking', 'ranking')}
+      ${link('/blog/', 'Blog', 'blog')}
       ${link('/metodologia/', 'Metodología', 'metodologia')}
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}
-      ${link('/noticias/', 'Noticias', 'noticias')}
       <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Soporte</a>
     </nav>
     <span class="spacer"></span>
@@ -67,7 +67,7 @@ export function footer() {
       <div>
         <h6>Plataforma</h6>
         <a href="/#ranking">Ranking de brokers</a>
-        <a href="/noticias/">Noticias y análisis</a>
+        <a href="/blog/">Blog</a>
         <a href="/metodologia/">Metodología</a>
         <a href="/como-verificamos/">Opiniones verificadas</a>
         <a href="/regulados/cysec/">Brokers regulados (hubs)</a>
