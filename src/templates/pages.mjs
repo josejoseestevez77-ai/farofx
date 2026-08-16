@@ -1,9 +1,9 @@
 // Fichas de reseña, hubs, autores, metodología y páginas de confianza/legales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, sealBadge } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, sealBadge, regCode, EU_UK_CODES, depLabel } from './helpers.mjs';
 
 const YEAR = 2026;
-const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
+const EU_UK = EU_UK_CODES;
 
 function breadcrumb(items) {
   const html = items
@@ -36,7 +36,7 @@ export function renderBroker(b, authors, position = null) {
   const score = computeScore(b);
   const author = authors[0];
   const regOk = b.regulators.filter((r) => r.ok);
-  const euUk = regOk.filter((r) => EU_UK.includes(r.authority));
+  const euUk = regOk.filter((r) => EU_UK.includes(regCode(r.authority)));
   const isRegulated = euUk.length > 0;
   const regNames = regOk.map((r) => r.authority).join(', ') || 'ninguno de primer nivel';
 
@@ -72,7 +72,7 @@ export function renderBroker(b, authors, position = null) {
         ? `Sí. ${b.name} opera bajo ${regNames}. Puedes comprobar cada licencia en el registro oficial del regulador correspondiente (enlaces en la caja de datos clave).`
         : `No por un regulador de primer nivel de la UE/UK. ${b.name} no aparece autorizado en CNMV, FCA ni CySEC según nuestra última verificación (${b.regulators[0].verifiedDate}).`,
     },
-    { q: `¿Cuál es el depósito mínimo de ${b.name}?`, a: `El depósito mínimo es de ${b.depositMin} €. Las condiciones de cuenta se re-verifican periódicamente.` },
+    { q: `¿Cuál es el depósito mínimo de ${b.name}?`, a: b.depositMin != null && b.depositMin !== '' ? `El depósito mínimo es de ${depLabel(b.depositMin)}. Las condiciones de cuenta se re-verifican periódicamente.` : `${b.name} no publica un depósito mínimo oficial verificable; conviene confirmarlo en su web antes de abrir cuenta.` },
     { q: `¿Qué plataformas ofrece ${b.name}?`, a: `${b.name} ofrece ${platforms}.` },
   ];
 
@@ -131,8 +131,8 @@ ${crumb.html}
       <div class="kd"><b>Entidad legal</b><div>${esc(b.legalEntity)}</div></div>
       <div class="kd"><b>Sede</b><div>${b.headquarters.flag} ${esc(b.headquarters.country)}</div></div>
       <div class="kd"><b>Protección de fondos</b><div>${esc(b.fundProtection)}</div></div>
-      <div class="kd"><b>Trayectoria</b><div>Operando desde ${b.foundedYear} (${YEAR - b.foundedYear} años)</div></div>
-      <div class="kd"><b>Depósito mínimo</b><div>${b.depositMin} €</div></div>
+      <div class="kd"><b>Trayectoria</b><div>${b.foundedYear ? `Operando desde ${b.foundedYear} (${YEAR - b.foundedYear} años)` : 'Antigüedad no verificada'}</div></div>
+      <div class="kd"><b>Depósito mínimo</b><div>${depLabel(b.depositMin)}</div></div>
       <div class="kd"><b>Costes típicos</b><div>${esc(b.spreadTypical)}<span class="src">Medición propia · ${b.regulators[0].verifiedDate}</span></div></div>
       <div class="kd"><b>Plataformas</b><div>${esc(platforms)}</div></div>
       <div class="kd"><b>Oficina verificada</b><div>${b.office.status === 'verified' ? '✅ Sí (' + b.office.date + ')' : b.office.status === 'failed' ? '⚠ No superada' : b.office.status === 'pending' ? '🕓 En revisión' : '– No aportada'}</div></div>
@@ -152,7 +152,7 @@ ${crumb.html}
     <p>Marco aplicable: ${isRegulated ? 'MiFID II y normativa ESMA para los reguladores europeos implicados.' : 'fuera del marco MiFID II al no constar regulación europea de primer nivel.'} La protección de fondos declarada es: ${esc(b.fundProtection)}.</p>
 
     <h2>Costes, plataformas y cuenta</h2>
-    <p>Costes típicos medidos: ${esc(b.spreadTypical)}. Depósito mínimo: ${b.depositMin} €. Plataformas disponibles: ${esc(platforms)}. Cada dato se re-verifica de forma periódica; la fecha de "actualizado" de esta ficha es real.</p>
+    <p>Costes típicos medidos: ${esc(b.spreadTypical)}. Depósito mínimo: ${depLabel(b.depositMin)}. Plataformas disponibles: ${esc(platforms)}. Cada dato se re-verifica de forma periódica; la fecha de "actualizado" de esta ficha es real.</p>
 
     <h3>Pros y contras reales</h3>
     <ul class="pc">
@@ -250,7 +250,7 @@ export function renderComoVerificamos() {
 export function renderRegulatorHub(reg, brokers, authors) {
   const list = brokers
     .map((b) => ({ b, score: computeScore(b) }))
-    .filter(({ b }) => b.regulators.some((r) => r.authority === reg && r.ok))
+    .filter(({ b }) => b.regulators.some((r) => regCode(r.authority) === reg && r.ok))
     .sort((a, b) => b.score - a.score);
   const crumb = breadcrumb([{ label: 'Inicio', url: '/' }, { label: 'Regulados', url: '/#ranking' }, { label: reg }]);
   const rows = list

@@ -29,6 +29,26 @@ export function computeScore(b) {
 }
 
 export const scoreColor = (s) => (s >= 8 ? '#2FA36B' : s >= 6.5 ? '#C8A24B' : s >= 5 ? '#d08a2c' : '#D9534F');
+
+// Código canónico de un regulador a partir de su etiqueta (que puede venir verbosa
+// del motor: "CySEC (Chipre)", "Banco Central de Irlanda (CBI)", "SEC/FINRA (EE. UU.)"…).
+// Prioriza el acrónimo entre paréntesis al final; si no, el primer token.
+export function regCode(authority) {
+  const s = String(authority || '').trim();
+  const paren = s.match(/\(([A-Z]{2,6})\)\s*$/); // acrónimo TODO en mayúsculas al final: "(CBI)", "(CFTC)"
+  if (paren) return paren[1];
+  const tok = s.split(/[\s(/]/)[0]; // si no, el primer token: "CySEC (Chipre)" → "CySEC"
+  return tok;
+}
+
+// Reguladores de primer nivel de la UE/UK (para el flag "Sin reg. UE/UK").
+export const EU_UK_CODES = ['FCA', 'CySEC', 'CNMV', 'ESMA', 'BaFin', 'CBI', 'AMF', 'CONSOB', 'MFSA', 'CBoI', 'CBI'];
+
+// Reguladores con página-hub propia (/regulados/<code>/).
+export const HUB_REGS = ['CNMV', 'FCA', 'CySEC', 'ASIC'];
+
+// Depósito mínimo legible: "n/d" cuando no hay dato (evita "null €").
+export const depLabel = (d) => (d == null || d === '' || Number.isNaN(+d)) ? 'n/d' : `${Number(d).toLocaleString('es-ES')} €`;
 export const riskLabel = (s) => (s >= 8 ? 'Riesgo bajo' : s >= 6 ? 'Riesgo medio' : 'Riesgo alto');
 export const starStr = (n) => '★'.repeat(Math.round(n)) + '☆'.repeat(5 - Math.round(n));
 export const fmt = (n) => Number(n).toLocaleString('es-ES');

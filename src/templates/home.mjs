@@ -1,16 +1,15 @@
 // Home / hub principal: hero + tabla de ranking data-driven + metodología + verificación + modales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS, podium } from './helpers.mjs';
-
-const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
+import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS, podium, regCode, EU_UK_CODES } from './helpers.mjs';
 
 // Modelo de datos que consume el script del cliente (misma fuente que las fichas).
 export function clientModel(brokers) {
   return brokers
     .map((b) => {
       const score = computeScore(b);
-      const noEuUk = !b.regulators.some((r) => r.ok && EU_UK.includes(r.authority));
-      const regs = b.regulators.filter((r) => r.ok).map((r) => ({ c: r.authority, ok: true }));
+      const noEuUk = !b.regulators.some((r) => r.ok && EU_UK_CODES.includes(regCode(r.authority)));
+      // Pastilla con el código canónico (FCA, CySEC…) y el nombre completo en el title.
+      const regs = b.regulators.filter((r) => r.ok).map((r) => ({ c: regCode(r.authority), full: r.authority, ok: true }));
       if (noEuUk) regs.unshift({ c: 'none', ok: false });
       return {
         id: b.slug,
