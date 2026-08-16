@@ -1,4 +1,4 @@
-/* FAROFX home — ranking interactivo. Datos inyectados por el build en window.__BROKERS__ */
+/* VEREDICTFX home — ranking interactivo. Datos inyectados por el build en window.__BROKERS__ */
 (function () {
   const BROKERS = window.__BROKERS__ || [];
   const $ = (s) => document.querySelector(s);
