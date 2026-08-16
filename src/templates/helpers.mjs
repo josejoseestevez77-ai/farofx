@@ -42,7 +42,26 @@ export function regCode(authority) {
 }
 
 // Reguladores de primer nivel de la UE/UK (para el flag "Sin reg. UE/UK").
-export const EU_UK_CODES = ['FCA', 'CySEC', 'CNMV', 'ESMA', 'BaFin', 'CBI', 'AMF', 'CONSOB', 'MFSA', 'CBoI', 'CBI'];
+export const EU_UK_CODES = [
+  'FCA',   // Reino Unido
+  'CySEC', // Chipre
+  'CNMV',  // España
+  'ESMA',  // UE
+  'BaFin', // Alemania
+  'CBI',   // Irlanda (Central Bank of Ireland)
+  'AMF',   // Francia
+  'CONSOB',// Italia
+  'MFSA',  // Malta
+  'FCMC',  // Letonia
+  'KNF',   // Polonia
+  'HCMC',  // Grecia
+  'CMVM',  // Portugal
+  'AFM',   // Países Bajos
+  'FSMA',  // Bélgica
+  'CSSF',  // Luxemburgo
+  'CNB',   // Chequia
+  'MNB',   // Hungría
+];
 
 // Reguladores con página-hub propia (/regulados/<code>/).
 export const HUB_REGS = ['CNMV', 'FCA', 'CySEC', 'ASIC'];
