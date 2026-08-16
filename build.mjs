@@ -10,7 +10,7 @@
 import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { SITE, computeScore } from './src/templates/helpers.mjs';
+import { SITE, computeScore, regCode, HUB_REGS } from './src/templates/helpers.mjs';
 import { renderHome } from './src/templates/home.mjs';
 import {
   renderBroker, renderMethodology, renderComoVerificamos, renderRegulatorHub,
@@ -116,8 +116,9 @@ page('/opinion-recibida/', renderOpinionRecibida(), 0.1, 'yearly');
 // Fichas de reseña (página estrella)
 for (const b of brokers) page(`/brokers/${b.slug}/`, renderBroker(b, authors, positionBySlug[b.slug]), 0.9, 'weekly');
 
-// Hubs por regulador (uno por cada regulador con al menos un broker verificado)
-const regulators = [...new Set(brokers.flatMap((b) => b.regulators.filter((r) => r.ok).map((r) => r.authority)))];
+// Hubs por regulador: solo los reguladores canónicos de primer nivel (HUB_REGS)
+// con al menos un broker verificado. Evita hubs basura por nombres verbosos.
+const regulators = HUB_REGS.filter((code) => brokers.some((b) => b.regulators.some((r) => r.ok && regCode(r.authority) === code)));
 for (const reg of regulators) page(`/regulados/${reg.toLowerCase()}/`, renderRegulatorHub(reg, brokers, authors), 0.7, 'weekly');
 
 // Autores
