@@ -6,6 +6,8 @@
   const MEDALS = ['🥇', '🥈', '🥉'];
 
   const scoreColor = (s) => (s >= 8 ? '#2FA36B' : s >= 6.5 ? '#C8A24B' : s >= 5 ? '#d08a2c' : '#D9534F');
+  // Depósito legible: "n/d" si no hay dato (evita mostrar "null€").
+  const dep = (d) => (d == null || d === '' || Number.isNaN(+d)) ? 'n/d' : (+d).toLocaleString('es') + '€';
 
   const OFFICE = {
     verified: { cls: 'ob-verified', ico: '🏢', label: 'Verificada' },
@@ -35,12 +37,12 @@
       }
       return true;
     });
-    list.sort((a, b) => (sort === 'reviews' ? b.reviews - a.reviews : sort === 'deposit' ? a.deposit - b.deposit : b.score - a.score));
+    list.sort((a, b) => (sort === 'reviews' ? b.reviews - a.reviews : sort === 'deposit' ? (a.deposit == null ? 1e12 : a.deposit) - (b.deposit == null ? 1e12 : b.deposit) : b.score - a.score));
     rowsEl.innerHTML = '';
     emptyEl.style.display = list.length ? 'none' : 'block';
     list.forEach((b, i) => {
       const regs = b.regs
-        .map((r) => (r.c === 'none' ? `<span class="reg warn">Sin reg. UE/UK</span>` : `<span class="reg">${r.c}</span>`))
+        .map((r) => (r.c === 'none' ? `<span class="reg warn">Sin reg. UE/UK</span>` : `<span class="reg"${r.full ? ` title="${escAttr(r.full)}"` : ''}>${r.c}</span>`))
         .join('');
       const medal = i < 3 ? `<span class="medal">${MEDALS[i]}</span>` : '';
       const el = document.createElement('div');
@@ -51,7 +53,7 @@
       el.innerHTML = `
         <span class="rank">${medal}${String(i + 1).padStart(2, '0')}</span>
         <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${b.logo ? `<img src="${b.logo}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff" onerror="this.remove()">` : ''}</span>
-          <span class="meta"><b>${b.name}</b><span>Depósito mín. ${b.deposit}€ · ${b.type.includes('copy') ? 'Copytrading' : 'Forex/CFD'}</span></span></div>
+          <span class="meta"><b>${b.name}</b><span>Depósito mín. ${dep(b.deposit)} · ${b.type.includes('copy') ? 'Copytrading' : 'Forex/CFD'}</span></span></div>
         <div class="regs">${regs}</div>
         ${officeBadge(b)}
         <div class="vcount"><b>${b.reviews.toLocaleString('es')}</b><span>analizadas</span></div>
@@ -66,7 +68,7 @@
     const mLogo = $('#m-logo'); mLogo.style.background = b.color; mLogo.style.position = 'relative'; mLogo.style.overflow = 'hidden'; mLogo.innerHTML = ''; mLogo.appendChild(document.createTextNode(b.init));
   if (b.logo) { const img = document.createElement('img'); img.src = b.logo; img.alt = ''; img.loading = 'lazy'; img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff'; img.onerror = function () { img.remove(); }; mLogo.appendChild(img); }
     $('#m-name').textContent = b.name;
-    $('#m-sub').textContent = `Depósito mínimo ${b.deposit}€ · ${b.type.includes('copy') ? 'Forex + Copytrading' : 'Forex / CFD'}`;
+    $('#m-sub').textContent = `Depósito mínimo ${dep(b.deposit)} · ${b.type.includes('copy') ? 'Forex + Copytrading' : 'Forex / CFD'}`;
     $('#m-score').textContent = b.score.toFixed(1); $('#m-score').style.color = scoreColor(b.score);
     $('#m-risk').textContent = b.risk;
     $('#m-basis').textContent = `· ${b.reviews.toLocaleString('es')} cuentas verificadas`;
