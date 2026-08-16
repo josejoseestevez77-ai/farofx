@@ -1,14 +1,14 @@
 {
-  "_comment": "Firma editorial de FAROFX. Byline genérico del equipo (decisión de Jose). Cada ficha se elabora verificando licencias en los registros oficiales antes de publicar.",
+  "_comment": "Firma editorial de Veredict FX. Byline genérico del equipo (decisión de Jose). Cada ficha se elabora verificando licencias en los registros oficiales antes de publicar.",
   "authors": [
     {
       "slug": "redaccion",
-      "name": "Redacción FAROFX",
+      "name": "Redacción Veredict FX",
       "role": "Equipo editorial · brokers y regulación",
       "location": "España",
       "specialties": ["Regulación (CNMV, ESMA, MiFID II)", "Verificación de licencias en registros oficiales", "Costes y protección al inversor"],
       "clusters": ["fichas-resena", "hubs-regulador", "metodologia"],
-      "credentials": "Equipo editorial de FAROFX. Cada ficha se elabora verificando las licencias en los registros oficiales de los reguladores, con fuente y fecha, y se revisa antes de publicar.",
+      "credentials": "Equipo editorial de Veredict FX. Cada ficha se elabora verificando las licencias en los registros oficiales de los reguladores, con fuente y fecha, y se revisa antes de publicar.",
       "sameAs": []
     }
   ]
