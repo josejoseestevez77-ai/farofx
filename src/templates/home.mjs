@@ -48,7 +48,7 @@ export function renderHome(brokers) {
     {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'FAROFX',
+      name: 'VEREDICTFX',
       url: SITE.url + '/',
       description: SITE.description,
       sameAs: SITE.sisters.map((s) => s.url),
@@ -208,7 +208,7 @@ ${modals()}
 
   return layout({
     active: '',
-    title: 'FAROFX — Opiniones de brokers verificadas. Puntuación auditable.',
+    title: 'VEREDICTFX — Opiniones de brokers verificadas. Puntuación auditable.',
     description: SITE.description,
     canonical: '/',
     jsonld,

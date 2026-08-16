@@ -1,7 +1,7 @@
 // Configuración del sitio y utilidades compartidas.
 export const SITE = {
-  name: 'FAROFX',
-  url: (process.env.SITE_URL || 'https://farofx.org').replace(/\/$/, ''),
+  name: 'Veredict FX',
+  url: (process.env.SITE_URL || 'https://veredictfx.com').replace(/\/$/, ''),
   tagline: 'Opiniones de brokers verificadas. Puntuación auditable.',
   description:
     'Plataforma independiente de análisis de brokers de forex y copytrading. Opiniones solo de traders verificados. Puntuación abierta y auditable. Nadie paga para cambiar su nota.',
@@ -80,7 +80,7 @@ export const AUDIT_LABELS = {
   costes: 'Transparencia de costes',
 };
 
-// ---------- SELLO "FARO Verificado · Nº X del ranking" ----------
+// ---------- SELLO "Veredict FX Verificado · Nº X del ranking" ----------
 // Insignia autocontenida (estilos en línea) que un broker puede mostrar como
 // prueba de su posición. Se usa en las fichas, el podio y la página de ranking.
 export function sealBadge(position, { size = 'md' } = {}) {
@@ -89,7 +89,7 @@ export function sealBadge(position, { size = 'md' } = {}) {
   return `<span class="faro-seal" style="display:inline-flex;align-items:center;gap:${sm ? '8px' : '11px'};padding:${sm ? '7px 12px' : '9px 15px'};border-radius:13px;background:linear-gradient(135deg,#0f1b14,#17281e);border:1px solid #2FA36B;box-shadow:0 6px 18px rgba(20,60,40,.18);font-family:var(--display,'Space Grotesk',system-ui,sans-serif);vertical-align:middle">
     <span style="display:grid;place-items:center;width:${sm ? '28px' : '34px'};height:${sm ? '28px' : '34px'};border-radius:9px;background:#2FA36B;color:#fff;font-weight:700;font-size:${sm ? '14px' : '17px'};flex:none">✓</span>
     <span style="display:flex;flex-direction:column;line-height:1.15;text-align:left">
-      <span style="font-size:${sm ? '9px' : '10px'};letter-spacing:.14em;color:#7fd4a6;font-weight:600;text-transform:uppercase">FARO · Verificado</span>
+      <span style="font-size:${sm ? '9px' : '10px'};letter-spacing:.14em;color:#7fd4a6;font-weight:600;text-transform:uppercase">Veredict FX · Verificado</span>
       <span style="font-size:${sm ? '13px' : '15px'};color:#fff;font-weight:700">${posText}</span>
     </span>
   </span>`;

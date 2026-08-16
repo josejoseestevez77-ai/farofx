@@ -1,6 +1,6 @@
-// Página dedicada de RANKING de FARO.
+// Página dedicada de RANKING de Veredict FX.
 // Reutiliza el modelo de cliente, el podio, los modales y home.js de la home,
-// y añade el argumento de visibilidad para brokers + el sello "FARO Verificado".
+// y añade el argumento de visibilidad para brokers + el sello "Veredict FX Verificado".
 import { layout } from './layout.mjs';
 import { SITE, esc, podium, sealBadge } from './helpers.mjs';
 import { clientModel, modals } from './home.mjs';
@@ -68,7 +68,7 @@ export function renderRanking(brokers) {
   <div class="pb-grid">
     <div>
       <span class="eyebrow">Para brokers</span>
-      <h2 style="font-family:var(--display);font-size:clamp(22px,2.6vw,32px);letter-spacing:-.02em;margin:10px 0 14px;color:var(--txt-inv,#f1f1ec)">Así te ve el mundo cuando estás en FARO</h2>
+      <h2 style="font-family:var(--display);font-size:clamp(22px,2.6vw,32px);letter-spacing:-.02em;margin:10px 0 14px;color:var(--txt-inv,#f1f1ec)">Así te ve el mundo cuando estás en Veredict FX</h2>
       <p style="color:var(--muted-inv,#b9b9ad);max-width:52ch">Cada broker del ranking tiene su <b>ficha propia</b>, optimizada para aparecer en Google cuando alguien busca <span class="mono">"tu marca + opiniones"</span> o <span class="mono">"tu marca review"</span>. En lugar de que el usuario encuentre un foro con quejas sueltas, encuentra una ficha seria, con tu regulación verificada, tus datos y tu nota auditable.</p>
       <ul class="pc" style="margin-top:16px">
         <li class="pro" style="color:var(--txt-inv,#f1f1ec)">Página propia indexable: apareces cuando te buscan por nombre.</li>
@@ -76,7 +76,7 @@ export function renderRanking(brokers) {
         <li class="pro" style="color:var(--txt-inv,#f1f1ec)">Opiniones verificadas de traders reales, sin ruido anónimo.</li>
         <li class="pro" style="color:var(--txt-inv,#f1f1ec)">Sello de posición que puedes exhibir en tu propia web.</li>
       </ul>
-      <div style="margin-top:22px"><a class="btn btn-seal" href="mailto:contacto@farofx.org?subject=Quiero%20estar%20en%20el%20ranking%20de%20FARO">Quiero estar en el ranking →</a></div>
+      <div style="margin-top:22px"><a class="btn btn-seal" href="mailto:contacto@veredictfx.com?subject=Quiero%20estar%20en%20el%20ranking%20de%20Veredict%20FX">Quiero estar en el ranking →</a></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
       <div style="font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-inv,#b9b9ad);font-weight:600">El sello que puedes mostrar</div>
@@ -96,7 +96,7 @@ ${modals()}
 
   return layout({
     active: 'ranking',
-    title: 'Ranking de brokers de forex y CFD 2026 | FARO',
+    title: 'Ranking de brokers de forex y CFD 2026 | Veredict FX',
     description: 'Ranking independiente de brokers de forex y CFD, ordenado por un score auditable y opiniones verificadas. Ningún broker paga por su posición.',
     canonical: '/ranking/',
     jsonld,

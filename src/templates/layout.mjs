@@ -1,4 +1,4 @@
-// Chrome reutilizable de FAROFX: <head>, cabecera, footer y ensamblado de página.
+// Chrome reutilizable de VEREDICTFX: <head>, cabecera, footer y ensamblado de página.
 // Todas las páginas se construyen con layout() para que el "chrome" sea idéntico.
 import { SITE, esc } from './helpers.mjs';
 
@@ -24,6 +24,8 @@ export function head({ title, description, canonical, jsonld = [], extraHead = '
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/theme.css">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${extraHead}
 ${ld}
 </head>
@@ -36,7 +38,7 @@ export function header(active = '') {
   return `<header>
   <style>header nav{align-items:center!important}header nav a{white-space:nowrap!important}</style>
   <div class="wrap nav">
-    <a href="/" class="brand">FARO<b>FX</b></a>
+    <a href="/" class="brand">VEREDICT<b>FX</b></a>
     <nav>
       ${link('/ranking/', 'Ranking', 'ranking')}
       ${link('/blog/', 'Blog', 'blog')}
@@ -60,9 +62,9 @@ export function footer() {
     </div>
     <div class="foot-grid">
       <div>
-        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px">FARO<b>FX</b></a>
+        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px">VEREDICT<b>FX</b></a>
         <p style="font-size:13.5px;max-width:36ch">Análisis independiente de brokers basado en datos verificados. Reseñas solo de traders verificados y puntuación abierta y auditable.</p>
-        <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@farofx.org">contacto@farofx.org</a></p>
+        <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@veredictfx.com">contacto@veredictfx.com</a></p>
       </div>
       <div>
         <h6>Plataforma</h6>
@@ -83,7 +85,7 @@ export function footer() {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 FAROFX</span>
+      <span>© 2026 VEREDICTFX</span>
       <span class="mono">Sin pagos de brokers · datos verificables · fuente independiente</span>
     </div>
   </div>

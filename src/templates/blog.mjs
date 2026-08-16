@@ -1,4 +1,4 @@
-// Sección BLOG de FARO — hub de contenido: noticias, guías y reseñas de brokers.
+// Sección BLOG de Veredict FX — hub de contenido: noticias, guías y reseñas de brokers.
 // Sustituye a la antigua sección "Noticias". Cada artículo es un JSON en
 // knowledge-base/noticias/<slug>.json (lo publica el motor n8n); las reseñas de
 // brokers viven en /brokers/<slug>/ y aquí se enlazan en tarjetas buscables.
@@ -76,7 +76,7 @@ export function renderArticulo(article, brokers = [], authors = []) {
   const nameBySlug = Object.fromEntries(brokers.map((b) => [b.slug, b.name]));
   const crumb = breadcrumbBlog(article);
   const fecha = fechaLarga(article.updated || article.date);
-  const author = article.author || (authors[0] && authors[0].name) || 'Redacción FARO';
+  const author = article.author || (authors[0] && authors[0].name) || 'Redacción Veredict FX';
 
   const related = (article.relatedBrokers || [])
     .map((slug) => ({ slug, name: nameBySlug[slug] || slug }))
@@ -100,7 +100,7 @@ export function renderArticulo(article, brokers = [], authors = []) {
     datePublished: article.date,
     dateModified: article.updated || article.date,
     author: { '@type': 'Organization', name: author },
-    publisher: { '@type': 'Organization', name: 'FARO' },
+    publisher: { '@type': 'Organization', name: 'Veredict FX' },
     mainEntityOfPage: SITE.url + `/blog/${article.slug}/`,
   };
 
@@ -133,7 +133,7 @@ ${crumb.html}
 
   return layout({
     active: 'blog',
-    title: article.metaTitle || `${article.title} | FARO`,
+    title: article.metaTitle || `${article.title} | Veredict FX`,
     description: article.metaDescription || article.excerpt || '',
     canonical: `/blog/${article.slug}/`,
     jsonld: [jsonldArticle, crumb.jsonld],
@@ -189,7 +189,7 @@ export function renderBlogIndex(articles, brokers = []) {
   const jsonld = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Blog de FARO: noticias, guías y reseñas de brokers',
+    name: 'Blog de Veredict FX: noticias, guías y reseñas de brokers',
     itemListElement: list.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: SITE.url + `/blog/${a.slug}/`, name: a.title })),
   };
 
@@ -274,7 +274,7 @@ ${styles}
 
   return layout({
     active: 'blog',
-    title: 'Blog de brokers de forex: noticias, guías y reseñas | FARO',
+    title: 'Blog de brokers de forex: noticias, guías y reseñas | Veredict FX',
     description: 'Noticias y análisis de regulación, avisos de fraude, guías para operar y reseñas verificadas de brokers de forex y CFD. Búsqueda por broker o tema.',
     canonical: '/blog/',
     jsonld: [jsonld],
