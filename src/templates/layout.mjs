@@ -38,7 +38,7 @@ export function header(active = '') {
   return `<header>
   <style>header nav{align-items:center!important}header nav a{white-space:nowrap!important}</style>
   <div class="wrap nav">
-    <a href="/" class="brand">VEREDICT<b>FX</b></a>
+    <a href="/" class="brand"><img src="/logo-mark.png" alt="Veredict FX" width="30" height="30" style="border-radius:7px;vertical-align:middle;margin:-2px 9px 0 0">VEREDICT<b>FX</b></a>
     <nav>
       ${link('/ranking/', 'Ranking', 'ranking')}
       ${link('/blog/', 'Blog', 'blog')}
@@ -62,7 +62,7 @@ export function footer() {
     </div>
     <div class="foot-grid">
       <div>
-        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px">VEREDICT<b>FX</b></a>
+        <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px"><img src="/logo-mark.png" alt="Veredict FX" width="26" height="26" style="border-radius:6px;vertical-align:middle;margin:-2px 8px 0 0">VEREDICT<b>FX</b></a>
         <p style="font-size:13.5px;max-width:36ch">Análisis independiente de brokers basado en datos verificados. Reseñas solo de traders verificados y puntuación abierta y auditable.</p>
         <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@veredictfx.com">contacto@veredictfx.com</a></p>
       </div>
