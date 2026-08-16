@@ -70,10 +70,10 @@ function loadBrokers() {
     if (list.length) {
       // Orden estable por slug para que el build sea determinista.
       list.sort((a, b) => String(a.slug).localeCompare(String(b.slug)));
-      return list.map(sanitize);
+      return list.map(sanitize).map(fixBrand);
     }
   }
-  return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers.map(sanitize);
+  return JSON.parse(readFileSync(join(KB, 'brokers.json'), 'utf8')).brokers.map(sanitize).map(fixBrand);
 }
 
 // Normaliza la marca en contenido antiguo: "FARO"/"FAROFX"/"farofx.org" (grabados en
