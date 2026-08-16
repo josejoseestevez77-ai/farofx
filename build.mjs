@@ -18,6 +18,7 @@ import {
   renderOpinar, renderOpinionRecibida,
 } from './src/templates/pages.mjs';
 import { renderArticulo, renderBlogIndex } from './src/templates/blog.mjs';
+import { renderRanking } from './src/templates/ranking.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const DIST = join(__dir, 'dist');
@@ -99,8 +100,13 @@ function page(path, html, priority = 0.6, changefreq = 'weekly') {
   pages.push({ path, html, priority, changefreq });
 }
 
+// Posición en el ranking (por score auditable, desc) → sello "Nº X" en cada ficha.
+const rankingOrder = brokers.map((b) => ({ slug: b.slug, s: computeScore(b) })).sort((a, b) => b.s - a.s);
+const positionBySlug = Object.fromEntries(rankingOrder.map((r, i) => [r.slug, i + 1]));
+
 // ---- Construir el conjunto de páginas ----
 page('/', renderHome(brokers), 1.0, 'daily');
+page('/ranking/', renderRanking(brokers), 0.95, 'daily');
 page('/metodologia/', renderMethodology(), 0.7, 'monthly');
 page('/como-verificamos/', renderComoVerificamos(), 0.7, 'monthly');
 page('/mejores-brokers-forex/', renderRoundup(brokers), 0.9, 'weekly');
@@ -108,7 +114,7 @@ page('/opinar/', renderOpinar(brokers), 0.6, 'monthly');
 page('/opinion-recibida/', renderOpinionRecibida(), 0.1, 'yearly');
 
 // Fichas de reseña (página estrella)
-for (const b of brokers) page(`/brokers/${b.slug}/`, renderBroker(b, authors), 0.9, 'weekly');
+for (const b of brokers) page(`/brokers/${b.slug}/`, renderBroker(b, authors, positionBySlug[b.slug]), 0.9, 'weekly');
 
 // Hubs por regulador (uno por cada regulador con al menos un broker verificado)
 const regulators = [...new Set(brokers.flatMap((b) => b.regulators.filter((r) => r.ok).map((r) => r.authority)))];
