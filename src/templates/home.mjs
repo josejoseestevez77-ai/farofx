@@ -1,6 +1,6 @@
 // Home / hub principal: hero + tabla de ranking data-driven + metodología + verificación + modales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS, logoUrl, logoImg } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreColor, riskLabel, fmt, AUDIT_LABELS, podium } from './helpers.mjs';
 
 const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
 
@@ -18,7 +18,6 @@ export function clientModel(brokers) {
         name: b.name,
         color: b.color,
         init: b.init,
-        logo: logoUrl(b.slug),
         office: b.office,
         type: b.type,
         deposit: b.depositMin,
@@ -34,7 +33,7 @@ export function clientModel(brokers) {
           r.ok,
           r.status.charAt(0).toUpperCase() + r.status.slice(1),
         ]),
-        revs: b.reviews.samples.slice(0, 10).map((s) => ({ u: s.user, s: s.stars, t: s.text, m: s.meta })),
+        revs: b.reviews.samples.map((s) => ({ u: s.user, s: s.stars, t: s.text, m: s.meta })),
       };
     })
     .sort((a, b) => b.score - a.score);
@@ -94,7 +93,7 @@ export function renderHome(brokers) {
     </div>
     <div class="ledger" aria-label="Ficha de puntuación auditable de ejemplo">
       <div class="ledger-top">
-        <div class="name"><span class="logo" style="width:26px;height:26px;border-radius:7px;background:${top.color};font-size:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700;position:relative;overflow:hidden">${esc(top.init)}${logoImg(top.id)}</span> ${esc(top.name)}</div>
+        <div class="name"><span class="logo" style="width:26px;height:26px;border-radius:7px;background:${top.color};font-size:12px;display:grid;place-items:center;color:#fff;font-family:var(--display);font-weight:700">${esc(top.init)}</span> ${esc(top.name)}</div>
         <span class="vbadge">VERIFICADO</span>
       </div>
       <div class="score-row">
@@ -126,8 +125,9 @@ export function renderHome(brokers) {
     <div class="sec-head">
       <span class="eyebrow">Ranking en vivo</span>
       <h2>Compara brokers por datos, no por marketing</h2>
-      <p>Filtra por regulador, tipo de cuenta o depósito mínimo. Pulsa en cualquier broker para ver el desglose auditable de su nota y las opiniones verificadas.</p>
+      <p>Filtra por regulador, tipo de cuenta o depósito mínimo. Pulsa en cualquier broker para ver el desglose auditable de su nota y las opiniones verificadas. <a href="/ranking/" style="color:var(--seal)">Ver el ranking completo →</a></p>
     </div>
+    ${podium(model)}
     <div class="filters">
       <input id="f-search" type="text" placeholder="Buscar broker…" oninput="renderRows()">
       <select id="f-reg" onchange="renderRows()">
@@ -156,7 +156,7 @@ export function renderHome(brokers) {
       </select>
     </div>
     <div class="table">
-      <div class="thead"><span>#</span><span>Broker</span><span>Reguladores</span><span>Oficina</span><span>Reviews analiz.</span><span>Nota</span><span></span></div>
+      <div class="thead"><span>#</span><span>Broker</span><span>Reguladores</span><span>Oficina</span><span>Opiniones verif.</span><span>Nota</span><span></span></div>
       <div id="rows"></div>
       <div class="empty" id="empty">Ningún broker coincide con esos filtros.</div>
     </div>
@@ -208,7 +208,7 @@ ${modals()}
 <script src="/home.js" defer></script>`;
 
   return layout({
-    active: 'ranking',
+    active: '',
     title: 'FAROFX — Opiniones de brokers verificadas. Puntuación auditable.',
     description: SITE.description,
     canonical: '/',
@@ -219,7 +219,7 @@ ${modals()}
 }
 
 // Los tres modales (broker, opinión, oficina) — idénticos al diseño.
-function modals() {
+export function modals() {
   return `
 <div class="overlay" id="officeModal" onclick="if(event.target===this)closeOffice()">
   <div class="modal" role="dialog" aria-modal="true" style="max-width:580px">

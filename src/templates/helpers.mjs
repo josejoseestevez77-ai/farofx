@@ -41,65 +41,60 @@ export const AUDIT_LABELS = {
   costes: 'Transparencia de costes',
 };
 
-// Dominio oficial de cada broker publicado, usado solo para mostrar su logo real
-// (servicio gratuito de favicons por dominio; no usa IA ni tiene coste).
-export const BROKER_DOMAINS = {
-  aaafx: 'aaafx.com', admirals: 'admirals.com', adss: 'adss.com',
-  'amana-capital': 'amanacapital.com', avatrade: 'avatrade.com', axi: 'axi.com',
-  axiory: 'axiory.com', bdswiss: 'bdswiss.com', 'blackbull-markets': 'blackbull.com',
-  'blueberry-markets': 'blueberrymarkets.com', capex: 'capex.com', 'capital-com': 'capital.com',
-  'century-financial': 'century.ae', 'cmc-markets': 'cmcmarkets.com', 'colmex-pro': 'colmexpro.com',
-  consorsbank: 'consorsbank.de', 'cwg-markets': 'cwgmarkets.com', darwinex: 'darwinex.com',
-  deriv: 'deriv.com', 'dif-broker': 'difbroker.com', 'dmm-fx': 'fx.dmm.com',
-  'doo-prime': 'dooprime.com', dukascopy: 'dukascopy.com', easymarkets: 'easymarkets.com',
-  eightcap: 'eightcap.com', errante: 'errante.com', etoro: 'etoro.com',
-  'etx-capital': 'etxcapital.com', eurotrader: 'eurotrader.com', exante: 'exante.eu',
-  exness: 'exness.com', 'fibo-group': 'fibogroup.com', 'forex-com': 'forex.com',
-  freedom24: 'freedom24.com', 'fusion-markets': 'fusionmarkets.com', fxcc: 'fxcc.com',
-  fxchoice: 'fxchoice.com', fxgt: 'fxgt.com', fxopen: 'fxopen.com',
-  fxpesa: 'fxpesa.com', fxprimus: 'fxprimus.com', fxpro: 'fxpro.com',
-  fxtm: 'forextime.com', 'gaitame-com': 'gaitame.com', 'gbe-brokers': 'gbebrokers.com',
-  'global-prime': 'globalprime.com', 'go-markets': 'gomarkets.com', 'grand-capital': 'grandcapital.net',
-  gtcfx: 'gtcfx.com', 'gvc-gaesco': 'gvcgaesco.es', 'hantec-markets': 'hantecmarkets.com',
-  hfm: 'hfm.com', hycm: 'hycm.com', ibroker: 'ibroker.es',
-  'ic-markets': 'icmarkets.com', 'ifc-markets': 'ifcmarkets.com', iforex: 'iforex.com',
-  ig: 'ig.com', infinox: 'infinox.com', 'interactive-brokers': 'interactivebrokers.com',
-  intertrader: 'intertrader.com', 'invast-global': 'invast.com.au', ironfx: 'ironfx.com',
-  libertex: 'libertex.com', 'markets-com': 'markets.com', mitrade: 'mitrade.com',
-  'moneta-markets': 'monetamarkets.com', moomoo: 'moomoo.com', 'mufg-esmart': 'kabu.com',
-  multibank: 'multibankgroup.com', naga: 'naga.com', oanda: 'oanda.com',
-  octa: 'octafx.com', pepperstone: 'pepperstone.com', plus500: 'plus500.com',
-  's-broker': 'sbroker.de', 'saxo-bank': 'home.saxo', 'scope-markets': 'scopemarkets.com',
-  skilling: 'skilling.com', 'smbc-nikko': 'smbcnikko.co.jp', 'spread-co': 'spreadco.com',
-  spreadex: 'spreadex.com', 'squared-financial': 'squaredfinancial.com', startrader: 'startrader.com',
-  thinkmarkets: 'thinkmarkets.com', tickmill: 'tickmill.com', tiomarkets: 'tiomarkets.com',
-  'titan-fx': 'titanfx.com', tmgm: 'tmgm.com', 'tms-brokers': 'tms.pl',
-  topfx: 'topfx.com', 'trade-nation': 'tradenation.com',
-  tradeeu: 'tradeeu.com', tradequo: 'tradequo.com',
-  'tradeview-markets': 'tvmarkets.com', 'trading-212': 'trading212.com', trive: 'trive.com',
-  'uob-kay-hian': 'uobkayhian.com', valutrades: 'valutrades.com', vantage: 'vantagemarkets.com',
-  vestle: 'vestle.com', weltrade: 'weltrade.com', xm: 'xm.com',
-  xtb: 'xtb.com', 'zero-markets': 'zeromarkets.com',
-};
-
-// Excepciones: logo real cuando el favicon por dominio no da un resultado bueno.
-export const LOGO_OVERRIDES = {
-  'trade-com': 'https://www.trade.com/wp-content/uploads/2025/04/cropped-Fav-trade-192x192.png',
-};
-
-// Devuelve la URL del logo real del broker (o null si no hay dominio mapeado,
-// en cuyo caso la plantilla mantiene el círculo de iniciales de siempre).
-export function logoUrl(slug) {
-  if (LOGO_OVERRIDES[slug]) return LOGO_OVERRIDES[slug];
-  const domain = BROKER_DOMAINS[slug];
-  return domain ? `https://www.google.com/s2/favicons?sz=128&domain=${domain}` : null;
+// ---------- SELLO "FARO Verificado · Nº X del ranking" ----------
+// Insignia autocontenida (estilos en línea) que un broker puede mostrar como
+// prueba de su posición. Se usa en las fichas, el podio y la página de ranking.
+export function sealBadge(position, { size = 'md' } = {}) {
+  const sm = size === 'sm';
+  const posText = position ? `Nº ${position} · Ranking 2026` : 'Ranking 2026';
+  return `<span class="faro-seal" style="display:inline-flex;align-items:center;gap:${sm ? '8px' : '11px'};padding:${sm ? '7px 12px' : '9px 15px'};border-radius:13px;background:linear-gradient(135deg,#0f1b14,#17281e);border:1px solid #2FA36B;box-shadow:0 6px 18px rgba(20,60,40,.18);font-family:var(--display,'Space Grotesk',system-ui,sans-serif);vertical-align:middle">
+    <span style="display:grid;place-items:center;width:${sm ? '28px' : '34px'};height:${sm ? '28px' : '34px'};border-radius:9px;background:#2FA36B;color:#fff;font-weight:700;font-size:${sm ? '14px' : '17px'};flex:none">✓</span>
+    <span style="display:flex;flex-direction:column;line-height:1.15;text-align:left">
+      <span style="font-size:${sm ? '9px' : '10px'};letter-spacing:.14em;color:#7fd4a6;font-weight:600;text-transform:uppercase">FARO · Verificado</span>
+      <span style="font-size:${sm ? '13px' : '15px'};color:#fff;font-weight:700">${posText}</span>
+    </span>
+  </span>`;
 }
 
-// HTML del <img> del logo listo para insertar dentro de un badge .logo existente
-// (position:relative en el span padre). Si falla la carga, se autoelimina y deja
-// ver el círculo de iniciales que ya estaba debajo.
-export function logoImg(slug) {
-  const url = logoUrl(slug);
-  if (!url) return '';
-  return `<img src="${url}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff" onerror="this.remove()">`;
+// ---------- PODIO (top 3) ----------
+// Recibe el modelo de cliente ya ordenado por nota (id,url,name,color,init,score,reviews).
+export function podium(model) {
+  const top = model.slice(0, 3);
+  if (top.length < 3) return '';
+  const order = [top[1], top[0], top[2]]; // 2º, 1º (centro, elevado), 3º
+  const place = { 0: 2, 1: 1, 2: 3 };
+  const medals = { 1: '🥇', 2: '🥈', 3: '🥉' };
+  const cards = order
+    .map((b, idx) => {
+      const p = place[idx];
+      const isFirst = p === 1;
+      return `<a class="pod-card${isFirst ? ' pod-1' : ''}" href="${b.url}" style="text-decoration:none">
+        <div class="pod-medal">${medals[p]}</div>
+        <div class="pod-logo" style="background:${b.color}">${esc(b.init)}</div>
+        <div class="pod-name">${esc(b.name)}</div>
+        <div class="pod-score" style="color:${scoreColor(b.score)}">${b.score.toFixed(1)}<span>/10</span></div>
+        <div class="pod-rev">${Number(b.reviews).toLocaleString('es-ES')} verificadas</div>
+        <div class="pod-pos">Nº ${p}</div>
+      </a>`;
+    })
+    .join('');
+  return `<style>
+  .podium{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end;margin:6px 0 30px}
+  .pod-card{display:flex;flex-direction:column;align-items:center;gap:6px;padding:20px 14px;border:1px solid var(--line-dark,#e5e0d6);border-radius:16px;background:var(--surface,#fff);text-align:center;transition:transform .15s,border-color .15s}
+  .pod-card:hover{transform:translateY(-3px);border-color:var(--seal)}
+  .pod-1{padding:28px 14px 24px;border-color:#2FA36B;box-shadow:0 10px 30px rgba(20,60,40,.12)}
+  .pod-medal{font-size:26px}
+  .pod-1 .pod-medal{font-size:34px}
+  .pod-logo{width:44px;height:44px;border-radius:11px;color:#fff;font-family:var(--display);font-weight:700;font-size:17px;display:grid;place-items:center}
+  .pod-1 .pod-logo{width:54px;height:54px;font-size:20px}
+  .pod-name{font-weight:700;font-size:16px;color:var(--ink,#1a1a1a);font-family:var(--display)}
+  .pod-1 .pod-name{font-size:19px}
+  .pod-score{font-family:var(--display);font-weight:700;font-size:26px;line-height:1}
+  .pod-1 .pod-score{font-size:34px}
+  .pod-score span{font-size:13px;color:var(--muted);font-weight:500}
+  .pod-rev{font-size:12px;color:var(--muted)}
+  .pod-pos{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--seal);font-weight:700}
+  @media(max-width:640px){.podium{grid-template-columns:1fr;align-items:stretch}.pod-1{order:-1}}
+  </style>
+  <div class="podium">${cards}</div>`;
 }

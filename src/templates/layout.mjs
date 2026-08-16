@@ -38,7 +38,7 @@ export function header(active = '') {
   <div class="wrap nav">
     <a href="/" class="brand">FARO<b>FX</b></a>
     <nav>
-      ${link('/#ranking', 'Ranking', 'ranking')}
+      ${link('/ranking/', 'Ranking', 'ranking')}
       ${link('/blog/', 'Blog', 'blog')}
       ${link('/metodologia/', 'Metodología', 'metodologia')}
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}

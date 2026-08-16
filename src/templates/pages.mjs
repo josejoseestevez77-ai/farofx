@@ -1,6 +1,6 @@
 // Fichas de reseña, hubs, autores, metodología y páginas de confianza/legales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, logoImg } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, sealBadge } from './helpers.mjs';
 
 const YEAR = 2026;
 const EU_UK = ['FCA', 'CySEC', 'CNMV', 'ESMA'];
@@ -32,7 +32,7 @@ function auditLines(b) {
 }
 
 // ---------- FICHA DE RESEÑA (página estrella) ----------
-export function renderBroker(b, authors) {
+export function renderBroker(b, authors, position = null) {
   const score = computeScore(b);
   const author = authors[0];
   const regOk = b.regulators.filter((r) => r.ok);
@@ -120,7 +120,7 @@ ${crumb.html}
       <span class="who">Por <a href="/autores/${author.slug}/" style="color:var(--seal)">${esc(author.name)}</a></span>
       <span class="dot-sep">·</span><span>${esc(author.role)}</span>
       <span class="dot-sep">·</span><span>Actualizado: ${b.regulators[0].verifiedDate}</span>
-      <span class="dot-sep">·</span><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reviews analizadas</span>
+      <span class="dot-sep">·</span><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span>
     </div>
 
     <div class="answer-box"><b>Respuesta directa.</b> ${esc(directAnswer)}</div>
@@ -163,13 +163,13 @@ ${crumb.html}
     <h2>Veredicto con puntuación</h2>
     <div class="verdict">
       <div class="vh"><b style="color:${scoreColor(score)}">${score.toFixed(1)}</b><span class="vbadge">${riskLabel(score)}</span><span class="mono" style="font-size:12px;color:var(--muted)">basado en ${fmt(b.reviews.count)} cuentas verificadas</span></div>
+      ${position ? `<div style="margin:14px 0 6px">${sealBadge(position)}</div><p style="margin:0 0 12px;font-size:13px;color:var(--muted)">${esc(b.name)} ocupa la posición <b>Nº ${position}</b> de ${YEAR} en el <a href="/ranking/" style="color:var(--seal)">ranking de FARO</a>.</p>` : ''}
       <p style="margin:0 0 12px">Este número es el mismo que ordena el ranking, derivado de la evidencia según la <a href="/metodologia/" style="color:var(--seal)">metodología pública</a>. Desglose auditable:</p>
       <div class="ledger-lines" style="color:var(--muted);padding:0">${auditLines(b)}</div>
     </div>
 
     <h2>Opiniones verificadas de traders</h2>
-    <p style="color:var(--muted);margin:0 0 16px">${fmt(b.reviews.count)} reviews analizadas · mostrando las ${Math.min(b.reviews.samples.length, 10)} más representativas</p>
-    ${b.reviews.samples.slice(0, 10).map((r) => `<div class="rev"><div class="rh"><span class="who"><span class="vbadge">VERIF.</span>${esc(r.user)}</span><span class="stars">${starStr(r.stars)}</span></div><p>${esc(r.text)}</p><div class="rmeta">${r.meta.map((m) => `<span>· ${esc(m)}</span>`).join('')}</div></div>`).join('')}
+    ${b.reviews.samples.map((r) => `<div class="rev"><div class="rh"><span class="who"><span class="vbadge">VERIF.</span>${esc(r.user)}</span><span class="stars">${starStr(r.stars)}</span></div><p>${esc(r.text)}</p><div class="rmeta">${r.meta.map((m) => `<span>· ${esc(m)}</span>`).join('')}</div></div>`).join('')}
 
     <h2>Preguntas frecuentes</h2>
     <div class="faq">
@@ -256,7 +256,7 @@ export function renderRegulatorHub(reg, brokers, authors) {
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
-      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>Depósito mín. ${b.depositMin}€ · desde ${b.foundedYear}</span></span></div>
+      <div class="bk"><span class="logo" style="background:${b.color}">${b.init}</span><span class="meta"><b>${esc(b.name)}</b><span>Depósito mín. ${b.depositMin}€ · desde ${b.foundedYear}</span></span></div>
       <div class="regs">${b.regulators.filter((r) => r.ok).map((r) => `<span class="reg">${r.authority}</span>`).join('')}</div>
       <span class="scorepill"><span class="dot" style="background:${scoreColor(score)}"></span>${score.toFixed(1)}</span>
       <span class="more">Ver análisis</span></a>`)
@@ -280,7 +280,7 @@ export function renderRoundup(brokers) {
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
-      <div class="bk"><span class="logo" style="background:${b.color};position:relative;overflow:hidden">${b.init}${logoImg(b.slug)}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reviews analizadas</span></span></div>
+      <div class="bk"><span class="logo" style="background:${b.color}">${b.init}</span><span class="meta"><b>${esc(b.name)}</b><span>${starStr(b.reviews.stars)} ${b.reviews.stars.toFixed(1)}/5 · ${fmt(b.reviews.count)} reseñas</span></span></div>
       <div class="regs">${b.regulators.filter((r) => r.ok).map((r) => `<span class="reg">${r.authority}</span>`).join('') || '<span class="reg warn">Sin reg. UE/UK</span>'}</div>
       <span class="scorepill"><span class="dot" style="background:${scoreColor(score)}"></span>${score.toFixed(1)}</span>
       <span class="more">Ver análisis</span></a>`)
@@ -391,14 +391,9 @@ export function renderOpinar(brokers) {
       <textarea id="op" name="opinion" maxlength="1200" placeholder="Cuenta tu experiencia real: retiros, spreads, atención al cliente, incidencias…" required></textarea>
     </div>
     <div class="form-row">
-      <label class="lbl" for="f-nombre">Nombre <span class="req">*</span></label>
-      <input type="text" id="f-nombre" name="nombre" maxlength="30" placeholder="P. ej. Pablo" required>
-    </div>
-    <div class="form-row">
-      <label class="lbl" for="f-apellido">Apellido <span class="req">*</span></label>
-      <input type="text" id="f-apellido" name="apellido" maxlength="30" placeholder="P. ej. Pérez" required>
-      <p class="hint">Se publica solo como "Nombre + inicial", por ejemplo "Pablo P.". No mostramos tu apellido completo ni otros datos personales.</p>
-      <input type="hidden" id="alias" name="alias">
+      <label class="lbl" for="alias">Alias a mostrar <span class="req">*</span></label>
+      <input type="text" id="alias" name="alias" maxlength="40" placeholder="P. ej. Carlos M." required>
+      <p class="hint">No pongas tu nombre completo ni datos personales.</p>
     </div>
     <div class="form-row">
       <label class="lbl" for="contexto">Contexto (opcional)</label>
@@ -428,11 +423,6 @@ export function renderOpinar(brokers) {
   function farofxReviewSubmit(f){
     var slug=(document.getElementById('broker-slug')||{}).value;
     if(!slug){ alert('Elige un broker de la lista escribiendo su nombre.'); return false; }
-    var nombre=(document.getElementById('f-nombre').value||'').trim();
-    var apellido=(document.getElementById('f-apellido').value||'').trim();
-    if(!nombre || !apellido){ alert('Completa tu nombre y apellido.'); return false; }
-    var inicial=apellido.charAt(0).toUpperCase();
-    document.getElementById('alias').value = nombre + ' ' + inicial + '.';
     // Si no se adjunta archivo, deshabilitamos el input para NO enviar una parte de fichero vacía
     // (un fichero de 0 bytes rompe la recepción del webhook y provoca el error al publicar).
     var fileInp=document.getElementById('prueba');
