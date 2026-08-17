@@ -203,6 +203,9 @@ for (const ico of ['favicon.png', 'apple-touch-icon.png', 'logo-mark.png']) {
   const srcIco = join(__dir, 'src', ico);
   if (existsSync(srcIco)) cpSync(srcIco, join(DIST, ico));
 }
+// Tarjetas para Telegram / redes (broker + tema). Se sirven en /cards/... si existen.
+const CARDS_DIR = join(__dir, 'cards');
+if (existsSync(CARDS_DIR)) cpSync(CARDS_DIR, join(DIST, 'cards'), { recursive: true });
 
 // ---- Preview todo-en-uno (para abrir con DOBLE CLIC, sin servidor) ----
 // Inlina CSS + JS en el HTML para que funcione desde el disco (file://).
