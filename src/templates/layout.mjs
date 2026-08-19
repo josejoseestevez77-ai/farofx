@@ -44,7 +44,7 @@ export function header(active = '') {
       ${link('/blog/', 'Blog', 'blog')}
       ${link('/metodologia/', 'Metodología', 'metodologia')}
       ${link('/mejores-brokers-forex/', 'Mejores brokers', 'mejores')}
-      <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Soporte</a>
+      <a href="https://t.me/VeredictFXSoporte_bot" target="_blank" rel="noopener">Soporte</a>
     </nav>
     <span class="spacer"></span>
     <a class="btn btn-ghost" href="/opinar/">Dejar opinión</a>
@@ -64,7 +64,7 @@ export function footer() {
       <div>
         <a href="/" class="brand" style="color:var(--txt-inv);margin-bottom:12px"><img src="/logo-mark.png" alt="Veredict FX" width="26" height="26" style="border-radius:6px;vertical-align:middle;margin:-2px 8px 0 0">VEREDICT<b>FX</b></a>
         <p style="font-size:13.5px;max-width:36ch">Análisis independiente de brokers basado en datos verificados. Reseñas solo de traders verificados y puntuación abierta y auditable.</p>
-        <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/FaroFXSoporteBot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@veredictfx.com">contacto@veredictfx.com</a></p>
+        <p style="font-size:13.5px;margin-top:12px">Soporte: <a href="https://t.me/VeredictFXSoporte_bot" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:contacto@veredictfx.com">contacto@veredictfx.com</a></p>
       </div>
       <div>
         <h6>Plataforma</h6>
