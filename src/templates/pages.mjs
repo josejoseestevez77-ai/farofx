@@ -60,7 +60,7 @@ export function renderBroker(b, authors, position = null) {
   const platforms = b.platforms.join(', ');
   const crumb = breadcrumb([
     { label: 'Inicio', url: '/' },
-    { label: 'Brokers', url: '/#ranking' },
+    { label: 'Brokers', url: '/ranking/' },
     { label: b.name },
   ]);
 
@@ -88,7 +88,7 @@ export function renderBroker(b, authors, position = null) {
     author: { '@type': 'Person', name: author.name, url: SITE.url + `/autores/${author.slug}/` },
     reviewRating: { '@type': 'Rating', ratingValue: score.toFixed(1), bestRating: '10', worstRating: '0' },
     datePublished: b.regulators[0].verifiedDate,
-    publisher: { '@type': 'Organization', name: 'VEREDICTFX' },
+    publisher: { '@type': 'Organization', name: 'Veredict FX', logo: { '@type': 'ImageObject', url: SITE.logo } },
   };
   const jsonldAggregate = {
     '@context': 'https://schema.org',
@@ -176,7 +176,7 @@ ${crumb.html}
       ${faqs.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}
     </div>
 
-    <div class="disclosure"><b>Disclosure de afiliación.</b> ${b.affiliateUrl ? 'VEREDICTFX puede percibir una comisión si abres cuenta a través de nuestro enlace. Esta comisión no altera la puntuación ni la posición en el ranking, que dependen solo de la evidencia.' : 'No mantenemos enlace de afiliación con este broker.'} El trading de forex/CFD y el copytrading conllevan alto riesgo de pérdida por apalancamiento.</div>
+    <div class="disclosure"><b>Disclosure de afiliación.</b> ${b.affiliateUrl ? 'Veredict FX puede percibir una comisión si abres cuenta a través de nuestro enlace. Esta comisión no altera la puntuación ni la posición en el ranking, que dependen solo de la evidencia.' : 'No mantenemos enlace de afiliación con este broker.'} El trading de forex/CFD y el copytrading conllevan alto riesgo de pérdida por apalancamiento.</div>
 
     ${b.affiliateUrl ? `<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px"><a class="btn btn-seal" href="${esc(b.affiliateUrl)}" rel="nofollow sponsored">Ver oferta de ${esc(b.name)} (afiliado declarado) →</a><a class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-dark)" href="/#ranking">Comparar con otros brokers</a></div>` : `<a class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-dark)" href="/#ranking">Comparar con otros brokers →</a>`}
 
@@ -189,9 +189,13 @@ ${crumb.html}
 
   return layout({
     active: '',
-    title: `${b.name}: ¿es fiable o un scam? Reseña ${YEAR} | VEREDICTFX`,
+    title: `${b.name}: ¿es fiable o un scam? Reseña ${YEAR} | Veredict FX`,
     description: directAnswer.slice(0, 155),
     canonical: `/brokers/${b.slug}/`,
+    ogType: 'article',
+    ogImage: `${SITE.url}/cards/brokers/${b.slug}.jpg`,
+    publishedTime: b.regulators[0].verifiedDate,
+    modifiedTime: b.regulators[0].verifiedDate,
     jsonld: [jsonldReview, jsonldAggregate, jsonldFaq, crumb.jsonld],
     main,
   });
@@ -222,7 +226,7 @@ export function renderMethodology() {
   </ul>
   <div class="pledge" style="color:var(--ink);background:var(--seal-soft)"><b style="color:#7a5e18">Compromiso.</b> Nuestros ingresos vienen de comisiones de afiliado declaradas. Ningún broker puede pagar para subir, bajar o borrar su puntuación.</div>
 </div></div></section>`;
-  return layout({ active: 'metodologia', title: 'Metodología de ranking | VEREDICTFX', description: 'Cómo VEREDICTFX calcula la nota de cada broker: fórmula, pesos y reglas. Puntuación abierta y auditable.', canonical: '/metodologia/', jsonld: [crumb.jsonld], main });
+  return layout({ active: 'metodologia', title: 'Metodología de ranking | Veredict FX', description: 'Cómo Veredict FX calcula la nota de cada broker: fórmula, pesos y reglas. Puntuación abierta y auditable.', canonical: '/metodologia/', jsonld: [crumb.jsonld], main });
 }
 
 // ---------- CÓMO VERIFICAMOS ----------
@@ -243,7 +247,7 @@ export function renderComoVerificamos() {
   <p>Para cada broker, verificamos la licencia en el registro oficial del regulador antes de publicar nada, y guardamos la fuente y la fecha. Las licencias se re-verifican periódicamente; si una cambia de estado, la ficha se actualiza.</p>
   <div style="margin-top:20px"><a class="btn btn-seal" href="/#verificar">Dejar mi opinión verificada</a></div>
 </div></div></section>`;
-  return layout({ active: 'verificar', title: 'Cómo verificamos opiniones y licencias | VEREDICTFX', description: 'Proceso de verificación de opiniones de traders (anti-fraude) y de licencias de brokers en el registro oficial.', canonical: '/como-verificamos/', jsonld: [crumb.jsonld], main });
+  return layout({ active: 'verificar', title: 'Cómo verificamos opiniones y licencias | Veredict FX', description: 'Proceso de verificación de opiniones de traders (anti-fraude) y de licencias de brokers en el registro oficial.', canonical: '/como-verificamos/', jsonld: [crumb.jsonld], main });
 }
 
 // ---------- HUB DE REGULADOR ----------
@@ -252,7 +256,7 @@ export function renderRegulatorHub(reg, brokers, authors) {
     .map((b) => ({ b, score: computeScore(b) }))
     .filter(({ b }) => b.regulators.some((r) => regCode(r.authority) === reg && r.ok))
     .sort((a, b) => b.score - a.score);
-  const crumb = breadcrumb([{ label: 'Inicio', url: '/' }, { label: 'Regulados', url: '/#ranking' }, { label: reg }]);
+  const crumb = breadcrumb([{ label: 'Inicio', url: '/' }, { label: 'Regulados', url: '/ranking/' }, { label: reg }]);
   const rows = list
     .map(({ b, score }, i) => `<a class="row" href="/brokers/${b.slug}/" style="text-decoration:none">
       <span class="rank">${i < 3 ? ['🥇', '🥈', '🥉'][i] : ''}${String(i + 1).padStart(2, '0')}</span>
@@ -270,7 +274,7 @@ export function renderRegulatorHub(reg, brokers, authors) {
   <style>.hubtable .row{grid-template-columns:28px 1.7fr 1fr 60px 92px}</style>
   <div class="hubtable">${rows || '<div class="empty" style="display:block">Todavía no hay brokers verificados en este hub.</div>'}</div></div>
 </div></section>`;
-  return layout({ active: '', title: `Brokers regulados por ${reg} (${YEAR}) | VEREDICTFX`, description: `Ranking de brokers de forex regulados por ${reg}, con licencia verificada en el registro oficial y score auditable.`, canonical: `/regulados/${reg.toLowerCase()}/`, jsonld: [jsonld, crumb.jsonld], main });
+  return layout({ active: '', title: `Brokers regulados por ${reg} (${YEAR}) | Veredict FX`, description: `Ranking de brokers de forex regulados por ${reg}, con licencia verificada en el registro oficial y score auditable.`, canonical: `/regulados/${reg.toLowerCase()}/`, jsonld: [jsonld, crumb.jsonld], main });
 }
 
 // ---------- ROUNDUP "MEJORES" ----------
@@ -294,7 +298,7 @@ export function renderRoundup(brokers) {
   <div class="hubtable">${rows}</div></div>
   <div class="disclosure" style="margin-top:24px"><b>Disclosure.</b> Algunas fichas incluyen enlaces de afiliado declarados que no alteran el orden ni la nota. Forex/CFD: alto riesgo de pérdida.</div>
 </div></section>`;
-  return layout({ active: 'mejores', title: `Mejores brokers de forex ${YEAR} | VEREDICTFX`, description: `Ranking de los mejores brokers de forex verificados en ${YEAR}, ordenados por score auditable con datos verificados.`, canonical: '/mejores-brokers-forex/', jsonld: [jsonld, crumb.jsonld], main });
+  return layout({ active: 'mejores', title: `Mejores brokers de forex ${YEAR} | Veredict FX`, description: `Ranking de los mejores brokers de forex verificados en ${YEAR}, ordenados por score auditable con datos verificados.`, canonical: '/mejores-brokers-forex/', jsonld: [jsonld, crumb.jsonld], main });
 }
 
 // ---------- AUTORES ----------
@@ -307,12 +311,12 @@ export function renderAuthorsIndex(authors) {
     .join('');
   const main = `${crumb.html}
 <section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
-  <span class="eyebrow">Equipo E-E-A-T</span><h1>Autores de VEREDICTFX</h1>
+  <span class="eyebrow">Equipo E-E-A-T</span><h1>Autores de Veredict FX</h1>
   <p style="color:var(--muted)">Firmas reales ancladas a regulación y análisis de brokers. Cada autor responde de lo que firma.</p>
   <div class="hub-note">Proceso editorial verificado: cada licencia se comprueba en el registro oficial del regulador, con fuente y fecha, antes de publicar cada ficha.</div>
   ${cards}
 </div></div></section>`;
-  return layout({ active: '', title: 'Autores | VEREDICTFX', description: 'El equipo editorial de VEREDICTFX: analistas de brokers, regulación, costes y protección al inversor.', canonical: '/autores/', jsonld: [crumb.jsonld], main });
+  return layout({ active: '', title: 'Autores | Veredict FX', description: 'El equipo editorial de Veredict FX: analistas de brokers, regulación, costes y protección al inversor.', canonical: '/autores/', jsonld: [crumb.jsonld], main });
 }
 
 export function renderAuthor(a) {
@@ -323,9 +327,9 @@ export function renderAuthor(a) {
   <div class="author-card" style="margin-bottom:22px"><span class="av">${a.name.replace(/[^A-Za-zÀ-ÿ]/g, '').slice(0, 1) || 'F'}</span><div><h1 style="font-size:26px;margin:0 0 4px">${esc(a.name)}</h1><p>${esc(a.role)} · ${esc(a.location)}</p></div></div>
   <h2>Especialidades</h2><div class="chips">${a.specialties.map((s) => `<span class="chip">${esc(s)}</span>`).join('')}</div>
   <h2>Credenciales</h2><p>${esc(a.credentials)}</p>
-  <div class="hub-note">Las reseñas de VEREDICTFX las firma el equipo editorial. Cada ficha se elabora verificando las licencias en los registros oficiales de los reguladores, con fuente y fecha.</div>
+  <div class="hub-note">Las reseñas de Veredict FX las firma el equipo editorial. Cada ficha se elabora verificando las licencias en los registros oficiales de los reguladores, con fuente y fecha.</div>
 </div></div></section>`;
-  return layout({ active: '', title: `${a.name} — ${a.role} | VEREDICTFX`, description: `${a.role} en VEREDICTFX. Especialista en ${a.specialties.join(', ')}.`, canonical: `/autores/${a.slug}/`, jsonld: [jsonld, crumb.jsonld], main });
+  return layout({ active: '', title: `${a.name} — ${a.role} | Veredict FX`, description: `${a.role} en Veredict FX. Especialista en ${a.specialties.join(', ')}.`, canonical: `/autores/${a.slug}/`, jsonld: [jsonld, crumb.jsonld], main });
 }
 
 // ---------- PÁGINAS LEGALES / CONFIANZA ----------
@@ -335,7 +339,7 @@ export function renderSimplePage({ slug, title, eyebrow, h1, body, active = '' }
 <section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
   <span class="eyebrow">${esc(eyebrow)}</span><h1>${esc(h1)}</h1>${body}
 </div></div></section>`;
-  return layout({ active, title: `${title} | VEREDICTFX`, description: title, canonical: `/${slug}/`, jsonld: [crumb.jsonld], main });
+  return layout({ active, title: `${title} | Veredict FX`, description: title, canonical: `/${slug}/`, jsonld: [crumb.jsonld], main });
 }
 
 // ---------- FORMULARIO: DEJAR OPINIÓN ----------
@@ -430,7 +434,7 @@ export function renderOpinar(brokers) {
     return true;
   }
   </script>`;
-  return layout({ active: '', title: 'Deja tu opinión sobre un broker | VEREDICTFX', description: 'Comparte tu experiencia real con un broker de forex/CFD. Opiniones verificadas con revisión humana antes de publicar.', canonical: '/opinar/', jsonld: [crumb.jsonld], main, scripts });
+  return layout({ active: '', title: 'Deja tu opinión sobre un broker | Veredict FX', description: 'Comparte tu experiencia real con un broker de forex/CFD. Opiniones verificadas con revisión humana antes de publicar.', canonical: '/opinar/', jsonld: [crumb.jsonld], main, scripts });
 }
 
 export function renderOpinionRecibida() {
@@ -439,5 +443,5 @@ export function renderOpinionRecibida() {
   <div class="answer-box"><b>¡Gracias por tu opinión!</b> La hemos recibido correctamente. Pasará por revisión humana antes de publicarse; si supera la verificación, aparecerá en la ficha del broker.</div>
   <p style="margin-top:20px"><a class="btn btn-seal" href="/#ranking">Volver al ranking</a></p>
 </div></div></section>`;
-  return layout({ active: '', title: 'Opinión recibida | VEREDICTFX', description: 'Gracias por tu opinión. Pasará por revisión antes de publicarse.', canonical: '/opinion-recibida/', jsonld: [], main });
+  return layout({ active: '', title: 'Opinión recibida | Veredict FX', description: 'Gracias por tu opinión. Pasará por revisión antes de publicarse.', canonical: '/opinion-recibida/', jsonld: [], main });
 }

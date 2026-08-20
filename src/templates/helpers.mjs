@@ -1,10 +1,17 @@
 // Configuración del sitio y utilidades compartidas.
 export const SITE = {
   name: 'Veredict FX',
-  url: (process.env.SITE_URL || 'https://veredictfx.com').replace(/\/$/, ''),
+  // Dominio canónico FIJO. No depende de env (Cloudflare tenía SITE_URL=farofx.org,
+  // que hacía que canonical/og/sitemap/robots/llms apuntaran al dominio viejo).
+  url: 'https://veredictfx.com',
   tagline: 'Opiniones de brokers verificadas. Puntuación auditable.',
   description:
-    'Plataforma independiente de análisis de brokers de forex y copytrading. Opiniones solo de traders verificados. Puntuación abierta y auditable. Nadie paga para cambiar su nota.',
+    'Análisis independiente de brokers de forex y CFD. Opiniones solo de traders verificados y puntuación abierta y auditable. Ningún broker paga por su nota.',
+  logo: 'https://veredictfx.com/logo-mark.png',
+  ogImage: 'https://veredictfx.com/og.png',
+  telegram: 'https://t.me/veredictfx',
+  email: 'contacto@veredictfx.com',
+  sameAs: ['https://t.me/veredictfx'],
   sisters: [],
 };
 

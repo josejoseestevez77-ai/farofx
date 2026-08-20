@@ -43,15 +43,31 @@ export function renderHome(brokers) {
   const top = model[0];
   const totalReviews = brokers.reduce((n, b) => n + b.reviews.count, 0);
 
-  // JSON-LD: Organization + ItemList del ranking.
+  // JSON-LD: Organization + WebSite + ItemList del ranking.
   const jsonld = [
     {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'VEREDICTFX',
+      name: 'Veredict FX',
+      alternateName: 'VEREDICTFX',
       url: SITE.url + '/',
+      logo: { '@type': 'ImageObject', url: SITE.logo },
       description: SITE.description,
-      sameAs: SITE.sisters.map((s) => s.url),
+      sameAs: SITE.sameAs,
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: SITE.email,
+        contactType: 'customer support',
+        availableLanguage: ['Spanish'],
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Veredict FX',
+      url: SITE.url + '/',
+      inLanguage: 'es-ES',
+      publisher: { '@type': 'Organization', name: 'Veredict FX' },
     },
     {
       '@context': 'https://schema.org',
@@ -208,7 +224,7 @@ ${modals()}
 
   return layout({
     active: '',
-    title: 'VEREDICTFX — Opiniones de brokers verificadas. Puntuación auditable.',
+    title: 'Opiniones y ranking de brokers de forex y CFD (2026) | Veredict FX',
     description: SITE.description,
     canonical: '/',
     jsonld,

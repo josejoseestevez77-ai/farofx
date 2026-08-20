@@ -2,11 +2,15 @@
 // Todas las páginas se construyen con layout() para que el "chrome" sea idéntico.
 import { SITE, esc } from './helpers.mjs';
 
-export function head({ title, description, canonical, jsonld = [], extraHead = '' }) {
+export function head({ title, description, canonical, jsonld = [], extraHead = '', ogType = 'website', ogImage = SITE.ogImage, publishedTime = '', modifiedTime = '' }) {
   const ld = jsonld
     .filter(Boolean)
     .map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`)
     .join('\n');
+  const url = `${SITE.url}${canonical}`;
+  const articleMeta = ogType === 'article'
+    ? `${publishedTime ? `\n<meta property="article:published_time" content="${esc(publishedTime)}">` : ''}${modifiedTime ? `\n<meta property="article:modified_time" content="${esc(modifiedTime)}">` : ''}`
+    : '';
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,12 +18,22 @@ export function head({ title, description, canonical, jsonld = [], extraHead = '
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${SITE.url}${canonical}">
-<meta property="og:type" content="website">
+<link rel="canonical" href="${url}">
+<link rel="alternate" hreflang="es" href="${url}">
+<link rel="alternate" hreflang="x-default" href="${url}">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#0c1a13">
+<meta property="og:site_name" content="Veredict FX">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="${ogType}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:url" content="${SITE.url}${canonical}">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${esc(ogImage)}">${articleMeta}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="${esc(ogImage)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -85,7 +99,7 @@ export function footer() {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 VEREDICTFX</span>
+      <span>© 2026 Veredict FX</span>
       <span class="mono">Sin pagos de brokers · datos verificables · fuente independiente</span>
     </div>
   </div>

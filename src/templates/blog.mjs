@@ -7,6 +7,19 @@ import { SITE, esc, computeScore, scoreColor } from './helpers.mjs';
 
 const YEAR = 2026;
 
+// Elige la tarjeta de tema (imagen OG/social) según el slug del artículo.
+// Misma lógica que el post de Telegram: coherencia entre web y redes.
+function temaCard(slug) {
+  const s = String(slug || '');
+  if (/chiringuito|clon|estafa|senal|pig-butchering|fraude/.test(s)) return 'chiringuitos';
+  if (/retir/.test(s)) return 'retiradas';
+  if (/apalancamiento|esma/.test(s)) return 'apalancamiento';
+  if (/spread|comision|swap|coste|deposito|bono/.test(s)) return 'costes';
+  if (/fscs|fogain|compensacion|pierde-licencia|proteg|garantia/.test(s)) return 'proteccion';
+  if (/regula|mifid|licencia|cnmv|fca|cysec|asic|offshore|pasaporte/.test(s)) return 'regulacion';
+  return 'general';
+}
+
 const PILLAR_LABEL = {
   A: 'Regulación',
   B: 'Fraude y seguridad',
@@ -100,7 +113,9 @@ export function renderArticulo(article, brokers = [], authors = []) {
     datePublished: article.date,
     dateModified: article.updated || article.date,
     author: { '@type': 'Organization', name: author },
-    publisher: { '@type': 'Organization', name: 'Veredict FX' },
+    publisher: { '@type': 'Organization', name: 'Veredict FX', logo: { '@type': 'ImageObject', url: SITE.logo } },
+    image: `${SITE.url}/cards/temas/${temaCard(article.slug)}.jpg`,
+    inLanguage: 'es-ES',
     mainEntityOfPage: SITE.url + `/blog/${article.slug}/`,
   };
 
@@ -136,6 +151,10 @@ ${crumb.html}
     title: article.metaTitle || `${article.title} | Veredict FX`,
     description: article.metaDescription || article.excerpt || '',
     canonical: `/blog/${article.slug}/`,
+    ogType: 'article',
+    ogImage: `${SITE.url}/cards/temas/${temaCard(article.slug)}.jpg`,
+    publishedTime: article.date,
+    modifiedTime: article.updated || article.date,
     jsonld: [jsonldArticle, crumb.jsonld],
     main,
   });
