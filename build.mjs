@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ==========================================================================
-   VEREDICTFX — Generador estático (Node, sin dependencias).
+   Veredict FX — Generador estático (Node, sin dependencias).
    Mismo enfoque que el motor de Pulso Mercados: plantillas + contenido.
    En cada build: renderiza páginas, recalcula el ranking, genera sitemap +
    robots + llms.txt e inserta el enlazado interno. Salida: dist/.
@@ -26,6 +26,9 @@ const KB = join(__dir, 'knowledge-base');
 
 const BROKERS_DIR = join(KB, 'brokers');
 const NOTICIAS_DIR = join(KB, 'noticias');
+
+// Fecha de build (YYYY-MM-DD) para el <lastmod> del sitemap: señal de frescura.
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
 
 // --- Saneado de datos generados por el motor (búsqueda web con IA) ---
 // El motor puede colar en algún campo etiquetas de cita como <cite index="25-1">…</cite>.
@@ -147,17 +150,17 @@ for (const a of articles) page(`/blog/${a.slug}/`, renderArticulo(a, brokers, au
 // Legales / confianza
 page('/politica-afiliacion/', renderSimplePage({
   slug: 'politica-afiliacion', title: 'Política de afiliación', eyebrow: 'Transparencia', h1: 'Política de afiliación',
-  body: `<div class="answer-box"><b>En una frase.</b> VEREDICTFX gana comisiones de afiliado declaradas cuando un trader elige un broker a través de nuestros enlaces. Esas comisiones no alteran la puntuación ni la posición en el ranking.</div>
+  body: `<div class="answer-box"><b>En una frase.</b> Veredict FX gana comisiones de afiliado declaradas cuando un trader elige un broker a través de nuestros enlaces. Esas comisiones no alteran la puntuación ni la posición en el ranking.</div>
   <p>Marcamos los enlaces de afiliado con el atributo <span class="mono">rel="nofollow sponsored"</span> y con una nota de disclosure visible en cada ficha. La nota y el orden del ranking dependen exclusivamente de la <a href="/metodologia/" style="color:var(--seal)">metodología pública</a>.</p>`,
 }), 0.3, 'yearly');
 
 page('/aviso-legal/', renderSimplePage({
   slug: 'aviso-legal', title: 'Aviso legal y advertencia de riesgo', eyebrow: 'Legal', h1: 'Aviso legal y advertencia de riesgo',
   body: `<div class="risk" style="color:#a83b37;background:var(--alert-soft)"><b>Advertencia de riesgo.</b> El trading de forex y CFD, y el copytrading, conllevan un alto riesgo de perder dinero rápidamente por el apalancamiento. Entre el 74% y el 89% de las cuentas minoristas pierden dinero al operar CFD.</div>
-  <p><b>Titularidad.</b> Este sitio web, <b>veredictfx.com</b> (en adelante «VEREDICTFX»), es un proyecto editorial independiente de análisis y comparación de brokers de forex y CFD. Correo de contacto: <a href="mailto:contacto@veredictfx.com" style="color:var(--seal)">contacto@veredictfx.com</a>.</p>
-  <p><b>Naturaleza de la información.</b> VEREDICTFX ofrece información general y opiniones editoriales con fines exclusivamente informativos. No constituye asesoramiento financiero, fiscal ni legal, ni una recomendación de inversión personalizada. VEREDICTFX no es una entidad regulada ni presta servicios de inversión. Antes de operar, valore su situación personal y, si lo necesita, consulte con un asesor autorizado.</p>
-  <p><b>Enlaces de afiliado.</b> Algunos enlaces a brokers son enlaces de afiliado: VEREDICTFX puede percibir una comisión si abre cuenta a través de ellos, sin coste adicional para usted. Esas comisiones no influyen en la puntuación ni en el orden del ranking, que dependen exclusivamente de nuestra <a href="/metodologia/" style="color:var(--seal)">metodología pública</a>. Consulte también nuestra <a href="/politica-afiliacion/" style="color:var(--seal)">política de afiliación</a>.</p>
-  <p><b>Propiedad intelectual.</b> Los textos, análisis, puntuaciones y el diseño de VEREDICTFX están protegidos por derechos de propiedad intelectual. No se permite su reproducción total o parcial sin autorización, salvo cita breve con enlace a la fuente.</p>
+  <p><b>Titularidad.</b> Este sitio web, <b>veredictfx.com</b> (en adelante «Veredict FX»), es un proyecto editorial independiente de análisis y comparación de brokers de forex y CFD. Correo de contacto: <a href="mailto:contacto@veredictfx.com" style="color:var(--seal)">contacto@veredictfx.com</a>.</p>
+  <p><b>Naturaleza de la información.</b> Veredict FX ofrece información general y opiniones editoriales con fines exclusivamente informativos. No constituye asesoramiento financiero, fiscal ni legal, ni una recomendación de inversión personalizada. Veredict FX no es una entidad regulada ni presta servicios de inversión. Antes de operar, valore su situación personal y, si lo necesita, consulte con un asesor autorizado.</p>
+  <p><b>Enlaces de afiliado.</b> Algunos enlaces a brokers son enlaces de afiliado: Veredict FX puede percibir una comisión si abre cuenta a través de ellos, sin coste adicional para usted. Esas comisiones no influyen en la puntuación ni en el orden del ranking, que dependen exclusivamente de nuestra <a href="/metodologia/" style="color:var(--seal)">metodología pública</a>. Consulte también nuestra <a href="/politica-afiliacion/" style="color:var(--seal)">política de afiliación</a>.</p>
+  <p><b>Propiedad intelectual.</b> Los textos, análisis, puntuaciones y el diseño de Veredict FX están protegidos por derechos de propiedad intelectual. No se permite su reproducción total o parcial sin autorización, salvo cita breve con enlace a la fuente.</p>
   <p><b>Responsabilidad.</b> Procuramos que la información sea veraz y esté actualizada, pero no garantizamos la ausencia de errores ni la disponibilidad continua del sitio. El uso de la información es responsabilidad del usuario. Los datos de licencias y reguladores deben verificarse siempre en los registros oficiales de cada organismo.</p>
   <p><b>Legislación aplicable.</b> El presente aviso legal se rige por la legislación española y de la Unión Europea que resulte de aplicación.</p>`,
 }), 0.3, 'yearly');
@@ -171,14 +174,14 @@ page('/privacidad/', renderSimplePage({
   <p><b>Conservación.</b> Conservamos la reseña mientras esté publicada o sea necesaria para las finalidades descritas. Los archivos de prueba se conservan solo el tiempo necesario para la verificación.</p>
   <p><b>Destinatarios.</b> No vendemos ni cedemos tus datos. Pueden acceder a ellos, como encargados del tratamiento, los proveedores tecnológicos que nos prestan servicio (alojamiento del sitio y mensajería interna del equipo de moderación), que actúan bajo nuestras instrucciones.</p>
   <p><b>Tus derechos.</b> Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:contacto@veredictfx.com" style="color:var(--seal)">contacto@veredictfx.com</a>. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (<span class="mono">aepd.es</span>).</p>
-  <p><b>Menores.</b> VEREDICTFX no está dirigido a menores de edad y no recopilamos deliberadamente datos de menores.</p>`,
+  <p><b>Menores.</b> Veredict FX no está dirigido a menores de edad y no recopilamos deliberadamente datos de menores.</p>`,
 }), 0.3, 'yearly');
 
 page('/cookies/', renderSimplePage({
   slug: 'cookies', title: 'Política de cookies', eyebrow: 'Legal', h1: 'Política de cookies',
-  body: `<div class="answer-box"><b>En una frase.</b> VEREDICTFX es un sitio estático que no instala cookies publicitarias ni de seguimiento propias.</div>
+  body: `<div class="answer-box"><b>En una frase.</b> Veredict FX es un sitio estático que no instala cookies publicitarias ni de seguimiento propias.</div>
   <p><b>Cookies propias.</b> No utilizamos cookies propias de análisis ni de publicidad. Únicamente podrían emplearse cookies estrictamente técnicas necesarias para que el sitio funcione y se muestre correctamente.</p>
-  <p><b>Enlaces a terceros.</b> Cuando pulsas un enlace hacia un broker, sales de VEREDICTFX y accedes a un sitio de terceros que puede instalar sus propias cookies, con sus propias políticas. Algunos de esos enlaces son de afiliado (ver <a href="/politica-afiliacion/" style="color:var(--seal)">política de afiliación</a>). No controlamos las cookies de terceros y te recomendamos revisar sus políticas.</p>
+  <p><b>Enlaces a terceros.</b> Cuando pulsas un enlace hacia un broker, sales de Veredict FX y accedes a un sitio de terceros que puede instalar sus propias cookies, con sus propias políticas. Algunos de esos enlaces son de afiliado (ver <a href="/politica-afiliacion/" style="color:var(--seal)">política de afiliación</a>). No controlamos las cookies de terceros y te recomendamos revisar sus políticas.</p>
   <p><b>Cómo gestionarlas.</b> Puedes bloquear o eliminar las cookies desde la configuración de tu navegador. Si en el futuro incorporamos herramientas de analítica, actualizaremos esta política y solicitaremos tu consentimiento cuando corresponda.</p>
   <p>Para cualquier duda sobre esta política, escríbenos a <a href="mailto:contacto@veredictfx.com" style="color:var(--seal)">contacto@veredictfx.com</a>.</p>`,
 }), 0.3, 'yearly');
@@ -199,7 +202,7 @@ const homeJs = readFileSync(join(__dir, 'src', 'home.js'), 'utf8');
 cpSync(join(__dir, 'src', 'theme.css'), join(DIST, 'theme.css'));
 cpSync(join(__dir, 'src', 'home.js'), join(DIST, 'home.js'));
 // Iconos de marca (favicon / apple-touch / logo). Se copian si existen.
-for (const ico of ['favicon.png', 'apple-touch-icon.png', 'logo-mark.png']) {
+for (const ico of ['favicon.png', 'apple-touch-icon.png', 'logo-mark.png', 'og.png']) {
   const srcIco = join(__dir, 'src', ico);
   if (existsSync(srcIco)) cpSync(srcIco, join(DIST, ico));
 }
@@ -224,17 +227,21 @@ if (fichaPage) writeFileSync(join(DIST, 'PREVIEW-ficha-ejemplo.html'), standalon
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
-  .map((p) => `  <url><loc>${SITE.url}${p.path}</loc><changefreq>${p.changefreq}</changefreq><priority>${p.priority.toFixed(1)}</priority></url>`)
+  .map((p) => `  <url><loc>${SITE.url}${p.path}</loc><lastmod>${BUILD_DATE}</lastmod><changefreq>${p.changefreq}</changefreq><priority>${p.priority.toFixed(1)}</priority></url>`)
   .join('\n')}
 </urlset>
 `;
 writeFileSync(join(DIST, 'sitemap.xml'), sitemap);
 
-// ---- robots.txt ----
+// ---- robots.txt (permite explícitamente crawlers de IA para GEO) ----
+const aiBots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'anthropic-ai', 'Claude-Web', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'Amazonbot', 'CCBot', 'Bytespider'];
 writeFileSync(
   join(DIST, 'robots.txt'),
   `User-agent: *
 Allow: /
+
+# Buscadores generativos / IA — bienvenidos (GEO)
+${aiBots.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}
 
 Sitemap: ${SITE.url}/sitemap.xml
 `
@@ -242,11 +249,16 @@ Sitemap: ${SITE.url}/sitemap.xml
 
 // ---- llms.txt ----
 const topBrokers = brokers.map((b) => ({ b, s: computeScore(b) })).sort((a, b) => b.s - a.s);
-const llms = `# VEREDICTFX
+const llms = `# Veredict FX
 
 > ${SITE.description}
 
-VEREDICTFX es una plataforma independiente de reseñas verificadas y ranking de brokers de forex/CFD en español (España y LatAm). La posición de cada broker sale de un score editorial auditable (regulación 35%, retirada 25%, quejas 25%, costes 15%), complementado con reseñas de usuarios verificadas. Ningún broker paga por su nota.
+Veredict FX (veredictfx.com) es una plataforma independiente de reseñas verificadas y ranking de brokers de forex/CFD en español (España y LatAm). La posición de cada broker sale de un score editorial auditable (regulación 35%, retirada 25%, quejas 25%, costes 15%), complementado con reseñas de usuarios verificadas. Ningún broker paga por su nota.
+
+- Entidad: Veredict FX — análisis independiente de brokers de forex y CFD.
+- Temas: regulación (CNMV, FCA, CySEC, ASIC), protección de fondos (FSCS, FOGAIN), apalancamiento (ESMA), costes, chiringuitos financieros, opiniones verificadas.
+- Contacto: ${SITE.email} · Telegram: ${SITE.telegram}
+- Idioma: español. Cobertura: ${brokers.length} brokers analizados.
 
 ## Páginas clave
 - [Ranking y home](${SITE.url}/): comparador de brokers verificados.
@@ -273,6 +285,6 @@ writeFileSync(
 `
 );
 
-console.log(`✓ VEREDICTFX construido: ${pages.length} páginas + sitemap/robots/llms en dist/`);
+console.log(`✓ Veredict FX construido: ${pages.length} páginas + sitemap/robots/llms en dist/`);
 console.log(`  Ranking (score auditable):`);
 topBrokers.forEach(({ b, s }, i) => console.log(`   ${i + 1}. ${b.name.padEnd(18)} ${s.toFixed(1)}/10`));
