@@ -1,0 +1,53 @@
+{
+  "slug": "cuenta-demo-vs-cuenta-real",
+  "title": "Cuenta demo vs cuenta real: cómo empezar en trading sin quemarte",
+  "metaTitle": "Cuenta demo vs cuenta real: cómo empezar sin quemarte | Veredict FX",
+  "metaDescription": "Diferencias entre cuenta demo y cuenta real en trading, cuánto tiempo practicar y qué revisar (regulación, protección de fondos) antes de operar con dinero.",
+  "pillar": "D",
+  "type": "guia",
+  "author": "Redacción Veredict FX",
+  "date": "2026-08-20",
+  "updated": "2026-08-20",
+  "excerpt": "Una cuenta demo simula el mercado con dinero ficticio; una cuenta real implica capital propio y riesgo efectivo de pérdida. La diferencia no es solo el dinero: cambia la psicología, la ejecución real de las órdenes y las protecciones legales que te amparan. Aquí te explicamos cómo dar el salto sin quemarte.",
+  "keyTakeaway": "Si estás empezando, usa la demo para entender la plataforma y probar tu estrategia sin arriesgar capital, pero no confundas resultados en demo con resultados reales: la presión emocional y la ejecución cambian cuando hay dinero de por medio. Antes de abrir una cuenta real, comprueba que el bróker está registrado ante un regulador reconocible (CNMV, CySEC, FCA…), entiende qué cubre y qué NO cubre el fondo de garantía de inversiones, y revisa los límites de apalancamiento que aplican por ley a los CFD para clientes minoristas. Empieza con un importe que puedas permitirte perder y trata cada operación real como un experimento controlado, no como una apuesta.",
+  "body": "## Qué es una cuenta demo y qué NO es\n\nUna cuenta demo es un entorno de simulación. Replica los precios y la interfaz de la plataforma real, pero el dinero es ficticio y no hay contraparte real ejecutando tu orden en el mercado.\n\nSirve para tres cosas concretas: familiarizarte con la plataforma (cómo se coloca una orden, cómo se gestiona un stop, dónde están las comisiones), probar si entiendes el funcionamiento de un instrumento antes de operarlo, y detectar errores operativos —confundir compra con venta, mal calcular el tamaño de la posición— sin coste.\n\nLo que la demo no puede enseñarte es la parte emocional. Perder dinero ficticio no genera la misma reacción que perder dinero real, y esa diferencia psicológica es precisamente la que hace tropezar a muchos traders principiantes cuando dan el salto.\n\n## Qué cambia realmente al pasar a una cuenta real\n\nAdemás del factor emocional, hay diferencias técnicas relevantes:\n\n**Ejecución y liquidez.** En real, tu orden compite con las de otros clientes y depende de la liquidez disponible en ese instante. En demo, la ejecución suele ser instantánea y sin fricción, lo que puede dar una sensación de facilidad que no se corresponde con la realidad del mercado.\n\n**Coste real de las operaciones.** Comisiones, spreads y financiación nocturna impactan de forma distinta cuando el dinero es tuyo. Revisar la tarifa vigente del bróker antes de operar en real es un paso que muchos se saltan en demo.\n\n**Protección legal.** Una cuenta demo no está protegida por ningún regulador porque no hay dinero real en juego. Una cuenta real sí depende de qué entidad la ofrece, dónde está autorizada y qué fondo de garantía la respalda.\n\n## Por qué la regulación del bróker importa antes de operar en real\n\nAntes de depositar dinero real, comprueba que el bróker figura en el registro de un supervisor financiero. Por ejemplo, \nXTB opera en España a través de su sucursal XTB S.A., bajo la supervisión de la Comisión Nacional del Mercado de Valores y está inscrita en el Registro de la CNMV con el número 40\n. Puedes consultar su ficha completa en [XTB](/brokers/xtb/).\n\nEn el caso de [eToro](/brokers/etoro/), la entidad opera en la Unión Europea bajo pasaporte comunitario y, además, \nha sido incluida en el registro de la Comisión Nacional del Mercado de Valores (CNMV) como proveedor de servicios de criptoactivos\n, lo que amplía el marco de supervisión aplicable a parte de su oferta en España.\n\nQue un bróker esté registrado no elimina el riesgo de mercado, pero sí implica que está sujeto a normas de conducta, transparencia y, en muchos casos, a mecanismos de protección del dinero de los clientes en caso de insolvencia de la entidad.\n\n## Los límites de apalancamiento no son iguales en demo y en real\n\nUn punto que suele generar confusión: en algunas plataformas la cuenta demo permite configurar apalancamientos que no estarían disponibles para un cliente minorista europeo en una cuenta real. Esto es así porque la normativa europea limita el apalancamiento máximo en CFD según el activo.\n\n\nLa comercialización de CFD a clientes minoristas está restringida al cumplimiento de límites de apalancamiento máximo permitido: 1/30 para divisas relevantes, 1/20 en otras divisas, oro e índices relevantes de acciones, 1/10 para materias primas o índices no relevantes, 1/2 en criptoactivos, y 1/5 para acciones u otros activos\n. Estas restricciones nacieron de una decisión europea que también obligó a los proveedores a incluir advertencias de riesgo estandarizadas dirigidas a los inversores minoristas.\n\nSi en demo pruebas una estrategia con un apalancamiento que luego no está disponible en tu cuenta real como cliente minorista, los resultados no serán comparables. Verifica siempre las condiciones aplicables a tu categoría de cliente antes de sacar conclusiones de tus pruebas en demo.\n\n## Qué protege (y qué no) tu dinero en una cuenta real\n\nCuando depositas dinero real en un bróker español o en una sucursal supervisada en España, puede aplicarte el Fondo General de Garantía de Inversiones (FOGAIN). \nEl FOGAIN ofrece una indemnización a los inversores de sus entidades adheridas en determinados supuestos de insolvencia de la entidad que presta el servicio de inversión, por el dinero y valores depositados o confiados a la entidad, con un máximo de 100.000 euros por inversor\n.\n\nEs fundamental entender el límite de esta protección: \nlas coberturas del FOGAIN solo se activan en dos supuestos, concurso de acreedores o insolvencia de la entidad, y quedan excluidas las pérdidas de valor que sufran los activos, un riesgo inherente a la propia inversión\n. Es decir, el FOGAIN te protege si el bróker quiebra, no si el mercado se mueve en tu contra.\n\n## Cuánto tiempo conviene practicar en demo\n\nNo existe un número mágico de semanas válido para todo el mundo, porque depende de tu experiencia previa, del instrumento que quieras operar y de cuánto tiempo puedas dedicarle. Como criterio general y sin cifras cerradas: practica en demo hasta que ejecutes órdenes sin dudar, entiendas cómo se calcula tu margen y tu riesgo por operación, y hayas comprobado que tu plan de gestión de riesgo funciona en distintos escenarios de mercado (no solo en tendencia favorable).\n\nPasar de demo a real de forma prematura, solo porque los resultados en simulación son buenos, es uno de los errores más comunes. Los resultados en papel no incorporan el coste emocional de ver caer tu saldo real.\n\n## Cómo dar el salto de forma más prudente\n\nAlgunas pautas prácticas y generales:\n\n- Empieza con un importe que, si lo perdieras entero, no comprometa tu situación financiera.\n- Aplica en real exactamente las mismas reglas de gestión de riesgo que usaste en demo (tamaño de posición, stop loss, número máximo de operaciones simultáneas).\n- Revisa la ficha regulatoria del bróker antes de depositar: número de registro, regulador de origen y si opera mediante sucursal o en libre prestación de servicios.\n- No uses la demo para \"calentar motores\" con apalancamientos que luego no tendrás disponibles como cliente minorista.\n- Ten claro qué cubre el fondo de garantía aplicable y qué no, para no confundir protección frente a insolvencia con protección frente a pérdidas de mercado.\n\n## Qué mirar en la ficha de un bróker antes de decidir\n\nAntes de abrir una cuenta real, compara al menos estos puntos entre varios brókers: regulador y número de registro, si existe fondo de garantía aplicable y su alcance, condiciones publicadas de comisiones y spreads, y disponibilidad de una cuenta demo sin coste para probar la plataforma. Puedes revisar esta información en las fichas de [XTB](/brokers/xtb/) y [eToro](/brokers/etoro/) antes de tomar cualquier decisión.\n\nRecuerda que operar con CFD y otros productos apalancados conlleva un riesgo elevado de perder dinero rápidamente, y que ninguna cuenta demo puede garantizar un resultado equivalente en una cuenta real.",
+  "relatedBrokers": [
+    "xtb",
+    "etoro"
+  ],
+  "sources": [
+    {
+      "title": "Información básica sobre XTB S.A., Sucursal en España (CNMV nº40)",
+      "url": "https://xtb.scdn5.secure.raxcdn.com/file/0101/75/ACTUAL_Iinformaci%C3%B3n%20b%C3%A1sica_en_vigor_a_partir_del_28_de_marzo_de_2024_b635e5fd34.pdf",
+      "date": "2024-03-28"
+    },
+    {
+      "title": "eToro obtiene el registro en la CNMV como proveedor de servicios de criptoactivos",
+      "url": "https://www.etoro.com/es/news-and-analysis/etoro-updates/etoro-obtiene-el-registro-en-la-cnmv-como-proveedor-de-servicios-de-criptoactivos/",
+      "date": "2025-04-09"
+    },
+    {
+      "title": "BOE-A-2023-16394. Resolución de la CNMV sobre medidas de intervención de producto relativas a CFD",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-16394",
+      "date": "2023-07-11"
+    },
+    {
+      "title": "FAQ sobre las medidas de intervención de producto de ESMA relacionadas con CFD y opciones binarias",
+      "url": "https://www.esma.europa.eu/sites/default/files/library/faq_esmas_product_intervention_measures_es.pdf",
+      "date": "2018-03-27"
+    },
+    {
+      "title": "Fondo de garantía de inversiones (FOGAIN) - Guía CNMV",
+      "url": "http://www.cnmv.es/docportal/publicaciones/fichas/ficha_fg.pdf",
+      "date": "2026-08-20"
+    },
+    {
+      "title": "Fogain, el instrumento que respalda a los inversores frente a insolvencias",
+      "url": "https://www.mapfream.com/fogain-respalda-inversores-insolvencias/",
+      "date": "2024-09-19"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Trader comparando una pantalla de cuenta demo y otra de cuenta real en un ordenador"
+}
