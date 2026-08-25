@@ -1,0 +1,53 @@
+{
+  "slug": "mt4-vs-mt5-vs-ctrader",
+  "title": "MT4 vs MT5 vs cTrader: qué plataforma te conviene",
+  "metaTitle": "MT4 vs MT5 vs cTrader: guía comparativa 2026 | Veredict FX",
+  "metaDescription": "Comparamos MT4, MT5 y cTrader: activos, órdenes, trading algorítmico y copy trading. Descubre qué plataforma se adapta mejor a tu forma de operar.",
+  "pillar": "D",
+  "type": "guia",
+  "author": "Redacción Veredict FX",
+  "date": "2026-08-25",
+  "updated": "2026-08-25",
+  "excerpt": "MT4, MT5 y cTrader son las tres plataformas más utilizadas para operar forex y CFD, pero no son iguales. MT4 destaca por su sencillez y su enorme comunidad de robots; MT5 amplía activos y herramientas; cTrader ofrece una interfaz moderna con profundidad de mercado nativa. La elección depende de qué operas, cómo automatizas y qué broker utilizas.",
+  "keyTakeaway": "No existe una plataforma \"mejor\" en términos absolutos: existe la que mejor encaja con tu forma de operar. Si haces scalping o day trading discrecional y valoras una interfaz moderna, cTrader puede resultarte más cómoda. Si programas o usas robots (EAs) y priorizas la comunidad y documentación más extensa, MT4 sigue siendo un estándar. Si necesitas operar múltiples clases de activos con más marcos temporales y herramientas de análisis, MT5 es la opción más completa. Antes de decidir, verifica qué plataformas ofrece realmente tu bróker y bajo qué entidad regulada vas a operar, porque eso condiciona la protección de tus fondos, no la plataforma en sí.",
+  "body": "## Tres plataformas, tres filosofías distintas\n\nCuando abres cuenta con un bróker de forex y CFD, casi siempre te vas a encontrar con una de estas tres opciones: MetaTrader 4 (MT4), MetaTrader 5 (MT5) o cTrader. Las tres cumplen la misma función básica —ver gráficos, enviar órdenes y gestionar posiciones—, pero difieren en el enfoque, en los activos que cubren mejor y en cómo se automatiza el trading.\n\nAntes de elegir plataforma conviene recordar algo importante: la plataforma no te protege como bróker. Eso lo hace la regulación de la entidad con la que abres cuenta, no el software que utilices para operar.\n\n## MT4: el estándar histórico del forex\n\nMetaTrader 4 fue durante años la plataforma de referencia para el trading de divisas. \nMetaTrader 5 es una versión más avanzada de MT4, que ofrece una gama más amplia de indicadores, marcos temporales adicionales y tipos de órdenes pendientes.\n Aun así, MT4 se ha mantenido vigente. \nMetaTrader 4 sigue siendo muy popular, y ambas versiones continúan operando.\n\n\nSu punto fuerte histórico es el lenguaje de programación MQL4 y la enorme comunidad de desarrolladores que ha crecido a su alrededor durante más de una década, lo que se traduce en una gran cantidad de robots (Expert Advisors) e indicadores disponibles, muchos de terceros.\n\n## MT5: multiactivo y más herramientas de análisis\n\nMT5 nació como sucesora de MT4 con un enfoque más amplio. \nTraders de todo el mundo han elegido la plataforma multiactivo MetaTrader 5 para operar forex, instrumentos bursátiles y futuros, con funciones avanzadas de trading financiero y herramientas superiores de análisis técnico y fundamental.\n\n\nA nivel técnico, MT5 amplía de forma notable la caja de herramientas. \nEl sistema de trading de MetaTrader 5 ofrece una función avanzada de profundidad de mercado, contabilidad separada de órdenes y operaciones, y soporte para todos los tipos de órdenes y modos de ejecución, con dos modos de contabilidad: netting para mercados bursátiles y hedging para forex.\n Además, \nofrece cuatro modos de ejecución de órdenes —instantánea, por solicitud, de mercado y de bolsa— y soporta todos los tipos de órdenes de trading, incluyendo órdenes de mercado, pendientes y stop, así como el stop trailing.\n\n\nEn cuanto a accesibilidad, \nMT5 está integrado con plataformas móviles para Android e iOS, y además de las versiones de escritorio y móvil está disponible en la web, accesible desde cualquier dispositivo.\n Para el trading algorítmico usa MQL5, un lenguaje distinto de MQL4 aunque con una filosofía similar.\n\n## cTrader: interfaz moderna y profundidad de mercado nativa\n\ncTrader tiene un origen distinto: no lo desarrolla MetaQuotes, sino una compañía independiente. \ncTrader es desarrollado por Spotware Systems, una empresa con sede en Limasol, Chipre.\n Su enfoque desde el principio ha sido ofrecer una experiencia más moderna. \nEs una plataforma de trading intuitiva y fácil de usar que combina gráficos potentes, ingreso de órdenes avanzado y una amplia capacidad de personalización.\n\n\ncTrader también apuesta fuerte por el trading automatizado y el copy trading. \nOfrece un servicio de copy trading versátil llamado cTrader Copy, y una función de trading algorítmico nativa conocida como cTrader Automate.\n A nivel de disponibilidad multiplataforma, \ncTrader ofrece disponibilidad en múltiples dispositivos con sus apps de iOS, Android, Windows, Mac y Web, todas traducidas a 23 idiomas.\n\n\nSu adopción entre brókers no es marginal: \nse trata de una plataforma premium de FX/CFD utilizada por más de 11 millones de traders y en la que confían más de 300 brókers y prop firms desde 2010.\n\n\n## Diferencias clave de un vistazo\n\n- **Activos y enfoque**: MT4 nació centrado en forex; MT5 y cTrader tienen un planteamiento multiactivo más amplio (forex, índices, acciones, materias primas, según lo que habilite cada bróker).\n- **Automatización**: MT4 usa MQL4, MT5 usa MQL5 y cTrader usa C# a través de cTrader Automate. La comunidad y disponibilidad de robots ya programados suele ser mayor en el ecosistema MetaTrader por su antigüedad.\n- **Interfaz**: cTrader suele percibirse como más moderna e intuitiva desde el primer uso; MT4 y MT5 mantienen un diseño más clásico, con curva de aprendizaje distinta según el usuario.\n- **Copy trading**: cTrader integra su propio servicio (cTrader Copy), mientras que en el mundo MetaTrader el copy trading suele depender de servicios del propio bróker o de terceros.\n\n## ¿Qué plataforma ofrecen los brókers?\n\nNo todos los brókers ofrecen las tres plataformas, y esto es un filtro práctico a la hora de elegir. Por ejemplo, [Pepperstone](/brokers/pepperstone/) pone a disposición de sus clientes MT4, MT5 y también cTrader, además de otras opciones como TradingView, según recoge la propia documentación del bróker. Por su parte, [IC Markets](/brokers/ic-markets/) también ofrece las tres plataformas —MT4, MT5 y cTrader—, lo que amplía el margen de elección para quien ya tiene preferencia por un ecosistema concreto.\n\nAntes de decidirte por un bróker en función de la plataforma, comprueba también qué entidad regulada te va a dar servicio según tu país de residencia, ya que las protecciones (fondos segregados, sistemas de compensación) dependen de esa entidad y no de MT4, MT5 o cTrader en sí.\n\n## Regulación: lo que realmente protege tu dinero\n\nLa plataforma es solo la herramienta con la que envías órdenes; quien custodia tu dinero y responde ante una eventual insolvencia es el bróker regulado. En el caso de Pepperstone, el grupo cuenta con licencias en distintas jurisdicciones. \nEstá licenciado y regulado por la Financial Conduct Authority (FCA) en el Reino Unido, la Australian Securities and Investments Commission (ASIC) en Australia, la Dubai Financial Services Authority (DFSA) en los EAU, la Cyprus Securities and Exchange Commission (CySEC) en Chipre, la Capital Markets Authority de Kenia (CMA), la Securities Commission of The Bahamas (SCB) y la Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) en Alemania.\n\n\nIC Markets, por su parte, también opera bajo varios reguladores según la entidad. \nEstá autorizado y regulado por la Cyprus Securities and Exchange Commission (CySEC), con licencia número 362/18.\n Además, \nIC Markets está regulado por la Australian Securities and Investments Commission (ASIC), la Seychelles Financial Services Authority (FSA) y también la Cyprus Securities and Exchange Commission (CySEC).\n\n\nTen en cuenta que la protección real varía según la entidad bajo la que abras cuenta, no según el broker \"en general\". Verifica siempre, antes de operar, qué entidad concreta te da servicio y qué regulador la supervisa en los registros oficiales del propio regulador.\n\n## Cómo elegir en la práctica\n\nPlantéate estas preguntas antes de decantarte por una plataforma:\n\n1. **¿Qué activos quieres operar?** Si tu interés es solo forex clásico, las tres plataformas te sirven. Si buscas más variedad de instrumentos, MT5 y cTrader suelen tener un catálogo más amplio según el bróker.\n2. **¿Vas a automatizar estrategias?** Si ya tienes robots en MQL4 o MQL5, quedarte en el ecosistema MetaTrader tiene sentido. Si programas en C# o quieres empezar de cero, cTrader Automate es una alternativa a valorar.\n3. **¿Qué bróker vas a usar?** No sirve de nada preferir una plataforma si el bróker que te interesa no la ofrece, o si solo la ofrece bajo una entidad regulada que no te conviene.\n4. **¿Priorizas la interfaz o la comunidad?** cTrader suele ganar en primera impresión visual; MT4/MT5 ganan en volumen de documentación, foros y recursos acumulados durante años.\n\nRecuerda que elegir plataforma es una decisión operativa, no una decisión de inversión. La plataforma no determina si vas a ganar o perder dinero operando: eso depende de tu estrategia, tu gestión de riesgo y las condiciones de mercado.",
+  "relatedBrokers": [
+    "pepperstone",
+    "ic-markets"
+  ],
+  "sources": [
+    {
+      "title": "MetaTrader 5 Multi-Asset Trading Platform",
+      "url": "https://www.metaquotes.net/en/metatrader5",
+      "date": "2026-08-25"
+    },
+    {
+      "title": "Trading online en fórex y las bolsas con MetaTrader 5",
+      "url": "https://www.metatrader5.com/en/trading-platform",
+      "date": "2026-08-25"
+    },
+    {
+      "title": "cTrader - Plataforma Premium de Trading de Forex/CFD",
+      "url": "https://www.spotware.com/ctrader/",
+      "date": "2026-08-25"
+    },
+    {
+      "title": "Is Pepperstone licensed and regulated - FAQ",
+      "url": "https://pepperstone.com/en/help-and-support/opening-an-account/is-pepperstone-licensed-and-regulated/",
+      "date": "2026-08-25"
+    },
+    {
+      "title": "Regulations - Regulated Forex Broker - IC Markets EU",
+      "url": "https://www.icmarkets.eu/en/company/regulation",
+      "date": "2026-08-25"
+    },
+    {
+      "title": "IC Markets Review 2026",
+      "url": "https://www.investing.com/brokers/reviews/ic-markets/",
+      "date": "2026-02-26"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Comparativa de las plataformas de trading MT4, MT5 y cTrader"
+}
