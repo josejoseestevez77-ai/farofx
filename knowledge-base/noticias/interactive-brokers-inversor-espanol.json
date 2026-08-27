@@ -1,0 +1,57 @@
+{
+  "slug": "interactive-brokers-inversor-espanol",
+  "title": "Interactive Brokers para el inversor español: lo que debes saber",
+  "metaTitle": "Interactive Brokers en España: guía para el inversor | Veredict FX",
+  "metaDescription": "¿Es seguro operar con Interactive Brokers desde España? Registro CNMV, protección del inversor, fiscalidad y alertas de clones, explicados con fuentes oficiales.",
+  "pillar": "C",
+  "type": "analisis",
+  "author": "Redacción Veredict FX",
+  "date": "2026-08-27",
+  "updated": "2026-08-27",
+  "excerpt": "Interactive Brokers no tiene sede en España: opera aquí gracias al pasaporte europeo de su filial irlandesa, registrada en la CNMV en régimen de libre prestación de servicios. Eso implica una protección de fondos distinta a la de un broker español y obligaciones fiscales que el inversor debe gestionar por su cuenta.",
+  "keyTakeaway": "Si vas a operar con Interactive Brokers desde España, ten claro que la entidad que te presta servicio es Interactive Brokers Ireland Limited, supervisada por el Banco Central de Irlanda y registrada en la CNMV solo en libre prestación de servicios, sin oficina local. Esto significa que la CNMV constata que puede operar aquí, pero la supervisión prudencial real recae en el regulador irlandés. Revisa siempre que estás en la web oficial (existen clones detectados por la propia CNMV), entiende que el fondo de garantía irlandés cubre un importe limitado y no protege frente a pérdidas de mercado, y ten presente que Hacienda no recibe los datos automáticamente: declarar el Modelo 100 y, si corresponde, el Modelo 720, es responsabilidad tuya. Antes de operar, consulta la ficha de [Interactive Brokers](/brokers/interactive-brokers/) y valora si el nivel de autogestión que exige se ajusta a tu perfil.",
+  "body": "## Quién presta realmente el servicio cuando abres cuenta desde España\n\nInteractive Brokers no es una entidad española. Cuando un residente en España abre cuenta, normalmente el contrato se firma con Interactive Brokers Ireland Limited, la filial que atiende a la Unión Europea. Esa sociedad está \ndebidamente registrada en España como empresa de servicios de inversión del Espacio Económico Europeo en libre prestación (sin establecimiento) con el número 5023\n.\n\nEsto tiene una implicación práctica que conviene entender bien: la CNMV no supervisa el día a día del broker, solo constata que puede operar legalmente en España gracias al pasaporte europeo. La vigilancia prudencial de fondo corresponde al Banco Central de Irlanda. Antes de dar por buena cualquier \"regulación española\", conviene revisar la ficha de [Interactive Brokers](/brokers/interactive-brokers/) y comprobar directamente en el registro de la CNMV qué figura exactamente inscrita y bajo qué régimen.\n\n## Qué cubre el fondo de compensación irlandés (y qué no cubre)\n\nLos clientes particulares de Interactive Brokers Ireland Limited pueden estar amparados por el Investor Compensation Scheme (ICS) irlandés. Según el propio administrador del esquema, la Investor Compensation Company DAC, \nel ICCL pagará una compensación equivalente al 90% del importe perdido, con un máximo de 20.000 euros por inversor\n.\n\nEs importante no confundir esta cobertura con una garantía sobre el valor de tus inversiones. El propio broker lo explica con claridad: \nla cobertura protege frente al fallo de la empresa de inversión, no frente a la pérdida de valor de mercado de los productos financieros\n. Además, \nel ICS está pensado para ayudar a personas físicas particulares y no cubre a instituciones ni a clientes profesionales\n.\n\nDicho de otro modo: si Interactive Brokers Ireland quebrara, el ICS podría compensarte por el efectivo o los activos que no se pudieran recuperar de la masa segregada, pero nunca por una caída bursátil de tus acciones o ETFs. Conviene tenerlo presente al dimensionar cuánto capital concentras en una sola cuenta, especialmente si operas también con otros brokers reseñados en Veredict FX.\n\n## Cuidado con los clones: la CNMV ya ha lanzado un aviso\n\nLa popularidad de Interactive Brokers también ha atraído a estafadores que copian su nombre y su imagen. La CNMV emitió una advertencia pública en la que identificaba una web fraudulenta que se hacía pasar por el grupo. En el documento oficial, la CNMV señala expresamente que \ninteractivebrokersgroup.com es un clon de Interactive Brokers Group\n. Otro repaso de esas alertas confirma que \nInteractive Brokers Group, en la dirección interactivebrokersgroup.com, opera como un clon de Interactive Brokers Ireland Limited\n.\n\nLa lección práctica es simple: verifica siempre que accedes al dominio oficial del broker, nunca a partir de enlaces recibidos por redes sociales, mensajería o anuncios sospechosos, y contrasta el número de registro (5023) directamente en la web de la CNMV antes de introducir cualquier dato personal o financiero.\n\n## Fiscalidad: Hacienda no recibe los datos automáticamente\n\nA diferencia de un broker con retenedor en España, Interactive Brokers no actúa como agente de retención del IRPF. Como resume una guía especializada en fiscalidad de brokers internacionales, \nIBKR no aplica la retención del 19% en las ganancias (salvo en ciertos dividendos), por lo que el inversor recibe el importe bruto y es responsable de reservar esa cantidad para pagarla en la Renta\n.\n\nEsto obliga al inversor residente en España a dos tareas. La primera es declarar en el IRPF (Modelo 100) todas las ganancias, dividendos e intereses obtenidos, con independencia de dónde esté domiciliado el broker. Como recuerda un análisis fiscal reciente, \nsi eres residente fiscal en España, Hacienda exige tributar por todos los rendimientos obtenidos, con independencia de dónde esté domiciliado el intermediario, y las ganancias, dividendos o intereses deben reflejarse en el IRPF\n.\n\nLa segunda es vigilar el umbral del Modelo 720. Esta declaración informativa \ndebe presentarse si el valor total de cuentas, valores o inmuebles en el extranjero supera los 50.000 euros en alguna de esas categorías\n. Una guía centrada específicamente en IBKR lo confirma para el caso concreto de este broker: \npara declarar Interactive Brokers en la Renta hay dos obligaciones reales: el Modelo 100 (plusvalías y dividendos brutos, de forma manual) y el Modelo 720 si la suma de los valores en brokers extranjeros supera los 50.000 euros a 31 de diciembre, ya que IBKR no actúa como retenedor en España\n.\n\nDado que el propio broker no comunica estos datos a la Agencia Tributaria de forma automática, como sí haría un intermediario español, la responsabilidad de recopilar los informes anuales y trasladarlos correctamente a cada modelo recae enteramente en el contribuyente. En caso de duda, lo prudente es apoyarse en un asesor fiscal, especialmente si la cartera combina varios mercados, divisas o productos con retención en origen.\n\n## Qué mirar antes de decidir si te conviene\n\nInteractive Brokers destaca por el acceso a un número muy amplio de mercados y productos, pero eso convive con un proceso de apertura de cuenta y unas plataformas que exigen cierta curva de aprendizaje. Antes de abrir cuenta conviene contrastar, además de la regulación y la fiscalidad ya comentadas, aspectos como el tipo de cuenta que necesitas, los permisos de producto que vas a activar y si prefieres una plataforma más sencilla frente a herramientas profesionales más completas. La ficha de [Interactive Brokers](/brokers/interactive-brokers/) en Veredict FX recoge estos elementos de forma resumida para que puedas comparalos con otras alternativas antes de tomar una decisión.\n\nEn cualquier caso, ningún registro regulatorio ni ningún fondo de compensación elimina el riesgo de mercado. Operar en bolsa, con derivados o con divisas implica la posibilidad de perder parte o la totalidad del capital invertido, y ninguna supervisión —española, irlandesa o estadounidense— cambia esa realidad.",
+  "relatedBrokers": [
+    "interactive-brokers"
+  ],
+  "sources": [
+    {
+      "title": "CNMV - Lista de empresas de servicios de inversión extranjeras en libre prestación (nº 5023) - Interactive Brokers Ireland Limited",
+      "url": "https://www.cnmv.es/portal/consultas/esi/esisextranjeraslp?tipo=CLP&numero=5023&lang=en",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Advertencia al público de la CNMV sobre clon de Interactive Brokers Group",
+      "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=7MPcW7f%2FRzLWTSIh9n68fIbgIfO3RtNU2TGg1f2UJVUILCnUAEn6Pt63MwWh+qV8",
+      "date": "2026-04-13"
+    },
+    {
+      "title": "La CNMV advierte: no inviertas en estas 13 entidades no autorizadas",
+      "url": "https://www.consumidorglobal.com/tecnologia/cnmv-advierte-no-inviertas-en-estas-13-entidades-no-autorizadas_18699_102.html",
+      "date": "2026-04-13"
+    },
+    {
+      "title": "Compensation Limits - Investor Compensation Company DAC (ICCL)",
+      "url": "https://www.investorcompensation.ie/claimant/compensation-limits.225.html",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Client Protection - Strength and Security - Interactive Brokers Ireland",
+      "url": "https://www.interactivebrokers.ie/en/general/security-investor-protection.php",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Cómo declarar las ganancias de brókeres extranjeros en la declaración de la renta",
+      "url": "https://www.bolsamania.com/declaracion-impuestos-renta/como-declarar-las-ganancias-de-brokeres-extranjeros-en-la-declaracion-de-la-renta/",
+      "date": "2026-02-16"
+    },
+    {
+      "title": "Cómo declarar Interactive Brokers en la Renta 2025: guía para inversores españoles",
+      "url": "https://redinversora.com/blog/como-declarar-ibkr-hacienda-renta-2025",
+      "date": "2026-06-04"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Inversor español consultando la plataforma de Interactive Brokers en un ordenador"
+}
