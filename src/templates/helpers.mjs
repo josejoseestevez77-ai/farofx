@@ -34,13 +34,24 @@ const clamp10 = (v) => Math.max(0, Math.min(10, Number(v) || 0));
 // Reguladores de segundo nivel: serios pero fuera del paraguas UE/UK (sin fondo de
 // compensación europeo). Los offshore débiles (FSC Mauricio, FSA Seychelles, VFSC…)
 // NO cuentan como regulación real → el broker cae a "sin regulación reconocida".
-export const TIER2_CODES = ['ASIC', 'FMA', 'FSCA', 'MAS', 'CFTC', 'NFA', 'SEC', 'FINRA', 'IIROC', 'SFC'];
+export const TIER2_CODES = ['ASIC', 'FMA', 'FSCA', 'MAS', 'CFTC', 'NFA', 'SEC', 'FINRA', 'IIROC', 'SFC', 'DFSA', 'SCA', 'JFSA'];
+
+// ¿Regulador serio no UE/UK? Por código, o la FSA de JAPÓN (distinta de la FSA de
+// Seychelles, que es offshore). Se distingue por el país en el nombre del regulador.
+function isTier2(r) {
+  const code = regCode(r.authority);
+  if (TIER2_CODES.includes(code)) return true;
+  if (code === 'FSA' && /jap[oó]n|japan/i.test(String(r.authority))) return true;
+  return false;
+}
 
 function regFacts(b) {
   const regs = Array.isArray(b.regulators) ? b.regulators : [];
-  const warned = regs.some((r) => /adverten|no autoriz|warning|chiringu|fraud/i.test(String(r.status || '')));
+  // Solo una ADVERTENCIA/ALERTA oficial cuenta como chiringuito. "no autorizado/sin
+  // registro" es benigno (significa "no regulado por ese organismo", no una alerta).
+  const warned = regs.some((r) => /advertenc|advertid|chiringu|fraud|estafa|alerta|lista negra|blacklist/i.test(String(r.status || '')));
   const t1 = regs.filter((r) => r.ok && EU_UK_CODES.includes(regCode(r.authority))).length; // UE/UK primer nivel
-  const t2 = regs.filter((r) => r.ok && TIER2_CODES.includes(regCode(r.authority))).length;  // serios no UE/UK
+  const t2 = regs.filter((r) => r.ok && isTier2(r)).length;                                   // serios no UE/UK
   return { warned, t1, t2 };
 }
 
