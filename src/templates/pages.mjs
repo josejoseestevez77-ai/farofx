@@ -1,6 +1,6 @@
 // Fichas de reseña, hubs, autores, metodología y páginas de confianza/legales.
 import { layout } from './layout.mjs';
-import { SITE, esc, computeScore, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, sealBadge, regCode, EU_UK_CODES, depLabel } from './helpers.mjs';
+import { SITE, esc, computeScore, scoreBreakdown, scoreColor, riskLabel, starStr, fmt, AUDIT_LABELS, WEIGHTS, sealBadge, regCode, EU_UK_CODES, depLabel } from './helpers.mjs';
 
 const YEAR = 2026;
 const EU_UK = EU_UK_CODES;
@@ -23,12 +23,19 @@ function breadcrumb(items) {
 }
 
 function auditLines(b) {
-  return Object.keys(AUDIT_LABELS)
+  const bd = scoreBreakdown(b);
+  const rows = Object.keys(AUDIT_LABELS)
     .map((k) => {
-      const v = b.subscores[k];
+      const v = bd.pillars[k];
       return `<div class="ll"><span>${AUDIT_LABELS[k]} <em style="color:var(--muted);font-style:normal">(${Math.round(WEIGHTS[k] * 100)}%)</em></span><span class="bar"><i style="width:${v * 10}%;background:${scoreColor(v)}"></i></span><span class="v">${v.toFixed(1)}</span></div>`;
     })
     .join('');
+  const note = bd.capReason
+    ? `<div class="ll" style="margin-top:8px"><span style="color:#D9534F">⚠ ${esc(bd.capReason)}</span></div>`
+    : bd.elite
+      ? `<div class="ll" style="margin-top:8px"><span style="color:#2FA36B">✓ Bonus de excelencia: regulación UE/UK múltiple, trayectoria contrastada y retiros sin incidencias.</span></div>`
+      : '';
+  return rows + note;
 }
 
 // ---------- FICHA DE RESEÑA (página estrella) ----------
@@ -208,21 +215,23 @@ export function renderMethodology() {
 <section class="block" style="padding-top:14px"><div class="wrap"><div class="article">
   <span class="eyebrow">Metodología abierta</span>
   <h1>Cómo puntuamos y rankeamos a los brokers</h1>
-  <div class="answer-box"><b>En una frase.</b> La nota de cada broker es una media ponderada de cuatro factores medibles —regulación (35%), velocidad de retirada (25%), quejas resueltas (25%) y transparencia de costes (15%)— con fuente y fecha en cada dato. Ningún broker puede pagar para cambiar su nota.</div>
+  <div class="answer-box"><b>En una frase.</b> La nota es una media ponderada de cinco factores medibles —regulación (35%), estabilidad financiera (20%), velocidad de retirada (22%), quejas resueltas (13%) y transparencia de costes (10%)— <b>con topes duros</b>: sin regulación de primer/segundo nivel, un broker suspende; con advertencia oficial de un regulador, cae al mínimo. La regulación y la solidez mandan sobre todo lo demás. Ningún broker puede pagar para cambiar su nota.</div>
   <h2>La fórmula</h2>
-  <p class="mono">score = 0,35·regulación + 0,25·retirada + 0,25·quejas + 0,15·costes</p>
+  <p class="mono">score = 0,35·regulación + 0,20·estabilidad + 0,22·retiros + 0,13·quejas + 0,10·costes</p>
   <div class="keydata"><h5>Pesos y qué mide cada factor</h5>
-    <div class="kd"><b>Regulación verificada (35%)</b><div>Reguladores de primer nivel, entidad legal, protección/compensación de fondos y segregación. Licencias cruzadas en vivo con CNMV, FCA, CySEC, ASIC y reguladores LatAm.</div></div>
-    <div class="kd"><b>Velocidad de retirada (25%)</b><div>Tiempo medio de pago reportado por cuentas verificadas.</div></div>
-    <div class="kd"><b>Quejas y resolución (25%)</b><div>Ratio de incidencias abiertas vs. resueltas y antecedentes públicos tratados con transparencia.</div></div>
-    <div class="kd"><b>Transparencia de costes (15%)</b><div>Spreads, comisiones y swaps publicados frente a los medidos.</div></div>
+    <div class="kd"><b>Regulación verificada (35%)</b><div>Se calcula desde los <b>hechos</b>, no desde una opinión: cuántos reguladores de primer nivel UE/UK (CNMV, FCA, CySEC, BaFin…) tiene la licencia activa, verificada en el registro oficial. Reguladores serios fuera de la UE/UK (ASIC, MAS, CFTC…) puntúan menos; los offshore débiles no cuentan como protección.</div></div>
+    <div class="kd"><b>Estabilidad financiera (20%)</b><div>Trayectoria/antigüedad de la entidad y protección de fondos (cuentas segregadas y fondos de compensación como FSCS o FOGAIN).</div></div>
+    <div class="kd"><b>Velocidad de retirada (22%)</b><div>Tiempo medio de pago reportado por cuentas verificadas. Las quejas de retiro sin resolver <b>penalizan de forma directa</b> la nota.</div></div>
+    <div class="kd"><b>Quejas y resolución (13%)</b><div>Ratio de incidencias abiertas vs. resueltas y antecedentes públicos tratados con transparencia.</div></div>
+    <div class="kd"><b>Transparencia de costes (10%)</b><div>Spreads, comisiones y swaps publicados frente a los medidos.</div></div>
   </div>
-  <h2>Reglas innegociables</h2>
+  <h2>Topes y reglas innegociables</h2>
   <ul class="pc">
-    <li class="pro">El veredicto y la posición los decide la evidencia, nunca un acuerdo comercial.</li>
-    <li class="pro">Nada de veredictos prefijados ni "siempre positivo/negativo" para ninguna marca.</li>
-    <li class="pro">Pros y contras reales en cada ficha.</li>
-    <li class="pro">Disclosure de afiliación visible siempre; los enlaces de afiliado no modifican la nota.</li>
+    <li class="con">Con <b>advertencia oficial</b> de un regulador (posible chiringuito), la nota se limita a un máximo de <b>2/10</b>.</li>
+    <li class="con">Sin ninguna regulación de primer o segundo nivel verificada, el broker <b>suspende</b> (máximo 4/10).</li>
+    <li class="con">Solo con regulación fuera de la UE/UK (sin fondo de compensación europeo), la nota se limita a <b>6,5/10</b>.</li>
+    <li class="pro">Un broker <b>sobresaliente</b> (varias licencias UE/UK, años de trayectoria y retiros sin incidencias) puede llegar a <b>9–9,5/10</b>.</li>
+    <li class="pro">El veredicto y la posición los decide la evidencia, nunca un acuerdo comercial. Los enlaces de afiliado no modifican la nota.</li>
   </ul>
   <div class="pledge" style="color:var(--ink);background:var(--seal-soft)"><b style="color:#7a5e18">Compromiso.</b> Nuestros ingresos vienen de comisiones de afiliado declaradas. Ningún broker puede pagar para subir, bajar o borrar su puntuación.</div>
 </div></div></section>`;

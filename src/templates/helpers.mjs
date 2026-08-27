@@ -15,8 +15,9 @@ export const SITE = {
   sisters: [],
 };
 
-// Pesos del score editorial (deben coincidir con metodologia-ranking.md).
-export const WEIGHTS = { regulacion: 0.35, retirada: 0.25, quejas: 0.25, costes: 0.15 };
+// Pesos del score editorial (deben coincidir con la metodología pública).
+// Regulación + estabilidad financiera mandan; luego retiros; después quejas y costes.
+export const WEIGHTS = { regulacion: 0.35, estabilidad: 0.20, retiros: 0.22, quejas: 0.13, costes: 0.10 };
 
 export const esc = (s = '') =>
   String(s)
@@ -25,14 +26,88 @@ export const esc = (s = '') =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
+// ---------- MOTOR DE PUNTUACIÓN (auditable) ----------
+// La regulación se calcula desde HECHOS (los reguladores verificados), no desde
+// una nota subjetiva del motor: así un chiringuito no puede "aprobar" por generosidad.
+const clamp10 = (v) => Math.max(0, Math.min(10, Number(v) || 0));
+
+// Reguladores de segundo nivel: serios pero fuera del paraguas UE/UK (sin fondo de
+// compensación europeo). Los offshore débiles (FSC Mauricio, FSA Seychelles, VFSC…)
+// NO cuentan como regulación real → el broker cae a "sin regulación reconocida".
+export const TIER2_CODES = ['ASIC', 'FMA', 'FSCA', 'MAS', 'CFTC', 'NFA', 'SEC', 'FINRA', 'IIROC', 'SFC'];
+
+function regFacts(b) {
+  const regs = Array.isArray(b.regulators) ? b.regulators : [];
+  const warned = regs.some((r) => /adverten|no autoriz|warning|chiringu|fraud/i.test(String(r.status || '')));
+  const t1 = regs.filter((r) => r.ok && EU_UK_CODES.includes(regCode(r.authority))).length; // UE/UK primer nivel
+  const t2 = regs.filter((r) => r.ok && TIER2_CODES.includes(regCode(r.authority))).length;  // serios no UE/UK
+  return { warned, t1, t2 };
+}
+
+function regulationScore(f) {
+  if (f.warned) return 1;      // advertencia oficial / no autorizado
+  if (f.t1 >= 3) return 10;
+  if (f.t1 === 2) return 9.5;
+  if (f.t1 === 1) return 8.0;
+  if (f.t2 >= 2) return 6.0;
+  if (f.t2 === 1) return 5.0;
+  return 2.0;                  // sin regulación reconocida
+}
+
+// Estabilidad financiera (proxy con datos objetivos): antigüedad + protección de fondos.
+function stabilityScore(b) {
+  const y = Number(b.foundedYear);
+  const age = y > 1900 && y <= 2026 ? 2026 - y : null;
+  let ageS = 5.5;
+  if (age != null) ageS = age >= 20 ? 10 : age >= 15 ? 9 : age >= 10 ? 8 : age >= 6 ? 6.5 : age >= 3 ? 5 : 3.5;
+  const fp = String(b.fundProtection || '').toLowerCase();
+  let prot = 5.5;
+  if (/fscs|fogain|icf|compensa|garant/.test(fp)) prot = 9.5;
+  else if (/segregad/.test(fp)) prot = 7;
+  if (/sin protecci|no declarad|desconocid|ninguna/.test(fp)) prot = 2;
+  return Math.round((0.6 * ageS + 0.4 * prot) * 10) / 10;
+}
+
+// Devuelve el desglose completo (pilares + topes + nota final). computeScore usa esto.
+export function scoreBreakdown(b) {
+  const s = b.subscores || {};
+  const f = regFacts(b);
+  const pillars = {
+    regulacion: regulationScore(f),
+    estabilidad: stabilityScore(b),
+    retiros: clamp10(s.retirada),
+    quejas: clamp10(s.quejas),
+    costes: clamp10(s.costes),
+  };
+  let raw =
+    WEIGHTS.regulacion * pillars.regulacion +
+    WEIGHTS.estabilidad * pillars.estabilidad +
+    WEIGHTS.retiros * pillars.retiros +
+    WEIGHTS.quejas * pillars.quejas +
+    WEIGHTS.costes * pillars.costes;
+
+  // Bonus de excelencia: élite regulada (≥2 UE/UK), estable y sin problemas de retiro.
+  const elite = f.t1 >= 2 && !f.warned && pillars.estabilidad >= 8 && pillars.retiros >= 7.5 && pillars.quejas >= 7.5;
+  if (elite) raw += 0.5;
+  // Penalización por quejas de retiro (lo que más duele al trader).
+  let penalty = 0;
+  if (pillars.retiros < 4) penalty = 1.0;
+  else if (pillars.retiros < 5.5) penalty = 0.4;
+  raw -= penalty;
+
+  // Topes duros por regulación (mandan sobre todo lo demás).
+  let cap = 10, capReason = '';
+  if (f.warned) { cap = 2.0; capReason = 'Advertencia oficial de un regulador (posible chiringuito): nota limitada.'; }
+  else if (f.t1 === 0 && f.t2 === 0) { cap = 4.0; capReason = 'Sin regulación de primer/segundo nivel verificada: suspenso.'; }
+  else if (f.t1 === 0 && f.t2 >= 1) { cap = 6.5; capReason = 'Solo regulación fuera de la UE/UK (sin fondo de compensación europeo).'; }
+
+  let final = Math.min(raw, cap);
+  final = Math.max(0.5, Math.min(9.9, final));
+  return { pillars, raw, cap, capReason, elite, penalty, warned: f.warned, t1: f.t1, t2: f.t2, final: Math.round(final * 10) / 10 };
+}
+
 export function computeScore(b) {
-  const s = b.subscores;
-  const raw =
-    WEIGHTS.regulacion * s.regulacion +
-    WEIGHTS.retirada * s.retirada +
-    WEIGHTS.quejas * s.quejas +
-    WEIGHTS.costes * s.costes;
-  return Math.round(raw * 10) / 10; // 0–10, un decimal
+  return scoreBreakdown(b).final; // 0–10, un decimal
 }
 
 export const scoreColor = (s) => (s >= 8 ? '#2FA36B' : s >= 6.5 ? '#C8A24B' : s >= 5 ? '#d08a2c' : '#D9534F');
@@ -82,7 +157,8 @@ export const fmt = (n) => Number(n).toLocaleString('es-ES');
 // Etiquetas legibles de las sub-notas para el desglose auditable.
 export const AUDIT_LABELS = {
   regulacion: 'Regulación verificada',
-  retirada: 'Velocidad de retirada',
+  estabilidad: 'Estabilidad financiera',
+  retiros: 'Velocidad de retirada',
   quejas: 'Quejas resueltas',
   costes: 'Transparencia de costes',
 };
