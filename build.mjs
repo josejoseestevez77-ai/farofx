@@ -233,6 +233,38 @@ ${pages
 `;
 writeFileSync(join(DIST, 'sitemap.xml'), sitemap);
 
+// ---- feed.xml (RSS 2.0) — para automatizaciones (Make/Zapier) y lectores ----
+const xmlesc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+const feedItems = [...articles]
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+  .slice(0, 30)
+  .map((a) => {
+    const link = `${SITE.url}/blog/${a.slug}/`;
+    const desc = stripTags(a.excerpt || a.metaDescription || '');
+    const d = a.date ? new Date(`${a.date}T09:00:00Z`) : new Date();
+    return `    <item>
+      <title>${xmlesc(a.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${d.toUTCString()}</pubDate>
+      <description>${xmlesc(desc)}</description>
+    </item>`;
+  })
+  .join('\n');
+const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Veredict FX — Blog</title>
+    <link>${SITE.url}/blog/</link>
+    <description>${xmlesc(SITE.description)}</description>
+    <language>es-ES</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${feedItems}
+  </channel>
+</rss>
+`;
+writeFileSync(join(DIST, 'feed.xml'), feed);
+
 // ---- robots.txt (permite explícitamente crawlers de IA para GEO) ----
 const aiBots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'anthropic-ai', 'Claude-Web', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'Amazonbot', 'CCBot', 'Bytespider'];
 writeFileSync(
