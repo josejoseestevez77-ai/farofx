@@ -106,21 +106,22 @@ export function scoreBreakdown(b) {
   else if (pillars.retiros < 5.5) penalty = 0.4;
   raw -= penalty;
 
-  // Calidad "no-regulatoria" (0-10): estabilidad + retiros + quejas + costes.
-  const qNorm = (WEIGHTS.estabilidad * pillars.estabilidad + WEIGHTS.retiros * pillars.retiros + WEIGHTS.quejas * pillars.quejas + WEIGHTS.costes * pillars.costes) /
-    (WEIGHTS.estabilidad + WEIGHTS.retiros + WEIGHTS.quejas + WEIGHTS.costes);
-  const band = (lo, hi) => lo + (hi - lo) * Math.max(0, Math.min(1, qNorm / 10));
+  // TOPE SUAVE: por debajo del "hombro" la nota es la real (los malos siguen bajos);
+  // por encima, se comprime asintóticamente hacia el techo → se reparten los que antes
+  // se apelotonaban justo en el tope, SIN subir a los peores del grupo.
+  const softcap = (r, cap, span) => {
+    const sh = cap - span;
+    return r <= sh ? r : sh + (cap - sh) * (1 - Math.exp(-(r - sh) / span));
+  };
 
-  // Topes por regulación repartidos en BANDAS (sin empates exactos): dentro de cada
-  // grupo capado, la nota se estira según la calidad real del broker.
   let final, capReason = '';
-  if (f.warned) { final = band(1.0, 2.0); capReason = 'Advertencia oficial de un regulador (posible chiringuito): nota limitada.'; }
-  else if (f.t1 === 0 && f.t2 === 0) { final = band(2.8, 4.5); capReason = 'Sin regulación de primer/segundo nivel verificada: suspenso.'; }
-  else if (f.t1 === 0 && f.t2 >= 1) { final = band(5.2, 6.5); capReason = 'Solo regulación fuera de la UE/UK (sin fondo de compensación europeo).'; }
+  if (f.warned) { final = Math.min(raw, 2.0); capReason = 'Advertencia oficial de un regulador (posible chiringuito): nota limitada.'; }
+  else if (f.t1 === 0 && f.t2 === 0) { final = softcap(raw, 4.5, 1.7); capReason = 'Sin regulación de primer/segundo nivel verificada: suspenso.'; }
+  else if (f.t1 === 0 && f.t2 >= 1) { final = softcap(raw, 6.5, 1.5); capReason = 'Solo regulación fuera de la UE/UK (sin fondo de compensación europeo).'; }
   else { final = raw; } // regulado UE/UK: nota completa (bonus/penalización ya aplicados)
 
   final = Math.max(0.5, Math.min(9.9, final));
-  return { pillars, raw, qNorm, capReason, elite, penalty, warned: f.warned, t1: f.t1, t2: f.t2, final: Math.round(final * 10) / 10 };
+  return { pillars, raw, capReason, elite, penalty, warned: f.warned, t1: f.t1, t2: f.t2, final: Math.round(final * 10) / 10 };
 }
 
 export function computeScore(b) {
