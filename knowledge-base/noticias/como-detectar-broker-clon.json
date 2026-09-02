@@ -1,0 +1,58 @@
+{
+  "slug": "como-detectar-broker-clon",
+  "title": "Cómo detectar un broker clon de una entidad regulada (y no caer)",
+  "metaTitle": "Cómo detectar un broker clon y no caer | Veredict FX",
+  "metaDescription": "Guía práctica para identificar brokers clon que suplantan a entidades reguladas. Aprende a verificar registros oficiales y evitar el fraude con datos de CNMV y FCA.",
+  "pillar": "B",
+  "type": "guia",
+  "author": "Redacción Veredict FX",
+  "date": "2026-09-02",
+  "updated": "2026-09-02",
+  "excerpt": "Un broker clon copia el nombre, el logo o incluso el número de licencia de una entidad regulada de verdad para parecer legítimo. La CNMV y la FCA publican alertas periódicas sobre estos casos, y la única forma fiable de distinguirlos es contrastar los datos directamente en el registro oficial del regulador, nunca en la web que te contacta.",
+  "keyTakeaway": "Antes de abrir una cuenta o transferir dinero a un \"broker regulado\", entra tú mismo en el registro oficial del supervisor (CNMV en España, FCA en Reino Unido, u otro equivalente) y busca la entidad por su nombre exacto y su número de licencia. No uses el teléfono, el email ni el enlace que te ha dado la web que te contactó: usa siempre los datos de contacto que aparecen en el propio registro. Si la entidad que buscas coincide en nombre pero los datos de contacto no cuadran, o si el regulador la ha señalado expresamente como \"clon\", desconfía y no operes. Para ver el perfil regulatorio verificado de brokers concretos puedes consultar fichas como las de [XTB](/brokers/xtb/) o [IG](/brokers/ig/), donde se detalla bajo qué licencias operan realmente.",
+  "body": "## Qué es exactamente un \"broker clon\"\n\nUn broker clon es una web o entidad fraudulenta que se hace pasar por un broker que sí está debidamente autorizado. No es una empresa parecida ni un competidor: es una suplantación directa. Según ha explicado la CNMV, \nse trata de fraudes realizados por empresas no autorizadas -chiringuitos financieros- que utilizan datos identificativos de empresas autorizadas o inscritas en su registro, denominadas clones, con el fin de confundir al inversor dando una apariencia de legalidad\n. En la práctica, esto significa copiar el nombre comercial, el logotipo, el número de registro e incluso el diseño completo de la web original.\n\nEl objetivo es sencillo: que el usuario piense que está tratando con una entidad supervisada y baje la guardia. La CNMV ha detallado que \nestos chiringuitos financieros utilizan ilegítimamente, incluso en sus páginas web, elementos identificativos idénticos o muy similares a los de empresas debidamente autorizadas e inscritas\n.\n\n## Casos reales que ilustran el patrón\n\nLos avisos de entidades no registradas que publica la CNMV cada semana incluyen con frecuencia clones de brokers y gestoras conocidas. Por ejemplo, el regulador español ha alertado de una web que \nactúa como un clon fraudulento y que no guarda relación con Oanda TMS Brokers SA, que sí está debidamente registrada en España\n.\n\nEn otro caso, la CNMV señaló una web que \nse trata de Tarillium, Value Markets e IG Index Limited\n, precisando que esta última \nha sido señalada al tratarse de un 'clon', por lo que la CNMV ha puntualizado que no guarda relación con Indexa Capital A.V., S.A., debidamente registrada en España\n. Este ejemplo es revelador: el nombre del clon puede combinar palabras de más de una entidad real para generar confusión, aunque la web fraudulenta no tenga relación alguna con el broker regulado que existe de verdad, como [IG](/brokers/ig/).\n\nOtros ejemplos documentados por la CNMV incluyen clones de Trade Republic, Monex Europe, Interactive Brokers o Renta 4. En el caso de Trade Republic, el organismo detectó que una entidad no registrada \nestá utilizando direcciones de correo electrónico como 'traderepublic2015@gmail.com' y 'nombre.apellido@re-publictrade.finance', haciéndose pasar por empleados de Trade Republic Bank\n. Con Interactive Brokers, la CNMV avisó de una web \nque opera como un clon de Interactive Brokers Ireland Limited\n.\n\nEn Reino Unido, la FCA advierte de un patrón idéntico. Su regulador explica que \nuna de las formas en que los estafadores buscan nuevas maneras de engañar al público es pretender ser una firma que ellos autorizan, a lo que llaman firma clon\n, y detalla que \nsuelen usar el nombre y la dirección de una firma genuina, o pueden copiar el número de referencia de la firma (FRN)\n.\n\n## Por qué el número de licencia no es garantía suficiente\n\nUno de los errores más comunes es pensar que basta con que la web muestre un número de registro para confiar. Los propios reguladores desmienten esto. La FCA ha señalado que \nadvierte a los consumidores que usen el teléfono que figura en el registro de la FCA para contactar con una firma autorizada y así asegurarse de que tratan con la firma real, ya que los estafadores suelen copiar los números de referencia de la firma\n.\n\nEs decir: un clon puede mostrar el mismo FRN, el mismo nombre y hasta la misma dirección postal que el broker legítimo. La diferencia real está en los datos de contacto —teléfono, email, dominio web— que solo puedes verificar con seguridad si los obtienes tú mismo del registro oficial, y no de la web o el mensaje que te ha llegado.\n\n## Cómo comprobar de verdad si un broker es quien dice ser\n\nEl procedimiento es el mismo en España y en cualquier jurisdicción con un regulador serio:\n\n**1. Busca la entidad en el registro oficial, no en Google.** La CNMV mantiene \nun buscador que aporta toda la información registrada en los registros oficiales sobre una entidad autorizada para prestar servicios de inversión\n. La FCA tiene su propio registro público (FCA Register) con la misma función.\n\n**2. Compara el nombre exacto, no solo el nombre comercial.** Muchos clones usan una marca comercial parecida pero con una razón social distinta, o registran dominios casi idénticos al original con pequeñas variaciones.\n\n**3. Usa el teléfono y el email que aparecen en el registro, no los que te ha dado la propia web.** Este es el consejo central de todos los reguladores: contacta con la entidad únicamente a través de los canales verificados de forma independiente.\n\n**4. Consulta también el listado de entidades advertidas.** Además del registro de autorizados, la CNMV ofrece \nun buscador de entidades advertidas\n donde figuran expresamente los clones detectados. La FCA mantiene su propia Warning List, que \npermite buscar detalles de firmas e individuos no autorizados que no pueden operar en el Reino Unido, y que pueden ser firmas clon (una copia de una firma genuina)\n.\n\n**5. Desconfía de quien te contacta primero.** La CNMV recomienda, ante cualquier duda sobre la identidad de quien ofrece el servicio, \nrechazar las ofertas inesperadas hasta comprobar que proceden de entidades debidamente inscritas en CNMV\n.\n\n## Qué protección tienes si operas con un broker regulado de verdad\n\nEsta comprobación no es un trámite burocrático: tiene consecuencias económicas directas. Si abres cuenta con una entidad de servicios de inversión debidamente registrada en España, tu dinero y tus instrumentos financieros quedan cubiertos por el FOGAIN en caso de insolvencia de la entidad. Según la guía oficial de la CNMV, \nel FOGAIN asegura a los clientes de una entidad adherida la recuperación del efectivo y los instrumentos financieros entregados a la entidad, con un máximo de 100.000 euros por inversor, cuando la entidad no pueda restituírselos por concurso de acreedores\n, entre otros supuestos.\n\nCon un clon, esta protección no existe. Al no ser una entidad registrada, ninguna operación realizada con ella está amparada por ningún fondo de garantía, y no hay ningún supervisor al que reclamar. Por eso la verificación previa en el registro oficial —y no en la web que te contacta— es el paso que marca la diferencia entre operar con un broker supervisado, como los que puedes consultar en las fichas de [XTB](/brokers/xtb/) o [IG](/brokers/ig/), y entregar tu dinero a una entidad sin ningún tipo de respaldo.\n\n## Señales de alerta que debes vigilar\n\n- El broker te contacta por WhatsApp, redes sociales o llamadas no solicitadas ofreciendo rentabilidades atractivas.\n- El dominio web es casi idéntico al de un broker conocido, pero con una letra cambiada, un guion añadido o una extensión distinta (.net en vez de .com, por ejemplo).\n- Te insisten en que uses el teléfono o el email que ellos te facilitan para \"verificar\" su licencia, en lugar de que lo compruebes tú en el registro del regulador.\n- Los datos de contacto que aparecen en su web no coinciden exactamente con los que figuran en el registro oficial cuando buscas la entidad por su nombre completo.\n- Prometen retiradas garantizadas o presionan para que inviertas con urgencia.\n\nSi detectas alguna de estas señales, la recomendación de los reguladores es no operar y, si ya has tenido contacto, denunciarlo ante el organismo correspondiente a través de sus canales oficiales de comunicación de infracciones.",
+  "relatedBrokers": [
+    "xtb",
+    "ig"
+  ],
+  "sources": [
+    {
+      "title": "La CNMV avisa de tres entidades no autorizadas a prestar servicios de inversión",
+      "url": "https://www.pressdigital.es/articulo/economia/2026-03-23/5819172-cnmv-avisa-tres-entidades-no-autorizadas-prestar-servicios-inversion",
+      "date": "2026-03-23"
+    },
+    {
+      "title": "Advertencia de entidades no registradas (CNMV)",
+      "url": "https://www.cnmv.es/webservices/verdocumento/ver?t=%7B0ecd45fc-c1d5-430f-941b-e1a6d1d93aa2%7D",
+      "date": "2026-07-06"
+    },
+    {
+      "title": "Clone firms and individuals (FCA)",
+      "url": "https://www.fca.org.uk/consumers/clone-firms-individuals",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "FCA Warning List of unauthorised firms",
+      "url": "https://www.fca.org.uk/consumers/warning-list-unauthorised-firms",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "Guía rápida de CNMV: Fondo de garantía de inversiones (FOGAIN)",
+      "url": "https://www.cnmv.es/DocPortal/Publicaciones/Fichas/GR14_FOGAIN.pdf",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "Buscador de entidades autorizadas para prestar servicios de inversión (CNMV)",
+      "url": "https://www.cnmv.es/portal/consultas/busquedaporentidad?tipoBusqueda=ESI&lang=en",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "La CNMV alerta del auge de fraudes a través de chiringuitos financieros clones",
+      "url": "https://www.elespanol.com/invertia/mercados/20210301/cnmv-alerta-fraudes-traves-chiringuitos-financieros-clones/562694250_0.html",
+      "date": "2021-03-01"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Persona comprobando en un ordenador el registro oficial de un regulador financiero para detectar un broker clon"
+}
