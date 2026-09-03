@@ -27,16 +27,25 @@ function ratingBox(er) {
   const best = Number(er.best || 5);
   const pct = Math.max(0, Math.min(100, (val / best) * 100));
   const valTxt = val.toFixed(1).replace('.', ',');
-  const stars = `<span class="er-stars" aria-hidden="true"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:${pct}%">★★★★★</span></span>`;
-  return `<div class="er-card">
-    <div class="er-main">
-      <div class="er-score"><span class="er-val">${valTxt}</span><span class="er-out">/${best}</span></div>
-      <div class="er-meta">
+  // Estilos EN LÍNEA (no dependen de theme.css) para que la caja y las
+  // estrellas se vean siempre bien aunque la CSS esté cacheada o no subida.
+  const stars =
+    `<span aria-hidden="true" style="position:relative;display:inline-block;font-size:20px;line-height:1;letter-spacing:3px;font-family:Arial,sans-serif">` +
+      `<span style="color:rgba(14,21,18,.18)">★★★★★</span>` +
+      `<span style="position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;width:${pct}%;color:var(--seal,#00B67A)">★★★★★</span>` +
+    `</span>`;
+  return `<div class="er-card" style="border:1px solid var(--seal,#00B67A);background:var(--seal-soft,rgba(0,182,122,.10));border-radius:14px;padding:20px 24px;margin:6px 0 24px">
+    <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="display:flex;align-items:baseline;line-height:1">
+        <span style="font-family:var(--display,var(--mono),sans-serif);font-weight:800;font-size:44px;color:var(--seal,#00B67A)">${valTxt}</span>
+        <span style="font-size:18px;color:var(--muted,#7E8BA3);margin-left:2px">/${best}</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
         ${stars}
-        <div class="er-label">Nota editorial · <b>Veredict FX</b></div>
+        <div style="font-size:13px;color:var(--muted,#7E8BA3)">Nota editorial · <b style="color:inherit">Veredict FX</b></div>
       </div>
     </div>
-    ${er.summary ? `<p class="er-summary">${esc(er.summary)}</p>` : ''}
+    ${er.summary ? `<p style="margin:14px 0 0;font-size:15px;line-height:1.6">${esc(er.summary)}</p>` : ''}
   </div>`;
 }
 
