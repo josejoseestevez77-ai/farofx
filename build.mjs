@@ -210,6 +210,13 @@ for (const ico of ['favicon.png', 'apple-touch-icon.png', 'logo-mark.png', 'og.p
 const CARDS_DIR = join(__dir, 'cards');
 if (existsSync(CARDS_DIR)) cpSync(CARDS_DIR, join(DIST, 'cards'), { recursive: true });
 
+// ---- Verificación de propiedad en Google Search Console ----
+// Sirve el archivo HTML que pide Google en la raíz del sitio.
+writeFileSync(
+  join(DIST, 'google6cb8c06d1037ff2d.html'),
+  'google-site-verification: google6cb8c06d1037ff2d.html'
+);
+
 // ---- Preview todo-en-uno (para abrir con DOBLE CLIC, sin servidor) ----
 // Inlina CSS + JS en el HTML para que funcione desde el disco (file://).
 function standalone(html) {
