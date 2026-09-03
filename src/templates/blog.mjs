@@ -20,6 +20,26 @@ function temaCard(slug) {
   return 'general';
 }
 
+// Caja visible de la nota editorial de Veredict FX (escala /5). Muestra la
+// valoración que el equipo defiende, con estrellas y una frase de contexto.
+function ratingBox(er) {
+  const val = Number(er.value);
+  const best = Number(er.best || 5);
+  const pct = Math.max(0, Math.min(100, (val / best) * 100));
+  const valTxt = val.toFixed(1).replace('.', ',');
+  const stars = `<span class="er-stars" aria-hidden="true"><span class="er-stars-bg">★★★★★</span><span class="er-stars-fg" style="width:${pct}%">★★★★★</span></span>`;
+  return `<div class="er-card">
+    <div class="er-main">
+      <div class="er-score"><span class="er-val">${valTxt}</span><span class="er-out">/${best}</span></div>
+      <div class="er-meta">
+        ${stars}
+        <div class="er-label">Nota editorial · <b>Veredict FX</b></div>
+      </div>
+    </div>
+    ${er.summary ? `<p class="er-summary">${esc(er.summary)}</p>` : ''}
+  </div>`;
+}
+
 const PILLAR_LABEL = {
   A: 'Regulación',
   B: 'Fraude y seguridad',
@@ -119,6 +139,40 @@ export function renderArticulo(article, brokers = [], authors = []) {
     mainEntityOfPage: SITE.url + `/blog/${article.slug}/`,
   };
 
+  // Nota editorial de Veredict FX (valoración propia del equipo). Cuando el
+  // artículo la incluye, se muestra una caja visible y se emite un Review
+  // schema veraz: firmado por Veredict, reflejando la nota que sí aparece en
+  // la página. NO es una nota agregada de terceros.
+  const er = article.editorialRating;
+  const jsonldReview = er
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Review',
+        name: article.title,
+        url: SITE.url + `/blog/${article.slug}/`,
+        datePublished: article.date,
+        author: { '@type': 'Organization', name: 'Veredict FX', url: SITE.url },
+        publisher: { '@type': 'Organization', name: 'Veredict FX', url: SITE.url },
+        itemReviewed: {
+          '@type': er.itemType || 'Product',
+          name: er.itemName,
+          ...(er.itemDescription ? { description: er.itemDescription } : {}),
+          ...(er.itemUrl ? { url: er.itemUrl } : {}),
+          ...(er.itemBrand ? { brand: { '@type': 'Brand', name: er.itemBrand } } : {}),
+          ...(er.itemServiceType ? { serviceType: er.itemServiceType } : {}),
+          ...((er.itemType || 'Product') === 'Service'
+            ? { provider: { '@type': 'Organization', name: er.itemName, ...(er.itemUrl ? { url: er.itemUrl } : {}) } }
+            : {}),
+        },
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: String(er.value),
+          bestRating: String(er.best || 5),
+          worstRating: String(er.worst || 1),
+        },
+      }
+    : null;
+
   const main = `
 ${crumb.html}
 <section class="block" style="padding-top:14px">
@@ -129,6 +183,8 @@ ${crumb.html}
       <span class="who">Por ${esc(author)}</span>
       <span class="dot-sep">·</span><span>Actualizado: ${esc(fecha)}</span>
     </div>
+
+    ${er ? ratingBox(er) : ''}
 
     ${article.excerpt ? `<div class="answer-box"><b>En breve.</b> ${esc(article.excerpt)}</div>` : ''}
 
@@ -155,7 +211,7 @@ ${crumb.html}
     ogImage: `${SITE.url}/cards/temas/${temaCard(article.slug)}.jpg`,
     publishedTime: article.date,
     modifiedTime: article.updated || article.date,
-    jsonld: [jsonldArticle, crumb.jsonld],
+    jsonld: [jsonldArticle, ...(jsonldReview ? [jsonldReview] : []), crumb.jsonld],
     main,
   });
 }
