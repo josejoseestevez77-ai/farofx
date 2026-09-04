@@ -182,6 +182,28 @@ export function renderArticulo(article, brokers = [], authors = []) {
       }
     : null;
 
+  // Preguntas frecuentes (FAQ) — bloque visible + FAQPage schema.
+  const faqs = Array.isArray(article.faqs) ? article.faqs.filter((f) => f && f.q && f.a) : [];
+  const faqHtml = faqs.length
+    ? `<h2>Preguntas frecuentes</h2>${faqs
+        .map(
+          (f) =>
+            `<div style="margin:0 0 16px"><p style="margin:0 0 4px"><b>${esc(f.q)}</b></p><p style="margin:0">${inline(f.a)}</p></div>`
+        )
+        .join('')}`
+    : '';
+  const jsonldFaq = faqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   const main = `
 ${crumb.html}
 <section class="block" style="padding-top:14px">
@@ -200,6 +222,8 @@ ${crumb.html}
     ${mdToHtml(article.body || '')}
 
     ${article.keyTakeaway ? `<h2>Qué significa para ti</h2><div class="answer-box">${esc(article.keyTakeaway)}</div>` : ''}
+
+    ${faqHtml}
 
     ${related ? `<div class="hub-note" style="margin-top:26px"><b>Fichas relacionadas:</b> <span class="regs">${related}</span></div>` : ''}
 
@@ -220,7 +244,7 @@ ${crumb.html}
     ogImage: `${SITE.url}/cards/temas/${temaCard(article.slug)}.jpg`,
     publishedTime: article.date,
     modifiedTime: article.updated || article.date,
-    jsonld: [jsonldArticle, ...(jsonldReview ? [jsonldReview] : []), crumb.jsonld],
+    jsonld: [jsonldArticle, ...(jsonldReview ? [jsonldReview] : []), ...(jsonldFaq ? [jsonldFaq] : []), crumb.jsonld],
     main,
   });
 }
