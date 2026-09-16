@@ -1,0 +1,63 @@
+{
+  "slug": "fca-vs-cnmv-diferencias",
+  "title": "FCA vs CNMV: diferencias clave para un trader español",
+  "metaTitle": "FCA vs CNMV: diferencias para el trader español | Veredict FX",
+  "metaDescription": "FCA vs CNMV: comparamos competencias, registros y fondos de garantía (FSCS y FOGAIN) para que sepas qué protección tienes realmente como trader.",
+  "pillar": "A",
+  "type": "guia",
+  "author": "Redacción Veredict FX",
+  "date": "2026-09-16",
+  "updated": "2026-09-16",
+  "excerpt": "En el debate FCA vs CNMV, la diferencia esencial es que cada organismo supervisa un mercado distinto: la CNMV vigila los servicios de inversión en España y la FCA hace lo propio en el Reino Unido. Para un trader español esto importa porque determina qué registro consultar, qué fondo de garantía cubre su dinero y qué ley se aplica si algo falla. Conocer estas diferencias es el primer paso para operar con un bróker realmente supervisado.",
+  "keyTakeaway": "Si vas a operar con un bróker que dice estar regulado por la FCA, por la CNMV o por ambos a la vez (como ocurre con firmas que operan en España mediante sucursal), lo primero es comprobar tú mismo el registro oficial correspondiente antes de depositar un euro. No te fíes solo del logo del regulador en la web del bróker: verifica el número de registro en la propia página de la CNMV o en el Financial Services Register de la FCA. Después, entiende qué fondo de garantía te protegería en caso de insolvencia de la entidad (FOGAIN o FSCS, según el caso) y recuerda que ninguno de los dos cubre las pérdidas por movimientos de mercado, solo la insolvencia del intermediario.",
+  "body": "## Qué es la CNMV y qué vigila en España\n\nLa Comisión Nacional del Mercado de Valores (CNMV) es el supervisor español de los mercados de valores. Su función es garantizar la transparencia de los mercados y la correcta formación de precios, así como proteger a los inversores.\n\nEntre sus competencias está mantener los registros oficiales donde figuran las entidades autorizadas a prestar servicios de inversión en España, y detallar qué servicios concretos puede ofrecer cada una y qué tarifas máximas puede aplicar. Para saber qué entidades están autorizadas, así como los servicios que puede ofrecer cada una y las tarifas máximas que pueden aplicar, deben consultarse los registros oficiales de la CNMV.\n\nLa CNMV también publica avisos sobre entidades no registradas, conocidas popularmente como \"chiringuitos financieros\". El organismo pone de manifiesto que dichas sociedades no figuran inscritas en el correspondiente registro y, por tanto, no están autorizadas para prestar servicios de inversión u otras actividades sujetas a su supervisión. Además, la CNMV pone a disposición del público un teléfono de atención al inversor para resolver dudas sobre si una entidad está registrada.\n\n## Qué es la FCA y qué vigila en Reino Unido\n\nLa Financial Conduct Authority (FCA) es el regulador financiero del Reino Unido. Su papel equivalente al de la CNMV consiste en autorizar y supervisar a las firmas que prestan servicios financieros en suelo británico: en el Reino Unido, nearly all financial service activities must be authorised or registered by la FCA.\n\nLa FCA mantiene el Financial Services Register, un registro público de firmas, individuos y otros organismos autorizados por la FCA y/o la PRA. Este registro permite comprobar si una firma está autorizada y para qué actividades concretas tiene permiso, de forma similar a como funciona el registro de la CNMV en España.\n\nAdemás del registro completo, la FCA ha lanzado una herramienta de comprobación rápida (\"Firm Checker\") pensada para que cualquier consumidor pueda verificar en pocos minutos si una entidad está autorizada antes de contratar un producto o servicio financiero.\n\n## FCA vs CNMV: diferencias clave para el trader\n\nLa comparativa FCA vs CNMV no va tanto de \"cuál es mejor\", sino de entender qué jurisdicción aplica y qué implicaciones tiene para ti como cliente:\n\n- **Ámbito territorial.** La CNMV regula el mercado español; la FCA, el británico. Desde la salida del Reino Unido de la Unión Europea, una autorización de la FCA ya no da automáticamente derecho a operar en España mediante pasaporte comunitario, por lo que muchos brókers con origen británico prestan servicio a clientes españoles a través de una filial europea registrada aparte ante la CNMV.\n- **Registro consultable.** En España se consulta el registro de la CNMV; en Reino Unido, el Financial Services Register de la FCA. Ambos son gratuitos y públicos.\n- **Fondo de garantía en caso de insolvencia.** En España, la referencia es el FOGAIN; en Reino Unido, el FSCS. Los importes y condiciones no son iguales, como se explica más abajo.\n- **Idioma y atención al cliente.** No es un requisito regulatorio en sí, pero al operar bajo supervisión de la CNMV es más habitual encontrar entidades con oficina y atención en español, mientras que las reguladas solo por la FCA suelen operar en inglés salvo que tengan además presencia registrada en España.\n\nUn caso ilustrativo es el de [XTB](/brokers/xtb/), que opera en España mediante una sucursal inscrita en el registro de la CNMV, mientras que su matriz está supervisada por el regulador polaco y cuenta también con autorización de la FCA para el mercado británico. Es decir, un mismo grupo puede estar bajo el paraguas de varios reguladores a la vez, cada uno con competencia sobre un territorio distinto.\n\nAlgo similar ocurre con [IG](/brokers/ig/): su entidad británica está regulada por la FCA, pero para clientes del resto de la Unión Europea, incluida España, ofrece sus servicios a través de una entidad domiciliada en Alemania y supervisada por el regulador alemán, que a su vez figura inscrita como sucursal en el registro de la CNMV. Comprobar con qué entidad concreta del grupo vas a contratar —y bajo qué regulador queda esa entidad— es un paso que conviene no saltarse.\n\n## FOGAIN vs FSCS: qué pasa si el bróker quiebra\n\nNi la CNMV ni la FCA garantizan directamente el dinero de los clientes: esa función la cumplen fondos de garantía independientes, y aquí también hay diferencias relevantes.\n\nEn España, el Fondo General de Garantía de Inversiones (FOGAIN) cubre a los clientes de sus entidades adheridas cuando una de ellas entra en concurso de acreedores o es declarada insolvente por la CNMV. Si se da uno de estos supuestos, el FOGAIN indemniza a los clientes afectados con un importe máximo de 100.000 euros. Es importante entender qué no cubre: el FOGAIN no cubre las pérdidas de valor que sufran las inversiones como consecuencia del funcionamiento de los mercados, ni la insolvencia del emisor de un producto, solo la insolvencia de la propia entidad que presta el servicio de inversión.\n\nEn el Reino Unido, el Financial Services Compensation Scheme (FSCS) cumple una función equivalente para las firmas autorizadas por la FCA. En el caso de inversiones, el FSCS puede pagar hasta 85.000 libras por persona y por firma. Al igual que el FOGAIN, el FSCS no compensa pérdidas derivadas de la evolución del mercado: solo entra en juego cuando la propia entidad no puede devolver el dinero o los activos del cliente por insolvencia.\n\nConviene recordar que si operas con una sucursal en España de un grupo extranjero, lo habitual es que el fondo de garantía aplicable sea el del país de origen de la matriz (por ejemplo, el esquema polaco o el alemán), y no necesariamente el FOGAIN español. Antes de operar, merece la pena revisar en la documentación legal del bróker qué fondo de garantía concreto cubre tu cuenta y con qué límite.\n\n## Cómo comprobar tú mismo si un bróker está autorizado\n\nAntes de depositar dinero en cualquier plataforma, es recomendable hacer dos comprobaciones básicas, sea cual sea el regulador que anuncie el bróker:\n\n1. **En España:** consulta el buscador de entidades autorizadas de la CNMV y comprueba el número de registro que figura en el aviso legal del bróker. Si no aparece, revisa también el listado de advertencias sobre entidades no autorizadas.\n2. **En Reino Unido:** utiliza el Financial Services Register de la FCA o su herramienta Firm Checker para verificar la autorización y las actividades concretas para las que la firma tiene permiso.\n\nMuchos casos de fraude utilizan la técnica del \"clon\", haciéndose pasar por una entidad legítima. Por eso, además de ver el nombre en el registro, conviene verificar que los datos de contacto y la web coincidan exactamente con los publicados por el regulador.\n\n## Preguntas frecuentes\n\n**¿Puedo operar en España con un bróker regulado solo por la FCA?**\nDepende de la entidad concreta. Muchos brókers británicos ofrecen a clientes de la Unión Europea, incluida España, sus servicios a través de una filial registrada en otro país europeo (y a menudo también inscrita como sucursal en la CNMV), en lugar de la entidad regulada únicamente por la FCA. Conviene comprobar con qué entidad exacta del grupo se firma el contrato.\n\n**¿Es más seguro un bróker regulado por la CNMV que uno regulado por la FCA?**\nNo se trata de que un regulador sea \"mejor\" que otro, sino de que cada uno tiene competencia sobre un territorio distinto y aplica su propia normativa y fondo de garantía. Lo relevante es comprobar que la entidad con la que vas a operar está efectivamente inscrita en el registro correspondiente a tu caso.\n\n**¿Qué cubre exactamente el FOGAIN si un bróker quiebra?**\nEl FOGAIN indemniza hasta un máximo de 100.000 euros por cliente cuando la entidad adherida entra en concurso de acreedores o es declarada insolvente por la CNMV, pero no cubre pérdidas derivadas de la evolución de los mercados ni la insolvencia del emisor de un producto financiero.\n\n**¿Cómo sé si una plataforma que dice estar \"regulada\" realmente lo está?**\nLa única forma fiable es consultar directamente el registro oficial del regulador que menciona: el buscador de entidades autorizadas de la CNMV para España, o el Financial Services Register de la FCA para Reino Unido. No basta con ver el logo del regulador en la propia web del bróker.",
+  "relatedBrokers": [
+    "ig",
+    "xtb"
+  ],
+  "sources": [
+    {
+      "title": "¿Cuáles son las entidades autorizadas?",
+      "url": "https://www.cnmv.es/portal/inversor/entidades-autorizadas?lang=en",
+      "date": "2024-03-20"
+    },
+    {
+      "title": "La CNMV alerta de entidades no autorizadas a prestar servicios de inversión",
+      "url": "https://forbes.es/economia/904781/la-cnmv-alerta-de-13-entidades-no-autorizadas-a-prestar-servicios-de-inversion-2/",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Financial Services Register - FCA",
+      "url": "https://www.fca.org.uk/firms/financial-services-register",
+      "date": "2026-02-13"
+    },
+    {
+      "title": "How to check a firm or individual is authorised - FCA",
+      "url": "https://www.fca.org.uk/consumers/how-check-firm-individual-authorised",
+      "date": "2023-02-27"
+    },
+    {
+      "title": "Investment compensation & protection - FSCS",
+      "url": "https://www.fscs.org.uk/what-we-cover/investments/",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "Inversores - FOGAIN: Fondo de garantía de inversiones",
+      "url": "https://www.fogain.com/inversores/",
+      "date": "2026-09-16"
+    },
+    {
+      "title": "¿Está XTB regulado? - XTB",
+      "url": "https://www.xtb.com/es/educacion/esta-xtb-regulado",
+      "date": "2026-03-25"
+    },
+    {
+      "title": "Bróker IG opiniones 2026: seguridad y spreads - Rankia",
+      "url": "https://www.rankia.com/blog/mejores-brokers/4746706-analisis-broker-ig-regulacion-garantias-productos-cuentas-opiniones",
+      "date": "2026-07-20"
+    }
+  ],
+  "riskWarning": true,
+  "schemaType": "Article",
+  "heroAlt": "Comparativa FCA vs CNMV: diferencias regulatorias para el trader español"
+}
