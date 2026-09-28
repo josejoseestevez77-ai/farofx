@@ -316,10 +316,33 @@ ${[...articles].sort((a, b) => String(b.date).localeCompare(String(a.date))).map
 `;
 writeFileSync(join(DIST, 'llms.txt'), llms);
 
-// ---- _redirects (Cloudflare Pages): 301 de la antigua sección /noticias/ a /blog/ ----
+// ---- 404 real (noindex) para páginas eliminadas ----
+writeFileSync(
+  join(DIST, '404.html'),
+  `<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Página no encontrada | Veredict FX</title>
+</head>
+<body style="font-family:system-ui,-apple-system,sans-serif;max-width:640px;margin:15vh auto;padding:0 16px;text-align:center;color:#1a1a2e">
+<h1>Página no encontrada</h1>
+<p>La página que buscas no existe o ha sido eliminada.</p>
+<p><a href="/">Volver a la portada</a></p>
+</body>
+</html>
+`
+);
+
+// ---- _redirects (Cloudflare Pages) ----
+// 301 de la antigua sección /noticias/ a /blog/, y 404 real para artículos eliminados (corte limpio, sin 301 a las nuevas URLs).
 writeFileSync(
   join(DIST, '_redirects'),
-  `/noticias/            /blog/          301
+  `/blog/quantx-review-opiniones/       /404.html   404
+/blog/quantx-qx-orion-vega-prime/    /404.html   404
+/noticias/            /blog/          301
 /noticias/*           /blog/:splat    301
 `
 );
